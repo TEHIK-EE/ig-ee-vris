@@ -4,7 +4,7 @@
 
 Requirements: https://github.com/FHIR/auto-ig-builder/blob/master/README.md 
 
-https://build.fhir.org/ig/TEHIK-EE/ig-ee-vris
+https://build.fhir.org/ig/TEHIK-EE/ig-ee-vris/
 
 # ig-ee-vris
 FHIR implementation guide for infertility treatment information system
