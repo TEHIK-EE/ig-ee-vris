@@ -1,4 +1,6 @@
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+// Alias: $fertility-cryopreservation-date = ee-vris-cryopreservation-date
+
+Alias: $mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
 
 Alias: $atc-ee-VS = https://fhir.ee/ValueSet/atc-ee
 Alias: $atc-ee = https://fhir.ee/CodeSystem/atc-ee
