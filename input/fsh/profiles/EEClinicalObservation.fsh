@@ -1,3 +1,4 @@
+/*
 Profile: EEClinicalObservation
 Parent: Observation
 Id: ee-clinical-observation
@@ -10,3 +11,4 @@ Description: "An example profile for clinical observations."
 * category.coding 1..1
 * category.coding = $observation-category#vital-signs
 * extension contains EEBodyPositionExtension named bodyPosition 0..1
+*/
