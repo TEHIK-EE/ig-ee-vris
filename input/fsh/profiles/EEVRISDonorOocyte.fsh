@@ -4,18 +4,18 @@ Alias: $fertility-bdp-property-type = https://fhir.ee/CodeSystem/fertility-bdp-p
 Alias: $fertility-cryopreservation-date = https://fhir.ee/StructureDefinition/fertility-cryopreservation-date
 Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
 
-Profile: EEVRISDonorSperm
+Profile: EEVRISDonorOocyte
 Parent: BiologicallyDerivedProduct
-Id: ee-vris-donor-sperm
-Title: "Doonori sperma"
-Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud sperma"
+Id: ee-vris-donor-oocyte
+Title: "Doonori munarakud"
+Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud munarakud"
 //* ^url = "https://fhir.ee/StructureDefinition/EEFertilityBDP-DonorSperm"
 //* ^version = "1.0.0"
 * ^status = #active
-* . ^short = "Doonori annetatud sperma"
+* . ^short = "Doonori annetatud munarakud"
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
-* extension[cryopreservationDate] ^short = "Annetatud spermadooside külmutamise kuupäev"
+* extension[cryopreservationDate] ^short = "Annetatud munarakkude külmutamise kuupäev"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND!" //$product-category#cells (exactly)
 * productCode 1..
@@ -30,13 +30,21 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud spe
 * property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
-* property ^slicing.description = "Sperma omadused"
+* property ^slicing.description = "Munarakkude omadused"
 * property contains
-    donatedDoseCount 1..1 and
-    frozenDoseCount 1..1
-* property[donatedDoseCount] ^short = "Annetatud spermadooside arv (5.1)"
-* property[donatedDoseCount].type ^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
-* property[donatedDoseCount].value[x] only integer
-* property[frozenDoseCount] ^short = "Külmutatud spermadooside arv (5.2)"
-* property[frozenDoseCount].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
-* property[frozenDoseCount].value[x] only integer
+    obtainedCount 1..1 and
+    frozenCount  1..1
+* property[obtainedCount] ^short = "Annetatud munarakkude arv"
+* property[obtainedCount].type ^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
+* property[obtainedCount].value[x] only integer
+* property[frozenCount] ^short = "Külmutatud munarakkude arv"
+* property[frozenCount].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
+* property[frozenCount].value[x] only integer
+* identifier 0..*
+* parent 0..0
+* request 0..0
+* biologicalSourceEvent ^short = "Kas seda on vaja?"
+* processingFacility ^short = "Kas seda on vaja?"
+* division 0..0
+* expirationDate 0..0
+* storageTempRequirements 0..0
