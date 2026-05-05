@@ -5,11 +5,11 @@
 
 # SUSHI will use id as both id and packageId in the IG unless a
 # specific packageId is also provided in this file.
-id: ig-ee-vris # REPLACE_ME: use a unique id for your IG
+id: ee.fhir.vris # REPLACE_ME: use a unique id for your IG
 canonical: https://fhir.ee/vris # REPLACE_ME: canonical url should start with https://fhir.ee/ and end with domain specific path
-name: EE TEHIK IG VRIS # REPLACE_ME:
-title: "TEHIK FHIR IG VRIS" # REPLACE_ME:
-description: TEHIK IG VRIS # REPLACE_ME:
+name: EEVRIS # REPLACE_ME:
+title: "VRIS - Viljatusravi infosüsteem" # REPLACE_ME:
+#description: Viljatusravi infosüsteem # REPLACE_ME:
 status: draft # active | draft | active | retired | unknown # REPLACE_ME: according to maturity of the IG
 license: MIT
 version: 0.1.0 #REPLACE_ME: start with 0.1.0 and increment as needed
