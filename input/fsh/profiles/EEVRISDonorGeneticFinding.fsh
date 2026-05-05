@@ -1,7 +1,7 @@
-Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
-Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
-Alias: $fertility-donor-genetic-finding-type = https://fhir.ee/ValueSet/fertility-donor-genetic-finding-type
+//Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+//Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+//Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
+//Alias: $fertility-donor-genetic-finding-type = https://fhir.ee/ValueSet/fertility-donor-genetic-finding-type
 
 Profile: EEVRISDonorGeneticFinding
 Parent: Condition

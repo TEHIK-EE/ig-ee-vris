@@ -1,8 +1,8 @@
-Alias: $product-category = http://hl7.org/fhir/product-category
-Alias: $fertility-biological-material-type = https://fhir.ee/CodeSystem/fertility-biological-material-type
-Alias: $fertility-bdp-property-type = https://fhir.ee/CodeSystem/fertility-bdp-property-type
-Alias: $fertility-cryopreservation-date = https://fhir.ee/StructureDefinition/fertility-cryopreservation-date
-Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
+//Alias: $product-category = http://hl7.org/fhir/product-category
+//Alias: $fertility-biological-material-type = https://fhir.ee/CodeSystem/fertility-biological-material-type
+//Alias: $fertility-bdp-property-type = https://fhir.ee/CodeSystem/fertility-bdp-property-type
+//Alias: $fertility-cryopreservation-date = https://fhir.ee/StructureDefinition/fertility-cryopreservation-date
+//Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
 
 Profile: EEVRISDonorOocyte
 Parent: BiologicallyDerivedProduct
