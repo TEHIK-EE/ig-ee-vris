@@ -3,8 +3,7 @@
   
 ### Via FHIR auto-build
 Requirements: https://github.com/FHIR/auto-ig-builder/blob/master/README.md 
-
-Using FHIR auto-build, the static site is automatically published to the `https://build.fhir.org/ig/TEHIK-EE/ig-ee-vris` site.
+https://build.fhir.org/ig/TEHIK-EE/ig-ee-vris
 =======
 # ig-ee-vris
 FHIR implementation guide for infertility treatment information system
