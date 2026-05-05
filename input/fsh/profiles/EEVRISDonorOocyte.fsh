@@ -40,7 +40,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud mun
 * property[frozenCount] ^short = "Külmutatud munarakkude arv"
 * property[frozenCount].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
 * property[frozenCount].value[x] only integer
-* identifier 0..*
+* identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..0
 * request 0..0
 * biologicalSourceEvent ^short = "Kas seda on vaja?"

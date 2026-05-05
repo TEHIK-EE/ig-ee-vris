@@ -37,3 +37,14 @@ Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. Kas
 * subject ^short = "Doonor"
 * note ^short = "Täiendav märkus"
 * note ^definition = "Lisainformatsioon geneetilise leiu kohta"
+* identifier 0..*
+* bodySite 0..0
+* encounter 0..0
+* onset[x] 0..0
+* abatement[x] 0..0
+* recordedDate 0..0
+* participant 0..*
+  * function 0..1
+  * actor 1..1
+* stage 0..0
+* evidence 0..0

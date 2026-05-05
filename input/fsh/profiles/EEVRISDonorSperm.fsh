@@ -40,3 +40,11 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud spe
 * property[frozenDoseCount] ^short = "Külmutatud spermadooside arv (5.2)"
 * property[frozenDoseCount].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
 * property[frozenDoseCount].value[x] only integer
+* identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
+* parent 0..0
+* request 0..0
+* biologicalSourceEvent ^short = "Kas seda on vaja?"
+* processingFacility ^short = "Kas seda on vaja?"
+* division 0..0
+* expirationDate 0..0
+* storageTempRequirements 0..0

@@ -41,3 +41,11 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"
 * property[developmentDay].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
 * property[developmentDay].value[x] only integer
+* identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
+* parent 0..0
+* request 0..0
+* biologicalSourceEvent ^short = "Kas seda on vaja?"
+* processingFacility ^short = "Kas seda on vaja?"
+* division 0..0
+* expirationDate 0..0
+* storageTempRequirements 0..0
