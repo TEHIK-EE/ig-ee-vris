@@ -1,15 +1,8 @@
-//Alias: $product-category = http://hl7.org/fhir/product-category
-//Alias: $fertility-biological-material-type = https://fhir.ee/CodeSystem/fertility-biological-material-type
-//Alias: $fertility-bdp-property-type = https://fhir.ee/CodeSystem/fertility-bdp-property-type
-//Alias: $fertility-cryopreservation-date = https://fhir.ee/StructureDefinition/fertility-cryopreservation-date
-//Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
-
 Profile: EEVRISDonorEmbryo
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-donor-embryo
 Title: "Doonori embrüo(d)"
 Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud embrüo(d)"
-//* ^url = "https://fhir.ee/StructureDefinition/EEFertilityBDP-DonorSperm"
 //* ^version = "1.0.0"
 * ^status = #active
 * . ^short = "Doonori annetatud embrüo(d)"
@@ -17,7 +10,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
 * extension[cryopreservationDate] ^short = "Annetatud embrüo külmutamise kuupäev"
 * productCategory 1..
-* productCategory ^binding.description = "LOEND!" //$product-category#cells (exactly)
+* productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
 * productCode ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
 * productStatus 1..

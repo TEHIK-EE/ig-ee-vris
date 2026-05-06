@@ -1,14 +1,8 @@
-//Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-//Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
-//Alias: $EEFertilityPatient = https://fhir.ee/StructureDefinition/EEFertilityPatient
-//Alias: $fertility-donor-genetic-finding-type = https://fhir.ee/ValueSet/fertility-donor-genetic-finding-type
-
 Profile: EEVRISDonorGeneticFinding
 Parent: Condition
 Id: ee-vris-donor-genetic-finding
 Title: "Doonori geneetiline leid"
 Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus."
-//* ^url = "https://fhir.ee/StructureDefinition/EEFertilityCondition-DonorGeneticFinding"
 //* ^version = "1.0.0"
 * ^status = #active
 * . ^short = "Doonori geneetiline leid"
