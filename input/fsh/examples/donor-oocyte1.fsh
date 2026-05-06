@@ -2,7 +2,7 @@ Instance: donor-oocyte1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "Example of donor oocyte"
-* meta.profile = "https://fhir.ee/StructureDefinition/ee-vris-donor-oocyte"
+* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-oocyte"
 * extension.url = "https://fhir.ee/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-02-20"
 * productCategory.system = "http://hl7.org/fhir/product-category"
