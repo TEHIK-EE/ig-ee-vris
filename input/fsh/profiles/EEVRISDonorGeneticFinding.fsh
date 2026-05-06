@@ -17,15 +17,16 @@ Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. Kas
 * clinicalStatus ^binding.description = "LOENDist fix kood!" //$condition-clinical#active
 * verificationStatus 1..
 * verificationStatus ^binding.description = "LOENDist fix kood!" //from ConditionVerificationStatus (required)
-//* verificationStatus ^short = "provisional = kahtlus (5.10.2); confirmed = DNA-testiga kinnitatud (5.10.3–5.10.5)"
+* verificationStatus ^short = "|provisional| = kahtlus; |confirmed| = DNA-testiga kinnitatud"
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
+* category 0..*
 * category contains
     conditionCategory 1..1 and
     geneticFindingType 1..1
 * category[conditionCategory] ^binding.description = "LOENDist fix kood!" //= $condition-category#encounter-diagnosis
-* category[geneticFindingType] ^binding.description = "LOENDist fix kood!" //from $fertility-donor-genetic-finding-type (required)
+* category[geneticFindingType] ^binding.description = "Uus loend vaja!!" //from $fertility-donor-genetic-finding-type (required)
 * category[geneticFindingType] ^short = "Geneetilise leiu tüüp"
 * category[geneticFindingType] ^definition = "Geneetilise leiu klassifikatsioon: päriliku haiguse kahtlus, autosoom-retsessiivse kandlus, X-liiteline kandlus või mitokondriaalne kandlus"
 * code 1..
