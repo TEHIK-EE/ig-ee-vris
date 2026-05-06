@@ -1,6 +1,7 @@
 Instance: donor-oocyte1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
+Description: "Example of donor oocyte"
 * meta.profile = "https://fhir.ee/StructureDefinition/ee-vris-donor-oocyte"
 * extension.url = "https://fhir.ee/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-02-20"
@@ -8,7 +9,7 @@ Usage: #example
 * productCategory.code = #cells
 * productCode = $biological-material-type#embryo "Embrüo(d)"
 * productStatus = #available
-* collection.source = Reference(Patient/donor-003) "Doonor"
+* collection.source = Reference(Patient/patientDonor1)
 * property[0].type.coding.system = $vris-property-type
 * property[=].type.coding.code = #obtained-count
 * property[=].type.coding.display = "Annetamisel saadud arv"

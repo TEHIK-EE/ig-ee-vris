@@ -1,7 +1,7 @@
 Instance: patientDonor1
 InstanceOf: Patient
 Usage: #example
-Description: "Patient Leena Lööve"
+Description: "Example of verified patient"
 * meta.profile = "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified"
 * language = #et
 * identifier[0].system = "https://fhir.ee/sid/pid/est/ni"

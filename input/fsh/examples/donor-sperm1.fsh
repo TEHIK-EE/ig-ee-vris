@@ -1,6 +1,7 @@
 Instance: donor-sperm1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
+Description: "Example of donor sperm"
 * meta.profile = "https://fhir.ee/StructureDefinition/ee-vris-donor-sperm"
 * extension.url = "https://fhir.ee/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-03-15"

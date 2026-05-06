@@ -1,6 +1,7 @@
 Instance: donor-genetic-finding-verified1
 InstanceOf: Condition
 Usage: #example
+Description: "Example of confirmed condition of donor's genetic disorder"
 * meta.profile = "https://fhir.ee/StructureDefinition/ee-vris-donor-genetic-finding"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
