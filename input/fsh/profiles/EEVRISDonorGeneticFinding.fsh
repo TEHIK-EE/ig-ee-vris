@@ -7,7 +7,7 @@ Profile: EEVRISDonorGeneticFinding
 Parent: Condition
 Id: ee-vris-donor-genetic-finding
 Title: "Doonori geneetiline leid"
-Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. Kasutatakse kõigi doonorilt saadud bioloogilise materjali kasutajate teavitamiseks."
+Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus."
 //* ^url = "https://fhir.ee/StructureDefinition/EEFertilityCondition-DonorGeneticFinding"
 //* ^version = "1.0.0"
 * ^status = #active
@@ -28,7 +28,7 @@ Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. Kas
 * category[conditionCategory] ^binding.description = "LOENDist fix kood!" //= $condition-category#encounter-diagnosis
 * category[geneticFindingType] ^binding.description = "Uus loend vaja!!" //from $fertility-donor-genetic-finding-type (required)
 * category[geneticFindingType] ^short = "Geneetilise leiu tüüp"
-* category[geneticFindingType] ^definition = "Geneetilise leiu klassifikatsioon: päriliku haiguse kahtlus, autosoom-retsessiivse kandlus, X-liiteline kandlus või mitokondriaalne kandlus"
+* category[geneticFindingType] ^definition = "Geneetilise leiu klassifikatsioon: |päriliku haiguse kahtlus|, |autosoom-retsessiivse kandlus|, |X-liiteline kandlus| või |mitokondriaalne kandlus|"
 * code 1..
 * code ^short = "Molekulaarne diagnoos"
 * code.text 1..

@@ -1,5 +1,3 @@
-Alias: $fertility-biological-material-type = https://fhir.ee/CodeSystem/vris-biological-material-type
-
 Instance: donor-sperm1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
@@ -8,14 +6,14 @@ Usage: #example
 * extension.valueDate = "2025-03-15"
 * productCategory.system = $product-category
 * productCategory.code = #cells
-* productCode = $fertility-biological-material-type#sperm "Sperma"
+* productCode = $biological-material-type#sperm "Sperma"
 * productStatus = #available
-* collection.source = Reference(Patient/patientExampleMPI) 
-* property[0].type.coding.system = "https://fhir.ee/CodeSystem/vris-property-type"
+* collection.source = Reference(Patient/patientDonor1) 
+* property[0].type.coding.system = $vris-property-type
 * property[=].type.coding.code = #donated-dose-count
 * property[=].type.coding.display = "Annetatud dooside arv"
 * property[=].valueInteger = 8
-* property[+].type.coding.system = "https://fhir.ee/CodeSystem/vris-property-type"
+* property[+].type.coding.system = $vris-property-type
 * property[=].type.coding.code = #frozen-dose-count
 * property[=].type.coding.display = "Külmutatud dooside arv"
 * property[=].valueInteger = 6

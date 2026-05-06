@@ -1,4 +1,4 @@
-Instance: patientExampleMPI
+Instance: patientDonor1
 InstanceOf: Patient
 Usage: #example
 Description: "Patient Leena Lööve"
