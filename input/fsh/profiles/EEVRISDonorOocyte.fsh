@@ -26,19 +26,20 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud mun
 * collection.source 1..
 * collection.source only Reference($mpi-patient)
 * collection.source ^short = "Doonori viide"
+* property.type from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "type"
+* property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
-* property ^slicing.description = "Munarakkude omadused"
-* property contains
-    obtainedCount 1..1 and
-    frozenCount  1..1
+* property ^slicing.description = "embrüo(d) omadused"
+* property contains   
+    obtainedCount 0..1 and
+    frozenCount  0..1
 * property[obtainedCount] ^short = "Annetatud munarakkude arv"
-* property[obtainedCount].type ^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
+* property[obtainedCount].type.coding.code = #donated-dose-count
 * property[obtainedCount].value[x] only integer
 * property[frozenCount] ^short = "Külmutatud munarakkude arv"
-* property[frozenCount].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
+* property[frozenCount].type.coding.code = #frozen-dose-count
 * property[frozenCount].value[x] only integer
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..0
