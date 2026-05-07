@@ -26,8 +26,8 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * property ^slicing.ordered = false
 * property ^slicing.description = "embrüo(d) omadused"
 * property contains
-    donatedCount 1..1 and
-    developmentDay 1..1
+    donatedCount 0..1 and
+    developmentDay 0..1
 * property[donatedCount] ^short = "Annetatud embrüote arv"
 * property[donatedCount].type.coding.code = #donated-dose-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 * property[donatedCount].value[x] only integer
