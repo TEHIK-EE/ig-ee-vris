@@ -1,3 +1,10 @@
 == Suppressed Messages ==
 
 # List of the lines (or parts) that should be ignored in QA report
+
+# Externally defined ValueSets cannot be resolved
+
+The valueSet reference%
+Hyperlink 'https://fhir.ee/%
+The link 'https://fhir.ee/ValueSet/%
+The link 'https://fhir.ee/CodeSystem/%
