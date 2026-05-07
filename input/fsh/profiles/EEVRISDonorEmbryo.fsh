@@ -28,7 +28,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
     donatedCount 1..1 and
     developmentDay 1..1
 * property[donatedCount] ^short = "Annetatud embrüote arv"
-* property[donatedCount].type ^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
+* property[donatedCount].type = #donated-dose-count$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 * property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
 * property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"

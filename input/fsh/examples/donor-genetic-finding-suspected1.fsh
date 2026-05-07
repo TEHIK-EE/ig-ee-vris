@@ -5,8 +5,8 @@ Description: "Example of suspected condition of genetic disorder of donor"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-genetic-finding"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional "Provisional"
-* category[0] = $condition-category#encounter-diagnosis
-* category[+] = $vris-donor-genetic-finding-type#hereditary-disease-suspicion "Päriliku haiguse kahtlus"
+//* category[0] = $condition-category#encounter-diagnosis
+* category = $vris-donor-genetic-finding-type#hereditary-disease-suspicion "Päriliku haiguse kahtlus"
 * code.text = "Kahtlustatav spinaalne lihasatroofia (SMA) — doonori lapsel ilmnenud sümptomid"
 * subject = Reference(Patient/patientDonor1)
 //* recordedDate = "2025-07-15"
