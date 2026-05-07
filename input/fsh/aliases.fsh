@@ -16,3 +16,4 @@ Alias: $vris-donor-genetic-finding-type = https://fhir.ee/CodeSystem/vris-geneet
 Alias: $vris-donor-genetic-finding-type-VS = https://fhir.ee/ValueSet/vris-geneetilise-leiu-tyyp
 
 Alias: $biological-material-type = https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik
+Alias: $biological-material-type-VS = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-liik

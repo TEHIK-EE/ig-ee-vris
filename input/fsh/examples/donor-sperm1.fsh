@@ -3,7 +3,7 @@ InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "Example of donor sperm"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-sperm"
-* extension.url = "https://fhir.ee/StructureDefinition/ee-vris-cryopreservation-date"
+* extension.url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-03-15"
 * productCategory.system = $product-category
 * productCategory.code = #cells

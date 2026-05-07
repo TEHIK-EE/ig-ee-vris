@@ -19,7 +19,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud spe
 * productCategory 1..
 * productCategory ^binding.description = "LOEND!" //$product-category#cells (exactly)
 * productCode 1..
-* productCode ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
+* productCode from $biological-material-type-VS // ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
 * productStatus 1..
 * productStatus ^binding.description = "LOEND!" //from BiologicallyDerivedProductStatus (required)
 * collection 1..
