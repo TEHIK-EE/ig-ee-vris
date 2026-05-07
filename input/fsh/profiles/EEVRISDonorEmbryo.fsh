@@ -19,8 +19,9 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * collection.source 1..
 * collection.source only Reference($mpi-patient)
 * collection.source ^short = "Doonori viide"
+* property.type from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "type"
+* property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
 * property ^slicing.description = "embrüo(d) omadused"
@@ -28,11 +29,11 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
     donatedCount 1..1 and
     developmentDay 1..1
 * property[donatedCount] ^short = "Annetatud embrüote arv"
-* property[donatedCount].type = #donated-dose-count$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
+* property[donatedCount].type.coding.code = #donated-dose-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 * property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
 * property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"
-* property[developmentDay].type ^binding.description = "LOENDist fix kood!" //  $fertility-bdp-property-type#frozen-dose-count
+* property[developmentDay].type.coding.code = #frozen-dose-count //$vris-property-type-VS
 * property[developmentDay].value[x] only integer
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..0
