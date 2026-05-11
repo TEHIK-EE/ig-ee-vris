@@ -5,7 +5,7 @@ Description: "TEST Example of donor cell (embryo)"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-cell"
 * extension.url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-02-20"
-* productCategory.system = "http://hl7.org/fhir/product-category"
+//* productCategory.system = "http://hl7.org/fhir/product-category"
 * productCategory.code = #cells
 * productCode = $biological-material-type#embryo "Embrüo(d)"
 * productStatus = #available
