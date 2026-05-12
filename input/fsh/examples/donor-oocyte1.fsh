@@ -1,4 +1,4 @@
-Instance: donor-oocyte1
+/*Instance: donor-oocyte1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "Example of donor oocyte"
@@ -18,3 +18,4 @@ Description: "Example of donor oocyte"
 * property[=].type.coding.code = #frozen-count
 * property[=].type.coding.display = "Külmutatud arv"
 * property[=].valueInteger = 5
+*/

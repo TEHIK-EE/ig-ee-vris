@@ -1,4 +1,4 @@
-Instance: donor-sperm1
+/*Instance: donor-sperm1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "Example of donor sperm"
@@ -18,3 +18,4 @@ Description: "Example of donor sperm"
 * property[=].type.coding.code = #frozen-dose-count
 * property[=].type.coding.display = "Külmutatud dooside arv"
 * property[=].valueInteger = 6
+*/

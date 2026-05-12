@@ -1,4 +1,4 @@
-Instance: donor-embryo1
+/*Instance: donor-embryo1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "Example of donor embryo"
@@ -18,3 +18,4 @@ Description: "Example of donor embryo"
 * property[=].type.coding.code = #development-day
 * property[=].type.coding.display = "Arengupäev"
 * property[=].valueInteger = 5
+*/
