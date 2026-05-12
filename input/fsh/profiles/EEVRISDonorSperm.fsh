@@ -1,3 +1,4 @@
+/*
 //Alias: $product-category = http://hl7.org/fhir/product-category
 //Alias: $fertility-biological-material-type = https://fhir.ee/CodeSystem/fertility-biological-material-type
 //Alias: $fertility-bdp-property-type = https://fhir.ee/CodeSystem/fertility-bdp-property-type
@@ -49,3 +50,4 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud spe
 * division 0..0
 * expirationDate 0..0
 * storageTempRequirements 0..0
+*/

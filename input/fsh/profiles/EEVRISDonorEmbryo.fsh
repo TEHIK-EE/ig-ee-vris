@@ -1,4 +1,4 @@
-Profile: EEVRISDonorEmbryo
+/*Profile: EEVRISDonorEmbryo
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-donor-embryo
 Title: "Doonori embrüo(d)"
@@ -43,3 +43,4 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * division 0..0
 * expirationDate 0..0
 * storageTempRequirements 0..0
+*/
