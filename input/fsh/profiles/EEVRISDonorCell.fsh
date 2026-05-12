@@ -21,8 +21,8 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 * collection.source ^short = "Doonori viide"
 * collection.collector 0..0
 * property.type.coding from $vris-property-type-VS
-* property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "value" //"type.coding.code.value"
+* property ^slicing.discriminator.type = #pattern
+* property ^slicing.discriminator.path = "type" //"type.coding.code.value"
 * property ^slicing.rules = #closed
 * property ^slicing.ordered = false
 * property ^slicing.description = "Bioloogilise materjali omadused"
