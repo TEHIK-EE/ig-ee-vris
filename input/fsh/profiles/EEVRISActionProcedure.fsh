@@ -1,8 +1,8 @@
-Profile: EEVRISInfertilityProcedure
+Profile: EEVRISActionProcedure
 Parent: Procedure
-Id: ee-vris-infertility-procedure
-Title: "Viljatus protseduur"
-Description: "Infertility related procedure e.g IVF, ICSI etc"
+Id: ee-vris-action-procedure
+Title: "Action profile"
+Description: "Procedure that is related to different actions related to biologic material. E.g freezing, destroying, donating, dispensing... "
 
 * identifier 0..*
 * instantiatesCanonical 0..*
@@ -12,7 +12,8 @@ Description: "Infertility related procedure e.g IVF, ICSI etc"
 * status 1..1   // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
 * statusReason 0..1
 * statusReason ^short = "MITTE Siirdamise põhjus. LOEND"
-* category 0..*   // muutus R4 0..1 → R5 0..*
+* category 0..*
+* category ^short = "(ee Kategooria määrab ära kas tegu on külmutamise, hävitamise, annetamise või väljastamisega. LOEND VAJA!)"
 * code 0..1
 * subject 1..1   // required: Patient|Group|Device|Practitioner|Organization|Location
 * focus 0..1   // uus R5-s
@@ -43,5 +44,6 @@ Description: "Infertility related procedure e.g IVF, ICSI etc"
 * focalDevice.action 0..1
 * focalDevice.manipulated 1..1   // required
 
-* used 0..*   // CodeableReference; R5 uus tüüp (R4: Reference)
+* used 0..*
+* used ^short = "(ee Siia referents biolooogilisele materjalile mille ümber protseduur toimub)"
 * supportingInfo 0..*   // uus R5-s
