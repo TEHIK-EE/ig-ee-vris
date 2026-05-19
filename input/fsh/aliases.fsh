@@ -18,3 +18,18 @@ Alias: $vris-donor-genetic-finding-type-VS = https://fhir.ee/ValueSet/vris-genee
 
 Alias: $biological-material-type = https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik
 Alias: $biological-material-type-VS = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-liik
+
+Alias: $obsCategory = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $appearance-CS = https://fhir.ee/CodeSystem/vris-physical-appearance-type
+Alias: $appearance = https://fhir.ee/ValueSet/vris-physical-appearance-type
+Alias: $eye-CS = https://fhir.ee/CodeSystem/vris-eye-colour
+Alias: $eye = https://fhir.ee/ValueSet/vris-eye-colour
+Alias: $hair-CS = https://fhir.ee/CodeSystem/vris-hair-colour
+Alias: $hair = https://fhir.ee/ValueSet/vris-hair-colour
+Alias: $skin-CS = https://fhir.ee/CodeSystem/vris-skin-colour
+Alias: $skin = https://fhir.ee/ValueSet/vris-skin-colour
+Alias: $body-CS = https://fhir.ee/CodeSystem/vris-body-structure
+Alias: $body = https://fhir.ee/ValueSet/vris-body-structure
+
+Alias: $loinc = http://loinc.org
+Alias: $ucum = http://unitsofmeasure.org

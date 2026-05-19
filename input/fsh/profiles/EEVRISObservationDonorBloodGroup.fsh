@@ -1,4 +1,3 @@
-
 Profile: EEVRISObservationDonorBloodGroup
 Parent: Observation
 Id: ee-vris--observation-donor-blood-group
