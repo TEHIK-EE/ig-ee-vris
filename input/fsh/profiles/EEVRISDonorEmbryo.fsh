@@ -35,7 +35,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
 * property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"
-* property[developmentDay].type.coding.code = #frozen-dose-count //$vris-property-type-VS
+* property[developmentDay].type.coding.code = #arengupäev //$vris-property-type-VS
 * property[developmentDay].value[x] only integer
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..0
