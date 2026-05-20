@@ -15,7 +15,7 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * communication ..0
 * period 1..1
 * relationship ^slicing.discriminator.type = #value
-* relationship ^slicing.discriminator.path = "$this"
+* relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
 * relationship contains
     donortype 0..1 
