@@ -23,7 +23,7 @@ Description: "Related person profile for VRIS, including contact type, personal 
 //* relationship[person] ^short = "Contact person type"
 //* relationship[person] from $relationship-type-VS (required)
 
-//* relationship[class] ^short = "Contact person's relationship to the patient"
+* relationship[class] ^short = "Do not use this in VRIS. (ee Seda ei kasuta VRIS-s)"
 //* relationship[class] from $relationship-relation-VS (required)
 
 * relationship[donortype] ^short = "Donor type"

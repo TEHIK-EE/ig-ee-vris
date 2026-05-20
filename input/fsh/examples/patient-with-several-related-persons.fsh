@@ -1,4 +1,4 @@
-Instance: example-donor-of-cell-patient
+/*Instance: example-donor-of-cell-patient
 InstanceOf: EEVRISDonorOfCell
 Usage: #example
 Title: "Donor of Cell Patient example with three RelatedPerson links"
@@ -24,3 +24,4 @@ Description: "Example Patient with links to sperm donor, oocyte donor and partne
 // Link 3: partner
 * link[2].other = Reference(RelatedPerson/example-relatedperson-partner)
 * link[2].type = #refer
+*/

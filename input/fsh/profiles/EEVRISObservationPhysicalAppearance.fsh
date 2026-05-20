@@ -14,7 +14,7 @@ Description: "Observation profile for recording characteristics of physical appe
 * code ^short = "Füüsilise välimuse vaatluse kood"
 //* code = $Appearance#physical-appearance "Physical Appearance Panel"
 * subject 1..1 
-* subject only Reference($mpi-patient)
+* subject only Reference($vris-patient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "Millal andmed registreeriti"

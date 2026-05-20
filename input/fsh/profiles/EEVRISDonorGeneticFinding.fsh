@@ -23,7 +23,7 @@ Description: "Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus."
 * code.text 1..
 * code.text ^short = "Diagnoos/haigus vabatekstina"
 * code.text ^definition = "Molekulaarne diagnoos vabatekstina. Nt 'CFTR geeni c.1521_1523delCTT (F508del) variant — tsüstilise fibroosi kandlus'"
-* subject only Reference($mpi-patient)
+* subject only Reference($vris-patient)
 * subject ^short = "Doonor"
 * note ^short = "Täiendav märkus?. Molekulaarne diagnoos. Kas code alla või note alla?!?!?!"
 * note ^definition = "Lisainformatsioon geneetilise leiu kohta??"

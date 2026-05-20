@@ -1,13 +1,12 @@
-/*Profile: EEVRISRecieverOfCell
+Profile: EEVRISPatient
 Parent: EEMPIPatient
-Id: ee-vris-reciever-of-cell
-Title: "EE MPI Patient Donor"
-Description: "For use of patients"
+Id: ee-vris-patient
+Title: "EE VRIS Patient"
+Description: "For use of donors and recievers"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * name 1..*
 * name[official] 1.. 
 * name[official] ^short = "Official name"
 * gender ^short = "Sex"
-//* maritalStatus 0..1
-*/
+* link ^short = "(ee siia )"

@@ -14,7 +14,7 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group of
 * code ^short = "(ee siia LOINC)"
 * code = #57743-7 "ABO-veregrupp (kinnitav uuring)"
 * subject 1..1 
-* subject only Reference($mpi-patient)
+* subject only Reference($vris-patient)
 * effective[x] 1..1
 * effective[x] only dateTime
 * performer 

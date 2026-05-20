@@ -1,11 +1,11 @@
 Profile: EEVRISDonorCell
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-donor-cell
-Title: "Doonori bioloogiline materjal"
-Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bioloogiline materjal (sperma, munarakud, embrüo)"
+Title: "Doonori bioloogiline materjal (sperma või munarakk)"
+Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bioloogiline materjal (sperma, munarakud)"
 
 * ^status = #active
-* . ^short = "Doonori annetatud bioloogiline materjal"
+* . ^short = "Doonori annetatud bioloogiline materjal, sperma või munarakk."
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
@@ -17,8 +17,8 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 * productStatus 1..
 * collection 1..
 * collection.source 1..
-* collection.source only Reference($mpi-patient)
-* collection.source ^short = "Reference of the donor. (ee Doonori viide)."
+* collection.source only Reference(EEVRISPatient)
+* collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
@@ -28,7 +28,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 * property ^slicing.description = "Characteristics of biologic material. (ee Bioloogilise materjali omadused)"
 * property contains
     donatedCount 0..1 and
-    secondCharacteristic 0..1 
+    frozenCount 0..1 
 * property[donatedCount] ^short = "Annetatud dooside/ühikute arv"
 * property[donatedCount].type.coding from $vris-property-type1-VS
 * property[donatedCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
@@ -36,13 +36,14 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 //* property[frozenCount] ^short = "Külmutatud dooside/ühikute arv"
 //* property[frozenCount].type.coding.code = #frozen-dose-count
 //* property[frozenCount].value[x] only integer
-* property[secondCharacteristic] ^short = "Embrüo arengupäev või külmutatud rakkude arv."
-* property[secondCharacteristic] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6). NB! Ainult embrüo puhul. Sperma ja munarakkude puhul külmutatud dooside/rakkude arv."
-* property[secondCharacteristic].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
-* property[secondCharacteristic].type.coding from $vris-property-type2-VS
-* property[secondCharacteristic].value[x] only integer
+* property[frozenCount] ^short = "Külmutatud rakkude arv."
+* property[frozenCount] ^definition = "Sperma ja munarakkude puhul külmutatud dooside/rakkude arv."
+* property[frozenCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
+* property[frozenCount].type.coding from $vris-property-type2-VS
+* property[frozenCount].value[x] only integer
 * parent 0..0
 * request 0..0
-* division 0..0
+* division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust?"
 * expirationDate 0..0
 * storageTempRequirements 0..0
+* biologicalSourceEvent ^short = "Kas selle kaudu saaks viidata KÜLMUTAMISELE/vm protseduurile?"

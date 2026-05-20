@@ -1,6 +1,6 @@
 // Alias: $fertility-cryopreservation-date = ee-vris-cryopreservation-date
 
-Alias: $mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
+Alias: $vris-patient = https://fhir.ee/vris/StructureDefinition/ee-vris-patient
 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
@@ -8,6 +8,7 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $sugu = https://fhir.ee/CodeSystem/administratiivne-sugu
 Alias: $product-category = http://hl7.org/fhir/product-category
 Alias: $vris-property-type = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
+Alias: $vris-property-type-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
 Alias: $vris-property-type1-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-annetus
 Alias: $vris-property-type2-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-omadus
 

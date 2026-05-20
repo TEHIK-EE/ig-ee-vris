@@ -1,4 +1,4 @@
-/*Profile: EEVRISDonorEmbryo
+Profile: EEVRISDonorEmbryo
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-donor-embryo
 Title: "Doonori embrüo(d)"
@@ -7,8 +7,10 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * ^status = #active
 * . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
-* extension[cryopreservationDate] ^short = "Annetatud embrüo külmutamise kuupäev"
+    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+    ExtensionEEVRISDonorReference named secondDonor 0..1
+* extension[cryopreservationDate] ^short = "(ee Annetatud embrüo külmutamise kuupäev)"
+* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide)"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
@@ -17,14 +19,14 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * productStatus ^binding.description = "LOEND!" //from BiologicallyDerivedProductStatus (required)
 * collection 1..
 * collection.source 1..
-* collection.source only Reference($mpi-patient)
+* collection.source only Reference($vris-patient)
 * collection.source ^short = "Doonori viide"
 * property.type from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
-* property ^slicing.description = "embrüo(d) omadused"
+* property ^slicing.description = "embrüo(de) omadused"
 * property contains
     donatedCount 0..1 and
     developmentDay 0..1
@@ -43,4 +45,3 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
 * division 0..0
 * expirationDate 0..0
 * storageTempRequirements 0..0
-*/
