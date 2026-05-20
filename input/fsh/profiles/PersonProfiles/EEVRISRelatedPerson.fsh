@@ -16,7 +16,7 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * period 1..1
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "$this"
-* relationship ^slicing.rules = #closed
+* relationship ^slicing.rules = #open
 * relationship contains
     donortype 0..1 
 
@@ -27,5 +27,5 @@ Description: "Related person profile for VRIS, including contact type, personal 
 //* relationship[class] from $relationship-relation-VS (required)
 
 * relationship[donortype] ^short = "Donor type"
-* relationship[donortype] ^definition = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte donor or partner."
+* relationship[donortype] ^definition = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner."
 * relationship[donortype] from $vris-donor-type-VS (required)
