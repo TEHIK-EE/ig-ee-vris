@@ -9,4 +9,4 @@ Description: "For use of patients"
 * name[official] 1.. 
 * name[official] ^short = "Official name"
 * gender ^short = "Sex"
-//* maritalStatus 0..1
+* link ^short = "(ee siia saab panna nii mitu RelatedPersonit kui vaja. Vt näidis)"

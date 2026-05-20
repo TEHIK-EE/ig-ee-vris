@@ -33,3 +33,7 @@ Alias: $body = https://fhir.ee/ValueSet/vris-body-structure
 
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
+
+Alias: $relationship-type-VS = https://fhir.ee/ValueSet/isiku-seos-patsiendiga
+Alias: $relationship-relation-VS = https://fhir.ee/ValueSet/patsiendi-kontaktisikute-liigid
+Alias: $vris-donor-type-VS = https://fhir.ee/ValueSet/vris-donor-type
