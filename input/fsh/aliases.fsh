@@ -1,6 +1,7 @@
 // Alias: $fertility-cryopreservation-date = ee-vris-cryopreservation-date
-
-Alias: $vris-patient = https://fhir.ee/vris/StructureDefinition/ee-vris-patient
+Alias: $mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified 
+Alias: $vris-donor = https://fhir.ee/vris/StructureDefinition/ee-vris-donor
+Alias: $vris-recipient = https://fhir.ee/vris/StructureDefinition/ee-vris-recipient
 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status

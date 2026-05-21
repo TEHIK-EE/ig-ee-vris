@@ -14,7 +14,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * code ^short = "Kehakõrguse LOINC kood"
 * code = $loinc#8302-2 "Body height"
 * subject 1..1
-* subject only Reference($vris-patient)
+* subject only Reference($vris-donor)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "Millal mõõtmine tehti"

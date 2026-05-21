@@ -25,7 +25,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud spe
 * productStatus ^binding.description = "LOEND!" //from BiologicallyDerivedProductStatus (required)
 * collection 1..
 * collection.source 1..
-* collection.source only Reference($vris-patient)
+* collection.source only Reference($vris-donor)
 * collection.source ^short = "Doonori viide"
 * property.type from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value

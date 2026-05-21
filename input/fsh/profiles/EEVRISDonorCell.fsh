@@ -17,7 +17,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 * productStatus 1..
 * collection 1..
 * collection.source 1..
-* collection.source only Reference(EEVRISPatient)
+* collection.source only Reference(EEVRISDonor)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS

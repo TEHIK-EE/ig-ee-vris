@@ -1,8 +1,8 @@
-/*Profile: EEVRISRecieverOfCell
+Profile: EEVRISRecipient
 Parent: EEMPIPatient
-Id: ee-vris-reciever-of-cell
+Id: ee-vris-recipient
 Title: "EE MPI Patient Donor"
-Description: "For use of patients"
+Description: "For use of patients who recieve care and are recipients of biologic material. (ee Retsiipienti profiil. NB! alati MPI-s registreeritud)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * name 1..*
@@ -10,4 +10,3 @@ Description: "For use of patients"
 * name[official] ^short = "Official name"
 * gender ^short = "Sex"
 //* maritalStatus 0..1
-*/

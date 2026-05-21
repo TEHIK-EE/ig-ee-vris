@@ -18,14 +18,15 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
 * relationship contains
+    donorClass 0..1 and
     donortype 0..1 
 
 //* relationship[person] ^short = "Contact person type"
 //* relationship[person] from $relationship-type-VS (required)
 
-* relationship[class] ^short = "Do not use this in VRIS. (ee Seda ei kasuta VRIS-s)"
+* relationship[donorClass] ^short = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner. (ee Näiteks spermadoonor"
 //* relationship[class] from $relationship-relation-VS (required)
 
-* relationship[donortype] ^short = "Donor type"
-* relationship[donortype] ^definition = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner."
+* relationship[donortype] ^short = "Donor type. (ee Näiteks |anonüümne|)"
+* relationship[donortype] ^definition = "Specifies the relationship between recipient and donor. (mitt-partnerannetaja, partnerannetaja jne)"
 * relationship[donortype] from $vris-donor-type-VS (required)

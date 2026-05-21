@@ -10,4 +10,4 @@ Context: BiologicallyDerivedProduct
 * . ^definition = "Doonori või seotud isiku viide"
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * value[x] 0..1
-* value[x] only Reference($vris-patient)
+* value[x] only Reference($vris-donor)

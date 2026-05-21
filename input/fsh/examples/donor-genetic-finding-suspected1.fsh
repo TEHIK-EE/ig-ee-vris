@@ -8,6 +8,6 @@ Description: "Example of suspected condition of genetic disorder of donor"
 //* category[0] = $condition-category#encounter-diagnosis
 * category = $vris-donor-genetic-finding-type#hereditary-disease-suspicion "Päriliku haiguse kahtlus"
 * code.text = "Kahtlustatav spinaalne lihasatroofia (SMA) — doonori lapsel ilmnenud sümptomid"
-* subject = Reference(Patient/patientDonor1)
+* subject = Reference(Patient/patientDonorMale)
 //* recordedDate = "2025-07-15"
 * note.text = "Doonori lapsel tekkinud lihasnõrkus, SMA kahtlus. DNA-test veel pooleli."
