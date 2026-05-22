@@ -8,9 +8,12 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bio
 * . ^short = "Doonori annetatud bioloogiline materjal, sperma või munarakk."
 
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
+    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+    ExtensionEEVRISCellCollection named collection 0..1
 * extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
-
+* extension[cryopreservationReason] ^short = "Külmutamise põhjus"
+* extension[collection] ^short = "Suguraku kogumise liik"
 * productCategory 0..0
 * productCode 1..
 * productCode from $biological-material-type-VS

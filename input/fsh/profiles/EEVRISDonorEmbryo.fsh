@@ -10,7 +10,7 @@ Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud emb
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISDonorReference named secondDonor 0..1
 * extension[cryopreservationDate] ^short = "(ee Annetatud embrüo külmutamise kuupäev)"
-* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide)"
+* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
