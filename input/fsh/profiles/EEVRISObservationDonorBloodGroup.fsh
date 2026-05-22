@@ -1,6 +1,6 @@
 Profile: EEVRISObservationDonorBloodGroup
 Parent: Observation
-Id: ee-vris--observation-donor-blood-group
+Id: ee-vris-observation-donor-blood-group
 Title: "EE VRIS Donor Blood Group Observation"
 Description: "Observation profile for recording the ABO and Rh(D) blood group of a donor in the Estonian VRIS fertility system."
 * ^status = #active
@@ -8,20 +8,32 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group of
 * ^version = "1.0.0"
 * status = #final
 * category 1..*
-* category ^short = "Siia kategooria labor."
-* category = #laboratory
+* category = $obsCategory#laboratory
 * code 1..1
-* code ^short = "(ee siia LOINC)"
-* code = #57743-7 "ABO-veregrupp (kinnitav uuring)"
-* subject 1..1 
+* code = $loinc#34532-2 "Blood type panel" 
+* subject 1..1
 * subject only Reference($vris-donor)
 * effective[x] 1..1
 * effective[x] only dateTime
-* performer 
-* value[x] 1..1
-* value[x] only CodeableConcept
-* note ^short = "Kui on midagi vaja veel lisada"
-* component 0..0
+* value[x] 0..0
+* note ^short = "Lisainfo vajadusel"
+* component 2..*
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #closed    
+* component contains
+    abo 1..1 and
+    rh  1..1
+* component[abo].code 1..1
+* component[abo].code = $loinc#883-9 "ABO group [Type] in Blood"
+* component[abo].value[x] 1..1
+* component[abo].value[x] only CodeableConcept
+* component[abo].valueCodeableConcept from https://fhir.ee/ValueSet/abo-veregrupp (required)
+* component[rh].code 1..1
+* component[rh].code = $loinc#10331-7 "Rh [Type] in Blood"
+* component[rh].value[x] 1..1
+* component[rh].value[x] only CodeableConcept
+* component[rh].valueCodeableConcept from https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus (required)
 * bodySite 0..0
 * specimen 0..0
 * device 0..0
@@ -33,7 +45,3 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group of
 * issued 0..0
 * dataAbsentReason 0..0
 * interpretation 0..0
-
-
-
-

@@ -1,7 +1,7 @@
 Profile: EEVRISRecipient
 Parent: EEMPIPatient
 Id: ee-vris-recipient
-Title: "EE MPI Patient Donor"
+Title: "EE VRIS Patient Donor"
 Description: "For use of patients who recieve care and are recipients of biologic material. (ee Retsiipienti profiil. NB! alati MPI-s registreeritud)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

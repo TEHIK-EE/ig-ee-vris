@@ -5,9 +5,9 @@ Title: "EE VRIS Patient"
 Description: "For use of donors. (ee Doonori profiil, kasutamiseks ka anonüümsete doonorite puhul.)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* name 1..*
-* name[official] 1.. 
-* name[official] ^short = "Official name"
+* identifier ^short = "Anonymous donor identifier? (ee Anonüümse doonori identifikaator?)"
+* name 0..*
+* name ^short = "Name of Donor if known. (ee Doonori nimi)"
 * gender ^short = "Sex"
 * link ^short = "(ee NB! SIIA TULEB LINK MPI PATSIENDILE)"
 * link.other only Reference($mpi-patient)
