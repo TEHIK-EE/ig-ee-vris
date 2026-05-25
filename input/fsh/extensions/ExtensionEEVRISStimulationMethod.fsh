@@ -1,7 +1,7 @@
 Extension: ExtensionEEVRISStimulationMethod
 Id: ee-vris-stimulation-method
-Title: "Stimulatsiooni meetod"
-Description: "Bioloogilise materjali stimulatsiooni meetod"
+Title: "Stimulation method"
+Description: "Extension for describing which stimulation method is/was used. (ee Bioloogilise materjali stimulatsiooni meetod.)"
 Context: BiologicallyDerivedProduct
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-stimulation-method"
 //* ^version = "1.0.0"

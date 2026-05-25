@@ -1,7 +1,7 @@
 Extension: ExtensionEEVRISCellOriginRole
 Id: ee-vris-cell-origin-role
 Title: "Cell origin role"
-Description: "Sperma/munaraku doonori/retsiipiendi roll (mittepartnerannetaja, partner, anonüümne, säilituseesmärk jne)."
+Description: "Extension for recording the role of donor/recipient of biological material. (ee Sperma/munaraku doonori/retsiipiendi roll (mittepartnerannetaja, partner, anonüümne, säilituseesmärk jne).)"
 * ^context[0].type = #element
 * ^context[=].expression = "BiologicallyDerivedProduct"
 * ^context[+].type = #element

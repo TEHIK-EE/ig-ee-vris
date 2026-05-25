@@ -1,7 +1,7 @@
 Extension: ExtensionEEVRISCryopreservationDate
 Id: ee-vris-cryopreservation-date
-Title: "Külmutamise kuupäev"
-Description: "Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev"
+Title: "Cryopreservation date"
+Description: "Extension for recording cryopreservation date. (ee Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev.)"
 Context: BiologicallyDerivedProduct
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
 //* ^version = "1.0.0"

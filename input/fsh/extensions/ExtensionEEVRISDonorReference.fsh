@@ -1,7 +1,7 @@
 Extension: ExtensionEEVRISDonorReference
 Id: ee-vris-donor-reference
-Title: "Seotud isik"
-Description: "Viide seotud isikule/doonorile"
+Title: "Related person reference"
+Description: "Extension for referencing related person. (ee Viide seotud isikule/doonorile.)"
 Context: BiologicallyDerivedProduct
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference"
 //* ^version = "1.0.0"
