@@ -2,7 +2,7 @@ Profile: EEVRISObservationBloodGroup
 Parent: Observation
 Id: ee-vris-observation-blood-group
 Title: "EE VRIS Blood Group Observation"
-Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system."
+Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
@@ -25,11 +25,13 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
     abo 1..1 and
     rh  1..1
 * component[abo].code 1..1
+* component[abo] ^short = "ABO veregrupp klassifikaatorist. NB! Loend ON olemas."
 * component[abo].code = $loinc#883-9 "ABO group [Type] in Blood"
 * component[abo].value[x] 1..1
 * component[abo].value[x] only CodeableConcept
 * component[abo].valueCodeableConcept from https://fhir.ee/ValueSet/abo-veregrupp (required)
 * component[rh].code 1..1
+* component[rh] ^short = "RhD kuuluvus klassifikaatorist. NB! Loend ON olemas."
 * component[rh].code = $loinc#10331-7 "Rh [Type] in Blood"
 * component[rh].value[x] 1..1
 * component[rh].value[x] only CodeableConcept

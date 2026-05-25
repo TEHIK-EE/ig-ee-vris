@@ -2,7 +2,7 @@ Profile: EEVRISSupplyDelivery
 Parent: SupplyDelivery
 Id: ee-vris-supply-delivery
 Title: "EE VRIS SupplyDelivery"
-Description: "Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Bioloogilise materjali välja saatmine JA vastuvõtmine)"
+Description: "Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja"
 * identifier 0..*
 * identifier ^short = "(ee liikumise identifikaator)"
 * basedOn 0..0
@@ -19,7 +19,7 @@ Description: "Use this profile for describing when the biological material (sper
 * suppliedItem.quantity 0..1
 * suppliedItem.quantity ^short = "Kogus, dooside arv, mida liigutatakse"
 * suppliedItem.item[x] 1..1
-* suppliedItem.itemReference only Reference(EEVRISDonorEmbryo or EEVRISDonorCell)
+* suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISReproductiveCell)
 * occurrence[x] 1..1
 * occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. Aeg, millal sündmus aset leiab)"
 * supplier 0..1

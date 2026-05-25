@@ -1,7 +1,7 @@
 Profile: EEVRISDonor
 Parent: EEBasePatient
 Id: ee-vris-donor
-Title: "EE VRIS Patient"
+Title: "EE VRIS Donor"
 Description: "For use of donors. (ee Doonori profiil, kasutamiseks ka anonüümsete doonorite puhul.)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

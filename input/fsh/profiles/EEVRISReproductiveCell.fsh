@@ -1,11 +1,11 @@
-Profile: EEVRISDonorCell
+Profile: EEVRISReproductiveCell
 Parent: BiologicallyDerivedProduct
-Id: ee-vris-donor-cell
-Title: "Doonori bioloogiline materjal (sperma või munarakk)"
-Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud bioloogiline materjal (sperma, munarakud)"
+Id: ee-vris-reproductive-cell
+Title: "EE VRIS Reproductive Cell"
+Description: "Sperm or oocyte. (ee Bioloogiline materjal (sperma või munarakk)"
 
 * ^status = #active
-* . ^short = "Doonori annetatud bioloogiline materjal, sperma või munarakk."
+* . ^short = "Bioloogiline materjal, sperma või munarakk."
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and

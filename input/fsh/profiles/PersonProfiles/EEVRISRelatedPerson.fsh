@@ -2,7 +2,7 @@ Profile: EEVRISRelatedPerson
 Parent: EEBaseRelatedPerson
 Id: ee-vris-related-person
 Title: "EE VRIS Related Person"
-Description: "Related person profile for VRIS, including contact type, personal relationship and donor type."
+Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi õi retsiipiendiga.)"
 * ^status = #draft
 * active 1..1 
 * relationship 1..*

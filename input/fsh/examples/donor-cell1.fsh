@@ -2,7 +2,7 @@ Instance: donor-cell1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "TEST Example of donor cell (sperm)"
-* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-cell"
+* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-cell"
 * extension.url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
 * extension.valueDate = "2025-02-20"
 //* productCategory.system = "http://hl7.org/fhir/product-category"

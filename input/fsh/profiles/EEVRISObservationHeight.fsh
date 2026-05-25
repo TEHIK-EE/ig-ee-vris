@@ -1,8 +1,8 @@
 Profile: EEVRISDonorHeight
 Parent: Observation
 Id: ee-vris-observation-height
-Title: "EE VRIS Donor Height Observation"
-Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system."
+Title: "EE VRIS Height Observation"
+Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"

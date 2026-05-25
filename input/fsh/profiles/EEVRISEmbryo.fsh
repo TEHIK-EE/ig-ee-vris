@@ -1,15 +1,15 @@
-Profile: EEVRISDonorEmbryo
+Profile: EEVRISEmbryo
 Parent: BiologicallyDerivedProduct
-Id: ee-vris-donor-embryo
-Title: "Doonori embrüo(d)"
-Description: "Anonüümse doonori või mittepartnerannetaja Eestis annetatud embrüo(d)"
+Id: ee-vris-embryo
+Title: "EE VRIS Embryo"
+Description: "Profile for embryo. (ee Embrüo.)"
 //* ^version = "1.0.0"
 * ^status = #active
-* . ^short = "Doonori annetatud embrüo(d)"
+//* . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISDonorReference named secondDonor 0..1
-* extension[cryopreservationDate] ^short = "(ee Annetatud embrüo külmutamise kuupäev)"
+* extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
 * extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
