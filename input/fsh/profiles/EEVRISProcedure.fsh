@@ -1,7 +1,7 @@
-Profile: EEVRISActionProcedure
+Profile: EEVRISProcedure
 Parent: Procedure
-Id: ee-vris-action-procedure
-Title: "Action profile"
+Id: ee-vris-procedure
+Title: "Profile for different procedures in VRIS."
 Description: "Procedure that is related to different actions related to biologic material. E.g freezing, destroying, donating, dispensing... "
 
 * identifier 0..*

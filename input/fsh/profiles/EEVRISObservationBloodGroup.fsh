@@ -1,8 +1,8 @@
-Profile: EEVRISObservationDonorBloodGroup
+Profile: EEVRISObservationBloodGroup
 Parent: Observation
-Id: ee-vris-observation-donor-blood-group
-Title: "EE VRIS Donor Blood Group Observation"
-Description: "Observation profile for recording the ABO and Rh(D) blood group of a donor in the Estonian VRIS fertility system."
+Id: ee-vris-observation-blood-group
+Title: "EE VRIS Blood Group Observation"
+Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system."
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"

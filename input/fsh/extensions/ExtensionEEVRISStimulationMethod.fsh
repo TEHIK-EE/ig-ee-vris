@@ -1,13 +1,13 @@
 Extension: ExtensionEEVRISStimulationMethod
 Id: ee-vris-stimulation-method
-Title: "Külmutamise kuupäev"
-Description: "Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev"
+Title: "Stimulatsiooni meetod"
+Description: "Bioloogilise materjali stimulatsiooni meetod"
 Context: BiologicallyDerivedProduct
-* ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
+* ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-stimulation-method"
 //* ^version = "1.0.0"
 * . 0..1
-* . ^short = "Date of cryopreservation. (ee Külmutamise kuupäev.)"
-* . ^definition = "Bioloogilise materjali külmutamise kuupäev"
+* . ^short = "Method of stimulation. (ee Stimulatsiooni meetod.)"
+* . ^definition = "Bioloogilise materjali stimulatsiooni meetod"
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * value[x] 1..1
-* value[x] only date
+* value[x] only CodeableConcept
