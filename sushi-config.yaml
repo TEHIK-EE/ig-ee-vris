@@ -127,12 +127,21 @@ groups:
       - StructureDefinition/ee-vris-recipient
       - StructureDefinition/ee-vris-related-person
   GroupB:
+    name: Biological material
+    description: Embryo and reproductive cell profiles
+    resources:
+      - StructureDefinition/ee-vris-embryo
+      - StructureDefinition/ee-vris-reproductive-cell
+  GroupC:
     name: Observations
     description: Observation profiles
     resources:
       - StructureDefinition/ee-vris-observation-blood-group
       - StructureDefinition/ee-vris-observation-gender-at-birth
       - StructureDefinition/ee-vris-observation-height
+      - StructureDefinition/ee-vris-observation-physical-appearance
+
+
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
