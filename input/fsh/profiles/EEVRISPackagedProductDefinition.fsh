@@ -1,7 +1,7 @@
 Profile: EEVRISPackagedProductDefinition
 Parent: PackagedProductDefinition
 Id: ee-vris-packaged-product-definition
-Title: "EE VRIS PackagedProductDefinition"
+Title: "PackagedProductDefinition: EE VRIS Package"
 Description: "Profile for packaged doses of sperm. (ee Sperma pakendite profiil)"
 * identifier 0..*
 * name 0..1

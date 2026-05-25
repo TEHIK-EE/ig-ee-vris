@@ -1,7 +1,7 @@
 Profile: EEVRISReproductiveCell
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-reproductive-cell
-Title: "EE VRIS Reproductive Cell"
+Title: "BiologicallyDerivedProduct: EE VRIS Reproductive Cell"
 Description: "Sperm or oocyte. (ee Bioloogiline materjal (sperma või munarakk)"
 
 * ^status = #active

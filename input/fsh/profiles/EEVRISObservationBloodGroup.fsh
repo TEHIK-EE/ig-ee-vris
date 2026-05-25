@@ -1,7 +1,7 @@
 Profile: EEVRISObservationBloodGroup
 Parent: Observation
 Id: ee-vris-observation-blood-group
-Title: "EE VRIS Blood Group Observation"
+Title: "Observation: EE VRIS Blood Group"
 Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)"
 * ^status = #active
 * ^experimental = false

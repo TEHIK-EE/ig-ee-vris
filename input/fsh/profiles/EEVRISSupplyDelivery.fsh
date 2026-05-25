@@ -1,7 +1,7 @@
 Profile: EEVRISSupplyDelivery
 Parent: SupplyDelivery
 Id: ee-vris-supply-delivery
-Title: "EE VRIS SupplyDelivery"
+Title: "SupplyDelivery: EE VRIS Biological material movement"
 Description: "Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja"
 * identifier 0..*
 * identifier ^short = "(ee liikumise identifikaator)"

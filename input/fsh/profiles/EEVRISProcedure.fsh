@@ -1,7 +1,7 @@
 Profile: EEVRISProcedure
 Parent: Procedure
 Id: ee-vris-procedure
-Title: "EE VRIS Procedure"
+Title: "Procedure: EE VRIS Procedure"
 Description: "Procedure that is related to different actions related to biologic material. E.g freezing, destroying, donating, dispensing... (ee Profiil erinevate protseduuride kirjeldamiseks. Nt. Külmutamine, annetamine...) "
 
 * identifier 0..*

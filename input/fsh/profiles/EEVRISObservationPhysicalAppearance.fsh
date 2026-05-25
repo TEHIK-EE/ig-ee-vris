@@ -1,7 +1,7 @@
 Profile: EEVRISObservationPhysicalAppearance
 Parent: Observation
 Id: ee-vris-observation-physical-appearance
-Title: "EE VRIS Physical Appearance Observation"
+Title: "Observation: EE VRIS Physical Appearance"
 Description: "Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)"
 * ^status = #active
 * ^experimental = false

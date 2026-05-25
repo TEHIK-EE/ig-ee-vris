@@ -1,7 +1,7 @@
 Profile: EEVRISObservationGenderAtBirth
 Parent: Observation
 Id: ee-vris-observation-gender-at-birth
-Title: "EE VRIS Gender at Birth Observation"
+Title: "Observation: EE VRIS Gender at Birth"
 Description: "Observation profile for recording gender of a donor at the moment of birth. (ee Sünnisugu.)"
 * ^status = #active
 * ^experimental = false

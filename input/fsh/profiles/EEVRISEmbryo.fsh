@@ -1,7 +1,7 @@
 Profile: EEVRISEmbryo
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-embryo
-Title: "EE VRIS Embryo"
+Title: "BiologicallyDerivedProduct: EE VRIS Embryo"
 Description: "Profile for embryo. (ee Embrüo.)"
 //* ^version = "1.0.0"
 * ^status = #active
