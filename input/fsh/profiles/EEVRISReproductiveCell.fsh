@@ -21,7 +21,7 @@ Description: "Sperm or oocyte. (ee Bioloogiline materjal (sperma või munarakk)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor)
-* collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali.)"
+* collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
