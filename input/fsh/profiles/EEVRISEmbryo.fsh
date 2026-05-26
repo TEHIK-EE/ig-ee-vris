@@ -20,7 +20,7 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference($vris-donor)
-* collection.source ^short = "Doonori viide"
+* collection.source ^short = "(ee Doonori viide! NB kas seda on vaja? Kui parent viitab sperma ja munaraku doonoritele?)"
 * property.type from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type.coding.code"
@@ -40,7 +40,7 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..*
 * parent only Reference(EEVRISReproductiveCell)
-* parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele vajadusel)"
+* parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele)"
 * request 0..0
 * biologicalSourceEvent ^short = "Kas seda on vaja?"
 * processingFacility ^short = "Kas seda on vaja?"

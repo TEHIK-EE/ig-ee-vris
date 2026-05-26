@@ -2,7 +2,7 @@ Profile: EEVRISPackagedProductDefinition
 Parent: PackagedProductDefinition
 Id: ee-vris-packaged-product-definition
 Title: "PackagedProductDefinition: EE VRIS Package"
-Description: "Profile for packaged doses of sperm. (ee Sperma pakendite profiil)"
+Description: "Profile for packaged doses of reproductive cells. (ee Suguraku pakendite profiil)"
 * identifier 0..*
 * name 0..1
 * type 0..1
@@ -35,6 +35,7 @@ Description: "Profile for packaged doses of sperm. (ee Sperma pakendite profiil)
 * packaging.containedItem.modifierExtension 0..0
 * packaging.containedItem.item 1..1
 * packaging.containedItem.item only CodeableReference(BiologicallyDerivedProduct)
+* packaging.containedItem ^short = "(ee See on pakend, milles on teatud arv doose. Siit saab edasi arvutada, mis võeti ja mis jäi?)"
 * packaging.containedItem.amount 0..1
 * packaging.packaging 0..0
 * characteristic 0..0
