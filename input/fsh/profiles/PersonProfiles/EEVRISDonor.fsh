@@ -11,5 +11,6 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks ka anonüüms
 * name 0..*
 * name ^short = "Name of Donor if known. (ee Doonori nimi)"
 * gender ^short = "Sex"
-* link ^short = "(ee NB! SIIA TULEB LINK MPI PATSIENDILE)"
-* link.other only Reference($mpi-patient)
+* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel)"
+* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
+//* link ^slicing.discriminator.type = #value

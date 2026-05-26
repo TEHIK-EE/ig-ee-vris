@@ -7,10 +7,10 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * ^status = #active
 //* . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
-    ExtensionEEVRISDonorReference named secondDonor 0..1
+    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
+//    ExtensionEEVRISDonorReference named secondDonor 0..1
 * extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
-* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
+//* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
@@ -38,7 +38,9 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * property[developmentDay].type.coding.code = #arengupäev //$vris-property-type-VS
 * property[developmentDay].value[x] only integer
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
-* parent 0..0
+* parent 0..*
+* parent only Reference(EEVRISReproductiveCell)
+* parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele vajadusel)"
 * request 0..0
 * biologicalSourceEvent ^short = "Kas seda on vaja?"
 * processingFacility ^short = "Kas seda on vaja?"

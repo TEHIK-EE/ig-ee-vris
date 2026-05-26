@@ -2,7 +2,7 @@ Profile: EEVRISRelatedPerson
 Parent: EEBaseRelatedPerson
 Id: ee-vris-related-person
 Title: "RelatedPerson: EE VRIS RelatedPerson"
-Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi õi retsiipiendiga.)"
+Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi või retsiipiendiga. Doonori ja retsipient vahelise SUHTE kirjeldus.)"
 * ^status = #draft
 * active 1..1 
 * relationship 1..*
@@ -13,6 +13,8 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * photo ..0
 * identifier ^short = "Contact person identifiers."
 * communication ..0
+* patient only Reference(EEVRISDonor or EEVRISRecipient)
+* patient ^short = "(ee Olenevalt doonori tüübist saab seose luua eri aegadel.)"
 * period 1..1
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"
@@ -24,9 +26,9 @@ Description: "Related person profile for VRIS, including contact type, personal 
 //* relationship[person] ^short = "Contact person type"
 //* relationship[person] from $relationship-type-VS (required)
 
-* relationship[donorClass] ^short = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner. (ee Näiteks spermadoonor"
+* relationship[donorClass] ^short = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner. (ee Näiteks spermadoonor)."
 //* relationship[class] from $relationship-relation-VS (required)
 
-* relationship[donortype] ^short = "Donor type. (ee Näiteks |anonüümne|)"
+* relationship[donortype] ^short = "Donor type. (ee |Partnerannetaja|Anonüümne doonor||Mitteparnerist doonor| NB! LOENDIT vaja!)"
 * relationship[donortype] ^definition = "Specifies the relationship between recipient and donor. (mitt-partnerannetaja, partnerannetaja jne)"
 * relationship[donortype] from $vris-donor-type-VS (required)
