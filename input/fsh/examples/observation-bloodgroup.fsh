@@ -11,5 +11,5 @@ Usage: #example
 * note.text = "Veregrupp määratud enne."
 * component[abo].code = $loinc#883-9 "ABO group [Type] in Blood"
 * component[abo].valueCodeableConcept = $sct#112149005 "B veregrupp"
-* component[rh].code = $loinc#10331-7 "Rh [Type] in Blood"
+* component[rh].code = $loinc#978-7 "Rh [Type] in Blood"
 * component[rh].valueCodeableConcept = $sct#10828004 "Positive"
