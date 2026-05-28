@@ -11,11 +11,13 @@ Description: "Sperm or oocyte. (ee Bioloogiline materjal (sperma või munarakk)"
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     ExtensionEEVRISCellCollection named collection 0..1 and 
-    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 
+    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+    $intended-recipient named recipient 0..1
 * extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
 * extension[cryopreservationReason] ^short = "Külmutamise põhjus"
 * extension[collection] ^short = "Suguraku kogumise liik"
 * extension[cellOrigin] ^short = "Suguraku päritolu"
+* extension[recipient] ^short = "Kui on vaja retsiipiendi seost, siis see tuleb täita patsiendi referentsiga."
 * productCategory 0..0
 * productCode 1..
 * productCode from $biological-material-type-VS

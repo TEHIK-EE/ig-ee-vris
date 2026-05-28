@@ -21,7 +21,7 @@ Description: "Genetic finding of cell donor that appears later in life. (ee Taga
 * code 1..
 * code ^short = "Molekulaarne diagnoos. Kas code alla või note alla?!?!?! KAS on lootust, et kunagi tuleks siia loend? Loend, mille alusel saaks valida kodeeritud diagnoosi?"
 * code.text 1..
-* code.text ^short = "Diagnoos/haigus vabatekstina"
+* code.text ^short = "(ee Diagnoos/haigus vabatekstina. Siin EI ole loendit, sest paljud geneetilised haigused pole veel RHK koodiga. TULEVIKUS Orpha-koodid?)"
 * code.text ^definition = "Molekulaarne diagnoos vabatekstina. Nt 'CFTR geeni c.1521_1523delCTT (F508del) variant — tsüstilise fibroosi kandlus'"
 * subject only Reference($vris-donor)
 * subject ^short = "Doonor"

@@ -7,7 +7,8 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * ^status = #active
 //* . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1
+    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+    $intended-recipient named recipient 0..1
 //    ExtensionEEVRISDonorReference named secondDonor 0..1
 * extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
