@@ -131,7 +131,8 @@ groups:
     description: Embryo and reproductive cell profiles
     resources:
       - StructureDefinition/ee-vris-embryo
-      - StructureDefinition/ee-vris-reproductive-cell
+      - StructureDefinition/ee-vris-sperm
+      - StructureDefinition/ee-vris-oocyte
   GroupC:
     name: Observations
     description: Observation profiles

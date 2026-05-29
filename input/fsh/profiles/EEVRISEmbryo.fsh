@@ -40,7 +40,7 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * property[developmentDay].value[x] only integer
 * identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
 * parent 0..*
-* parent only Reference(EEVRISReproductiveCell)
+* parent only Reference(EEVRISSperm or EEVRISOocyte)
 * parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele)"
 * request 0..0
 * biologicalSourceEvent ^short = "Kas seda on vaja?"
