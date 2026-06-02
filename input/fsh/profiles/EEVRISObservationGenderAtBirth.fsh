@@ -3,9 +3,9 @@ Parent: Observation
 Id: ee-vris-observation-gender-at-birth
 Title: "Observation: EE VRIS Gender at Birth"
 Description: "Observation profile for recording gender of a donor at the moment of birth. (ee Sünnisugu.)"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
-* ^version = "1.0.0"
+* ^version = "0.1.0"
 * status = #final
 * category 1..* 
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"

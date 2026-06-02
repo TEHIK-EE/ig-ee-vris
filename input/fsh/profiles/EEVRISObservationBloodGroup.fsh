@@ -3,14 +3,14 @@ Parent: Observation
 Id: ee-vris-observation-blood-group
 Title: "Observation: EE VRIS Blood Group"
 Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^version = "1.0.0"
 * status = #final
 * category 1..*
 * category = $obsCategory#laboratory
 * code 1..1
-* code = $loinc#34532-2 "Blood type panel" 
+//* code = $loinc#34532-2 "Blood type panel" 
 * subject 1..1
 * subject only Reference($vris-donor)
 * effective[x] 1..1

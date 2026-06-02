@@ -8,9 +8,12 @@ Description: "Profile for embryo. (ee Embrüo.)"
 //* . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
-    $intended-recipient named recipient 0..1
-//    ExtensionEEVRISDonorReference named secondDonor 0..1
+    $intended-recipient named recipient 0..1 and
+    ExtensionEEVRISThawing named thawning 0..1
+
 * extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
+* extension[recipient] ^short = "(ee Retsiipient)"
+* extension[thawning] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
 * productCategory 1..
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
