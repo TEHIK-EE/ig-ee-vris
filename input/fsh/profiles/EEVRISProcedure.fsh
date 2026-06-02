@@ -9,7 +9,9 @@ Description: "Procedure that is related to different actions related to biologic
 * basedOn 0..*
 * partOf 0..*
 * status 1..1   // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
+* status ^short = "(ee kui embryot ei siirdata, siis panna |not-done| ja statusReasoni alla põhjus)"
 * statusReason 0..1
+* statusReason ^short = "(ee STAATUSE Põhjuste LOEND?)"
 * category 0..*
 * category ^short = "(ee Kategooria määrab ära kas tegu on külmutamise, hävitamise, annetamise või väljastamisega. LOEND VAJA!)"
 * code 0..1
@@ -30,13 +32,13 @@ Description: "Procedure that is related to different actions related to biologic
 
 * location 0..0
 * reason 0..*
-* reason ^short = "(ee Hävitamise põhjus. LOEND)"
+* reason ^short = "(ee Näiteks: Hävitamise põhjus, mitte-siirdamise põhjus jne. LOEND(id?))"
 * bodySite 0..0
 * outcome 0..1
-* outcome ^short = "(ee Inseminatsiooni/... tulemus. Nb! LOEND)"
+* outcome ^short = "(ee Inseminatsiooni/jne jne... tulemus. Nb! LOEND)"
 * report 0..0
 * complication 0..*
-* complication ^short = "Tüsistused. NB! LOEND"   // CodeableReference(Condition); R5 uus tüüp
+* complication ^short = "(ee Tüsistused. NB! LOEND)"   // CodeableReference(Condition); R5 uus tüüp
 * followUp 0..*
 * note 0..*
 * note ^short = "(ee lisainfo)"
