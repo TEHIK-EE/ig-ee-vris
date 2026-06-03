@@ -8,7 +8,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * . ^short = "Bioloogiline materjal, sperma."
 
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..* and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     ExtensionEEVRISCellCollection named collection 0..1 and 
     ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
