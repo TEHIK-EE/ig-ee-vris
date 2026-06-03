@@ -2,26 +2,22 @@ Profile: EEVRISMedicationAdministration
 Parent: MedicationAdministration
 Id: ee-vris-medication-administration
 Title: "MedicationAdministration: EEVRIS Medication administred during procedure(s)"
-Description: "Profile for medication administration during inferitility procedure. (ee Ravitsükli või protseduuri käigus manustatud ravim(id).)"
-* id 0..1
-* meta 0..1
-* implicitRules 0..1
-* language 0..1
-* text 0..1
-* contained 0..*
-* extension 0..*
-* modifierExtension 0..*
 * identifier 0..*
 * basedOn 0..*
+* basedOn ^short = "(ee Siia tuleb viide ravitsükklile, millest tuleneb ravimi(te) manustamine.)"
 * partOf 0..*
+* partOf ^short = "(ee Juhul kui ravimi manustamine on mingi protseduuri osa, siis siia viide sellele protseduurile.)"
 * status 1..1
 * statusReason 0..*
 * category 0..*
 * medication 1..1
+* medication ^short = "(ee KAS paneme viite loendile ja ATC? seda pole termserveris... tuleb MedIn liidestus teha?)"
 * subject 1..1
+* subject ^short = "(ee Siia PATSIENT, kes sai ravimit.)"
 * encounter 0..1
 * supportingInformation 0..*
 * occurence[x] 1..1
+* occurence[x] ^short = "(ee Aeg, millal ravim manustati.)"
 * recorded 0..1
 * isSubPotent 0..1
 * subPotentReason 0..*

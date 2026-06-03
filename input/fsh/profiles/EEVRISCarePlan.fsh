@@ -34,10 +34,18 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * activity 0..*
 * activity ^short = "(ee Siin on (kõik) protseduurid, mida viljastumiseks tehti. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
 * activity.id 0..1
+* activity.performedActivity ^slicing.discriminator[0].type = #type
+* activity.performedActivity ^slicing.discriminator[0].path = "reference"
+* activity.performedActivity ^slicing.rules = #open
+* activity.performedActivity contains
+    medicationAdministration 0..* and
+    procedure 0..*
+* activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
+* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure)
 * activity.extension 0..*
 * activity.modifierExtension 0..*
-* activity.performedActivity 0..*
-* activity.performedActivity only CodeableReference(EEVRISProcedure)
+//* activity.performedActivity 0..*
+//* activity.performedActivity only CodeableReference(EEVRISProcedure)
 * activity.progress 0..*
 * activity.plannedActivityReference 0..0
 * note 0..*
