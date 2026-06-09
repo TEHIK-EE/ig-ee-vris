@@ -17,7 +17,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
 * extension[cryopreservationReason] ^short = "Külmutamise põhjus"
 * extension[cellOrigin] ^short = "Suguraku päritolu roll"
-* extension[recipient] ^short = "Kui on vaja retsiipiendi seost, siis see tuleb täita patsiendi referentsiga."
+* extension[recipient] ^short = "Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga."
 * extension[oocyteOrigin] ^short = "Munaraku päritolu"
 * extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0

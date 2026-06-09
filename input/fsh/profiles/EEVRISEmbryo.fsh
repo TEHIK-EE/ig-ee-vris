@@ -13,7 +13,7 @@ Description: "Profile for embryo. (ee Embrüo.)"
     ExtensionEEVRISReCryopreservation named reCryo 0..1
 
 * extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
-* extension[recipient] ^short = "(ee Retsiipient)"
+* extension[recipient] ^short = "(ee retsipient)"
 * extension[thawning] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
 * extension[reCryo] ^short = "(ee Embrüo taaskülmutamine jah/ei; ja arv)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"

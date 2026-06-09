@@ -17,7 +17,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * extension[cryopreservationReason] ^short = "Külmutamise põhjus"
 * extension[collection] ^short = "Suguraku (sperma) kogumise meetod"
 * extension[cellOrigin] ^short = "Suguraku päritolu roll"
-* extension[recipient] ^short = "Kui on vaja retsiipiendi seost, siis see tuleb täita patsiendi referentsiga."
+* extension[recipient] ^short = "Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga."
 //* extension[oocyteOrigin] ^short = "Munaraku päritolu"
 //* extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0
