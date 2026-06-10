@@ -43,3 +43,6 @@ Alias: $vris-donor-type-VS = https://fhir.ee/ValueSet/vris-donor-type
 Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship 
 Alias: $intended-recipient = http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient
+
+Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
+Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-fertility-treatment-component
