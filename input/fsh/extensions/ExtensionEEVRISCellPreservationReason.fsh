@@ -1,7 +1,7 @@
 Extension: ExtensionEEVRISCellPreservationReason
 Id: ee-vris-cell-preservation-reason
 Title: "Cell preservation reason"
-Description: "Extension for recording the reason of cell preservation. (ee Sperma/munaraku säilitamise põhjus.)"
+Description: "Extension for the reason of cell preservation. (ee Sperma/munaraku säilitamise põhjus.)"
 Context: BiologicallyDerivedProduct
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason"
 //* ^version = "1.0.0"
