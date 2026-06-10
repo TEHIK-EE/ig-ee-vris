@@ -10,6 +10,6 @@ Usage: #example
 * packaging.type.text = "Krüosäilitamise konteiner"
 * packaging.containedItem[0].item = Reference(BiologicallyDerivedProduct/donor-cell1)
 * packaging.containedItem[0].amount.value = 3
-* packaging.containedItem[0].amount.unit = "doos"
-* packaging.containedItem[0].amount.system = "http://unitsofmeasure.org"
-* packaging.containedItem[0].amount.code = #dose
+//* packaging.containedItem[0].amount.unit = "doos"
+//* packaging.containedItem[0].amount.system = "http://unitsofmeasure.org"
+//* packaging.containedItem[0].amount.code = #dose

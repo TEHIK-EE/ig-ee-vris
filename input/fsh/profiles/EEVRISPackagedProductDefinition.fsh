@@ -35,7 +35,7 @@ Description: "Profile for packaged doses of reproductive cells. (ee Suguraku pak
 * packaging.containedItem.modifierExtension 0..0
 * packaging.containedItem.item 1..1
 * packaging.containedItem.item only CodeableReference(BiologicallyDerivedProduct)
-* packaging.containedItem ^short = "(ee See on pakend, milles on teatud arv doose. Siit saab edasi arvutada, mis võeti ja mis jäi?)"
+* packaging.containedItem ^short = "(ee See on pakend, milles on teatud arv doose. Väljendatud täisarvuna ilma ühikuteta. Siit saab edasi arvutada, mis võeti ja mis jäi?)"
 * packaging.containedItem.amount 0..1
 * packaging.packaging 0..0
 * characteristic 0..0
