@@ -4,6 +4,7 @@ Description: "Example of bloodgroup"
 Usage: #example
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group"
 * status = #final
+* language = #et 
 * category = $obsCategory#laboratory
 * code = $loinc#34530-6 "ABO-veregrupp ja RhD antigeen (kinnitav uuring)"
 * subject = Reference(Patient/patientDonorMale) "D-2024-001"

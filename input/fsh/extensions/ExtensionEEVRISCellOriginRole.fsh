@@ -5,7 +5,7 @@ Description: "Extension for the role of donor/recipient of biological material. 
 * ^context[0].type = #element
 * ^context[=].expression = "BiologicallyDerivedProduct"
 * ^context[+].type = #element
-* ^context[=].expression = "EEVRISDonor"
+* ^context[=].expression = "Patient"
 * . ^short = ""
 * . ^definition = "(ee Doonori/retsipiendi roll)."
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-origin-role"

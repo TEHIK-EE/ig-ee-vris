@@ -17,7 +17,7 @@ Description: "Profile for embryo. (ee Embrüo.)"
 * extension[thawning] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
 * extension[reCryo] ^short = "(ee Embrüo taaskülmutamine jah/ei; ja arv)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
-* productCategory 1..
+* productCategory 0..1
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
 * productCode from $biological-material-type-VS // ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
