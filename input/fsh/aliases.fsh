@@ -46,3 +46,5 @@ Alias: $intended-recipient = http://hl7.org/fhir/StructureDefinition/biologicall
 
 Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
 Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-fertility-treatment-component
+Alias: $RHK-10 = https://fhir.ee/ValueSet/rhk-10
+Alias: $indication-category = https://fhir.ee/ValueSet/vris-fertility-indication-category
