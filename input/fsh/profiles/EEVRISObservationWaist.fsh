@@ -1,8 +1,8 @@
-Profile: EEVRISObservationHeight
+Profile: EEVRISObservationWaist
 Parent: Observation
-Id: ee-vris-observation-height
-Title: "Observation: EE VRIS Height"
-Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
+Id: ee-vris-observation-waist
+Title: "Observation: EE VRIS Waist"
+Description: "Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
@@ -12,7 +12,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
 * code ^short = "Kehakõrguse LOINC kood"
-* code = $loinc#8302-2 "Body height"
+* code = $loinc#56115-9 "Patsiendi vööümbermõõt"
 * subject 1..1
 * subject only Reference($vris-donor)
 * effective[x] 1..1 
@@ -20,7 +20,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * effective[x] ^short = "Millal mõõtmine tehti"
 * value[x] 1..1
 * value[x] only Quantity
-* value[x] ^short = "Kehakõrgus sentimeetrites"
+* value[x] ^short = "Vööümbermõõt sentimeetrites"
 * valueQuantity.value 1..1
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum

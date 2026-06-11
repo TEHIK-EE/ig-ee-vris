@@ -49,7 +49,8 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
     priorPregnanciesCount 0..1 and
     priorDeliveriesCount 0..1 and
     liveBirthsCount 0..1 and
-    stillbirthsCount 0..1
+    stillbirthsCount 0..1 and
+    primaryInfertility    0..1
 
 * component[priorPregnanciesCount] ^short = "Varasemate raseduste arv"
 * component[priorPregnanciesCount].code = $obstetric-component-CS#prior-pregnancies-count
@@ -88,3 +89,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[stillbirthsCount].dataAbsentReason 0..0
 * component[stillbirthsCount].interpretation 0..0
 * component[stillbirthsCount].referenceRange 0..0
+
+* component[primaryInfertility] ^short = "Primaarne (true) või sekundaarne (false) viljatus"
+* component[primaryInfertility].code = $obstetric-component-CS#primary-infertility
+* component[primaryInfertility].value[x] only boolean

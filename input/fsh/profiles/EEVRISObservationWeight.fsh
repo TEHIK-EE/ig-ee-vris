@@ -1,8 +1,8 @@
-Profile: EEVRISObservationHeight
+Profile: EEVRISObservationWeight
 Parent: Observation
-Id: ee-vris-observation-height
-Title: "Observation: EE VRIS Height"
-Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
+Id: ee-vris-observation-weight
+Title: "Observation: EE VRIS Weight"
+Description: "Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
@@ -11,8 +11,8 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
-* code ^short = "Kehakõrguse LOINC kood"
-* code = $loinc#8302-2 "Body height"
+* code ^short = "Kehakaalu LOINC kood"
+* code = $loinc#29463-7 "Patsiendi kehakaal"
 * subject 1..1
 * subject only Reference($vris-donor)
 * effective[x] 1..1 
@@ -20,13 +20,13 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * effective[x] ^short = "Millal mõõtmine tehti"
 * value[x] 1..1
 * value[x] only Quantity
-* value[x] ^short = "Kehakõrgus sentimeetrites"
+* value[x] ^short = "Kehakaal kilogrammides"
 * valueQuantity.value 1..1
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1
-* valueQuantity.code = #cm
-* valueQuantity.unit = "cm"
+* valueQuantity.code = #kg 
+* valueQuantity.unit = "kg"
 * note ^short = "Kui on midagi vaja veel lisada"
 * component 0..0
 * bodySite 0..0
