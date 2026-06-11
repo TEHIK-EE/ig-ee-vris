@@ -14,8 +14,7 @@ Description: "Observation profile for recording waist circumference of a donor i
 * code ^short = "Kehakõrguse LOINC kood"
 * code = $loinc#56115-9 "Patsiendi vööümbermõõt"
 * subject 1..1
-* subject only Reference($vris-donor)
-* effective[x] 1..1 
+* subject only Reference($vris-donor or EEVRISRecipient)
 * effective[x] only dateTime
 * effective[x] ^short = "Millal mõõtmine tehti"
 * value[x] 1..1

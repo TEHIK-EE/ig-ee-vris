@@ -14,7 +14,7 @@ Description: "Observation profile for recording weight of a donor in the Estonia
 * code ^short = "Kehakaalu LOINC kood"
 * code = $loinc#29463-7 "Patsiendi kehakaal"
 * subject 1..1
-* subject only Reference($vris-donor)
+* subject only Reference($vris-donor or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "Millal mõõtmine tehti"
