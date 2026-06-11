@@ -15,13 +15,13 @@ Description: "Use this profile for describing when the biological material (sper
 * type = #biologicallyderivedproduct
 * type ^short = "Always biologicallyderivedproduct"
 * suppliedItem 0..*
-* suppliedItem ^short = "(ee MIDA liigutatakse)"
+* suppliedItem ^short = "(ee MIDA liigutatakse. KAS siia ka pakend? Mille sees spermadoosid?)"
 * suppliedItem.quantity 0..1
-* suppliedItem.quantity ^short = "Kogus, dooside arv, mida liigutatakse"
+* suppliedItem.quantity ^short = "(ee Kogus, dooside arv, mida liigutatakse.)"
 * suppliedItem.item[x] 1..1
 * suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISSperm or EEVRISOocyte)
 * occurrence[x] 1..1
-* occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. Aeg, millal sündmus aset leiab)"
+* occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. AEG, millal sündmus aset leiab)"
 * supplier 0..1
 * supplier ^short = "(ee PÄRITOLU. KES saadab)"
 * destination 1..1
