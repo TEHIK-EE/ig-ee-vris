@@ -7,6 +7,6 @@ Title: "Observation: EE VRIS Education Level"
 Description: "Education level of a donor or recipient in the Estonian VRIS fertility system. (ee Haridustase.)"
 * ^status = #draft
 
-* subject only Reference(EEVRISDonor or EEVRISRecipient)
+* subject only Reference(EEVRISPatient or EEVRISRecipient)
 * subject ^short = "(ee Doonor või retsipient, kelle haridustase on kirjeldatud)"
 * valueCodeableConcept ^short = "(ee Siin on Hariduse LOEND!)"

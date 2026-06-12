@@ -1,5 +1,5 @@
 /*Instance: example-donor-of-cell-patient
-InstanceOf: EEVRISDonorOfCell
+InstanceOf: EEVRISPatientOfCell
 Usage: #example
 Title: "Donor of Cell Patient example with three RelatedPerson links"
 Description: "Example Patient with links to sperm donor, oocyte donor and partner."

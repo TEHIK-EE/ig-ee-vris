@@ -6,7 +6,8 @@ Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anon체�
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * extension contains
-    $nationality named nationality 0..1
+    $nationality named nationality 0..1 and
+    $additional-identifier named additionalIdentifier 0..*
 * extension[nationality] ^short = "ee RAHVUS"
 * identifier ^short = "(ee Anon체체mse patsiendi identifikaator, MR number v천i kliinikusisene kood)"
 * name[nickname].text ^short = "(ee Anon체체mse patsiendi h체체dnimi v천i kirjeldus)"

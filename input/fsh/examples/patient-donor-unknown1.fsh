@@ -3,7 +3,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Example of unknown patient"
 * meta.profile = "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown"
-* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor"
+* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-patient"
 * language = #et
 * identifier[0].system = "https://fhir.ee/sid/pid/est/mr"
 * identifier[=].value = "Doonor-12345"

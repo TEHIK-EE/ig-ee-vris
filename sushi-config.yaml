@@ -123,7 +123,7 @@ groups:
     name: Persons
     description: Donor-Recipient related profiles
     resources:
-      - StructureDefinition/ee-vris-donor
+      - StructureDefinition/ee-vris-patient
       - StructureDefinition/ee-vris-recipient
       - StructureDefinition/ee-vris-related-person
   GroupB:

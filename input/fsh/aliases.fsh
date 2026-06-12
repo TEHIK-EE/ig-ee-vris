@@ -1,6 +1,6 @@
 // Alias: $fertility-cryopreservation-date = ee-vris-cryopreservation-date
 Alias: $mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified 
-Alias: $vris-donor = https://fhir.ee/vris/StructureDefinition/ee-vris-donor
+Alias: $vris-donor = https://fhir.ee/vris/StructureDefinition/ee-vris-patient
 Alias: $vris-recipient = https://fhir.ee/vris/StructureDefinition/ee-vris-recipient
 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
@@ -44,6 +44,7 @@ Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship 
 Alias: $intended-recipient = http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Alias: $additional-identifier = http://hl7.org/fhir/StructureDefinition/additionalIdentifier
 
 Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
 Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-fertility-treatment-component

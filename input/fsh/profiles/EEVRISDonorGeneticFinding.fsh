@@ -1,6 +1,6 @@
-Profile: EEVRISDonorGeneticFinding
+Profile: EEVRISPatientGeneticFinding
 Parent: Condition
-Id: ee-vris-donor-genetic-finding
+Id: ee-vris-patient-genetic-finding
 Title: "Condition: EE VRIS Donor Genetic Finding"
 Description: "Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus.)"
 //* ^version = "1.0.0"

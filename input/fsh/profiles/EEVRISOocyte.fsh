@@ -27,7 +27,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * productStatus 1..
 * collection 1..
 * collection.source 1..
-* collection.source only Reference(EEVRISDonor)
+* collection.source only Reference(EEVRISPatient)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS

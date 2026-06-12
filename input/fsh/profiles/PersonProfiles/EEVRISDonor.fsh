@@ -1,6 +1,6 @@
-Profile: EEVRISDonor
-Parent: EEBasePatient
-Id: ee-vris-donor
+Profile: EEVRISPatient
+Parent: EEMPIPatient
+Id: ee-vris-patient
 Title: "Patient: EE VRIS Donor"
 Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüümsete ja välismaiste doonorite puhul.)"
 * ^status = #draft
@@ -8,10 +8,10 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * extension contains
     ExtensionEEVRISCellOriginRole named role 0..1 and
     $birth-place named birthPlace 0..1 and
-    $citizenship named citizenship 0..1
-* identifier ^short = "Identifier for donor (ee DOONORIKOOD)"
+    $nationality named nationality 0..1
+* identifier ^short = "Identifier for donor (ee DOONORIKOOD. Kasuta erinevaid system-urisi, et eristada. IRCC uri vajaks lisamist patisendi identifikaatorite domeeni!)"
 * identifier.type ^short = "(ee Kas kasutada doonorite puhul DR Donor registration numberit eristamaks teistest??)"
-* identifier ^slicing.discriminator.type = #value
+/* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
@@ -44,16 +44,16 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * identifier[ircc].system = "https://fhir.ee/sid/pid/est/ircc" (exactly)
 * identifier[ircc].system ^short = "(ee IRCC identifikaatori süsteem)"
 * identifier[ircc].value 1..1
-* identifier[ircc].value ^short = "(ee IRCC kood)"
-
+ identifier[ircc].value ^short = "(ee IRCC kood)"
+*/
 * name 0..*
 * name ^short = "Name if known. (ee Doonori nimi, kui on teada)"
 * birthDate 0..1
 * birthDate.extension.valueAge ^short = "(ee Vanus)"
 * birthDate.extension.valueAge 1..1
 * gender ^short = "Sex (ee Sugu)"
-* maritalStatus ^short = "(ee Perekonnaseis. Rahvastikuregistri loend?)"
+* maritalStatus ^short = "(ee Perekonnaseis. SEE TULEB ERALDI observationi kaudu, mitte siit!)"
 * deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"
-//* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel)"
-//* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
+* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel. NB! Uurikuidas MPI link töötab, kirjas on et EI salvestata, kas see mõjutab VRIS?)"
+* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
 //* link ^slicing.discriminator.type = #value

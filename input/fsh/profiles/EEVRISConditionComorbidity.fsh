@@ -26,7 +26,7 @@ Description: "Condition profile for comorbidities of a donor or recipient in the
 
 * bodySite 0..0
 * subject 1..1
-* subject only Reference(EEVRISDonor or EEVRISRecipient)
+* subject only Reference(EEVRISPatient or EEVRISRecipient)
 * subject ^short = "(ee Doonor või retsipient, partner või annetaja kellel kaasuv haigus esineb)"
 
 * encounter 0..0
