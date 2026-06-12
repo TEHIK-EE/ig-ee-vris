@@ -10,4 +10,4 @@ Description: "For use of patients who recieve care and are recipients of biologi
 * name[official] ^short = "Official name"
 * gender ^short = "Sex"
 //* maritalStatus 0..1
-* link ^short = "(ee Selle kaudu suhted)"
+//* link ^short = "(ee Selle kaudu suhted)"

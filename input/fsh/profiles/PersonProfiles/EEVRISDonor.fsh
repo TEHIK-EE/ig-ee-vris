@@ -53,7 +53,7 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * birthDate.extension.valueAge 1..1
 * gender ^short = "Sex (ee Sugu)"
 * maritalStatus ^short = "(ee Perekonnaseis. Rahvastikuregistri loend?)"
-* deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation.)"
-* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel)"
-* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
+* deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"
+//* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel)"
+//* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
 //* link ^slicing.discriminator.type = #value
