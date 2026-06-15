@@ -11,7 +11,7 @@ Description: "Extension for the role of donor/recipient of biological material. 
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-origin-role"
 //* ^version = "1.0.0"
 * . 0..1
-* . ^short = "Role of donor/recipient. (ee Doonori/retsipiendi roll LOENDIST. (nt munaraku doonor või sperma doonor))"
+* . ^short = "Role of donor/recipient. (ee Doonori/retsipiendi roll LOENDIST.)"
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * value[x] 1..1
 * value[x] only CodeableConcept

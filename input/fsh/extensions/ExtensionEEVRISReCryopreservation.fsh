@@ -1,6 +1,6 @@
 Extension: ExtensionEEVRISReCryopreservation
 Id: ee-vris-recryo
-Title: "Thawing date and count"
+Title: "Re-cryopreservation date and count"
 Description: "Extension for re-cryopreservation information. (ee Bioloogilise materjali taaskülmutamine ja arv.)"
 Context: BiologicallyDerivedProduct
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-recryo"
