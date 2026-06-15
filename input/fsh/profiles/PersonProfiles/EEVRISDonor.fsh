@@ -8,7 +8,7 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * extension contains
     ExtensionEEVRISCellOriginRole named role 0..1 and
     $birth-place named birthPlace 0..1 and
-    $nationality named nationality 0..1
+    $nationality named nationality 0..1 
 * identifier ^short = "Identifier for donor (ee DOONORIKOOD. Kasuta erinevaid system-urisi, et eristada. IRCC uri vajaks lisamist patisendi identifikaatorite domeeni!)"
 * identifier.type ^short = "(ee Kas kasutada doonorite puhul DR Donor registration numberit eristamaks teistest??)"
 /* identifier ^slicing.discriminator.type = #value
@@ -50,7 +50,7 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * birthDate 0..1
 * birthDate.extension.valueAge ^short = "(ee Vanus)"
 * birthDate.extension.valueAge 1..1
-* gender ^short = "Sex (ee Sugu)"
+* gender ^short = "(ee Sugu. Võib erineda sünnisoost!)"
 * maritalStatus ^short = "(ee Perekonnaseis. SEE TULEB ERALDI observationi kaudu, mitte siit!)"
 * deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"
 * link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel. NB! Uurikuidas MPI link töötab, kirjas on et EI salvestata, kas see mõjutab VRIS?)"

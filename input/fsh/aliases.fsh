@@ -53,3 +53,4 @@ Alias: $indication-category = https://fhir.ee/ValueSet/vris-fertility-indication
 
 Alias: $patient-identifier-domain-VS = https://fhir.ee/ValueSet/patsiendi-identifikaatorite-domeen
 Alias: $mpi-related-person = https://fhir.ee/mpi/StructureDefinition/ee-mpi-related-person
+Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace

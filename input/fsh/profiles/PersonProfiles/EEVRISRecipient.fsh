@@ -7,10 +7,11 @@ Description: "For use of patients who recieve care and are recipients of biologi
 * ^publisher = "HL7 Estonia"
 * extension contains
     $birth-place named birthPlace 0..1 and
-    $nationality named nationality 0..1
+    $nationality named nationality 0..1 and
+    ExtensionEEVRISBirthSex named birthSex 0..1
 * name 1..*
 * name[official] 1.. 
 * name[official] ^short = "Official name"
-* gender ^short = "Sex"
+* gender ^short = "(ee Sugu. VÕIB erineda sünnisoost!)"
 //* maritalStatus 0..1
 //* link ^short = "(ee Selle kaudu suhted)"

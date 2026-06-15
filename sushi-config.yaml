@@ -139,7 +139,6 @@ groups:
     description: Observation profiles
     resources:
       - StructureDefinition/ee-vris-observation-blood-group
-      - StructureDefinition/ee-vris-observation-gender-at-birth
       - StructureDefinition/ee-vris-observation-height
       - StructureDefinition/ee-vris-observation-physical-appearance
       - StructureDefinition/ee-vris-observation-attempting-to-concieve

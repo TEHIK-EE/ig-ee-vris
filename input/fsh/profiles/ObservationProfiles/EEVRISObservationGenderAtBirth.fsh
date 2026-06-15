@@ -1,4 +1,4 @@
-Profile: EEVRISObservationGenderAtBirth
+/*Profile: EEVRISObservationGenderAtBirth
 Parent: Observation
 Id: ee-vris-observation-gender-at-birth
 Title: "Observation: EE VRIS Gender at Birth"
@@ -14,7 +14,7 @@ Description: "Observation profile for recording gender of a donor at the moment 
 * code ^short = "Sugu"
 //* code = $loinc#8302-2 "Body height"
 * subject 1..1
-* subject only Reference($vris-donor)
+* subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Millal mõõtmine tehti)"
@@ -34,3 +34,4 @@ Description: "Observation profile for recording gender of a donor at the moment 
 * issued 0..0
 * dataAbsentReason 0..1
 * interpretation 0..0
+*/
