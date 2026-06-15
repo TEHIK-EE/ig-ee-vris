@@ -12,7 +12,7 @@ Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anonü�
 * extension[nationality] ^short = "(ee RAHVUS)"
 * extension[additionalIdentifier] ^short = "(ee Kui on vaja rohkem kui 1 identifikaatorit)"
 * identifier ^short = "(ee Anonüümse patsiendi identifikaator, MR number või kliinikusisene kood)"
-* name[nickname].text ^short = "(ee Anonüümse patsiendi hüüdnimi või kirjeldus)"
+* name[nickname].text ^short = "(ee Anonüümse patsiendi hüüdnimi või kirjeldus. KAS selle võiks süsteem ise täita?)"
 * gender ^short = "Sex (ee Sugu kohustuslik)"
 //* maritalStatus 1..1
 //* maritalStatus ^short = "(ee Perekonnaseis)"

@@ -53,6 +53,6 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * gender ^short = "(ee Sugu. Võib erineda sünnisoost!)"
 * maritalStatus ^short = "(ee Perekonnaseis. SEE TULEB ERALDI observationi kaudu, mitte siit!)"
 * deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"
-* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel. NB! Uurikuidas MPI link töötab, kirjas on et EI salvestata, kas see mõjutab VRIS?)"
+* link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel teha PIGEM identifikaatorite pärimise kaudu. NB! Uurikuidas MPI link töötab, kirjas on et EI salvestata, kas see mõjutab VRIS?)"
 //* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
 //* link ^slicing.discriminator.type = #value
