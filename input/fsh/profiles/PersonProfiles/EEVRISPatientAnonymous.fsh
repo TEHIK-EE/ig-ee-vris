@@ -1,6 +1,6 @@
-Profile: EEVRISPatientAnonymous
+Profile: EEVRISDonorAnonymous
 Parent: EEMPIPatientUnknown
-Id: ee-vris-patient-anonymous
+Id: ee-vris-donor-anonymous
 Title: "Patient: EE VRIS Anonymous Patient"
 Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anonüümne (välismaa) doonor VRIS-is.)"
 * ^status = #draft

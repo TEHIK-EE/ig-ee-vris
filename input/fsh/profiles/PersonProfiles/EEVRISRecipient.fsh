@@ -1,5 +1,5 @@
 Profile: EEVRISRecipient
-Parent: EEMPIPatient
+Parent: EEMPIPatientVerified
 Id: ee-vris-recipient
 Title: "Patient: EE VRIS Recipient"
 Description: "For use of patients who recieve care and are recipients of biologic material. Also pertners of recipients use this profile. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Ka partner on retsipient?)"

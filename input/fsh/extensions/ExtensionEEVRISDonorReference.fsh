@@ -1,9 +1,9 @@
-Extension: ExtensionEEVRISPatientReference
-Id: ee-vris-patient-reference
+Extension: ExtensionEEVRISDonorReference
+Id: ee-vris-donor-reference
 Title: "Related person reference"
 Description: "Extension for referencing related person. (ee Viide seotud isikule/doonorile.)"
 Context: BiologicallyDerivedProduct
-* ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-reference"
+* ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference"
 //* ^version = "1.0.0"
 * . 0..1
 * . ^short = "Reference to donor (Doonori või seotud isiku viide)"

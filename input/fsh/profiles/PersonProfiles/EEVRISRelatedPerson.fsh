@@ -1,5 +1,5 @@
 Profile: EEVRISRelatedPerson
-Parent: EEBaseRelatedPerson
+Parent: $mpi-related-person
 Id: ee-vris-related-person
 Title: "RelatedPerson: EE VRIS RelatedPerson"
 Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)"
@@ -13,7 +13,7 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * photo ..0
 * identifier ^short = "Contact person identifiers."
 * communication ..0
-* patient only Reference(EEVRISPatient or EEVRISRecipient)
+* patient only Reference(EEVRISDonor or EEVRISRecipient)
 * patient ^short = "(ee Olenevalt doonori tüübist saab seose luua eri aegadel.)"
 * period 1..1
 * relationship ^slicing.discriminator.type = #value

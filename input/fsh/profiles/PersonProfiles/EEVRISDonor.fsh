@@ -1,6 +1,6 @@
-Profile: EEVRISPatient
-Parent: EEMPIPatient
-Id: ee-vris-patient
+Profile: EEVRISDonor
+Parent: EEMPIPatientVerified
+Id: ee-vris-donor
 Title: "Patient: EE VRIS Donor"
 Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüümsete ja välismaiste doonorite puhul.)"
 * ^status = #draft
@@ -46,7 +46,6 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * identifier[ircc].value 1..1
  identifier[ircc].value ^short = "(ee IRCC kood)"
 */
-* name 0..*
 * name ^short = "Name if known. (ee Doonori nimi, kui on teada)"
 * birthDate 0..1
 * birthDate.extension.valueAge ^short = "(ee Vanus)"
@@ -55,5 +54,5 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * maritalStatus ^short = "(ee Perekonnaseis. SEE TULEB ERALDI observationi kaudu, mitte siit!)"
 * deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"
 * link ^short = "(ee NB! Seosed MPI kirje ja suhete vahel. NB! Uurikuidas MPI link töötab, kirjas on et EI salvestata, kas see mõjutab VRIS?)"
-* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
+//* link.other only Reference($mpi-patient or EEVRISRelatedPerson)
 //* link ^slicing.discriminator.type = #value

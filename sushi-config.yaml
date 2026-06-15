@@ -123,10 +123,10 @@ groups:
     name: Persons
     description: Donor-Recipient related profiles
     resources:
-      - StructureDefinition/ee-vris-patient
+      - StructureDefinition/ee-vris-donor
       - StructureDefinition/ee-vris-recipient
       - StructureDefinition/ee-vris-related-person
-      - StructureDefinition/ee-vris-patient-anonymous
+      - StructureDefinition/ee-vris-donor-anonymous
   GroupB:
     name: Biological material
     description: Embryo and reproductive cell profiles

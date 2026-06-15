@@ -23,7 +23,7 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * bodySite 0..0
 
 * subject 1..1
-* subject only Reference(EEVRISRecipient or EEVRISPatient)
+* subject only Reference(EEVRISRecipient or EEVRISDonor)
 * subject ^short = "(ee Retsipient (kui on partner), kellel näidustus esineb)"
 
 * encounter 0..0

@@ -23,8 +23,8 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * bodySite 0..0
 
 * subject 1..1
-* subject only Reference(EEVRISRecipient or EEVRISPatient)
-* subject ^short = "(ee Retsipient, EEVRISPatient kui on suguraku annetaja?)"
+* subject only Reference(EEVRISRecipient or EEVRISDonor)
+* subject ^short = "(ee Retsipient, EEVRISDonor kui on suguraku annetaja?)"
 
 * encounter 0..0
 
