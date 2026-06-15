@@ -1,5 +1,5 @@
 Profile: EEVRISRelatedPerson
-Parent: $mpi-related-person
+Parent: EEBaseRelatedPerson
 Id: ee-vris-related-person
 Title: "RelatedPerson: EE VRIS RelatedPerson"
 Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)"
