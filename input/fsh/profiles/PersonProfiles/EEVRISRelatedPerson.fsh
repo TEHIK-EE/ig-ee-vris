@@ -2,7 +2,7 @@ Profile: EEVRISRelatedPerson
 Parent: EEBaseRelatedPerson
 Id: ee-vris-related-person
 Title: "RelatedPerson: EE VRIS RelatedPerson"
-Description: "Related person profile for VRIS, including contact type, personal relationship and donor type. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)"
+Description: "Related person profile for VRIS. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)"
 * ^status = #draft
 * active 1..1 
 * relationship 1..*
@@ -14,7 +14,7 @@ Description: "Related person profile for VRIS, including contact type, personal 
 * identifier ^short = "Contact person identifiers."
 * communication ..0
 * patient only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)
-* patient ^short = "(ee Olenevalt doonori tüübist saab seose luua eri aegadel.)"
+* patient ^short = "(ee Olenevalt doonori tüübist saab seose luua eri aegadel. SIIA VIIDE PATSIENDILE. Patsient võib olla doonor või retsipient.)"
 * period 1..1
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"

@@ -2,7 +2,7 @@ Profile: EEVRISDonor
 Parent: EEMPIPatientVerified
 Id: ee-vris-donor
 Title: "Patient: EE VRIS Donor"
-Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüümsete ja välismaiste doonorite puhul.)"
+Description: "For use of donors. (ee Doonori profiil, kasutamiseks. Anonüümsete ja anonüümsete-välismaiste doonorite puhul on TEINE PROFIIL!)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * extension contains
@@ -10,7 +10,8 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
     $birth-place named birthPlace 0..1 and
     $nationality named nationality 0..1 
 * identifier ^short = "Identifier for donor (ee DOONORIKOOD. Kasuta erinevaid system-urisi, et eristada. IRCC uri vajaks lisamist patisendi identifikaatorite domeeni!)"
-* identifier.type ^short = "(ee Kas kasutada doonorite puhul DR Donor registration numberit eristamaks teistest??)"
+* identifier.type ^short = "(ee Kas kasutada doonorite puhul DR Donor registration numberit eristamaks teistest? seda saaks kasutada parameetrina (?) otsingutes, kui on vaja otsida doonoreid?)"
+* identifier.type = #DR 
 /* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -46,10 +47,10 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks KA anonüüms
 * identifier[ircc].value 1..1
  identifier[ircc].value ^short = "(ee IRCC kood)"
 */
-* name ^short = "Name if known. (ee Doonori nimi, kui on teada)"
+* name ^short = "Name.(ee Doonori nimi)"
 * birthDate 0..1
-* birthDate.extension.valueAge ^short = "(ee Vanus)"
-* birthDate.extension.valueAge 1..1
+* birthDate.extension[age].valueAge 1..1
+* birthDate.extension[age] ^short = "(ee Vanus on kohustuslik)"
 * gender ^short = "(ee Sugu. Võib erineda sünnisoost!)"
 * maritalStatus ^short = "(ee Perekonnaseis. SEE TULEB ERALDI observationi kaudu, mitte siit!)"
 * deceased[x] ^short = "(ee Surnud (boolean) ja surmaaeg. Surma põhjus on eraldi observation? Kas seda on vaja?)"

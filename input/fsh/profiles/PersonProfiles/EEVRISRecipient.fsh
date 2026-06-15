@@ -2,7 +2,7 @@ Profile: EEVRISRecipient
 Parent: EEMPIPatientVerified
 Id: ee-vris-recipient
 Title: "Patient: EE VRIS Recipient"
-Description: "For use of patients who recieve care and are recipients of biologic material. Also pertners of recipients use this profile. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Ka partner on retsipient?)"
+Description: "For use of patients who recieve care and are recipients of biologic material. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Kas partner on retsipient?)"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * extension contains
@@ -13,5 +13,7 @@ Description: "For use of patients who recieve care and are recipients of biologi
 * name[official] 1.. 
 * name[official] ^short = "Official name"
 * gender ^short = "(ee Sugu. VÕIB erineda sünnisoost!)"
+* birthDate.extension[age].valueAge 1..1
+* birthDate.extension[age] ^short = "(ee Vanus on kohustuslik)"
 //* maritalStatus 0..1
 //* link ^short = "(ee Selle kaudu suhted)"

@@ -16,8 +16,8 @@ Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anonü�
 * gender ^short = "Sex (ee Sugu kohustuslik)"
 //* maritalStatus 1..1
 //* maritalStatus ^short = "(ee Perekonnaseis)"
-* birthDate.extension.valueAge 1..1
-* birthDate.extension ^short = "(ee Vanus)"
+* birthDate.extension[age].valueAge 1..1
+* birthDate.extension[age] ^short = "(ee Vanus on kohustuslik)"
 * birthDate.value ^short = "(ee Sünniaeg, ei ole kohustuslik.)"
 * address.country 1..1
 * address ^short = "ee RIIK on kohustuslik"
