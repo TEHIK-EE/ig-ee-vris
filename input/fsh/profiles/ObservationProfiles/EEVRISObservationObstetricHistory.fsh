@@ -1,5 +1,5 @@
 Profile: EEVRISObservationObstetricHistory
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-obstetric-history
 Title: "Observation: EE VRIS Obstetric History"
 Description: "Obstetric history for fertility patients. Records prior pregnancies, deliveries, live births and stillbirths. (ee Sünnitusanamnees: varasemate raseduste, sünnituste ja sündide arv)"

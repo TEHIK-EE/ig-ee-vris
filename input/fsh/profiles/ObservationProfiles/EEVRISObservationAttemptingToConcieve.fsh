@@ -1,5 +1,5 @@
 Profile: EEVRISObservationAttemptingToConcieve
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-attempting-to-concieve
 Title: "Observation: EE VRIS Attempting to Concieve"
 Description: "Observation profile for how long is woman attempting to concieve. (ee Rasesduda üritamine.)"

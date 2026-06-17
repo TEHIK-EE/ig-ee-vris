@@ -1,5 +1,5 @@
 Profile: EEVRISObservationWeight
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-weight
 Title: "Observation: EE VRIS Weight"
 Description: "Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)"

@@ -1,5 +1,5 @@
 Profile: EEVRISObservationPriorFertilityTreatment
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-prior-fertility-treatment
 Title: "Observation: EE VRIS Prior Fertility Treatment"
 Description: "Prior fertility treatment history. Records whether IVF and/or IUI has been performed and the number of cycles. (ee Varasema viljatusravi anamnees)"

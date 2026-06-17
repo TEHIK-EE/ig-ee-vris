@@ -1,5 +1,5 @@
 Profile: EEVRISObservationTobaccoUse
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-tobacco-use
 Title: "Observation: EE VRIS Tobacco Use"
 Description: "Observation profile for tobacco use status in the Estonian VRIS fertility system. (ee Tubakatoodete kasutamine.)"
@@ -13,7 +13,7 @@ Description: "Observation profile for tobacco use status in the Estonian VRIS fe
 * category ^short = "Vaatluse kategooria — sotsiaalne anamnees"
 * code 1..1
 * code = $loinc#72166-2
-* code ^short = "Tobacco smoking status LOINC kood"
+* code ^short = "Tobacco smoking status LOINC. (ee NB! ELHR seda koodi ei ole!)"
 * subject 1..1
 * subject only Reference($vris-donor or EEVRISRecipient)
 * subject ^short = "Viide kelle kohta andmed koguti"

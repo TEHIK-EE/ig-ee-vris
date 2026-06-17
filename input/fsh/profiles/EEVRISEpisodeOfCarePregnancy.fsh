@@ -1,5 +1,5 @@
 Profile: EEVRISEpisodeOfCarePregnancy
-Parent: EpisodeOfCare
+Parent: EEBaseEpisodeOfCare
 Id: ee-vris-episode-of-care-pregnancy
 Title: "EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy"
 Description: "EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar)."

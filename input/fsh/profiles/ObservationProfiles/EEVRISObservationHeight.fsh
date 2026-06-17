@@ -1,5 +1,5 @@
 Profile: EEVRISObservationHeight
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-height
 Title: "Observation: EE VRIS Height"
 Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
@@ -12,7 +12,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
 * code ^short = "Kehakõrguse LOINC kood"
-* code = $loinc#8302-2 "Body height"
+* code = $loinc#8302-2 "Patsiendi pikkus"
 * subject 1..1
 * subject only Reference($vris-donor or EEVRISRecipient)
 * effective[x] 1..1 

@@ -1,5 +1,5 @@
 Profile: EEVRISObservationWaist
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-waist
 Title: "Observation: EE VRIS Waist"
 Description: "Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)"
@@ -11,7 +11,7 @@ Description: "Observation profile for recording waist circumference of a donor i
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
-* code ^short = "Kehakõrguse LOINC kood"
+* code ^short = "Vööümbermõõdu LOINC kood"
 * code = $loinc#56115-9 "Patsiendi vööümbermõõt"
 * subject 1..1
 * subject only Reference($vris-donor or EEVRISRecipient)

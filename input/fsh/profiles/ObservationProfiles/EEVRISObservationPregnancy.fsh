@@ -1,5 +1,5 @@
 Profile: EEVRISObservationPregnancy
-Parent: Observation
+Parent: EEBaseObservation
 Id: ee-vris-observation-pregnancy
 Title: "Observation: EE VRIS Pregnancy"
 Description: "Observation profile for recording pregnancy. (ee Rasedus - biokeemiline või kliiniline.)"
