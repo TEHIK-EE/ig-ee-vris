@@ -1,20 +1,15 @@
 Profile: EEVRISObservationBloodGroup
-Parent: EEBaseObservation
+Parent: Observation
 Id: ee-vris-observation-blood-group
 Title: "Observation: EE VRIS Blood Group"
 Description: "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)"
-* ^status = #draft
-* ^experimental = false
-* ^version = "1.0.0"
-
-* status = #final
 * category 1..*
 * category = $obsCategory#laboratory
 * code 1..1
 * code = $loinc#34530-6
 * code ^short = "ABO ja RhD veregrupp"
 * subject 1..1
-* subject only Reference($vris-donor)
+* subject only Reference($vris-donor or EEVRISRecipient or EEVRISDonorAnonymous)
 * effective[x] 1..1
 * effective[x] only dateTime
 * value[x] 0..0
@@ -32,13 +27,13 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
 * component[abo].code = $loinc#57743-7
 * component[abo].value[x] 1..1
 * component[abo].value[x] only CodeableConcept
-* component[abo].valueCodeableConcept from https://fhir.ee/ValueSet/abo-veregrupp (required)
+* component[abo].valueCodeableConcept from $sct (required)
 
 * component[rh] ^short = "RhD kuuluvus klassifikaatorist"
 * component[rh].code = $loinc#978-7
 * component[rh].value[x] 1..1
 * component[rh].value[x] only CodeableConcept
-* component[rh].valueCodeableConcept from https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus (required)
+* component[rh].valueCodeableConcept from $sct (required)
 
 * bodySite 0..0
 * specimen 0..0

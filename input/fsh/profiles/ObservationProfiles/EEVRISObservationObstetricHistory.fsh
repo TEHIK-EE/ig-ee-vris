@@ -1,10 +1,8 @@
 Profile: EEVRISObservationObstetricHistory
-Parent: EEBaseObservation
+Parent: Observation
 Id: ee-vris-observation-obstetric-history
 Title: "Observation: EE VRIS Obstetric History"
 Description: "Obstetric history for fertility patients. Records prior pregnancies, deliveries, live births and stillbirths. (ee Sünnitusanamnees: varasemate raseduste, sünnituste ja sündide arv)"
-* ^status = #draft
-
 * basedOn 0..0
 * partOf 0..0
 * status 1..1
@@ -12,8 +10,8 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * category 0..*
 * category ^short = "Observation category"
 * code 1..1
-//* code = $vris-anamnesis-code-CS#obstetric-history
-* code ^short = "(ee Sünnitusanamnees. Vaja LOENDIT või kasutame LOINC?)"
+* code ^short = "(ee Sünnitusanamnees. Vaja LOENDIT.)"
+* code = $sct#248983002
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
 * subject ^short = "(ee Patient retsipient või partner (kellel on sünnitusanamnees))"
@@ -53,7 +51,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
     primaryInfertility    0..1
 
 * component[priorPregnanciesCount] ^short = "Varasemate raseduste arv"
-* component[priorPregnanciesCount].code = $obstetric-component-CS#prior-pregnancies-count
+* component[priorPregnanciesCount].code = $sct#246211005
 * component[priorPregnanciesCount].code ^short = "Prior pregnancies count"
 * component[priorPregnanciesCount].value[x] only integer
 * component[priorPregnanciesCount].value[x] ^short = "Varasemate raseduste arv"
@@ -63,7 +61,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[priorPregnanciesCount].referenceRange 0..0
 
 * component[priorDeliveriesCount] ^short = "Varasemate sünnituste arv"
-* component[priorDeliveriesCount].code = $obstetric-component-CS#prior-deliveries-count
+* component[priorDeliveriesCount].code = $sct#3950001 "Birth"
 * component[priorDeliveriesCount].code ^short = "Prior deliveries count"
 * component[priorDeliveriesCount].value[x] only integer
 * component[priorDeliveriesCount].value[x] ^short = "Varasemate sünnituste arv (eeltäidetud RR-st, muudetav)"
@@ -73,7 +71,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[priorDeliveriesCount].referenceRange 0..0
 
 * component[liveBirthsCount] ^short = "Sündinud laste arv (RR)"
-* component[liveBirthsCount].code = $obstetric-component-CS#live-births-count
+* component[liveBirthsCount].code = $sct#248991006
 * component[liveBirthsCount].code ^short = "Live births count"
 * component[liveBirthsCount].value[x] only integer
 * component[liveBirthsCount].value[x] ^short = "Sündinud laste arv (eeltäidetud RR päringust)"
@@ -82,7 +80,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[liveBirthsCount].referenceRange 0..0
 
 * component[stillbirthsCount] ^short = "Surnult sündinud laste arv (RR)"
-* component[stillbirthsCount].code = $obstetric-component-CS#stillbirths-count
+* component[stillbirthsCount].code = $sct#252112002
 * component[stillbirthsCount].code ^short = "Stillbirths count"
 * component[stillbirthsCount].value[x] only integer
 * component[stillbirthsCount].value[x] ^short = "Surnult sündinud laste arv sh mitmikrasedused (eeltäidetud RR päringust)"
@@ -91,5 +89,5 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[stillbirthsCount].referenceRange 0..0
 
 * component[primaryInfertility] ^short = "Primaarne (true) või sekundaarne (false) viljatus"
-* component[primaryInfertility].code = $obstetric-component-CS#primary-infertility
+* component[primaryInfertility].code = $sct#297106006
 * component[primaryInfertility].value[x] only boolean

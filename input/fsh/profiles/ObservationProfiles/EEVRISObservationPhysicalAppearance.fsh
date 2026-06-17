@@ -1,5 +1,5 @@
 Profile: EEVRISObservationPhysicalAppearance
-Parent: EEBaseObservation
+Parent: Observation
 Id: ee-vris-observation-physical-appearance
 Title: "Observation: EE VRIS Physical Appearance"
 Description: "Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)"
@@ -12,9 +12,9 @@ Description: "Observation profile for recording characteristics of physical appe
 //* category = $obsCategory#laboratory "Laboratory"
 * code 1..1 
 * code ^short = "Füüsilise välimuse vaatluse kood"
-//* code = $Appearance#physical-appearance "Physical Appearance Panel"
+* code = $sct#703248002
 * subject 1..1 
-* subject only Reference($vris-donor)
+* subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "Millal andmed registreeriti"
@@ -33,25 +33,25 @@ Description: "Observation profile for recording characteristics of physical appe
     bodyStructure 0..1
 * component[eyeColour] ^short = "Silmade värvus"
 //* component[eyeColour].code 1..1
-//* component[eyeColour].code = $AppearanceCS#eye-colour
+* component[eyeColour].code = $sct#247030006
 * component[eyeColour].value[x] 1..1
 * component[eyeColour].value[x] only CodeableConcept
 * component[eyeColour].value[x] from $eye (required)
 * component[hairColour] ^short = "Juuste värvus"
 //* component[hairColour].code 1..1
-//* component[hairColour].code = $AppearanceCS#hair-colour
+* component[hairColour].code = $sct#80040005
 * component[hairColour].value[x] 1..1
 * component[hairColour].value[x] only CodeableConcept
 * component[hairColour].value[x] from $hair (required)
 * component[skinColour] ^short = "Naha värvus"
 * component[skinColour].code 1..1
-//* component[skinColour].code = $AppearanceCS#skin-colour
+* component[skinColour].code = $sct#364533002
 //* component[skinColour].value[x] 1..1
 * component[skinColour].value[x] only CodeableConcept
 * component[skinColour].value[x] from $skin (required)
 * component[bodyStructure] ^short = "Kehaehitus"
 * component[bodyStructure].code 1..1
-//* component[bodyStructure].code = $AppearanceCS#body-structure
+* component[bodyStructure].code = $sct#366209005
 //* component[bodyStructure].value[x] 1..1
 * component[bodyStructure].value[x] only CodeableConcept
 * component[bodyStructure].value[x] from $body (required)

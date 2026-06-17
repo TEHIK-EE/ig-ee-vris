@@ -1,5 +1,5 @@
 Profile: EEVRISObservationWeight
-Parent: EEBaseObservation
+Parent: Observation
 Id: ee-vris-observation-weight
 Title: "Observation: EE VRIS Weight"
 Description: "Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)"
@@ -11,10 +11,10 @@ Description: "Observation profile for recording weight of a donor in the Estonia
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
-* code ^short = "Kehakaalu LOINC kood"
-* code = $loinc#29463-7 "Patsiendi kehakaal"
+* code ^short = "Kehakaal"
+* code = $sct#27113001 "Body weight"
 * subject 1..1
-* subject only Reference($vris-donor or EEVRISRecipient)
+* subject only Reference($vris-donor or EEVRISRecipient or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "Millal mõõtmine tehti"

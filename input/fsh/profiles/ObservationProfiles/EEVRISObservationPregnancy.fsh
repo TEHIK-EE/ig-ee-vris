@@ -1,5 +1,5 @@
 Profile: EEVRISObservationPregnancy
-Parent: EEBaseObservation
+Parent: Observation
 Id: ee-vris-observation-pregnancy
 Title: "Observation: EE VRIS Pregnancy"
 Description: "Observation profile for recording pregnancy. (ee Rasedus - biokeemiline või kliiniline.)"
@@ -12,9 +12,9 @@ Description: "Observation profile for recording pregnancy. (ee Rasedus - biokeem
 * category = $obsCategory#social-history "Social history"
 * code 1..1
 * code ^short = "Siia kood"
-//* code = $loinc#8302-2 "Body height"
+* code = $sct#77386006 
 * subject 1..1
-* subject only Reference($vris-donor)
+* subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Millal mõõtmine tehti)"
