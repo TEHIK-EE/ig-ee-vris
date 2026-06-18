@@ -22,7 +22,7 @@ Description: "Condition profile for comorbidities of a donor or recipient in the
 
 * code 1..1
 * code from $RHK-10 (preferred)
-* code ^short = "(ee Kaasuvate haiguse kood RHK-10 järgi. NB! IGA HAIGUSE JAOKS PROFIIL KORDUB!)"
+* code ^short = "(ee Kaasuvate haiguse kood RHK-10 järgi. NB! IGA HAIGUSE JAOKS RESURSS KORDUB, ühe alla ei saa mitut panna!!)"
 
 * bodySite 0..0
 * subject 1..1
