@@ -20,5 +20,5 @@ Description: "Example of donor embryo"
 * property[=].type.coding.code = #development-day
 * property[=].type.coding.display = "Arengupäev"
 * property[=].valueInteger = 5
-* parent[0] = Reference(donor-cell2)
-* parent[+] = Reference(donor-cell1)
+* parent[0] = Reference(sperm1)
+* parent[+] = Reference(oocyte1)

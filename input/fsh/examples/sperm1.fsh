@@ -1,4 +1,4 @@
-Instance: donor-cell1
+Instance: sperm1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "TEST Example of donor cell (sperm)"
