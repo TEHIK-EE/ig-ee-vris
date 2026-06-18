@@ -22,28 +22,28 @@ Description: "Observation profile for recording characteristics of physical appe
 * component ^slicing.ordered = false
 * component ^slicing.description = "Sliced by physical appearance characteristic. (ee NB! Loendi viited ja koodid EI OLE lõplikud!)"
 * component contains
-    eyeColour     0..1 and
-    hairColour    0..1 and
-    skinColour    0..1 and
+    eyecolor     0..1 and
+    haircolor    0..1 and
+    skincolor    0..1 and
     bodyStructure 0..1
-* component[eyeColour] ^short = "Silmade värvus"
-//* component[eyeColour].code 1..1
-* component[eyeColour].code = $sct#247030006
-* component[eyeColour].value[x] 1..1
-* component[eyeColour].value[x] only CodeableConcept
-* component[eyeColour].value[x] from $eye (required)
-* component[hairColour] ^short = "Juuste värvus"
-//* component[hairColour].code 1..1
-* component[hairColour].code = $sct#80040005
-* component[hairColour].value[x] 1..1
-* component[hairColour].value[x] only CodeableConcept
-* component[hairColour].value[x] from $hair (required)
-* component[skinColour] ^short = "Naha värvus"
-* component[skinColour].code 1..1
-* component[skinColour].code = $sct#364533002
-//* component[skinColour].value[x] 1..1
-* component[skinColour].value[x] only CodeableConcept
-* component[skinColour].value[x] from $skin (required)
+* component[eyecolor] ^short = "Silmade värvus"
+//* component[eyecolor].code 1..1
+* component[eyecolor].code = $sct#247030006
+* component[eyecolor].value[x] 1..1
+* component[eyecolor].value[x] only CodeableConcept
+* component[eyecolor].value[x] from $eye (required)
+* component[haircolor] ^short = "Juuste värvus"
+//* component[haircolor].code 1..1
+* component[haircolor].code = $sct#80040005
+* component[haircolor].value[x] 1..1
+* component[haircolor].value[x] only CodeableConcept
+* component[haircolor].value[x] from $hair (required)
+* component[skincolor] ^short = "Naha värvus"
+* component[skincolor].code 1..1
+* component[skincolor].code = $sct#364533002
+//* component[skincolor].value[x] 1..1
+* component[skincolor].value[x] only CodeableConcept
+* component[skincolor].value[x] from $skin (required)
 * component[bodyStructure] ^short = "Kehaehitus"
 * component[bodyStructure].code 1..1
 * component[bodyStructure].code = $sct#366209005

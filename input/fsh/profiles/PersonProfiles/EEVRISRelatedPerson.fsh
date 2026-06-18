@@ -26,9 +26,9 @@ Description: "Related person profile for VRIS. (ee Seotud isiku profiil näitab 
 //* relationship[person] ^short = "Contact person type"
 //* relationship[person] from $relationship-type-VS (required)
 
-* relationship[donorClass] ^short = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner. (ee Näiteks spermadoonor)."
+* relationship[donorClass] ^short = "Specifies the VRIS-specific donor or related person type, such as sperm donor, oocyte dono, embryo donor or partner. (ee Näiteks spermadoonor.KAS SEDA on VAJA?)."
 //* relationship[class] from $relationship-relation-VS (required)
 
-* relationship[donortype] ^short = "Donor type. (ee |Partnerannetaja|Anonüümne doonor||Mitteparnerist doonor| NB! LOENDIT vaja!)"
+* relationship[donortype] ^short = "Specifies the relationship between recipient and donor. (ee |Partnerannetaja|Anonüümne doonor||Mitteparnerist doonor| NB! LOENDIT vaja!)"
 * relationship[donortype] ^definition = "Specifies the relationship between recipient and donor. (mitt-partnerannetaja, partnerannetaja jne)"
 * relationship[donortype] from $vris-donor-type-VS (required)
