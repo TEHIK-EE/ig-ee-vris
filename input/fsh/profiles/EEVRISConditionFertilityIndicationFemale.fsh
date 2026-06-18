@@ -10,42 +10,28 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * clinicalStatus ^short = "Kliiniline staatus (nt active, resolved)"
 * verificationStatus 0..1
 * verificationStatus ^short = "Kinnituse staatus (nt confirmed, provisional)"
-//* category 0..*
-//* category from $indication-category (preferred)
-//* category ^short = "Näidustuse tüüp. (ee Meestegur | Naistegur | Kombineeritud | Seletamata | Muu)"
-
 * severity 0..0
-
 * code 1..1
 * code from $RHK-10 (preferred)
 * code ^short = "(ee Näidustuse kood RHK-10 järgi. NAISTE loend VAJA!)"
-
 * bodySite 0..0
-
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor)
 * subject ^short = "(ee Retsipient, EEVRISDonor kui on suguraku annetaja?)"
-
 * encounter 0..0
-
 * onset[x] 0..1
 * onset[x] only dateTime
-* onset[x] ^short = "Millal seisund tuvastati"
-
+* onset[x] ^short = "(ee Millal seisund tuvastati)"
 * abatement[x] 0..0
-
 * recordedDate 0..1
-* recordedDate ^short = "Millal näidustus kirja pandi"
-
+* recordedDate ^short = "(ee Millal näidustus kirja pandi)"
 * participant 0..*
 * participant ^short = "(ee Kes näidustuse kirjastas. NB! SPDst)"
 * participant.function 0..1
-* participant.function ^short = "Osaleja roll"
+* participant.function ^short = "( ee Osaleja roll. KAS SEDA ONA VAJA?)"
 * participant.actor 1..1
-* participant.actor ^short = "Osaleja viide"
-
+* participant.actor ^short = "(ee Osaleja viide. SPD)"
 * stage 0..0
 * evidence 0..0
-
 * note 0..*
-* note ^short = "Lisainfo / täpsustus näidustuse kohta"
+* note ^short = "(ee Lisainfo / täpsustus näidustuse kohta)"
