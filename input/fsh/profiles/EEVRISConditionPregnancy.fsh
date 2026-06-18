@@ -12,7 +12,7 @@ Description: "Condition profile for pregnancy in Estonian VRIS fertility system.
 * code 1..1
 * bodySite 0..0
 * subject 1..1
-* subject only Reference(EEVRISRecipient)
+* subject only Reference(EEVRISRecipient or $mpi-patient)
 * encounter 0..1
 * onset[x] only dateTime
 * abatement[x] 0..0

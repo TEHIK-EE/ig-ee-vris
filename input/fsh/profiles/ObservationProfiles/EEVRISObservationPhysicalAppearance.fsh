@@ -9,7 +9,7 @@ Description: "Observation profile for recording characteristics of physical appe
 * code ^short = "Füüsilise välimuse vaatluse kood"
 * code = $sct#703248002
 * subject 1..1 
-* subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient)
+* subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient or $mpi-patient)
 * effective[x] 1..1 
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Millal andmed registreeriti)"

@@ -10,10 +10,6 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * clinicalStatus ^short = "Kliiniline staatus (nt active, resolved)"
 * verificationStatus 0..1
 * verificationStatus ^short = "Kinnituse staatus (nt confirmed, provisional)"
-//* category 0..*
-//* category from $indication-category (preferred)
-//* category ^short = "Näidustuse tüüp. (ee Meestegur | Naistegur | Kombineeritud | Seletamata | Muu)"
-
 * severity 0..0
 
 * code 1..1
@@ -23,7 +19,7 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * bodySite 0..0
 
 * subject 1..1
-* subject only Reference(EEVRISRecipient or EEVRISDonor)
+* subject only Reference(EEVRISRecipient or $mpi-patient or EEVRISDonor)
 * subject ^short = "(ee Retsipient (kui on partner), kellel näidustus esineb)"
 
 * encounter 0..0

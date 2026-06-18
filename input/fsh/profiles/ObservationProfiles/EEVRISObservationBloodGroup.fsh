@@ -9,7 +9,7 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
 * code = $loinc#34530-6
 * code ^short = "ABO ja RhD veregrupp"
 * subject 1..1
-* subject only Reference($vris-donor or EEVRISRecipient or EEVRISDonorAnonymous)
+* subject only Reference($vris-donor or EEVRISRecipient or $mpi-patient or EEVRISDonorAnonymous)
 * effective[x] 1..1
 * effective[x] only dateTime
 * value[x] 0..0

@@ -18,7 +18,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * title 0..1
 * description 0..1
 * subject 1..1
-* subject only Reference(EEVRISRecipient)
+* subject only Reference(EEVRISRecipient or $mpi-patient)
 * encounter 0..1
 * period 0..1
 * period ^short = "(ee Tsükli alguskuupäev. KAS lõppu pole vaja?)"

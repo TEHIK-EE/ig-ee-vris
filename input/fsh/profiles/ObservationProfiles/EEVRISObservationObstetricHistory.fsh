@@ -12,7 +12,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * code ^short = "(ee Sünnitusanamnees. Vaja LOENDIT.)"
 * code = $sct#248983002
 * subject 1..1
-* subject only Reference(EEVRISRecipient)
+* subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient retsipient või partner (kellel on sünnitusanamnees))"
 * focus 0..0
 * encounter 0..0

@@ -13,7 +13,7 @@ Description: "Related person profile for VRIS. (ee Seotud isiku profiil näitab 
 * photo ..0
 * identifier ^short = "Contact person identifiers."
 * communication ..0
-* patient only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)
+* patient only Reference(EEVRISDonor or EEVRISRecipient or $mpi-patient or EEVRISDonorAnonymous)
 * patient ^short = "(ee Olenevalt doonori tüübist saab seose luua eri aegadel. SIIA VIIDE PATSIENDILE. Patsient võib olla doonor või retsipient.)"
 * period 1..1
 * relationship ^slicing.discriminator.type = #value

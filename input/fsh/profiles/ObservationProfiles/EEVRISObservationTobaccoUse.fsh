@@ -10,7 +10,7 @@ Description: "Observation profile for tobacco use status in the Estonian VRIS fe
 * code = $sct#365980008 "Finding of tobacco use and exposure"
 * code ^short = "Tobacco smoking status."
 * subject 1..1
-* subject only Reference($vris-donor or EEVRISRecipient or EEVRISDonorAnonymous)
+* subject only Reference($vris-donor or EEVRISRecipient or $mpi-patient or EEVRISDonorAnonymous)
 * subject ^short = "Viide kelle kohta andmed koguti"
 * effective[x] 1..1
 * effective[x] only dateTime

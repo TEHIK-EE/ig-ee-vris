@@ -13,7 +13,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * code ^short = "(ee Varasem viljatusravi. NB! ÕIGE snomed kood on puudu! See on placeholder!)"
 * code = $sct#416940007 "History of procedure" 
 * subject 1..1
-* subject only Reference(EEVRISRecipient)
+* subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient ainult viljatusravi saav naine)"
 * focus 0..0
 * encounter 0..0

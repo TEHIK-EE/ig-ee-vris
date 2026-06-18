@@ -1,4 +1,4 @@
-Profile: EEVRISRecipient
+Profile: EEVRISRecipient or $mpi-patient
 Parent: EEMPIPatientVerified
 Id: ee-vris-recipient
 Title: "Patient: EE VRIS Recipient"

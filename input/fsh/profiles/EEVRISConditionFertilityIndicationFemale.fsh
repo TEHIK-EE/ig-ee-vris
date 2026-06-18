@@ -16,7 +16,7 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * code ^short = "(ee Näidustuse kood RHK-10 järgi. NAISTE loend VAJA!)"
 * bodySite 0..0
 * subject 1..1
-* subject only Reference(EEVRISRecipient or EEVRISDonor)
+* subject only Reference(EEVRISRecipient or $mpi-patient or EEVRISDonor)
 * subject ^short = "(ee Retsipient, EEVRISDonor kui on suguraku annetaja?)"
 * encounter 0..0
 * onset[x] 0..1
