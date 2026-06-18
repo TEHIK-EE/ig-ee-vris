@@ -7,7 +7,6 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * partOf 0..0
 * status 1..1
 * status ^short = "Observation status"
-* category 0..*
 * category ^short = "Observation category"
 * code 1..1
 * code ^short = "(ee Sünnitusanamnees. Vaja LOENDIT.)"
@@ -22,12 +21,12 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * issued 0..1
 * issued ^short = "(ee Süsteemi sisestamise kuupäev/kellaaeg)"
 * performer 0..*
-* performer ^short = "(ee Kes salvestas)"
+* performer ^short = "(ee Kes salvestas. NB! Viide SPD-le!)"
 * value[x] 0..0
-* dataAbsentReason 0..0
+* dataAbsentReason 0..1
 * interpretation 0..0
 * note 0..*
-* note ^short = "Lisainfo / märkused"
+* note ^short = "(ee Lisainfo / märkused)"
 * bodySite 0..0
 * bodyStructure 0..0
 * method 0..0
@@ -75,7 +74,7 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[liveBirthsCount].code ^short = "Live births count"
 * component[liveBirthsCount].value[x] only integer
 * component[liveBirthsCount].value[x] ^short = "Sündinud laste arv (eeltäidetud RR päringust)"
-* component[liveBirthsCount].dataAbsentReason 0..0
+* component[liveBirthsCount].dataAbsentReason 0..1
 * component[liveBirthsCount].interpretation 0..0
 * component[liveBirthsCount].referenceRange 0..0
 
@@ -84,10 +83,11 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * component[stillbirthsCount].code ^short = "Stillbirths count"
 * component[stillbirthsCount].value[x] only integer
 * component[stillbirthsCount].value[x] ^short = "Surnult sündinud laste arv sh mitmikrasedused (eeltäidetud RR päringust)"
-* component[stillbirthsCount].dataAbsentReason 0..0
+* component[stillbirthsCount].dataAbsentReason 0..1
 * component[stillbirthsCount].interpretation 0..0
 * component[stillbirthsCount].referenceRange 0..0
 
 * component[primaryInfertility] ^short = "Primaarne (true) või sekundaarne (false) viljatus"
 * component[primaryInfertility].code = $sct#297106006
 * component[primaryInfertility].value[x] only boolean
+* component[primaryInfertility].dataAbsentReason 0..1

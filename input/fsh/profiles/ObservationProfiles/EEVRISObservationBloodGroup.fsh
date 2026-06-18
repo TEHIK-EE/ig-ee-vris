@@ -13,7 +13,7 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
 * effective[x] 1..1
 * effective[x] only dateTime
 * value[x] 0..0
-* note ^short = "Lisainfo vajadusel"
+* note ^short = "(ee Lisainfo vajadusel)"
 
 * component 2..*
 * component ^slicing.discriminator.type = #value
@@ -23,7 +23,7 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
     abo 1..1 and
     rh  1..1
 
-* component[abo] ^short = "ABO veregrupp klassifikaatorist"
+* component[abo] ^short = "(ee ABO veregrupp klassifikaatorist)"
 * component[abo].code = $loinc#57743-7
 * component[abo].value[x] 1..1
 * component[abo].value[x] only CodeableConcept

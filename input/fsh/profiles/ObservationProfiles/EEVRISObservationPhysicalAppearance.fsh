@@ -3,13 +3,8 @@ Parent: Observation
 Id: ee-vris-observation-physical-appearance
 Title: "Observation: EE VRIS Physical Appearance"
 Description: "Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)"
-* ^status = #active
-* ^experimental = false
-* ^version = "1.0.0"
 * status = #final
-* category 1..* 
 * category ^short = "Vaatluse kategooria"
-//* category = $obsCategory#laboratory "Laboratory"
 * code 1..1 
 * code ^short = "Füüsilise välimuse vaatluse kood"
 * code = $sct#703248002
@@ -17,15 +12,15 @@ Description: "Observation profile for recording characteristics of physical appe
 * subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient)
 * effective[x] 1..1 
 * effective[x] only dateTime
-* effective[x] ^short = "Millal andmed registreeriti"
+* effective[x] ^short = "(ee Millal andmed registreeriti)"
 * value[x] 0..0
 * note 
-* note ^short = "Kui on midagi vaja veel lisada"
+* note ^short = "(ee Kui on midagi vaja veel lisada)"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "system"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false
-* component ^slicing.description = "Sliced by physical appearance characteristic"
+* component ^slicing.description = "Sliced by physical appearance characteristic. (ee NB! Loendi viited ja koodid EI OLE lõplikud!)"
 * component contains
     eyeColour     0..1 and
     hairColour    0..1 and

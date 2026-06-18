@@ -7,7 +7,6 @@ Description: "Observation profile for recording pregnancy. (ee Rasedus - biokeem
 * ^experimental = false
 * ^version = "0.1.0"
 * status = #final
-* category 1..* 
 * category ^short = "Raseduse kategooria?"
 * category = $obsCategory#social-history "Social history"
 * code 1..1
@@ -33,5 +32,5 @@ Description: "Observation profile for recording pregnancy. (ee Rasedus - biokeem
 * focus ^short = "(ee Siia referents raseduse condition profiilile)"
 * encounter 0..0
 * issued 0..0
-* dataAbsentReason 0..1
+* dataAbsentReason 0..0
 * interpretation 0..0

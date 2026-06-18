@@ -3,11 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-height
 Title: "Observation: EE VRIS Height"
 Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
-* ^status = #active
-* ^experimental = false
-* ^version = "1.0.0"
 * status = #final
-* category 1..* 
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
@@ -17,7 +13,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * subject only Reference($vris-donor or EEVRISRecipient or EEVRISDonorAnonymous)
 * effective[x] 1..1 
 * effective[x] only dateTime
-* effective[x] ^short = "Millal mõõtmine tehti"
+* effective[x] ^short = "(ee Millal mõõtmine tehti)"
 * value[x] 1..1
 * value[x] only Quantity
 * value[x] ^short = "Kehakõrgus sentimeetrites"
@@ -27,7 +23,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * valueQuantity.code 1..1
 * valueQuantity.code = #cm
 * valueQuantity.unit = "cm"
-* note ^short = "Kui on midagi vaja veel lisada"
+* note ^short = "(ee Kui on midagi vaja veel lisada)"
 * component 0..0
 * bodySite 0..0
 * specimen 0..0
@@ -38,5 +34,5 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * focus 0..0
 * encounter 0..0
 * issued 0..0
-* dataAbsentReason 0..1
+* dataAbsentReason 0..0
 * interpretation 0..0

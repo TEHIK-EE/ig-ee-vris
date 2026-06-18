@@ -12,6 +12,7 @@ Description: "Observation profile for how long is woman attempting to concieve. 
 * code 1..1
 * code ^short = "(ee Rasestuda üritamise aeg. Vaja LOENDIT või kasutame LOINC?)"
 * code from $sct (preferred)
+* code = $sct#169449001 "Trying to conceive"
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
 * subject ^short = "(ee Patsient on AINULT viljatusravi saav naine)"

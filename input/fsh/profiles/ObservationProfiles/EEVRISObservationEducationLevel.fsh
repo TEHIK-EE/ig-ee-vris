@@ -1,5 +1,3 @@
-//Alias: $mpi-education = https://fhir.ee/mpi/StructureDefinition/ee-mpi-socialhistory-education-level
-
 Profile: EEVRISObservationEducationLevel
 Parent: EEMPISocialHistoryEducationLevel
 Id: ee-vris-observation-education-level
