@@ -30,3 +30,5 @@ Description: "Use this profile for describing when the biological material (sper
 * destination ^short = "(ee SIHTKOHT. MIS asukoht vastu võtab)"
 * receiver 0..*
 * receiver ^short = "(ee KES või MIS organisatsioon vastu võtab. Kas kohustuslik on Organization või Location, mis vastu võtab?)"
+* receiver.reference ^short = "(ee VIIDE SPD-le)"
+* receiver.display ^short = "(ee KUI viide puudub, tekstina)"
