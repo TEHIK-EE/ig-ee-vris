@@ -2,25 +2,26 @@ Profile: EEVRISProcedure
 Parent: Procedure
 Id: ee-vris-procedure
 Title: "Procedure: EE VRIS Procedure"
-Description: "Procedure that is related to different actions related to biologic material. E.g freezing, destroying, donating, dispensing... (ee Profiil erinevate protseduuride kirjeldamiseks. Nt. Külmutamine, annetamine...) "
+Description: "Base profile for Procedure. For each specific procedure use their profiles(freezing, destroying, donating, dispensing etc)... (ee Baasprofiil erinevate protseduuride kirjeldamiseks. (Nt. Külmutamine, annetamine...)) "
 * identifier 0..*
 * instantiatesCanonical 0..*
 * instantiatesUri 0..*
 * basedOn 0..*
 * partOf 0..*
 * status 1..1   // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
-* status ^short = "(ee kui embryot ei siirdata, siis panna |not-done| ja statusReasoni alla põhjus)"
+* status ^short = "(ee See on kohustuslik!)"
 * statusReason 0..1
 * statusReason ^short = "(ee STAATUSE Põhjuste LOEND?)"
 * category 0..*
-* category ^short = "(ee Kategooria määrab ära kas tegu on külmutamise, hävitamise, annetamise või väljastamisega. LOEND VAJA!)"
+* category ^short = "(ee Kategooria määrab ära kas tegu on külmutamise, hävitamise, annetamise või väljastamisega. LOENDit VAJA! Igal profiilil fix kood)"
 * code 0..1
 * subject 1..1
 * subject ^short = "(ee Siia tuleb viide KELLELE protseduur tehti.)"
 * focus 0..1
+* focus ^short = "(ee Kui on vaja lisaks subjektile teist patsienti ka. Nt. doonori viide siia, retsipiendi viide subject-i alla?)"
 * encounter 0..1
 * occurrence[x] 0..1  
-* occurrence[x] ^short = "Kuupäev"
+* occurrence[x] ^short = "(ee Kuupäev, millal tegevus toimus)"
 * recorded 0..1
 * recorder 0..1
 * reported[x] 0..1   // reportedBoolean | reportedReference
@@ -29,14 +30,11 @@ Description: "Procedure that is related to different actions related to biologic
 * performer.actor 1..1   
 * performer.onBehalfOf 0..1
 * performer.period 0..1
-
-* location 0..0
 * reason 0..*
 * reason ^short = "(ee Näiteks: Hävitamise põhjus, mitte-siirdamise põhjus jne. LOEND(id?))"
 * bodySite 0..0
 * outcome 0..1
-* outcome ^short = "(ee Inseminatsiooni/jne jne... tulemus. Nb! LOEND)"
-* report 0..0
+* outcome ^short = "(ee Tegevuse/toimingu/protseduuri/jne jne... tulemus. Nb! LOEND)"
 * complication 0..*
 * complication ^short = "(ee Tüsistused. NB! LOEND)"   // CodeableReference(Condition); R5 uus tüüp
 * followUp 0..*
