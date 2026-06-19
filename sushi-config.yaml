@@ -134,6 +134,7 @@ groups:
       - StructureDefinition/ee-vris-embryo
       - StructureDefinition/ee-vris-sperm
       - StructureDefinition/ee-vris-oocyte
+      - StructureDefinition/ee-vris-reproductive-tissue
   GroupC:
     name: Observations
     description: Observation profiles
