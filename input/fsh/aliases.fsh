@@ -59,3 +59,4 @@ Alias: $vris-procedure-category = https://fhir.ee/ValueSet/vris-procedure-catego
 Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-cryopreservation-code
 Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-cryopreservation-reason
 Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-cryopreservation-outcome
+Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-destruction-reason
