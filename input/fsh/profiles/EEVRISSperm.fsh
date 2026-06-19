@@ -21,7 +21,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 //* extension[oocyteOrigin] ^short = "Munaraku päritolu"
 //* extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0
-* productCode 1..
+* productCode 0..1
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Sperma, fix kood! Vaja loendit! KAS on vaja kui igal sugurakul on oma profiil???)"
 * productStatus 1..

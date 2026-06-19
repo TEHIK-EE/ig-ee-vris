@@ -11,6 +11,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+    ExtensionEEVRISCellCollection named collection 0..1 and 
     $intended-recipient named recipient 0..1 and
     ExtensionEEVRISOocyteOrigin named oocyteOrigin 0..1 and
     ExtensionEEVRISOocyteType named oocyteType 0..1
@@ -21,7 +22,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * extension[oocyteOrigin] ^short = "Munaraku päritolu"
 * extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0
-* productCode 1..
+* productCode 0..1
 * productCode from $biological-material-type-VS
 * productCode ^short = "Munarakk. FIX KOOD! (NB! Embryol on oma profiil EEVRISEmbryo). Vaja loendit!"
 * productStatus 1..

@@ -24,6 +24,7 @@ Description: "Use this profile for describing when the biological material (sper
 * occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. AEG, millal sündmus aset leiab)"
 * supplier 0..1
 * supplier ^short = "(ee PÄRITOLU. KES saadab)"
+* supplier.reference.value ^short = "(ee TEKSTIna riigikood VÕI referents SDP Organizationile????)"
 * destination 1..1
 * destination ^short = "(ee SIHTKOHT. MIS asukoht vastu võtab)"
 * receiver 0..*
