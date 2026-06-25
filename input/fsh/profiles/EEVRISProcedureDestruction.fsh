@@ -7,7 +7,7 @@ Description: "Profile for destruction of biological material (sperm, oocyte, emb
 
 * category 1..1
 * category = $vris-procedure-category#destruction
-* category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel!)"
+* category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel! Fake kood hetkel!)"
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)

@@ -10,14 +10,16 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
-    ExtensionEEVRISCellCollection named collection 0..1 and 
+    ExtensionEEVRISCellUsageState named usageState 0..1 and 
     ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+    ExtensionEEVRISCollectionMethod named collection 0..1 and
     $intended-recipient named recipient 0..1
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
 * extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
-* extension[collection] ^short = "(ee Suguraku (sperma) kogumise meetod)"
+* extension[collection] ^short = "(ee Suguraku (sperma) KOGUMISE meetod)"
 * extension[cellOrigin] ^short = "(ee Suguraku päritolu roll)"
 * extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga.)"
+* extension[usageState] ^short = "(ee SAAMISE meetod. Kas värske v sulatatud jne)"
 //* extension[oocyteOrigin] ^short = "Munaraku päritolu"
 //* extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0

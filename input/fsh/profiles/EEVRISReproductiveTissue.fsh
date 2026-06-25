@@ -2,7 +2,7 @@ Profile: EEVRISReproductiveTissue
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-reproductive-tissue
 Title: "BiologicallyDerivedProduct: EE VRIS Reproductive Tissue"
-Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation before oncological treatment. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks enne onkoloogilist ravi.)"
+Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks.)"
 
 * ^status = #active
 * . ^short = "Bioloogiline materjal, munandi või munasarja kude."
@@ -10,7 +10,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
-    ExtensionEEVRISCellCollection named collection 0..1 and 
+    ExtensionEEVRISCollectionMethod named collection 0..1 and 
     ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
     $intended-recipient named recipient 0..1
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
