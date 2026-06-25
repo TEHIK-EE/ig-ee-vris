@@ -12,8 +12,8 @@ Description: "Observation profile for recording whether fetus reduction procedur
 * category = $obsCategory#procedure
 * category ^short = "(ee Vaatluse kategooria protseduur)"
 * code 1..1
-* code = $sct#240106003
-* code ^short = "(ee Loote reduktsioon, SCT #240106003 'Selective fetal reduction')"
+* code = $sct#265633004 //|Selective destruction of fetus (procedure)|
+* code ^short = "(ee Loote reduktsioon"
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
 * subject ^short = "(ee Rase patsient)"

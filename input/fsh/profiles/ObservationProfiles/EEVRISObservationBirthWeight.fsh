@@ -7,7 +7,7 @@ Description: "Birth weight of newborn child. (ee Lapse sünnikaal grammides.)"
 
 * status = #final
 * category = $obsCategory#vital-signs
-* code = $sct#364589006                                  // Birth weight
+* code = $sct#364589006 // |Birth weight (observable entity)|                                  // Birth weight
 * subject 1..1
 * subject only Reference(EEVRISPatientChild)
 * effective[x] 1..1

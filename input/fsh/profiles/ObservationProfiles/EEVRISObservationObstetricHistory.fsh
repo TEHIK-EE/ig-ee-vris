@@ -50,7 +50,7 @@ Description: "Past obstetric history at the START of fertility treatment cycle. 
     primaryInfertility    0..1
 
 * component[priorPregnanciesCount] ^short = "Varasemate raseduste arv"
-* component[priorPregnanciesCount].code = $sct#246211005
+* component[priorPregnanciesCount].code = $sct#246211005 // |Number of previous pregnancies (observable entity)|
 * component[priorPregnanciesCount].code ^short = "Prior pregnancies count"
 * component[priorPregnanciesCount].value[x] only integer
 * component[priorPregnanciesCount].value[x] ^short = "Varasemate raseduste arv"
@@ -60,7 +60,7 @@ Description: "Past obstetric history at the START of fertility treatment cycle. 
 * component[priorPregnanciesCount].referenceRange 0..0
 
 * component[priorDeliveriesCount] ^short = "Varasemate sünnituste arv"
-* component[priorDeliveriesCount].code = $sct#3950001 "Birth"
+* component[priorDeliveriesCount].code = $sct#118212000 //|Parity finding (finding)| 
 * component[priorDeliveriesCount].code ^short = "Prior deliveries count"
 * component[priorDeliveriesCount].value[x] only integer
 * component[priorDeliveriesCount].value[x] ^short = "Varasemate sünnituste arv (eeltäidetud RR-st, muudetav)"
@@ -70,7 +70,7 @@ Description: "Past obstetric history at the START of fertility treatment cycle. 
 * component[priorDeliveriesCount].referenceRange 0..0
 
 * component[liveBirthsCount] ^short = "Sündinud laste arv (RR)"
-* component[liveBirthsCount].code = $sct#248991006
+* component[liveBirthsCount].code = $sct#248991006 // |Number of live deliveries (observable entity)|
 * component[liveBirthsCount].code ^short = "Live births count"
 * component[liveBirthsCount].value[x] only integer
 * component[liveBirthsCount].value[x] ^short = "Sündinud laste arv (eeltäidetud RR päringust)"
@@ -79,7 +79,7 @@ Description: "Past obstetric history at the START of fertility treatment cycle. 
 * component[liveBirthsCount].referenceRange 0..0
 
 * component[stillbirthsCount] ^short = "Surnult sündinud laste arv (RR)"
-* component[stillbirthsCount].code = $sct#252112002
+* component[stillbirthsCount].code = $sct#252112002 //|Number of stillbirths (observable entity)|
 * component[stillbirthsCount].code ^short = "Stillbirths count"
 * component[stillbirthsCount].value[x] only integer
 * component[stillbirthsCount].value[x] ^short = "Surnult sündinud laste arv sh mitmikrasedused (eeltäidetud RR päringust)"
@@ -88,6 +88,6 @@ Description: "Past obstetric history at the START of fertility treatment cycle. 
 * component[stillbirthsCount].referenceRange 0..0
 
 * component[primaryInfertility] ^short = "Primaarne (true) või sekundaarne (false) viljatus"
-* component[primaryInfertility].code = $sct#297106006
+* component[primaryInfertility].code = $sct#297106006 // |Primary infertility (finding)|
 * component[primaryInfertility].value[x] only boolean
 * component[primaryInfertility].dataAbsentReason 0..1

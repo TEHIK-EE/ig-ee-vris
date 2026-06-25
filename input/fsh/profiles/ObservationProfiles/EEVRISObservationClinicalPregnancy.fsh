@@ -8,7 +8,7 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * status = #final
 * category = $obsCategory#exam
 * code 1..1
-* code = $sct#77386006
+* code = $sct#77386006 // |Pregnancy (finding)|
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
 * effective[x] 1..1
@@ -23,12 +23,12 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
     fetalHeartActivity 0..1
 
 * component[gestationalSacCount] ^short = "(ee Lootemunade arv ultraheliuuringul)"
-* component[gestationalSacCount].code = $sct#46153002    // "Gestational sac"
+* component[gestationalSacCount].code = $sct#300572002 //|Gestational sac present (finding)|    // "Gestational sac"
 * component[gestationalSacCount].value[x] only integer
 * component[gestationalSacCount].valueInteger ^short = "(ee Lootemunade arv, nt 1, 2, 3)"
 
 * component[fetalHeartActivity] ^short = "(ee Loote südametegevus)"
-* component[fetalHeartActivity].code = $sct#364561005
+* component[fetalHeartActivity].code = $sct#249045009 //|Fetal heart sounds present (finding)|
 * component[fetalHeartActivity].value[x] only boolean
 
 * bodySite 0..0

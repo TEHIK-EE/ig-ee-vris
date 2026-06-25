@@ -10,7 +10,7 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
 * category 0..*
 * category = $obsCategory#exam
 * code 1..1
-* code = $sct#364320009                          // "Pregnancy outcome"
+* code = $sct#364320009 // |Pregnancy observable (observable entity)|                         
 * code ^short = "(ee Raseduse lõppemise kood)"
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
@@ -44,44 +44,44 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
     deliveryMethod 0..1                // UUS
 
 * component[terminationType] ^short = "(ee Raseduse katkemise/katkestamise liik)"
-* component[terminationType].code = $sct#363681007
+* component[terminationType].code = $sct#363681007 // |Pregnancy with abortive outcome (disorder)|
 * component[terminationType].value[x] only CodeableConcept
 //* component[terminationType].valueCodeableConcept from $vris-pregnancy-termination-type-VS (required)
 
 * component[indication] ^short = "(ee Näidustus, vabatekst)"
-* component[indication].code = $sct#42836004
+* component[indication].code = $sct#432678004 // |Indication for procedure (observable entity)|
 * component[indication].value[x] only string
 
 * component[terminationDate] ^short = "(ee Raseduse katkemise/katkestamise kuupäev)"
-* component[terminationDate].code = $sct#386216000
+* component[terminationDate].code = $sct#439272007 //|Date of procedure (observable entity)|
 * component[terminationDate].value[x] only dateTime
 
 * component[deliveryDate] ^short = "(ee Sünnituse kuupäev)"
-* component[deliveryDate].code = $sct#169826009
+* component[deliveryDate].code = $sct#161714006 // |Estimated date of delivery (observable entity)|
 * component[deliveryDate].value[x] only dateTime
 
 * component[gestationalAgeWeeks] ^short = "(ee Raseduskestus sünnituse hetkel, nädalates)"
-* component[gestationalAgeWeeks].code = $sct#412726003
+* component[gestationalAgeWeeks].code = $sct#364739001 //|Finding of fetal gestation at delivery (finding)|
 * component[gestationalAgeWeeks].value[x] only Quantity
 * component[gestationalAgeWeeks].valueQuantity.unit = "wk"
 * component[gestationalAgeWeeks].valueQuantity.system = $ucum
 * component[gestationalAgeWeeks].valueQuantity.code = #wk
 
 * component[liveBirthsCount] ^short = "(ee Sündinud laste arv)"
-* component[liveBirthsCount].code = $sct#250423004        // Multiple birth
+* component[liveBirthsCount].code = $sct#248991006 //|Number of live deliveries (observable entity)|     
 * component[liveBirthsCount].value[x] only integer
 
 * component[stillbirthsCount] ^short = "(ee Surnult sündinud laste arv)"
-* component[stillbirthsCount].code = $sct#237364002       // Stillbirth
+* component[stillbirthsCount].code = $sct#252112002 //|Number of stillbirths (observable entity)|
 * component[stillbirthsCount].value[x] only integer
 
 * component[placentationType] ^short = "(ee Platsentatsiooni tüüp mitmikel)"
-* component[placentationType].code = $sct#272431007       // Placentation
+* component[placentationType].code = $sct#16356006 // |Multiple pregnancy (finding)|     
 * component[placentationType].value[x] only CodeableConcept
 //* component[placentationType].valueCodeableConcept from $vris-placentation-type-VS (required)
 
 * component[deliveryMethod] ^short = "(ee Sünnitusviis)"
-* component[deliveryMethod].code = $sct#386216000         // Method of delivery
+* component[deliveryMethod].code = $sct#118215003 //|Delivery finding (finding)|        
 * component[deliveryMethod].value[x] only CodeableConcept
 //* component[deliveryMethod].valueCodeableConcept from $vris-delivery-method-VS (required)
 // Invariandid – UI loogika valideerimine
