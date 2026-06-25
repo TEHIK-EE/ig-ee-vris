@@ -39,8 +39,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property ^slicing.description = "(ee Bioloogilise materjali (koe) omadused)"
 * property contains
     fragmentCount 0..1 and
-    frozenFragmentCount 0..1 and
-    tissueSize 0..1
+    frozenFragmentCount 0..1
 
 * property[fragmentCount] ^short = "(ee Koetükkide arv)"
 * property[fragmentCount].type.coding from $vris-property-type1-VS
@@ -51,12 +50,6 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[frozenFragmentCount].type.coding from $vris-property-type2-VS
 * property[frozenFragmentCount].type.coding.code ^short = "(ee Olenevalt koest on siin teatud kindel kood)"
 * property[frozenFragmentCount].value[x] only integer
-
-* property[tissueSize] ^short = "(ee Koe suurus/maht)"
-* property[tissueSize].type.coding from $vris-property-type1-VS
-* property[tissueSize].type.coding.code ^short = "(ee Koe suuruse kood)"
-* property[tissueSize].value[x] only Quantity
-* property[tissueSize].valueQuantity.unit = "mm3"
 
 * parent 0..0
 * request 0..0

@@ -147,7 +147,8 @@ groups:
       - StructureDefinition/ee-vris-observation-waist
       - StructureDefinition/ee-vris-observation-obstetric-history
       - StructureDefinition/ee-vris-observation-tobacco-use
-      - StructureDefinition/ee-vris-observation-pregnancy
+      - StructureDefinition/ee-vris-observation-clinical-pregnancy
+      - StructureDefinition/ee-vris-observation-biochemical-pregnancy
       - StructureDefinition/ee-vris-observation-prior-fertility-treatment
       - StructureDefinition/ee-vris-observation-marital-status
       - StructureDefinition/ee-vris-observation-education-level
