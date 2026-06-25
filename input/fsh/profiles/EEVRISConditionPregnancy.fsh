@@ -20,4 +20,5 @@ Description: "Condition profile for pregnancy in Estonian VRIS fertility system.
 * participant 0..*
 * stage 0..0
 * evidence 0..*
+* evidence ^short = "KAS siia viide observationile?"
 * note 0..*

@@ -2,7 +2,7 @@ Profile: EEVRISObservationClinicalPregnancy
 Parent: Observation
 Id: ee-vris-observation-clinical-pregnancy
 Title: "Observation: EE VRIS Clinical Pregnancy"
-Description: "Clinical pregnancy, confirmed by ultrasound. (ee Kliiniline rasedus, kinnitatud ultraheliuuringuga. NB! Biokeemilise raseduse profiil on eraldi.)"
+Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (ee Kliiniline rasedus, kinnitatud ultraheliuuringuga. LOOTEMUNADE arv ka! NB! Biokeemilise raseduse profiil on eraldi.)"
 * ^status = #draft
 * ^version = "0.1.0"
 * status = #final
@@ -14,22 +14,23 @@ Description: "Clinical pregnancy, confirmed by ultrasound. (ee Kliiniline rasedu
 * effective[x] 1..1
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Millal UH tehti)"
+* component 0..*
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains
+    gestationalSacCount 0..1 and
+    fetalHeartActivity 0..1
 
-* value[x] 0..1                                  // ← 0..1 et lubada dataAbsentReason
-* value[x] only boolean
-* valueBoolean ^short = "(ee true = rasedus tuvastatud, false = rasedust ei tuvastatud)"
+* component[gestationalSacCount] ^short = "(ee Lootemunade arv ultraheliuuringul)"
+* component[gestationalSacCount].code = $sct#46153002    // "Gestational sac"
+* component[gestationalSacCount].value[x] only integer
+* component[gestationalSacCount].valueInteger ^short = "(ee Lootemunade arv, nt 1, 2, 3)"
 
-* dataAbsentReason 0..1
-* dataAbsentReason ^short = "(ee Kui pole teada, kasuta #unknown. FHIR-loend?)"
-//* dataAbsentReason from $data-absent-reason (required)
+* component[fetalHeartActivity] ^short = "(ee Loote südametegevus)"
+* component[fetalHeartActivity].code = $sct#364561005
+* component[fetalHeartActivity].value[x] only boolean
 
-* derivedFrom 0..*
-* derivedFrom ^short = "(ee Viide biokeemilisele rasedusele ja/või ultraheli tulemustele?)"
-* focus 0..*
-* focus ^short = "(ee Viide raseduse Condition profiilile)"
-* note 0..*
-
-* component 0..0
 * bodySite 0..0
 * specimen 0..0
 * device 0..0
