@@ -127,6 +127,7 @@ groups:
       - StructureDefinition/ee-vris-recipient
       - StructureDefinition/ee-vris-related-person
       - StructureDefinition/ee-vris-donor-anonymous
+      - StructureDefinition/ee-vris-patient-child
   GroupB:
     name: Biological material
     description: Embryo and reproductive cell profiles
@@ -152,6 +153,12 @@ groups:
       - StructureDefinition/ee-vris-observation-prior-fertility-treatment
       - StructureDefinition/ee-vris-observation-marital-status
       - StructureDefinition/ee-vris-observation-education-level
+      - StructureDefinition/ee-vris-observation-neonatal-intensive-care
+      - StructureDefinition/ee-vris-observation-prenatal-care-discontinued
+      - StructureDefinition/ee-vris-observation-fetus-reduction
+      - StructureDefinition/ee-vris-observation-birth-weight
+      - StructureDefinition/ee-vris-observation-pregnancy-outcome
+
 
 
 

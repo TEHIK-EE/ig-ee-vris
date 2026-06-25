@@ -2,7 +2,7 @@ Instance: donor-genetic-finding-suspected1
 InstanceOf: Condition
 Usage: #example
 Description: "Example of suspected condition of genetic disorder of donor"
-* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-genetic-finding"
+* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional "Provisional"
 //* category[0] = $condition-category#encounter-diagnosis
