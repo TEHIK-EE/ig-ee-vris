@@ -37,7 +37,11 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
     indication 0..1 and
     terminationDate 0..1 and
     deliveryDate 0..1 and
-    gestationalAgeWeeks 0..1
+    gestationalAgeWeeks 0..1 and    
+    liveBirthsCount 0..1 and           // UUS
+    stillbirthsCount 0..1 and          // UUS
+    placentationType 0..1 and          // UUS
+    deliveryMethod 0..1                // UUS
 
 * component[terminationType] ^short = "(ee Raseduse katkemise/katkestamise liik)"
 * component[terminationType].code = $sct#363681007
@@ -63,6 +67,23 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
 * component[gestationalAgeWeeks].valueQuantity.system = $ucum
 * component[gestationalAgeWeeks].valueQuantity.code = #wk
 
+* component[liveBirthsCount] ^short = "(ee Sündinud laste arv)"
+* component[liveBirthsCount].code = $sct#250423004        // Multiple birth
+* component[liveBirthsCount].value[x] only integer
+
+* component[stillbirthsCount] ^short = "(ee Surnult sündinud laste arv)"
+* component[stillbirthsCount].code = $sct#237364002       // Stillbirth
+* component[stillbirthsCount].value[x] only integer
+
+* component[placentationType] ^short = "(ee Platsentatsiooni tüüp mitmikel)"
+* component[placentationType].code = $sct#272431007       // Placentation
+* component[placentationType].value[x] only CodeableConcept
+//* component[placentationType].valueCodeableConcept from $vris-placentation-type-VS (required)
+
+* component[deliveryMethod] ^short = "(ee Sünnitusviis)"
+* component[deliveryMethod].code = $sct#386216000         // Method of delivery
+* component[deliveryMethod].value[x] only CodeableConcept
+//* component[deliveryMethod].valueCodeableConcept from $vris-delivery-method-VS (required)
 // Invariandid – UI loogika valideerimine
 * obeys vris-preg-outcome-1
 * obeys vris-preg-outcome-2

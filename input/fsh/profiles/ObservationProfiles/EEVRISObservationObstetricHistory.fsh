@@ -2,7 +2,7 @@ Profile: EEVRISObservationObstetricHistory
 Parent: Observation
 Id: ee-vris-observation-obstetric-history
 Title: "Observation: EE VRIS Obstetric History"
-Description: "Obstetric history for fertility patients. Records prior pregnancies, deliveries, live births and stillbirths. (ee Sünnitusanamnees: varasemate raseduste, sünnituste ja sündide arv)"
+Description: "Past obstetric history at the START of fertility treatment cycle. Records cumulative count of all prior pregnancies, deliveries, live births and stillbirths BEFORE current treatment. (ee Sünnitusanamnees ENNE käesolevat viljatusravi tsüklit. Varasemate raseduste, sünnituste ja sündide kumulatiivne arv.)"
 * basedOn 0..0
 * partOf 0..0
 * status 1..1
@@ -10,14 +10,14 @@ Description: "Obstetric history for fertility patients. Records prior pregnancie
 * category ^short = "Observation category"
 * code 1..1
 * code ^short = "(ee Sünnitusanamnees. Vaja LOENDIT.)"
-* code = $sct#248983002
+* code = $sct#248983002 //"Obstetric history"
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient retsipient või partner (kellel on sünnitusanamnees))"
 * focus 0..0
 * encounter 0..0
 * effective[x] 0..1
-* effective[x] ^short = "(ee Anamneesi kogumise kuupäev)"
+* effective[x] ^short = "(ee Anamneesi kogumise kuupäev. Viljatusravi alguses tavaliselt.)"
 * issued 0..1
 * issued ^short = "(ee Süsteemi sisestamise kuupäev/kellaaeg)"
 * performer 0..*
