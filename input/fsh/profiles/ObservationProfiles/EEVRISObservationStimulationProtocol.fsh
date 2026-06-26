@@ -75,3 +75,16 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * encounter 0..0
 * issued 0..0
 * interpretation 0..0
+
+* obeys vris-stim-protocol-gonadotropin
+* obeys vris-stim-protocol-follitropin
+
+Invariant: vris-stim-protocol-gonadotropin
+Description: "If stimulation medication includes gonadotropin, gonadotropin type must be specified"
+Severity: #error
+Expression: "component.where(code.coding.code='stimulation-medication').value.coding.code in ('oral-and-gonadotropin' | 'gonadotropin-only') implies component.where(code.coding.code='gonadotropin-type').exists()"
+
+Invariant: vris-stim-protocol-follitropin
+Description: "If FSH (uFSH or rFSH) was used, total Follitropin dose must be specified"
+Severity: #error
+Expression: "component.where(code.coding.code='gonadotropin-type').value.coding.code in ('uFSH' | 'rFSH') implies component.where(code.coding.code='follitropin-total-dose').exists()"
