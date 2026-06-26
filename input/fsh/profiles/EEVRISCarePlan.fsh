@@ -62,9 +62,11 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * activity.performedActivity ^slicing.rules = #open
 * activity.performedActivity contains
     medicationAdministration 0..* and
-    procedure 0..*
+    procedure 0..* and
+    observation 0..*
 * activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
 * activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure)
+* activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol)
 * activity.extension 0..*
 * activity.modifierExtension 0..*
 //* activity.performedActivity 0..*

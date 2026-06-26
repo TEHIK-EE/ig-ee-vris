@@ -60,3 +60,9 @@ Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-cryopreser
 Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-cryopreservation-reason
 Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-cryopreservation-outcome
 Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-destruction-reason
+
+Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-pre-stimulation-treatment
+Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-lh-suppression-protocol
+Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-gonadotropin-use
+Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-oocyte-trigger
+Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteal-phase-support

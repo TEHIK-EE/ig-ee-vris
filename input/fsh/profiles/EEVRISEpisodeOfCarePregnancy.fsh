@@ -2,7 +2,7 @@ Profile: EEVRISEpisodeOfCarePregnancy
 Parent: EEBaseEpisodeOfCare
 Id: ee-vris-episode-of-care-pregnancy
 Title: "EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy"
-Description: "EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar)."
+Description: "EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar. NB! Profiil peab järgima Encounter-EoC tuleviku struktuuri!)."
 * ^status = #draft
 * identifier 1..*
 * identifier.id 0..0
