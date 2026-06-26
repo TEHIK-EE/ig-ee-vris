@@ -6,8 +6,8 @@ Description: "Observation profile for recording characteristics of physical appe
 * status = #final
 * category ^short = "Vaatluse kategooria"
 * code 1..1 
-* code ^short = "Füüsilise välimuse vaatluse kood"
-* code = $sct#703248002
+* code ^short = "Füüsilise välimuse vaatluse SCT kood"
+* code = $sct#703248002 //|Appearance (observable entity)|
 * subject 1..1 
 * subject only Reference($vris-donor or EEVRISDonorAnonymous or EEVRISRecipient or $mpi-patient)
 * effective[x] 1..1 

@@ -2,7 +2,7 @@ Profile: EEVRISConditionFertilityIndicationFemale
 Parent: Condition
 Id: ee-vris-condition-fertility-indication-female
 Title: "Condition: EE VRIS Female Fertility Treatment Indication"
-Description: "Clinical indication or diagnosis that is the reason for infertility treatment for Female. (ee NAISE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus.)"
+Description: "Clinical indication or diagnosis that is the reason for infertility treatment for Female. (ee NAISE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)"
 * ^status = #draft
 * identifier 0..*
 * identifier ^short = "(ee Näidustuse identifikaator)"
@@ -28,10 +28,12 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 * participant 0..*
 * participant ^short = "(ee Kes näidustuse kirjastas. NB! SPDst)"
 * participant.function 0..1
-* participant.function ^short = "( ee Osaleja roll. KAS SEDA ONA VAJA?)"
+* participant.function ^short = "(ee Osaleja roll. KAS seda on vaja, sest roll tuleb SPD-st...?)"
 * participant.actor 1..1
-* participant.actor ^short = "(ee Osaleja viide. SPD)"
+* participant.actor ^short = "(ee Osaleja referents.)"
+
 * stage 0..0
 * evidence 0..0
+
 * note 0..*
 * note ^short = "(ee Lisainfo / täpsustus näidustuse kohta)"

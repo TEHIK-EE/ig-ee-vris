@@ -2,7 +2,7 @@ Profile: EEVRISConditionDonorGeneticFinding
 Parent: Condition
 Id: ee-vris-condition-donor-genetic-finding
 Title: "Condition: EE VRIS Donor Genetic Finding"
-Description: "Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus.)"
+Description: "Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. NB! Tulevikus viidata Diagnoosi-teenusele!)"
 //* ^version = "1.0.0"
 * ^status = #active
 * . ^short = "Doonori geneetiline leid"
@@ -34,7 +34,7 @@ Description: "Genetic finding of cell donor that appears later in life. (ee Taga
 * abatement[x] 0..0
 * recordedDate 0..0
 * participant 0..*
-  * function 0..1
+  * function 0..0
   * actor 1..1
 * stage 0..0
 * evidence 0..0

@@ -2,7 +2,7 @@ Profile: EEVRISConditionComorbidity
 Parent: Condition
 Id: ee-vris-condition-comorbidity
 Title: "Condition: EE VRIS Comorbidity"
-Description: "Condition profile for comorbidities of a donor or recipient in the Estonian VRIS fertility system. (ee Kaasuv haigus.)"
+Description: "Condition profile for comorbidities of a donor or recipient in the Estonian VRIS fertility system. (ee Kaasuv haigus. NB! Tulevikus viidata Diagnoosi-teenusele!)"
 * ^status = #draft
 
 * identifier 0..*
