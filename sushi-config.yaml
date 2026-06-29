@@ -158,6 +158,8 @@ groups:
       - StructureDefinition/ee-vris-observation-fetus-reduction
       - StructureDefinition/ee-vris-observation-birth-weight
       - StructureDefinition/ee-vris-observation-pregnancy-outcome
+      - StructureDefinition/ee-vris-observation-stimulation-protocol
+
 
 
 

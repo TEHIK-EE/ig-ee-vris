@@ -41,7 +41,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * supportingInfo ^slicing.discriminator.path = "resolve()"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.ordered = false
-* supportingInfo ^slicing.description = "(ee Lisateave – partner, rahastusallikas vms)"
+* supportingInfo ^slicing.description = "(ee Lisateave partner, rahastusallikas vms)"
 
 * supportingInfo contains
     partner 0..1 and
