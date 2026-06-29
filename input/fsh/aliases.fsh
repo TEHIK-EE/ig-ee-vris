@@ -67,3 +67,5 @@ Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-gonadotropin-us
 Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-oocyte-trigger
 Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteal-phase-support
 Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-cycle-discontinuation-reason
+Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-oocyte-intended-use
+Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-fertility-preservation-reason

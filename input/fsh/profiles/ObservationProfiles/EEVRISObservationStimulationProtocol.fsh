@@ -52,7 +52,7 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * component[gonadotropinUse].value[x] only CodeableConcept
 * component[gonadotropinUse].valueCodeableConcept from $vris-gonadotropin-use-VS (required)
 
-* component[finalOocyteMaturationTrigger] ^short = "(ee Munarakkude lõpliku küpsemise käivitamine trigger NB! LOEND VAJA!)"
+* component[finalOocyteMaturationTrigger] ^short = "(ee Munarakkude lõpliku küpsemise käivitamine  NB! LOEND VAJA!)"
 * component[finalOocyteMaturationTrigger].code.text = "TODO: SNOMED CT otsi 'oocyte maturation trigger' / 'hCG trigger'"
 * component[finalOocyteMaturationTrigger].value[x] only CodeableConcept
 * component[finalOocyteMaturationTrigger].valueCodeableConcept from $vris-oocyte-trigger-VS (required)

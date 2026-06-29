@@ -29,10 +29,7 @@ Description: "Coverage profile for fertility treatment in Estonian VRIS. Identif
 * period 0..1
 * period ^short = "(ee Kindlustuse kehtivuse periood)"
 
-* insurer 0..1
-* insurer only Reference(Organization)
-* insurer ^short = "(ee Kindlustusandja nt Tervisekassa, eraisikukindlustusettevõte)"
-
+* insurer 0..0
 * class 0..0
 * order 0..0
 * network 0..0
