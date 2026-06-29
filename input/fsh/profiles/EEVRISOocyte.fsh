@@ -17,7 +17,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     ExtensionEEVRISOocyteType named oocyteType 0..1
 * extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
 * extension[cryopreservationReason] ^short = "Külmutamise põhjus"
-* extension[cellOrigin] ^short = "Suguraku päritolu roll"
+* extension[cellOrigin] ^short = "Suguraku päritolu roll. SIIA see kas on enda tarbeks või doonorlusesk!"
 * extension[recipient] ^short = "Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga."
 * extension[oocyteOrigin] ^short = "Munaraku päritolu"
 * extension[oocyteType] ^short = "Munaraku tüüp"
@@ -28,7 +28,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * productStatus 1..
 * collection 1..
 * collection.source 1..
-* collection.source only Reference(EEVRISDonor)
+* collection.source only Reference(EEVRISDonor or EEVRISRecipient)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS
@@ -40,7 +40,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property contains
     donatedCount 0..1 and
     frozenCount 0..1 
-* property[donatedCount] ^short = "Annetatud ühikute arv"
+* property[donatedCount] ^short = "Annetatud/saadud ühikute arv"
 * property[donatedCount].type.coding from $vris-property-type1-VS
 * property[donatedCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
 * property[donatedCount].value[x] only integer

@@ -3,6 +3,9 @@ Parent: CarePlan
 Id: ee-vris-care-plan
 Title: "CarePlan: EEVRIS Cycle"
 Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee Ravisükkel. VÄRSKE või KÜLMUTATUD-SULATATUD)"
+* extension contains
+    ExtensionEEVRISCycleDiscontinuationReason named cycleDiscontinuationReason 0..1
+* extension[cycleDiscontinuationReason] ^short = "(ee Täidetakse kui status = revoked. Katkestamise põhjus.)"
 * identifier 0..*
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0

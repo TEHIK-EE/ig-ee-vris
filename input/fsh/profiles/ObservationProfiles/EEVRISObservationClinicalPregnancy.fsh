@@ -14,6 +14,14 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * effective[x] 1..1
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Millal UH tehti)"
+
+* value[x] 0..1
+* value[x] only boolean
+* valueBoolean ^short = "(ee true = kliiniline rasedus tuvastatud, false = ei tuvastatud)"
+
+* dataAbsentReason 0..1
+* dataAbsentReason ^short = "(ee #unknown kui pole teada)"
+
 * component 0..*
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
