@@ -69,3 +69,4 @@ Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteal-phas
 Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-cycle-discontinuation-reason
 Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-oocyte-intended-use
 Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-fertility-preservation-reason
+Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-sperm-donor-stimulation-method

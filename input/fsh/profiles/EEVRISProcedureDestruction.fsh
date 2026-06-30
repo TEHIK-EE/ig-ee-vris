@@ -23,4 +23,4 @@ Description: "Profile for destruction of biological material (sperm, oocyte, emb
 
 * used 1..*
 * used ^short = "(ee Viide hävitatud bioloogilisele materjalile)"
-* used only Reference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte)
+* used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte)
