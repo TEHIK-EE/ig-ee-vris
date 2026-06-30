@@ -10,4 +10,4 @@ Context: BiologicallyDerivedProduct
 * . ^definition = "Bioloogilise materjali külmutamise kuupäev"
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * value[x] 1..1
-* value[x] only date
+* value[x] only dateTime

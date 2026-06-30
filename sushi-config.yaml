@@ -159,6 +159,8 @@ groups:
       - StructureDefinition/ee-vris-observation-birth-weight
       - StructureDefinition/ee-vris-observation-pregnancy-outcome
       - StructureDefinition/ee-vris-observation-stimulation-protocol
+      - StructureDefinition/ee-vris-observation-embryo-lifecycle-counts
+      - StructureDefinition/ee-vris-observation-fertilization-counts
 
 
 

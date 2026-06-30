@@ -29,5 +29,6 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * outcome ^short = "(ee Külmutamise tulemus, edukas / ebaõnnestunud / osaliselt edukas (NB! LOEND puudu!))"
 * used 1..*
 * used ^short = "(ee Viide külmutatud bioloogilisele materjalile: sperma / munarakk / embrüo)"
+* used only Reference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte)
 * note 0..*
 * note ^short = "(ee Lisainfo külmutamise kohta)"
