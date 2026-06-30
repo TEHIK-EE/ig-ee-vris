@@ -2,7 +2,7 @@ Profile: EEVRISObservationFertilizationCounts
 Parent: Observation
 Id: ee-vris-observation-fertilization-counts
 Title: "Observation: EE VRIS Fertilization Counts"
-Description: "Laboratory counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud, embrüoloogi laboratoorne mõõtmine.)"
+Description: "Counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud erinevates staadiumites.)"
 * ^status = #draft
 
 * status = #final
@@ -14,15 +14,17 @@ Description: "Laboratory counts of oocytes used and fertilized during fertilizat
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
-* subject ^short = "(ee Patsient, kelle munarakke viljastati)"
+* subject ^short = "(ee Patsient, kelle munarakkudega tehti toiminguid. KAS viitame patsiendile VÕI focuse kaudu rakule. OTSUSTUSKOHT!?!?!)"
 
 * effective[x] 1..1
 * effective[x] only dateTime
 * effective[x] ^short = "(ee Mõõtmise/hindamise aeg)"
 
+* focus only Reference(EEVRISOocyte)
+
 * partOf 0..*
 * partOf only Reference(EEVRISProcedureFertilization)
-* partOf ^short = "(ee Viide viljastamise protseduurile, mille raames arvud salvestati)"
+* partOf ^short = "(ee Viide protseduurile, mille raames arvud salvestati)"
 
 * value[x] 0..0
 * note 0..*

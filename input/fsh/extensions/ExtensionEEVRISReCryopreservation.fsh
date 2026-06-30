@@ -11,8 +11,11 @@ Context: BiologicallyDerivedProduct
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * extension contains
     reCryo 0..1 and
-    reCryoCount 0..1
+    reCryoCount 0..1 and
+    reCryoDate 0..1
 * extension[reCryo] ^short = "Re-cryopreservation is done= true, not done=false"
 * extension[reCryo].value[x] only boolean
 * extension[reCryoCount] ^short = "Count"
 * extension[reCryoCount].value[x] only integer
+* extension[reCryoDate] ^short = "Date"
+* extension[reCryoDate].value[x] only dateTime
