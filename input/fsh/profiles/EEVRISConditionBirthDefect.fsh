@@ -11,7 +11,7 @@ Description: "Congenital birth defect of newborn child. (ee Lapse väärarend. N
 * code from $RHK-10 (preferred)
 * code ^short = "(ee Väärarendi kood RHK-10 või vabatekst)"
 * code.text 0..1
-* code.text ^short = "(ee Väärarendi vabatekstiline kirjeldus, kui RHK ei sobi)"
+* code.text ^short = "(ee Väärarendi vabatekstiline kirjeldus, kui RHK ei sobi.)"
 * subject 1..1
 * subject only Reference(EEVRISPatientChild)
 * onset[x] only dateTime

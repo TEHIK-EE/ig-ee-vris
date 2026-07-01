@@ -36,7 +36,7 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * outcome 0..1
 * outcome ^short = "(ee Tegevuse/toimingu/protseduuri/jne jne... tulemus. Nb! LOEND)"
 * complication 0..*
-* complication ^short = "(ee Tüsistused. NB! LOEND)"   // CodeableReference(Condition); R5 uus tüüp
+* complication ^short = "(ee Tüsistused. Referents Condition-ressursile või loend. NB! LOEND vajalik)"   // CodeableReference(Condition); R5 uus tüüp
 * followUp 0..*
 * note 0..*
 * note ^short = "(ee lisainfo)"

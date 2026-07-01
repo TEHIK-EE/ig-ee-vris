@@ -19,3 +19,4 @@ Description: "Whether the child received neonatal intensive care during first 7 
 * valueBoolean ^short = "(ee true = sai intensiivravi, false = ei saanud)"
 
 * dataAbsentReason 0..1
+* dataAbsentReason ^short = "(ee Kasutada seda loendit, kui tulemus pole teada/on ebaselge/vms)"

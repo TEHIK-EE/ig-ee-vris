@@ -1,9 +1,11 @@
-># NB! 
+># NB! This is a development build and should be considered as “work in progress”. The content changes on a daily basis. This is not an official product release yet.
 >
->**This is a development build and should be considered as “work in progress”. The content changes on a daily basis. This is not an official product release yet.**
 >
->**Juhendit täiendatakse igapäevaselt. Kõik liidestumiseks vajalik materjal pole veel juhendisse lisatud, tegu on MUSTANDIGA!**
 >
+># Juhendit täiendatakse igapäevaselt. Kõik liidestumiseks vajalik materjal pole veel juhendisse lisatud, tegu on MUSTANDIGA!
+>
+>
+# NB!  SNOMED koodid on enamjaolt placeholderid. KÕIK tuleb üle kontrollida! Loendite viited on kunstlikud, loendid on alles loomisel.
 
 [//]: # (REPLACE_ME: Should replace with domain specific introduction)
 ### Intro
