@@ -30,6 +30,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Sperma, fix kood! Vaja loendit! KAS on vaja kui igal sugurakul on oma profiil???)"
 * productStatus 1..
+* productStatus ^short = "(ee Staatuse kaudu saab vroneeringut teha? NB Vaja loendit!)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor)

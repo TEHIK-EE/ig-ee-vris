@@ -23,7 +23,8 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * encounter 0..1
-* encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Encounter-EoC-teenus, siis kui valmis!)"
+* encounter only Reference(EEVRISEncounter)
+* encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Ja läbi Encounterite tekib (eestaid)kestev EoC, mis seob kõik kokku. Encounter-EoC-teenus, siis kui valmis!)"
 * period 0..1
 * period ^short = "(ee Tsükli alguskuupäev. KAS lõppu pole vaja?)"
 * period.start 1..1
