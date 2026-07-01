@@ -2,7 +2,7 @@ Profile: EEVRISConditionBirthDefect
 Parent: Condition
 Id: ee-vris-condition-birth-defect
 Title: "Condition: EE VRIS Birth Defect"
-Description: "Congenital birth defect of newborn child. (ee Lapse väärarend.)"
+Description: "Congenital birth defect of newborn child. (ee Lapse väärarend. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"
 * ^status = #draft
 
 * clinicalStatus 1..1

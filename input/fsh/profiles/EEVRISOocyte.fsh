@@ -20,13 +20,13 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     ExtensionEEVRISThawing named thawing 0..1
 
 * extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
-* extension[cryopreservationReason] ^short = "Külmutamise põhjus"
+* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus. Nt meditsiiniline, mittemeditsiiniline jne)"
 //* extension[cellOrigin] ^short = "Suguraku päritolu roll. SIIA see kas on enda tarbeks või doonorlusesk!"
-* extension[recipient] ^short = "Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga."
-* extension[oocyteOrigin] ^short = "Munaraku päritolu"
-* extension[oocyteType] ^short = "Munaraku tüüp"
+* extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga.)"
+* extension[oocyteOrigin] ^short = "(ee Munaraku päritolu. Nt patsiendi munarakk, PA munarakk jne)"
+* extension[oocyteType] ^short = "(ee Munaraku tüüp. nt viljastamise päeval hangitud, külmutatud-sulatatud jne)"
 * extension[intendedUse] ^short = "(ee Munaraku kasutusotstarve doonorluseks või enda tarbeks)"
-* extension[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus)"
+* extension[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus. Nt onkoloogiline, sooline üleminek jne)"
 * extension[thawing] ^short = "(ee Sulatamine)"
 * productCategory 0..0
 * productCode 0..1

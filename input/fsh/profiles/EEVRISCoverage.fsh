@@ -2,7 +2,7 @@ Profile: EEVRISCoverage
 Parent: Coverage
 Id: ee-vris-coverage
 Title: "Coverage: EE VRIS Coverage"
-Description: "Coverage profile for fertility treatment in Estonian VRIS. Identifies the payer of treatment (Health Insurance Fund or self-pay). (ee Viljatusravi rahastamise allikas, Tervisekassa või omaosalus)"
+Description: "Coverage profile for fertility treatment in Estonian VRIS. Identifies the payer of treatment (Health Insurance Fund or self-pay). (ee Viljatusravi rahastamise allikas, Tervisekassa või omaosalus. KAS teeme selle profiiliga või lihtsa extensioni?)"
 * identifier 0..*
 * identifier ^short = "(ee Kindlustuse identifikaator)"
 

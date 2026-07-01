@@ -2,7 +2,7 @@ Profile: EEVRISConditionTreatmentComplication
 Parent: Condition
 Id: ee-vris-condition-treatment-complication
 Title: "Condition: EE VRIS Fertility Treatment Complication"
-Description: "Complication related to fertility treatment. (ee Viljatusraviga seotud (haiglaravi vajavad?) tüsistused.)"
+Description: "Complication related to fertility treatment. (ee Viljatusraviga seotud (haiglaravi vajavad?) tüsistused. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"
 * ^status = #draft
 
 * identifier 0..*
