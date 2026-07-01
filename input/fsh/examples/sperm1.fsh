@@ -4,7 +4,7 @@ Usage: #example
 Description: "TEST Example of donor cell (sperm)"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"
 * extension.url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
-* extension.valueDate = "2025-02-20"
+* extension.valueDateTime = "2025-02-20"
 * productCode = $biological-material-type#sperm "Sperma"
 * productStatus = #available
 * collection.source = Reference(Patient/patientDonorMale)

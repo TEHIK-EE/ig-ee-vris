@@ -8,7 +8,7 @@ Usage: #example
 * status = #active
 * description = "Pakend sisaldab 3 krüosäilitatud sperma doosi."
 * packaging.type.text = "Krüosäilitamise konteiner"
-* packaging.containedItem[0].item = Reference(BiologicallyDerivedProduct/donor-cell1)
+* packaging.containedItem[0].item = Reference(BiologicallyDerivedProduct/sperm1)
 * packaging.containedItem[0].amount.value = 3
 //* packaging.containedItem[0].amount.unit = "doos"
 //* packaging.containedItem[0].amount.system = "http://unitsofmeasure.org"

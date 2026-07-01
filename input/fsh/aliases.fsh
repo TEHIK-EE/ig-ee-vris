@@ -49,6 +49,7 @@ Alias: $additional-identifier = http://hl7.org/fhir/StructureDefinition/addition
 Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
 Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-fertility-treatment-component
 Alias: $RHK-10 = https://fhir.ee/ValueSet/rhk-10
+Alias: $RHK-10-CS = https://fhir.ee/CodeSystem/rhk-10
 Alias: $indication-category = https://fhir.ee/ValueSet/vris-fertility-indication-category
 
 Alias: $patient-identifier-domain-VS = https://fhir.ee/ValueSet/patsiendi-identifikaatorite-domeen

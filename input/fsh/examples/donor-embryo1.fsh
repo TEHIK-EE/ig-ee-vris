@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example of donor embryo"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"
 * extension[0].url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
-* extension[=].valueDate = "2025-02-20"
+* extension[=].valueDateTime = "2025-02-20"
 //* extension[+].url = "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference"
 //* extension[=].valueReference = Reference(Patient/patientDonorMale)
 //* productCategory.system = "http://hl7.org/fhir/product-category"

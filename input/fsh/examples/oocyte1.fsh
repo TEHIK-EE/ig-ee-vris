@@ -4,7 +4,7 @@ Usage: #example
 Description: "TEST Example of donor cell (oocyte)"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"
 * extension.url = "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"
-* extension.valueDate = "2025-02-20"
+* extension.valueDateTime = "2025-02-20"
 //* productCategory.system = "http://hl7.org/fhir/product-category"
 //* productCategory.code = #cells
 * productCode = $biological-material-type#oocyte "Oocyte"

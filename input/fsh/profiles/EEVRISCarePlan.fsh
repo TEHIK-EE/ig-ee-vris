@@ -24,7 +24,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * encounter 0..1
 * encounter only Reference(EEVRISEncounter)
-* encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Ja läbi Encounterite tekib (eestaid)kestev EoC, mis seob kõik kokku. Encounter-EoC-teenus, siis kui valmis!)"
+* encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Ja läbi Encounterite tekib (aastaid?) kestev EoC, mis seob kõik kokku. Encounter-EoC-teenus, siis kui valmis!)"
 * period 0..1
 * period ^short = "(ee Tsükli alguskuupäev. KAS lõppu pole vaja?)"
 * period.start 1..1
@@ -53,7 +53,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * supportingInfo[partner] ^short = "(ee Partneri viide, RelatedPerson või Patient)"
 
 * supportingInfo[coverage] only Reference(EEVRISCoverage)
-* supportingInfo[coverage] ^short = "(ee Rahastusallika viide, kui on Tervisekassa rahastatud)"
+* supportingInfo[coverage] ^short = "(ee Rahastusallika viide, kui on Tervisekassa rahastatud. KAS selle asemel võiks teha extensioni?)"
 
 * supportingInfo[other] only Reference(Resource)
 * supportingInfo[other] ^short = "(ee Muud lisaviited vajadusel)"
@@ -69,8 +69,8 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
     procedure 0..* and
     observation 0..*
 * activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
-* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure)
-* activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol)
+* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization)
+* activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol or EEVRISObservationFertilizationCounts or EEVRISObservationNeonatalIntensiveCare)
 * activity.extension 0..*
 * activity.modifierExtension 0..*
 //* activity.performedActivity 0..*
