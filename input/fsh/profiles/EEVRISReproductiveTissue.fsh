@@ -39,20 +39,20 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
     cellOriginRole 0..1 and
     collectionMethod 0..1
 
-* property[fragmentCount] ^short = "(ee Koetükkide arv)"
+* property[fragmentCount].value[x] ^short = "(ee Koetükkide arv)"
 * property[fragmentCount].type.coding = $vris-property-type#fragment-count
 * property[fragmentCount].value[x] only integer
 
-* property[frozenFragmentCount] ^short = "(ee Külmutatud koetükkide arv)"
+* property[frozenFragmentCount].value[x] ^short = "(ee Külmutatud koetükkide arv)"
 * property[frozenFragmentCount].type.coding = $vris-property-type#frozen-fragment-count
 * property[frozenFragmentCount].value[x] only integer
 
-* property[cellOriginRole] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
+* property[cellOriginRole].value[x] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
 * property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
 * property[cellOriginRole].value[x] only CodeableConcept
 * property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
 
-* property[collectionMethod] ^short = "(ee Koe kogumise meetod, nt biopsia)"
+* property[collectionMethod].value[x] ^short = "(ee Koe kogumise meetod, nt biopsia)"
 * property[collectionMethod].type.coding = $vris-property-type#collection-method
 * property[collectionMethod].value[x] only CodeableConcept
 * property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
