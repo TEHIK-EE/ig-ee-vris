@@ -1,15 +1,15 @@
 [//]: # (This is sample page #1 REPLACE_ME: Replace or remove according to your needs)
 ### Paragraph #1 
 
-#### Mermaid diagram
+#### TEST diagram
 Sample diagram using [mermaid](https://mermaid.js.org/) syntax:
 
 
 ```mermaid
 graph TD
-    ROOT -->|text| ABC
-    ABC -->|text| DDD
-    ABC -->|exmplanations| BBB
+    Viljatusravi saav naine -->|tuleb kliinikusse| Saab ravi
+    Saab ravi -->|õnnestub| sünnib laps
+    Saab ravi -->|ei õnnestu| teeb uue tsükli
 ```
 
 #### PlantUML diagram
