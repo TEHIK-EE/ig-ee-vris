@@ -10,24 +10,13 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
-//    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
-    ExtensionEEVRISCollectionMethod named collection 0..1 and 
     $intended-recipient named recipient 0..1 and
-    ExtensionEEVRISOocyteOrigin named oocyteOrigin 0..1 and
-    ExtensionEEVRISOocyteType named oocyteType 0..1 and    
-    ExtensionEEVRISOocyteIntendedUse named intendedUse 0..1 and
-    ExtensionEEVRISFertilityPreservationReason named preservationReason 0..1 and
     ExtensionEEVRISThawing named thawing 0..1
 
-* extension[cryopreservationDate] ^short = "Külmutamise kuupäev"
-* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus. Nt meditsiiniline, mittemeditsiiniline jne)"
-//* extension[cellOrigin] ^short = "Suguraku päritolu roll. SIIA see kas on enda tarbeks või doonorlusesk!"
-* extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga.)"
-* extension[oocyteOrigin] ^short = "(ee Munaraku päritolu. Nt patsiendi munarakk, PA munarakk jne)"
-* extension[oocyteType] ^short = "(ee Munaraku tüüp. nt viljastamise päeval hangitud, külmutatud-sulatatud jne)"
-* extension[intendedUse] ^short = "(ee Munaraku kasutusotstarve doonorluseks või enda tarbeks)"
-* extension[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus. Nt onkoloogiline, sooline üleminek jne)"
-* extension[thawing] ^short = "(ee Sulatamine)"
+* extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
+* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
+* extension[recipient] ^short = "(ee Retsipiendi viide, kui on määratud)"
+* extension[thawing] ^short = "(ee Sulatamise kuupäev ja arv)"
 * productCategory 0..0
 * productCode 0..1
 * productCode from $biological-material-type-VS
@@ -47,24 +36,56 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property contains
     donatedCount 0..1 and
     frozenCount 0..1 and
-    metaPhase2count 0..1
-* property[donatedCount] ^short = "Annetatud/saadud ühikute arv"
-* property[donatedCount].type.coding from $vris-property-type1-VS
-* property[donatedCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
+    metaPhase2Count 0..1 and
+    cellOriginRole 0..1 and
+    collectionMethod 0..1 and
+    oocyteOrigin 0..1 and
+    oocyteType 0..1 and
+    intendedUse 0..1 and
+    preservationReason 0..1
+
+* property[donatedCount] ^short = "(ee Annetatud/saadud munarakkude arv)"
+* property[donatedCount].type.coding = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
-//* property[frozenCount] ^short = "Külmutatud dooside/ühikute arv"
-//* property[frozenCount].type.coding.code = #frozen-dose-count
-//* property[frozenCount].value[x] only integer
-* property[frozenCount] ^short = "Külmutatud rakkude arv."
-* property[frozenCount] ^definition = "Mnarakkude puhul külmutatud rakkude arv."
-* property[frozenCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
-* property[frozenCount].type.coding from $vris-property-type2-VS
+
+* property[frozenCount] ^short = "(ee Külmutatud munarakkude arv)"
+* property[frozenCount].type.coding = $vris-property-type#frozen-count
 * property[frozenCount].value[x] only integer
-* property[metaPhase2count] ^short = "Metafaas II (MII) munarakkude arv"
-* property[metaPhase2count] ^definition = "Metafaas II (MII) munarakkude arv"
-* property[metaPhase2count].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
-* property[metaPhase2count].type.coding from $vris-property-type2-VS
-* property[metaPhase2count].value[x] only integer
+
+* property[metaPhase2Count] ^short = "(ee Metafaas II (MII) munarakkude arv)"
+* property[metaPhase2Count].type.coding = $vris-property-type#meta-phase-2-count
+* property[metaPhase2Count].value[x] only integer
+
+* property[cellOriginRole] ^short = "(ee Munaraku päritolu roll: enda tarbeks / doonorluseks / anonüümne jne)"
+* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
+* property[cellOriginRole].value[x] only CodeableConcept
+* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+
+* property[collectionMethod] ^short = "(ee Munaraku kogumise meetod)"
+* property[collectionMethod].type.coding = $vris-property-type#collection-method
+* property[collectionMethod].value[x] only CodeableConcept
+* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
+
+* property[oocyteOrigin] ^short = "(ee Munaraku päritolu: patsiendi enda munarakk, PA munarakk jne)"
+* property[oocyteOrigin].type.coding = $vris-property-type#oocyte-origin
+* property[oocyteOrigin].value[x] only CodeableConcept
+* property[oocyteOrigin].valueCodeableConcept from $vris-oocyte-origin (required)
+
+* property[oocyteType] ^short = "(ee Munaraku tüüp: viljastamise päeval hangitud / külmutatud-sulatatud jne)"
+* property[oocyteType].type.coding = $vris-property-type#oocyte-type
+* property[oocyteType].value[x] only CodeableConcept
+* property[oocyteType].valueCodeableConcept from $vris-oocyte-type (required)
+
+* property[intendedUse] ^short = "(ee Munaraku kasutusotstarve: doonorluseks või enda tarbeks)"
+* property[intendedUse].type.coding = $vris-property-type#intended-use
+* property[intendedUse].value[x] only CodeableConcept
+* property[intendedUse].valueCodeableConcept from $vris-oocyte-intended-use (required)
+
+* property[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus: onkoloogiline, sooline üleminek jne)"
+* property[preservationReason].type.coding = $vris-property-type#preservation-reason
+* property[preservationReason].value[x] only CodeableConcept
+* property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
+
 * parent 0..0
 * request 0..0
 * division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust? Nt kui osa munarakke külmutati ja osa kasutati värskelt vm, kas siis saaks sellega eristada?"

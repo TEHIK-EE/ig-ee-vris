@@ -10,19 +10,19 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
-    ExtensionEEVRISCellUsageState named usageState 0..1 and 
-    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
-    ExtensionEEVRISCollectionMethod named collection 0..1 and
-    $intended-recipient named recipient 0..1 and 
-    ExtensionEEVRISSpermDonorStimulationMethod named donorStimulationMethod 0..1
+//    ExtensionEEVRISCellUsageState named usageState 0..1 and 
+//    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+//    ExtensionEEVRISCollectionMethod named collection 0..1 and
+    $intended-recipient named recipient 0..1
+//    ExtensionEEVRISSpermDonorStimulationMethod named donorStimulationMethod 0..1
 
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
 * extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
-* extension[collection] ^short = "(ee Suguraku (sperma) KOGUMISE meetod)"
-* extension[cellOrigin] ^short = "(ee Suguraku päritolu roll, partner-annetaja, mittepartner jne)"
+//* extension[collection] ^short = "(ee Suguraku (sperma) KOGUMISE meetod)"
+//* extension[cellOrigin] ^short = "(ee Suguraku päritolu roll, partner-annetaja, mittepartner jne)"
 * extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga.)"
-* extension[usageState] ^short = "(ee SAAMISE meetod. Kas värske v sulatatud jne)"
-* extension[donorStimulationMethod] ^short = "(ee Mehe stimulatsiooni meetod (nt follitropiin jne))"
+//* extension[usageState] ^short = "(ee SAAMISE meetod. Kas värske v sulatatud jne)"
+//* extension[donorStimulationMethod] ^short = "(ee Mehe stimulatsiooni meetod (nt follitropiin jne))"
 //* extension[oocyteOrigin] ^short = "Munaraku päritolu"
 //* extension[oocyteType] ^short = "Munaraku tüüp"
 * productCategory 0..0
@@ -44,19 +44,33 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * property ^slicing.description = "Characteristics of biologic material. (ee Bioloogilise materjali omadused)"
 * property contains
     donatedCount 0..1 and
-    frozenCount 0..1 
-* property[donatedCount] ^short = "Annetatud dooside arv"
-* property[donatedCount].type.coding from $vris-property-type1-VS
-* property[donatedCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
+    frozenCount 0..1 and
+    cellOriginRole 0..1 and
+    collectionMethod 0..1 and
+    usageState 0..1 and
+    donorStimulationMethod 0..1
+
+* property[donatedCount].type.coding = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
-//* property[frozenCount] ^short = "Külmutatud dooside/ühikute arv"
-//* property[frozenCount].type.coding.code = #frozen-dose-count
-//* property[frozenCount].value[x] only integer
-* property[frozenCount] ^short = "Külmutatud spermadooside arv"
-//* property[frozenCount] ^definition = "Sperma ja munarakkude puhul külmutatud dooside/rakkude arv."
-* property[frozenCount].type.coding.code ^short = "olenevalt sugurakust on siin teatud kindel kood"
-* property[frozenCount].type.coding from $vris-property-type2-VS
+
+* property[frozenCount].type.coding = $vris-property-type#frozen-count
 * property[frozenCount].value[x] only integer
+
+* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
+* property[cellOriginRole].value[x] only CodeableConcept
+* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+
+* property[collectionMethod].type.coding = $vris-property-type#collection-method
+* property[collectionMethod].value[x] only CodeableConcept
+* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
+
+* property[usageState].type.coding = $vris-property-type#usage-state
+* property[usageState].value[x] only CodeableConcept
+* property[usageState].valueCodeableConcept from $vris-cell-usage-state (required)
+
+* property[donorStimulationMethod].type.coding = $vris-property-type#donor-stimulation-method
+* property[donorStimulationMethod].value[x] only CodeableConcept
+* property[donorStimulationMethod].valueCodeableConcept from $vris-sperm-donor-stimulation-method (required)
 * parent 0..0
 * request 0..0
 * division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust?"

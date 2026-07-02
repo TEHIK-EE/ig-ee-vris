@@ -29,7 +29,7 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 * collection.source 1..
 * collection.source only Reference($vris-donor)
 * collection.source ^short = "(ee Doonori viide! NB kas seda on vaja? Kui parent viitab sperma ja munaraku doonoritele?)"
-* property.type from $vris-property-type-VS
+* property.type from $vris-property-type
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open

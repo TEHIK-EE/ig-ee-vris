@@ -1,7 +1,7 @@
 Instance: practitionerrole-doctor
 InstanceOf: PractitionerRole
 Usage: #example
-Description: "Example of doctor (PractitionerRole D99876) working at PERH"
+Description: "Example of doctor (PractitionerRole D99876) working at NovaVita"
 * language = #et
 * active = true
 * identifier.value = "D99876"

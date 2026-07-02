@@ -8,8 +8,8 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $sugu = https://fhir.ee/CodeSystem/administratiivne-sugu
 Alias: $product-category = http://hl7.org/fhir/product-category
-Alias: $vris-property-type = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
-Alias: $vris-property-type-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
+Alias: $vris-property-type-CS = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
+Alias: $vris-property-type = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
 Alias: $vris-property-type1-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-annetus
 Alias: $vris-property-type2-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-omadus
 
@@ -71,3 +71,14 @@ Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-cycle-
 Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-oocyte-intended-use
 Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-fertility-preservation-reason
 Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-sperm-donor-stimulation-method
+
+
+Alias: $vris-cell-origin-role = https://fhir.ee/vris/ValueSet/vris-cell-origin-role
+Alias: $vris-collection-method = https://fhir.ee/vris/ValueSet/vris-collection-method
+Alias: $vris-cell-usage-state = https://fhir.ee/vris/ValueSet/vris-cell-usage-state
+
+Alias: $vris-cell-preservation-reason = https://fhir.ee/vris/ValueSet/vris-cell-preservation-reason
+Alias: $vris-fertilization-method = https://fhir.ee/vris/ValueSet/vris-fertilization-method
+
+Alias: $vris-oocyte-origin = https://fhir.ee/vris/ValueSet/vris-oocyte-origin
+Alias: $vris-oocyte-type = https://fhir.ee/vris/ValueSet/vris-oocyte-type
