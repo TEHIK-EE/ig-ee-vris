@@ -8,7 +8,7 @@ Description: "Example of a female fertility treatment indication: anovulation di
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code = $RHK-10-CS#N97.0 "Anovulatsiooniga seotud naisinfertiiilsus"
-* subject = Reference(patientDonorFemale)
+* subject = Reference(patientFemale)
 * onsetDateTime = "2023-06-15"
 * recordedDate = "2023-06-20"
 //* participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUT

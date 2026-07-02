@@ -11,7 +11,7 @@ Description: "Example of donor embryo"
 //* productCategory.code = #cells
 * productCode = $biological-material-type#embryo "Embrüo(d)"
 * productStatus = #available
-* collection.source = Reference(Patient/patientDonorFemale)
+* collection.source = Reference(Patient/patientFemale)
 * property[0].type.coding.system = $vris-property-type
 * property[=].type.coding.code = #donated-count
 * property[=].type.coding.display = "Annetatud arv"

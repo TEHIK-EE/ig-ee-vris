@@ -1,4 +1,4 @@
-Instance: patientDonorFemale
+Instance: patientFemale
 InstanceOf: Patient
 Usage: #example
 Description: "Example of verified female patient"

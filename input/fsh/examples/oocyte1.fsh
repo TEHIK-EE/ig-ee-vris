@@ -9,7 +9,7 @@ Description: "TEST Example of donor cell (oocyte)"
 //* productCategory.code = #cells
 * productCode = $biological-material-type#oocyte "Oocyte"
 * productStatus = #available
-* collection.source = Reference(Patient/patientDonorFemale)
+* collection.source = Reference(Patient/patientFemale)
 * property[0].type.coding.system = $vris-property-type
 * property[=].type.coding.code = #donated-count
 * property[=].type.coding.display = "Annetatud arv"
