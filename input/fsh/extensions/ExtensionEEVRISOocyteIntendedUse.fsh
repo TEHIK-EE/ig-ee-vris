@@ -1,6 +1,6 @@
 Extension: ExtensionEEVRISOocyteIntendedUse
 Id: ee-vris-oocyte-intended-use
-Title: "VRIS Oocyte Intended Use"
+Title: "Oocyte Intended Use"
 Description: "Indicates whether the oocyte is intended for donation or for self-use. (ee Munaraku kasutusotstarve, doonorluseks või enda tarbeks.)"
 * ^context.expression = "BiologicallyDerivedProduct"
 * ^context.type = #element

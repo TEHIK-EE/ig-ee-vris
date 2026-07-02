@@ -1,6 +1,6 @@
 Extension: ExtensionEEVRISSpermDonorStimulationMethod
 Id: ee-vris-sperm-donor-stimulation-method
-Title: "VRIS Sperm Donor Stimulation Method"
+Title: "Sperm Donor Stimulation Method"
 Description: "Hormonal stimulation method used for sperm donor prior to sperm collection. (ee Seemnerakkude annetaja stimulatsiooni meetod.)"
 * ^url = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm-donor-stimulation-method"
 * ^status = #draft

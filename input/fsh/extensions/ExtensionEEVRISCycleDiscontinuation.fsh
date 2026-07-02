@@ -1,6 +1,6 @@
 Extension: ExtensionEEVRISCycleDiscontinuationReason
 Id: ee-vris-cycle-discontinuation-reason
-Title: "VRIS Cycle Discontinuation Reason"
+Title: "Cycle Discontinuation Reason"
 Description: "Reason for fertility treatment cycle discontinuation. (ee Ravitsükli katkestamise põhjus.)"
 Context: CarePlan
 * ^context.type = #element
