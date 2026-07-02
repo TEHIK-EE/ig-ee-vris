@@ -5,19 +5,15 @@ Title: "BiologicallyDerivedProduct: EE VRIS Reproductive Tissue"
 Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks.)"
 
 * ^status = #active
-* . ^short = "Bioloogiline materjal, munandi või munasarja kude."
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
-    ExtensionEEVRISCollectionMethod named collection 0..1 and 
-    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
     $intended-recipient named recipient 0..1
+
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
 * extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus, nt enne onkoloogilist ravi)"
-* extension[collection] ^short = "(ee Koe kogumise meetod, nt biopsia)"
-* extension[cellOrigin] ^short = "(ee Koe päritolu roll)"
-* extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga. Tavaliselt on retsipient sama isik kes doonor (autoloogne säilitamine).)"
+* extension[recipient] ^short = "(ee Retsipiendi viide. Tavaliselt on retsipient sama isik kes doonor (autoloogne säilitamine).)"
 
 * productCategory 0..1
 * productCategory ^short = "(ee Toote kategooria, kude (tissue) KAS SEDA ON  VAJA????)"
@@ -39,18 +35,27 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property ^slicing.description = "(ee Bioloogilise materjali (koe) omadused)"
 * property contains
     fragmentCount 0..1 and
-    frozenFragmentCount 0..1
+    frozenFragmentCount 0..1 and
+    cellOriginRole 0..1 and
+    collectionMethod 0..1
 
 * property[fragmentCount] ^short = "(ee Koetükkide arv)"
-* property[fragmentCount].type.coding from $vris-property-type1-VS
-* property[fragmentCount].type.coding.code ^short = "(ee Olenevalt koest on siin teatud kindel kood)"
+* property[fragmentCount].type.coding = $vris-property-type#fragment-count
 * property[fragmentCount].value[x] only integer
 
 * property[frozenFragmentCount] ^short = "(ee Külmutatud koetükkide arv)"
-* property[frozenFragmentCount].type.coding from $vris-property-type2-VS
-* property[frozenFragmentCount].type.coding.code ^short = "(ee Olenevalt koest on siin teatud kindel kood)"
+* property[frozenFragmentCount].type.coding = $vris-property-type#frozen-fragment-count
 * property[frozenFragmentCount].value[x] only integer
 
+* property[cellOriginRole] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
+* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
+* property[cellOriginRole].value[x] only CodeableConcept
+* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+
+* property[collectionMethod] ^short = "(ee Koe kogumise meetod, nt biopsia)"
+* property[collectionMethod].type.coding = $vris-property-type#collection-method
+* property[collectionMethod].value[x] only CodeableConcept
+* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
 * parent 0..0
 * request 0..0
 * division ^short = "(ee KAS seda saaks kasutada osaproovide/koetükkide identifikaatoriks?)"

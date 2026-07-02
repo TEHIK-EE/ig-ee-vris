@@ -1,4 +1,4 @@
-Extension: ExtensionEEVRISOocyteType
+/*Extension: ExtensionEEVRISOocyteType
 Id: ee-vris-oocyte-type
 Title: "Oocyte type"
 Description: "Extension for oocyte type. (ee Munaraku tüüp.)|Viljastamise päeval hangitud|Külmutatud-sulatatud|Viljastamise päeval hangitud ja külmutatud-sulatatud|"
@@ -10,3 +10,4 @@ Context: BiologicallyDerivedProduct
 //* url = "https://fhir.ee/StructureDefinition/fertility-cryopreservation-date" (exactly)
 * value[x] 1..1
 * value[x] only CodeableConcept
+*/

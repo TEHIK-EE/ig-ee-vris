@@ -1,4 +1,4 @@
-Extension: ExtensionEEVRISSpermDonorStimulationMethod
+/*Extension: ExtensionEEVRISSpermDonorStimulationMethod
 Id: ee-vris-sperm-donor-stimulation-method
 Title: "Sperm Donor Stimulation Method"
 Description: "Hormonal stimulation method used for sperm donor prior to sperm collection. (ee Seemnerakkude annetaja stimulatsiooni meetod.)"
@@ -14,3 +14,4 @@ Description: "Hormonal stimulation method used for sperm donor prior to sperm co
 * value[x] only CodeableConcept
 * valueCodeableConcept from $vris-sperm-donor-stimulation-method (required)
 * valueCodeableConcept ^short = "(ee Stimulatsiooni meetod, Follitropiin / Kooriongonadotropiin / Follitropiin+Kooriongonadotropiin / Muu)"
+*/

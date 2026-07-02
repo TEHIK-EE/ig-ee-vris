@@ -49,6 +49,12 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
     collectionMethod 0..1 and
     usageState 0..1 and
     donorStimulationMethod 0..1
+* property[donatedCount] ^short = "(ee Annetatud dooside arv)"
+* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
+* property[cellOriginRole] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
+* property[collectionMethod] ^short = "(ee Sperma kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
+* property[usageState] ^short = "(ee Sperma SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
+* property[donorStimulationMethod] ^short = "(ee Mehe stimulatsiooni meetod: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
 
 * property[donatedCount].type.coding = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
