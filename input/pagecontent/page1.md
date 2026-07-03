@@ -7,9 +7,9 @@ Sample diagram using [mermaid](https://mermaid.js.org/) syntax:
 
 ```mermaid
 graph TD
-    Viljatusravi saav naine -->|tuleb kliinikusse| Saab ravi
-    Saab ravi -->|õnnestub| sünnib laps
-    Saab ravi -->|ei õnnestu| teeb uue tsükli
+    ViljatusraviSaavNaine -->|tuleb kliinikusse| SaabRavi
+    SaabRavi -->|õnnestub| synnibLaps
+    SaabRavi -->|ei õnnestu| teebUueTsykli
 ```
 
 #### PlantUML diagram
