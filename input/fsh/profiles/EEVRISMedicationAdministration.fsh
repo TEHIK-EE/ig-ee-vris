@@ -6,22 +6,24 @@ Description: "Profile for medication administration during infertility procedure
 * identifier 0..*
 * basedOn 0..*
 * basedOn ^short = "(ee Siia tuleb viide ravitsüklile, millest tuleneb ravimi(te) manustamine.)"
+* basedOn only Reference(EEVRISCarePlan)
 * partOf 0..*
 * partOf ^short = "(ee Juhul kui ravimi manustamine on mingi protseduuri osa, siis siia viide sellele protseduurile.)"
+* partOf only Reference(EEVRISProcedure)
 * status 1..1
 * statusReason 0..*
 * category 0..*
 * medication 1..1
 * medication ^short = "(ee KAS paneme viite loendile ja ATC? seda pole termserveris... tuleb MedIn liidestus teha? Või uus LOEND teatud kindlatest ravimitest... SNOMED?)"
 * subject 1..1
-* subject ^short = "(ee Siia PATSIENT, kes sai ravimit.)"
+* subject ^short = "(ee Siia PATSIENDi viide, kes sai ravimit.)"
 * encounter 0..1
 * supportingInformation 0..*
 * occurence[x] 1..1
 * occurence[x] ^short = "(ee Aeg, millal ravim manustati.)"
 * recorded 0..1
-* isSubPotent 0..1
-* subPotentReason 0..*
+* isSubPotent 0..0
+* subPotentReason 0..0
 * performer 0..*
 * performer.id 0..1
 * performer.extension 0..*

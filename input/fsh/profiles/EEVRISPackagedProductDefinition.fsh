@@ -8,7 +8,7 @@ Description: "Profile for packaged doses of reproductive cells. (ee Suguraku pak
 * type 0..1
 * packageFor 0..0
 * status 0..1
-* status ^short = "(ee unavailable võiks olla seotud broneeringuga?)"
+* status ^short = "(ee KUI viidatud BDP on |unavailable| siis see võiks olla seotud broneeringuga?)"
 * statusDate 0..1
 * containedItemQuantity 0..0
 * description 0..1

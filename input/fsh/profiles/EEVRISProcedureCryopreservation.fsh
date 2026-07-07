@@ -3,7 +3,6 @@ Parent: EEVRISProcedure
 Id: ee-vris-procedure-cryopreservation
 Title: "Procedure: EE VRIS Cryopreservation"
 Description: "Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur.)"
-* status ^short = "(ee Protseduuri staatus)"
 * category 1..1
 * category = $vris-procedure-category#cryopreservation
 * category ^short = "(ee Fix kood: krüosäilitamine. NB! LOEND puudu!)"
@@ -29,6 +28,6 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * outcome ^short = "(ee Külmutamise tulemus, edukas / ebaõnnestunud / osaliselt edukas (NB! LOEND puudu!))"
 * used 1..*
 * used ^short = "(ee Viide külmutatud bioloogilisele materjalile: sperma / munarakk / embrüo)"
-* used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte)
+* used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte or EEVRISReproductiveTissue)
 * note 0..*
 * note ^short = "(ee Lisainfo külmutamise kohta)"

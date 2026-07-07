@@ -14,13 +14,15 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * basedOn 0..*
 * basedOn ^short = "KAS SIIA viide varasematele tsükklitele? SEOS?"
 * replaces 0..*
-* replaces
+* replaces ^short = "(ee Sii tuleb viide eelmisele tsükklile mida praegune tsükkel asendab.)"
 * partOf 0..*
+* partOf ^short = "(ee Siia tuleb viide kui tsükkel on osa SUUREMASt peamisest viljatusraviplaanist.)"
 * status 1..1
 * intent 1..1
-* category 0..*
+* category 1..*
 * category ^short = "(ee Siia LOEND, mis tüüpi ravitsükkel on. |Värske tsükkel|Külmutatud embrüo siirdamine|Emakasisene inseminatsioon (IUI))"
 * title 0..1
+* title ^short = "(ee Vabatekstiline inimloetav NIMETUS tsüklile.)"
 * description 0..1
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
@@ -28,7 +30,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * encounter only Reference(EEVRISEncounter)
 * encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Ja läbi Encounterite tekib (aastaid?) kestev EoC, mis seob kõik kokku. Encounter-EoC-teenus, siis kui valmis!)"
 * period 0..1
-* period ^short = "(ee Tsükli alguskuupäev. KAS lõppu pole vaja?)"
+* period ^short = "(ee Tsükli alguskuupäev on kohustuslik. KAS lõppu pole vaja?)"
 * period.start 1..1
 * created 0..1
 * created ^short = "(ee KAS sed on vaja, dokumenteerimise alguspäev?)"
@@ -39,26 +41,26 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * addresses 0..*
 * addresses only CodeableReference(EEVRISConditionFertilityIndicationFemale or EEVRISConditionFertilityIndicationMale)
 * supportingInfo 0..*
-* supportingInfo ^short = "(ee siia äkki partneri seos? VÕI Haigekassa rahastuse viide?)"
-* supportingInfo ^slicing.discriminator.type = #type
-* supportingInfo ^slicing.discriminator.path = "resolve()"
-* supportingInfo ^slicing.rules = #open
-* supportingInfo ^slicing.ordered = false
-* supportingInfo ^slicing.description = "(ee Lisateave partner, rahastusallikas vms)"
+//* supportingInfo ^short = "(ee siia äkki partneri seos? VÕI Haigekassa rahastuse viide?)"
+//* supportingInfo ^slicing.discriminator.type = #type
+//* supportingInfo ^slicing.discriminator.path = "resolve()"
+//* supportingInfo ^slicing.rules = #open
+//* supportingInfo ^slicing.ordered = false
+//* supportingInfo ^slicing.description = "(ee Lisateave partner, rahastusallikas vms)"
 
-* supportingInfo contains
-    partner 0..1 and
-    coverage 0..* and
-    other 0..*
+//* //supportingInfo contains
+//    partner 0..1 and
+//    coverage 0..* and
+//    other 0..*
 
-* supportingInfo[partner] only Reference(EEVRISRelatedPerson or EEVRISRecipient)
-* supportingInfo[partner] ^short = "(ee Partneri viide, RelatedPerson või Patient)"
+* supportingInfo only Reference(EEVRISRelatedPerson or EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
+* supportingInfo ^short = "(ee Partneri viide, RelatedPerson või Patient)"
 
-* supportingInfo[coverage] only Reference(EEVRISCoverage)
-* supportingInfo[coverage] ^short = "(ee Rahastusallika viide, kui on Tervisekassa rahastatud. KAS selle asemel võiks teha extensioni?)"
+//* supportingInfo[coverage] only Reference(EEVRISCoverage)
+//* supportingInfo[coverage] ^short = "(ee Rahastusallika viide, kui on Tervisekassa rahastatud. KAS selle asemel võiks teha extensioni?)"
 
-* supportingInfo[other] only Reference(Resource)
-* supportingInfo[other] ^short = "(ee Muud lisaviited vajadusel)"
+//* supportingInfo[other] only Reference(Resource)
+//* supportingInfo[other] ^short = "(ee Muud lisaviited vajadusel)"
 * goal 0..0
 * activity 0..*
 * activity ^short = "(ee Siin on (kõik) protseduurid, mida viljastumiseks TEHTI. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
