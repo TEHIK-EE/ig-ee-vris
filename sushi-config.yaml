@@ -161,6 +161,8 @@ groups:
       - StructureDefinition/ee-vris-observation-stimulation-protocol
       - StructureDefinition/ee-vris-observation-embryo-lifecycle-counts
       - StructureDefinition/ee-vris-observation-fertilization-counts
+      - StructureDefinition/ee-vris-observation-stimulation-protocol-embryo
+
 
 
 

@@ -7,6 +7,7 @@
 >
 # NB!  SNOMED koodid on enamjaolt placeholderid. KÕIK tuleb üle kontrollida! Loendite viited on kunstlikud, loendid on alles loomisel.
 
+
 [//]: # (REPLACE_ME: Should replace with domain specific introduction)
 ### Intro
 
