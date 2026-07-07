@@ -26,6 +26,7 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * component ^slicing.rules = #open
 * component contains
     ovarianStimulation 0..1 and
+    stimulationMethod 0..1 and
     preStimulationTreatment 0..1 and
     lhSuppressionProtocol 0..1 and
     gonadotropinUse 0..1 and
@@ -36,6 +37,11 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * component[ovarianStimulation] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
 * component[ovarianStimulation].code = $sct#732970000 //|Controlled ovarian stimulation (procedure)|
 * component[ovarianStimulation].value[x] only boolean
+
+* component[stimulationMethod] ^short = "(ee Viljatusravi saava naise stimulatsiooni meetod. NB! LOEND VAJA!)"
+* component[stimulationMethod].code.text = "TODO: SNOMED CT otsi 'ovarian stimulation method' / "
+* component[stimulationMethod].value[x] only CodeableConcept
+* component[stimulationMethod].valueCodeableConcept from $vris-female-stimulation-method-VS (required)
 
 * component[preStimulationTreatment] ^short = "(ee Stimulatsioonieelne ravi)"
 * component[preStimulationTreatment].code.text = "TODO: SNOMED CT otsi 'pre-stimulation treatment'"

@@ -82,3 +82,5 @@ Alias: $vris-fertilization-method = https://fhir.ee/vris/ValueSet/vris-fertiliza
 
 Alias: $vris-oocyte-origin = https://fhir.ee/vris/ValueSet/vris-oocyte-origin
 Alias: $vris-oocyte-type = https://fhir.ee/vris/ValueSet/vris-oocyte-type
+Alias: $vris-female-stimulation-method-VS = https://fhir.ee/vris/ValueSet/vris-female-stimulation-method
+Alias: $vris-preparation-protocol-VS = https://fhir.ee/vris/ValueSet/vris-preparation-protocol-VS

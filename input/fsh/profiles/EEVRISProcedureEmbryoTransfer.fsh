@@ -27,6 +27,7 @@ Description: "Procedure for embryo transfer to recipient. Records transfer date,
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "(ee Embrüo siirdamise kuupäev)"
 
+* complication only CodeableReference(EEVRISConditionTreatmentComplication)
 * performer 1..*
 * performer.actor 1..1
 
