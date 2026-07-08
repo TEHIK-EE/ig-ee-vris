@@ -22,23 +22,23 @@ Alias: $biological-material-type = https://fhir.ee/CodeSystem/vris-bioloogilise-
 Alias: $biological-material-type-VS = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-liik
 
 Alias: $obsCategory = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $appearance-CS = https://fhir.ee/CodeSystem/vris-physical-appearance-type
-Alias: $appearance = https://fhir.ee/ValueSet/vris-physical-appearance-type
-Alias: $eye-CS = https://fhir.ee/CodeSystem/vris-eye-color
-Alias: $eye = https://fhir.ee/ValueSet/vris-eye-color
-Alias: $hair-CS = https://fhir.ee/CodeSystem/vris-hair-color
-Alias: $hair = https://fhir.ee/ValueSet/vris-hair-color
-Alias: $skin-CS = https://fhir.ee/CodeSystem/vris-skin-color
-Alias: $skin = https://fhir.ee/ValueSet/vris-skin-color
-Alias: $body-CS = https://fhir.ee/CodeSystem/vris-body-structure
-Alias: $body = https://fhir.ee/ValueSet/vris-body-structure
+Alias: $appearance-CS = https://fhir.ee/CodeSystem/vris-valimuse-tyyp
+Alias: $appearance = https://fhir.ee/ValueSet/vris-valimuse-tyyp
+Alias: $eye-CS = https://fhir.ee/CodeSystem/vris-silmade-varvus
+Alias: $eye = https://fhir.ee/ValueSet/vris-silmade-varvus
+Alias: $hair-CS = https://fhir.ee/CodeSystem/vris-juuste-varvus
+Alias: $hair = https://fhir.ee/ValueSet/vris-juuste-varvus
+Alias: $skin-CS = https://fhir.ee/CodeSystem/vris-naha-varvus
+Alias: $skin = https://fhir.ee/ValueSet/vris-naha-varvus
+Alias: $body-CS = https://fhir.ee/CodeSystem/vris-kehaehitus
+Alias: $body = https://fhir.ee/ValueSet/vris-kehaehitus
 
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $relationship-type-VS = https://fhir.ee/ValueSet/isiku-seos-patsiendiga
 Alias: $relationship-relation-VS = https://fhir.ee/ValueSet/patsiendi-kontaktisikute-liigid
-Alias: $vris-donor-type-VS = https://fhir.ee/ValueSet/vris-donor-type
+Alias: $vris-donor-type-VS = https://fhir.ee/ValueSet/vris-doonori-tyyp
 
 Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship 
@@ -46,41 +46,43 @@ Alias: $intended-recipient = http://hl7.org/fhir/StructureDefinition/biologicall
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $additional-identifier = http://hl7.org/fhir/StructureDefinition/additionalIdentifier
 
-Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
-Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-fertility-treatment-component
+//Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
+
+Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-synnitusanamneesi-komponent
+Alias: $fertility-treatment-component-CS = https://fhir.ee/CodeSystem/vris-viljatusravi-komponent
 Alias: $RHK-10 = https://fhir.ee/ValueSet/rhk-10
 Alias: $RHK-10-CS = https://fhir.ee/CodeSystem/rhk-10
-Alias: $indication-category = https://fhir.ee/ValueSet/vris-fertility-indication-category
+Alias: $indication-category = https://fhir.ee/ValueSet/vris-naidustuse-kategooria
 
 Alias: $patient-identifier-domain-VS = https://fhir.ee/ValueSet/patsiendi-identifikaatorite-domeen
 Alias: $mpi-related-person = https://fhir.ee/mpi/StructureDefinition/ee-mpi-related-person
 Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 
-Alias: $vris-procedure-category = https://fhir.ee/ValueSet/vris-procedure-category
-Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-cryopreservation-code
-Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-cryopreservation-reason
-Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-cryopreservation-outcome
-Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-destruction-reason
+Alias: $vris-procedure-category = https://fhir.ee/ValueSet/vris-protseduuri-kategooria
+Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-kylmutamise-kood
+Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-kylmutamise-pohjus
+Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-kylmutamise-tulemus
+Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-havitamise-pohjus
 
-Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-pre-stimulation-treatment
-Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-lh-suppression-protocol
-Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-gonadotropin-use
-Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-oocyte-trigger
-Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteal-phase-support
-Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-cycle-discontinuation-reason
-Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-oocyte-intended-use
-Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-fertility-preservation-reason
-Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-sperm-donor-stimulation-method
+Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-stimulatsioonieelne-ravi
+Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-lh-supressiooni-protokoll
+Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-gonadotropiini-kasutus
+Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-munaraku-kypsemise-trigger
+Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteaalfaasi-toetus
+Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-tsykli-katkestamise-pohjus
+Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-munaraku-kasutusotstarve
+Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
+Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-spermadoonori-stimulatsiooni-meetod
 
 
-Alias: $vris-cell-origin-role = https://fhir.ee/vris/ValueSet/vris-cell-origin-role
-Alias: $vris-collection-method = https://fhir.ee/vris/ValueSet/vris-collection-method
-Alias: $vris-cell-usage-state = https://fhir.ee/vris/ValueSet/vris-cell-usage-state
+Alias: $vris-cell-origin-role = https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll
+Alias: $vris-collection-method = https://fhir.ee/ValueSet/vris-kogumise-meetod
+Alias: $vris-cell-usage-state = https://fhir.ee/ValueSet/vris-suguraku-saamise-meetod
 
-Alias: $vris-cell-preservation-reason = https://fhir.ee/vris/ValueSet/vris-cell-preservation-reason
-Alias: $vris-fertilization-method = https://fhir.ee/vris/ValueSet/vris-fertilization-method
+Alias: $vris-cell-preservation-reason = https://fhir.ee/ValueSet/vris-suguraku-sailitamise-pohjus
+Alias: $vris-fertilization-method = https://fhir.ee/ValueSet/vris-viljastamise-meetod
 
-Alias: $vris-oocyte-origin = https://fhir.ee/vris/ValueSet/vris-oocyte-origin
-Alias: $vris-oocyte-type = https://fhir.ee/vris/ValueSet/vris-oocyte-type
-Alias: $vris-female-stimulation-method-VS = https://fhir.ee/vris/ValueSet/vris-female-stimulation-method
-Alias: $vris-preparation-protocol-VS = https://fhir.ee/vris/ValueSet/vris-preparation-protocol-VS
+Alias: $vris-oocyte-origin = https://fhir.ee/ValueSet/vris-munaraku-paritolu
+Alias: $vris-oocyte-type = https://fhir.ee/ValueSet/vris-munaraku-tyyp
+Alias: $vris-female-stimulation-method-VS = https://fhir.ee/ValueSet/vris-naise-stimulatsiooni-meetod
+Alias: $vris-preparation-protocol-VS = https://fhir.ee/ValueSet/vris-ettevalmistuse-protokoll
