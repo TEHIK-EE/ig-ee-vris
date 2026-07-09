@@ -2,10 +2,10 @@ Profile: EEVRISSperm
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-sperm
 Title: "BiologicallyDerivedProduct: EE VRIS Sperm"
-Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
+Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 
 * ^status = #active
-* . ^short = "Bioloogiline materjal, sperma."
+* . ^short = "Bioloogiline materjal, Seemnerakud."
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
@@ -52,9 +52,9 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (sperma)"
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 * property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
 * property[cellOriginRole] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
-* property[collectionMethod] ^short = "(ee Sperma kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
-* property[usageState] ^short = "(ee Sperma SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
-* property[donorStimulationMethod] ^short = "(ee Mehe stimulatsiooni meetod: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
+* property[collectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
+* property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
+* property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja stimulatsioon: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
 
 * property[donatedCount].type.coding = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
