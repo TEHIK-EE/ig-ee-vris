@@ -5,7 +5,7 @@ Title: "SupplyDelivery: EE VRIS Biological material movement"
 Description: "Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja"
 * extension contains 
     ExtensionEEVRISSuppliedPackage named suppliedPackage 0..1
-* extension[suppliedPackage] ^short = "(ee KUI on vaja viidata pakendile.)"
+* extension[suppliedPackage] ^short = "(ee KUI on vaja viidata pakendile. Äkki saaks identifikaatorite järgi viidata? Või alati on üks BDP 1 pakend? Arutelukoht!)"
 * identifier 0..*
 * identifier ^short = "(ee Liikumise identifikaator. Selle järgi saab jälgida materjali. Varasemad materjali liikumised tulevad selle kaudu.)"
 * basedOn 0..0

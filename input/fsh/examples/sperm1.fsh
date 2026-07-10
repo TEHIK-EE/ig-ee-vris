@@ -1,4 +1,4 @@
-Instance: sperm1
+/*Instance: sperm1
 InstanceOf: BiologicallyDerivedProduct
 Usage: #example
 Description: "TEST Example of donor cell (sperm)"
@@ -16,3 +16,37 @@ Description: "TEST Example of donor cell (sperm)"
 * property[=].type.coding.code = #frozen-count
 * property[=].type.coding.display = "Külmutatud dooside arv"
 * property[=].valueInteger = 5
+*/
+Instance: sperm1
+InstanceOf: EEVRISSperm
+Usage: #example
+Description: "Example of donor spermn"
+* meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"
+* extension[cryopreservationDate].valueDateTime = "2025-02-20"
+* extension[cryopreservationReason].valueCodeableConcept.coding.system = $sct
+* extension[cryopreservationReason].valueCodeableConcept.coding.code = #TODO
+* extension[cryopreservationReason].valueCodeableConcept.coding.display = "For donation"
+* extension[recipient].valueReference = Reference(Patient/patientFemale)
+* productCode = $biological-material-type#sperm "Seemnerakud"
+* productStatus = #available
+* collection.source = Reference(Patient/patientDonorMale)
+* property[donatedCount].valueInteger = 4
+* property[frozenCount].valueInteger = 4
+* property[cellOriginRole].valueCodeableConcept.coding.system = $sct
+* property[cellOriginRole].valueCodeableConcept.coding.code = #TODO
+* property[cellOriginRole].valueCodeableConcept.coding.display = "Non-partner donor"
+
+* property[collectionMethod].valueCodeableConcept.coding.system = $sct
+* property[collectionMethod].valueCodeableConcept.coding.code = #TODO
+* property[collectionMethod].valueCodeableConcept.coding.display = "Ejaculation"
+
+* property[usageState].valueCodeableConcept.coding.system = $sct
+* property[usageState].valueCodeableConcept.coding.code = #TODO
+* property[usageState].valueCodeableConcept.coding.display = "Thawed from frozen"
+
+* property[donorStimulationMethod].valueCodeableConcept.coding.system = $sct
+* property[donorStimulationMethod].valueCodeableConcept.coding.code = #TODO
+* property[donorStimulationMethod].valueCodeableConcept.coding.display = "Follitropin + Chorionic gonadotropin"
+
+//* biologicalSourceEvent.identifier.system = https://fhir.ee/sid/vris/procedure
+//* biologicalSourceEvent.identifier.value = "sperm-collection-2025-02-20-001"
