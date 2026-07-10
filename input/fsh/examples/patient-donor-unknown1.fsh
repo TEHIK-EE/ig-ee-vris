@@ -28,7 +28,7 @@ Description: "Example of anonymous foreign sperm donor"
 * active = true
 * name[nickname].use = #nickname
 * name[nickname].text = "Doonor12345"
-* gender = #mees
+* gender = #male
 * birthDate = "1990-01-01"
 * birthDate.extension[age].valueAge.value = 35
 * birthDate.extension[age].valueAge.unit = "a"
