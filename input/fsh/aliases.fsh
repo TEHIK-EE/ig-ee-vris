@@ -46,7 +46,7 @@ Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship 
 Alias: $intended-recipient = http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-Alias: $additional-identifier = http://hl7.org/fhir/StructureDefinition/additionalIdentifier
+//Alias: $additional-identifier = http://hl7.org/fhir/StructureDefinition/additionalIdentifier
 
 //Alias: $obstetric-component-CS = https://fhir.ee/CodeSystem/vris-obstetric-component
 

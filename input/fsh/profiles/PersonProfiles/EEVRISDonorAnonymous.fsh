@@ -8,7 +8,7 @@ Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anonü�
 * extension contains
     ExtensionEEVRISCellOriginRole named role 0..1 and
     $nationality named nationality 0..1 and
-    $additional-identifier named additionalIdentifier 0..*
+    ExtensionEEVRISAdditionalIdentifier named additionalIdentifier 0..*
 * extension[nationality] ^short = "(ee RAHVUS)"
 * extension[additionalIdentifier] ^short = "(ee Kui on vaja rohkem kui 1 identifikaatorit)"
 * identifier ^short = "(ee Anonüümse patsiendi identifikaator, MR number või kliinikusisene kood)"
