@@ -53,4 +53,4 @@ Description: "Example of embryo"
 * parent[+] = Reference(oocyte1)
 * biologicalSourceEvent.system = "https://fhir.ee/sid/vris/procedure"
 * biologicalSourceEvent.value = "fertilization-2025-02-15-001"
-* processingFacility[0] = Reference(Organization/novaVita)
+* processingFacility[0] = Reference(Organization/organization-novavita1)
