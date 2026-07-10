@@ -17,7 +17,7 @@ Description: "Observation profile for recording characteristics of physical appe
 * note 
 * note ^short = "(ee Kui on midagi vaja veel lisada)"
 * component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "system"
+* component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false
 * component ^slicing.description = "Sliced by physical appearance characteristic. (ee NB! Loendi viited ja koodid EI OLE lõplikud!)"
