@@ -6,7 +6,7 @@ Alias: $vris-recipient = https://fhir.ee/vris/StructureDefinition/ee-vris-recipi
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
-Alias: $sugu = https://fhir.ee/CodeSystem/administratiivne-sugu
+Alias: $sugu = http://hl7.org/fhir/administrative-gender //https://fhir.ee/CodeSystem/administratiivne-sugu
 Alias: $product-category = http://hl7.org/fhir/product-category
 Alias: $vris-property-type-CS = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
 Alias: $vris-property-type = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
@@ -14,6 +14,8 @@ Alias: $vris-property-type1-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-anne
 Alias: $vris-property-type2-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-omadus
 
 Alias: $sct = http://snomed.info/sct
+Alias: $rtk = https://fhir.ee/CodeSystem/rtk
+Alias: $identifier-domain = https://fhir.ee/CodeSystem/identifikaatorite-domeen
 
 Alias: $vris-donor-genetic-finding-type = https://fhir.ee/CodeSystem/vris-geneetilise-leiu-tyyp
 Alias: $vris-donor-genetic-finding-type-VS = https://fhir.ee/ValueSet/vris-geneetilise-leiu-tyyp

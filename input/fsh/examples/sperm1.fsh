@@ -48,5 +48,5 @@ Description: "Example of donor spermn"
 * property[donorStimulationMethod].valueCodeableConcept.coding.code = #TODO
 * property[donorStimulationMethod].valueCodeableConcept.coding.display = "Follitropin + Chorionic gonadotropin"
 
-//* biologicalSourceEvent.identifier.system = https://fhir.ee/sid/vris/procedure
-//* biologicalSourceEvent.identifier.value = "sperm-collection-2025-02-20-001"
+//* biologicalSourceEvent.system = $identifier-domain
+* biologicalSourceEvent.value = "ABC123"
