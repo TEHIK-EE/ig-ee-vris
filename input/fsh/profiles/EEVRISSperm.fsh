@@ -33,7 +33,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * productStatus ^short = "(ee Staatuse kaudu saab vroneeringut teha? NB Vaja loendit!)"
 * collection 1..
 * collection.source 1..
-* collection.source only Reference(EEVRISDonor)
+* collection.source only Reference(EEVRISDonor or EEVRISDonorAnonymous)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS
