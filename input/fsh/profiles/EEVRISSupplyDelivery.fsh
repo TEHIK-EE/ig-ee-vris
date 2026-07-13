@@ -25,7 +25,7 @@ Description: "Use this profile for describing when the biological material (sper
 * suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISSperm or EEVRISOocyte)
 * occurrence[x] 1..1
 * occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. AEG, millal sündmus aset leiab)"
-* supplier 0..1
+* supplier 1..1
 * supplier ^short = "(ee PÄRITOLU. KES saadab)"
 //* supplier only Reference(Organization)
 * supplier.display ^short = "(ee TEKSTIna riigikood VÕI referents SDP Organizationile????)"
