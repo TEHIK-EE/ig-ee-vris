@@ -27,9 +27,9 @@ Description: "Example of oocyte"
 
 * extension[cryopreservationDate].valueDateTime = "2025-02-20"
 
-* extension[cryopreservationReason].valueCodeableConcept.coding.system = $sct
-* extension[cryopreservationReason].valueCodeableConcept.coding.code = #TODO
-* extension[cryopreservationReason].valueCodeableConcept.coding.display = "Preservation reason"
+* extension[cryopreservationReason].valueCodeableConcept.coding.system = $reasons
+* extension[cryopreservationReason].valueCodeableConcept.coding.code = #medical
+* extension[cryopreservationReason].valueCodeableConcept.coding.display = "Meditsiiniline põhjus"
 
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
 
@@ -47,9 +47,9 @@ Description: "Example of oocyte"
 
 * property[metaPhase2Count].valueInteger = 6
 
-* property[cellOriginRole].valueCodeableConcept.coding.system = $sct
-* property[cellOriginRole].valueCodeableConcept.coding.code = #TODO
-* property[cellOriginRole].valueCodeableConcept.coding.display = "Self preservation"
+* property[cellOriginRole].valueCodeableConcept.coding.system = $reasons
+* property[cellOriginRole].valueCodeableConcept.coding.code = #endale
+* property[cellOriginRole].valueCodeableConcept.coding.display = "Säilitaja"
 
 * property[collectionMethod].valueCodeableConcept.coding.system = $sct
 * property[collectionMethod].valueCodeableConcept.coding.code = #TODO
@@ -67,6 +67,6 @@ Description: "Example of oocyte"
 * property[intendedUse].valueCodeableConcept.coding.code = #TODO
 * property[intendedUse].valueCodeableConcept.coding.display = "For self use"
 
-* property[preservationReason].valueCodeableConcept.coding.system = $sct
-* property[preservationReason].valueCodeableConcept.coding.code = #TODO
-* property[preservationReason].valueCodeableConcept.coding.display = "Elective"
+* property[preservationReason].valueCodeableConcept.coding.system = $reasons
+* property[preservationReason].valueCodeableConcept.coding.code = #nononco
+* property[preservationReason].valueCodeableConcept.coding.display = "Mitte-onkoloogiline terviseprobleem"

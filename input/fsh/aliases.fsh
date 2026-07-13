@@ -65,6 +65,7 @@ Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-kylmutamis
 Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-kylmutamise-pohjus
 Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-kylmutamise-tulemus
 Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-havitamise-pohjus
+Alias: $reasons = https://fhir.ee/CodeSystem/vris-pohjused
 
 Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-stimulatsioonieelne-ravi
 Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-lh-supressiooni-protokoll

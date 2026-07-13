@@ -1,4 +1,4 @@
-Instance: carePlanIvfCycle2025Example
+Instance: carePlanIvfCycle2025
 InstanceOf: EEVRISCarePlan
 Usage: #example
 Description: "Example of a fresh IVF treatment cycle CarePlan for female recipient."

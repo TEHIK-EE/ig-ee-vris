@@ -12,7 +12,7 @@ Description: "Example of follitropin administration during ovarian stimulation f
 * medication.concept.coding.display = "Gonal-F"
 * subject = Reference(Patient/patientFemale)
 //* encounter = Reference(Encounter/encounter-ivf-stimulation-2025)
-* basedOn = Reference(CarePlan/fertility-treatment-cycle-ivf-2025-example)
+* basedOn = Reference(CarePlan/carePlanIvfCycle2025)
 * occurenceDateTime = "2025-03-18T08:30:00+02:00"
 * recorded = "2025-03-18T08:35:00+02:00"
 * performer[0].function.coding.system = $sct
@@ -21,11 +21,11 @@ Description: "Example of follitropin administration during ovarian stimulation f
 * performer[=].actor = Reference(PractitionerRole/practitionerrole-doctor)
 
 * reason.concept.coding.system = $sct
-* reason.concept.coding.code = #TODO
-* reason.concept.coding.display = "Ovarian stimulation for IVF"
+* reason.concept.coding.code = #732970000 //placeholder?!|Controlled ovarian stimulation (procedure)|
+* reason.concept.coding.display = "Controlled ovarian stimulation"
 * dosage.text = "150 IU subkutaanselt kord päevas"
 * dosage.route.coding.system = $sct
-* dosage.route.coding.code = #TODO
+* dosage.route.coding.code = #34206005
 * dosage.route.coding.display = "Subcutaneous route"
 * dosage.dose.value = 150
 * dosage.dose.unit = "IU"
