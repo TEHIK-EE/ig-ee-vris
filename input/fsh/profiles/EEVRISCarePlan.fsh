@@ -65,8 +65,8 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * activity 0..*
 * activity ^short = "(ee Siin on (kõik) protseduurid, mida viljastumiseks TEHTI. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
 * activity.id 0..1
-* activity.performedActivity ^slicing.discriminator[0].type = #type
-* activity.performedActivity ^slicing.discriminator[0].path = "reference"
+* activity.performedActivity ^slicing.discriminator[0].type = #profile
+* activity.performedActivity ^slicing.discriminator[0].path = "reference.resolve()"
 * activity.performedActivity ^slicing.rules = #open
 * activity.performedActivity contains
     medicationAdministration 0..* and

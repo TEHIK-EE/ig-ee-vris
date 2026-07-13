@@ -10,7 +10,7 @@ Description: "Example of ovarian stimulation protocol for IVF cycle"
 * effectiveDateTime = "2025-03-15"
 * component[ovarianStimulation].valueBoolean = true
 * component[preStimulationTreatment].code.coding.system = $sct
-* component[preStimulationTreatment].code.coding.code = #TODO
+* component[preStimulationTreatment].code.coding.code = #170960008 // |Hormonal replacement therapy: combined estrogen/progestogen (finding)|
 * component[preStimulationTreatment].code.coding.display = "ostrogeen ja progestageen"
 * component[lhSuppressionProtocol].code.coding.system = $sct
 * component[lhSuppressionProtocol].code.coding.code = #TODO
