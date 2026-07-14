@@ -15,7 +15,7 @@ Description: "Example of sperm package delivery from Nova Vita to PERH, 4 doses 
 * supplier = Reference(Organization/organization-novavita1)
 * supplier.display = "Nova Vita Kliinik"
 
-* destination.reference = "Location/perhFertilityClinic"
+* destination.reference = "https://example.org/fhir/Location/perhFertilityClinic"
 * destination.display = "PERH Fertility Clinic"
-* receiver[0].reference = "Organization/perh"
+* receiver[0].reference = "https://example.org/fhir/Organization/perh"
 * receiver[=].display = "Põhja-Eesti Regionaalhaigla"
