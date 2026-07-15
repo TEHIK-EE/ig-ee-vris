@@ -33,7 +33,7 @@ Description: "Example of oocyte"
 
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
 
-* extension[thawing].extension[thawingDate].valueDate = "2025-06-15"
+* extension[thawing].extension[thawingDate].valueDateTime = "2025-06-15"
 * extension[thawing].extension[thawingCount].valueInteger = 1
 
 * productCode = $biological-material-type#oocyte "Munarakk"
@@ -47,9 +47,9 @@ Description: "Example of oocyte"
 
 * property[metaPhase2Count].valueInteger = 6
 
-* property[cellOriginRole].valueCodeableConcept.coding.system = $reasons
-* property[cellOriginRole].valueCodeableConcept.coding.code = #endale
-* property[cellOriginRole].valueCodeableConcept.coding.display = "Säilitaja"
+* property[Role].valueCodeableConcept.coding.system = $reasons
+* property[Role].valueCodeableConcept.coding.code = #endale
+* property[Role].valueCodeableConcept.coding.display = "Säilitaja"
 
 * property[collectionMethod].valueCodeableConcept.coding.system = $sct
 * property[collectionMethod].valueCodeableConcept.coding.code = #TODO

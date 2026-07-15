@@ -12,7 +12,7 @@ Description: "Example of embryo"
 * extension[cryopreservationReason].valueCodeableConcept.coding.code = #hilisem //TODO! placeholder|Cryopreservation for genetic studies (procedure)|
 * extension[cryopreservationReason].valueCodeableConcept.coding.display = "PGT"
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
-* extension[thawning].extension[thawingDate].valueDate = "2025-08-10"
+* extension[thawning].extension[thawingDate].valueDateTime = "2025-08-10"
 * extension[thawning].extension[thawingCount].valueInteger = 1
 
 * extension[reCryo].extension[reCryo].valueBoolean = false

@@ -11,7 +11,7 @@ Description: "Sperm or oocyte. (ee Bioloogiline materjal (sperma või munarakk)"
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     ExtensionEEVRISCellCollection named collection 0..1 and 
-    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+    ExtensionEEVRISRole named cellOrigin 0..1 and
     $intended-recipient named recipient 0..1 and
     ExtensionEEVRISOocyteOrigin named oocyteOrigin 0..1 and
     ExtensionEEVRISOocyteType named oocyteType 0..1

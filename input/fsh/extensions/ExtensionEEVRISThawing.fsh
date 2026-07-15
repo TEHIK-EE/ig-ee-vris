@@ -13,6 +13,6 @@ Context: BiologicallyDerivedProduct
     thawingDate 0..1 and
     thawingCount 0..1
 * extension[thawingDate] ^short = "When thawning or warming is happening"
-* extension[thawingDate].value[x] only date
+* extension[thawingDate].value[x] only dateTime 
 * extension[thawingCount] ^short = "Count"
 * extension[thawingCount].value[x] only integer

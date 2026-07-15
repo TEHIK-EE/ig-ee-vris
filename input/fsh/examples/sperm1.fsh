@@ -32,9 +32,9 @@ Description: "Example of donor spermn"
 * collection.source = Reference(Patient/patientDonorMale)
 * property[donatedCount].valueInteger = 4
 * property[frozenCount].valueInteger = 4
-* property[cellOriginRole].valueCodeableConcept.coding.system = $sct
-* property[cellOriginRole].valueCodeableConcept.coding.code = #TODO
-* property[cellOriginRole].valueCodeableConcept.coding.display = "Non-partner donor"
+* property[Role].valueCodeableConcept.coding.system = $sct
+* property[Role].valueCodeableConcept.coding.code = #TODO
+* property[Role].valueCodeableConcept.coding.display = "Non-partner donor"
 
 * property[collectionMethod].valueCodeableConcept.coding.system = $sct
 * property[collectionMethod].valueCodeableConcept.coding.code = #TODO

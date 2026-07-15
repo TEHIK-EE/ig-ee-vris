@@ -11,7 +11,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
 //    ExtensionEEVRISCellUsageState named usageState 0..1 and 
-//    ExtensionEEVRISCellOriginRole named cellOrigin 0..1 and
+//    ExtensionEEVRISRole named cellOrigin 0..1 and
 //    ExtensionEEVRISCollectionMethod named collection 0..1 and
     $intended-recipient named recipient 0..1
 //    ExtensionEEVRISSpermDonorStimulationMethod named donorStimulationMethod 0..1
@@ -45,13 +45,13 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property contains
     donatedCount 0..1 and
     frozenCount 0..1 and
-    cellOriginRole 0..1 and
+    Role 0..1 and
     collectionMethod 0..1 and
     usageState 0..1 and
     donorStimulationMethod 0..1
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 * property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
-* property[cellOriginRole] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
+* property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
 * property[collectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
 * property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja stimulatsioon: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
@@ -62,9 +62,9 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[frozenCount].type.coding = $vris-property-type#frozen-count
 * property[frozenCount].value[x] only integer
 
-* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
-* property[cellOriginRole].value[x] only CodeableConcept
-* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+* property[Role].type.coding = $vris-property-type#cell-origin-role
+* property[Role].value[x] only CodeableConcept
+* property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
 * property[collectionMethod].type.coding = $vris-property-type#collection-method
 * property[collectionMethod].value[x] only CodeableConcept

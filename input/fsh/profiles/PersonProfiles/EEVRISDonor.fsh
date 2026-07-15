@@ -6,7 +6,7 @@ Description: "For use of donors. (ee Doonori profiil, kasutamiseks. Anonüümset
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * extension contains
-    ExtensionEEVRISCellOriginRole named role 0..1 and
+    ExtensionEEVRISRole named role 0..1 and
     $birth-place named birthPlace 0..1 and
     $nationality named nationality 0..1 
 * identifier ^short = "Identifier for donor (ee DOONORIKOOD. Kasuta erinevaid system-urisi, et eristada. IRCC uri vajaks lisamist patisendi identifikaatorite domeeni!)"

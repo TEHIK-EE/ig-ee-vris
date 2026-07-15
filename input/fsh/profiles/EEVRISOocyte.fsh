@@ -37,7 +37,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     donatedCount 0..1 and
     frozenCount 0..1 and
     metaPhase2Count 0..1 and
-    cellOriginRole 0..1 and
+    Role 0..1 and
     collectionMethod 0..1 and
     oocyteOrigin 0..1 and
     oocyteType 0..1 and
@@ -56,10 +56,10 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property[metaPhase2Count].type.coding = $vris-property-type#meta-phase-2-count
 * property[metaPhase2Count].value[x] only integer
 
-* property[cellOriginRole] ^short = "(ee Munaraku päritolu roll: enda tarbeks / doonorluseks / anonüümne jne)"
-* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
-* property[cellOriginRole].value[x] only CodeableConcept
-* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+* property[Role] ^short = "(ee Munaraku päritolu roll: enda tarbeks / doonorluseks / anonüümne jne)"
+* property[Role].type.coding = $vris-property-type#cell-origin-role
+* property[Role].value[x] only CodeableConcept
+* property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
 * property[collectionMethod] ^short = "(ee Munaraku kogumise meetod)"
 * property[collectionMethod].type.coding = $vris-property-type#collection-method

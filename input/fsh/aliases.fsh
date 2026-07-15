@@ -1,5 +1,6 @@
 // Alias: $fertility-cryopreservation-date = ee-vris-cryopreservation-date
 Alias: $mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified 
+Alias: $mpi-patient-unknown = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown
 Alias: $vris-donor = https://fhir.ee/vris/StructureDefinition/ee-vris-donor
 Alias: $vris-recipient = https://fhir.ee/vris/StructureDefinition/ee-vris-recipient
 

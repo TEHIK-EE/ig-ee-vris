@@ -36,7 +36,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property contains
     fragmentCount 0..1 and
     frozenFragmentCount 0..1 and
-    cellOriginRole 0..1 and
+    Role 0..1 and
     collectionMethod 0..1
 
 * property[fragmentCount].value[x] ^short = "(ee Koetükkide arv)"
@@ -47,10 +47,10 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[frozenFragmentCount].type.coding = $vris-property-type#frozen-fragment-count
 * property[frozenFragmentCount].value[x] only integer
 
-* property[cellOriginRole].value[x] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
-* property[cellOriginRole].type.coding = $vris-property-type#cell-origin-role
-* property[cellOriginRole].value[x] only CodeableConcept
-* property[cellOriginRole].valueCodeableConcept from $vris-cell-origin-role (required)
+* property[Role].value[x] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
+* property[Role].type.coding = $vris-property-type#cell-origin-role
+* property[Role].value[x] only CodeableConcept
+* property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
 * property[collectionMethod].value[x] ^short = "(ee Koe kogumise meetod, nt biopsia)"
 * property[collectionMethod].type.coding = $vris-property-type#collection-method

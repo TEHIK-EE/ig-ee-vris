@@ -6,7 +6,7 @@ Description: "Anonymous donor in the Estonian VRIS fertility system. (ee Anon√º√
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * extension contains
-    ExtensionEEVRISCellOriginRole named role 0..1 and
+    ExtensionEEVRISRole named role 0..1 and
     $nationality named nationality 0..1 and
     ExtensionEEVRISAdditionalIdentifier named additionalIdentifier 0..*
 * extension[nationality] ^short = "(ee RAHVUS)"
