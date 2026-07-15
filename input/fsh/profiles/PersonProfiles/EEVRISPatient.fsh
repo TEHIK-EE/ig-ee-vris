@@ -4,7 +4,7 @@ Id: ee-vris-patient-universal
 Title: "Patient: EE VRIS Patient"
 Description: "VRIS patient profile. (ee VRIS patsiendi profiil. Roll modifierExtension'ina ning link viitab MPI ametlikule patsiendikirjele.)"
 * extension contains
-    ExtensionEEVRISRole named role 1..1 and
+    ExtensionEEVRISRole named role 1..* and
     $birth-place named birthPlace 0..1 and
     $nationality named nationality 0..1 and
     ExtensionEEVRISBirthSex named birthSex 0..1 and
