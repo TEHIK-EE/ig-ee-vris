@@ -1,6 +1,6 @@
 Profile: EEVRISPatient
 Parent: Patient
-Id: ee-vris-patient-lite
+Id: ee-vris-patient-universal
 Title: "Patient: EE VRIS Patient"
 Description: "VRIS patient profile. (ee VRIS patsiendi profiil. Roll modifierExtension'ina ning link viitab MPI ametlikule patsiendikirjele.)"
 * extension contains
