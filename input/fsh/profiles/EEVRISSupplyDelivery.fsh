@@ -29,7 +29,7 @@ Description: "Use this profile for describing when the biological material (sper
 * supplier ^short = "(ee PÄRITOLU. KES saadab)"
 //* supplier only Reference(Organization)
 * supplier.display ^short = "(ee TEKSTIna riigikood VÕI referents SDP Organizationile????)"
-* supplier.reference ^short = "(ee VÕI referents SDP Organizationile????)"
+* supplier.reference ^short = "(ee VÕI referents SPD Organizationile????)"
 * destination 1..1
 * destination ^short = "(ee SIHTKOHT. MIS asukoht vastu võtab)"
 * receiver 0..*

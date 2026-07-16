@@ -30,7 +30,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Sperma, fix kood! Vaja loendit! KAS on vaja kui igal sugurakul on oma profiil???)"
 * productStatus 1..
-* productStatus ^short = "(ee Staatuse kaudu saab vroneeringut teha? NB Vaja loendit!)"
+* productStatus ^short = "(ee Staatuse kaudu saab broneeringut teha? NB Vaja loendit!)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor or EEVRISDonorAnonymous)
@@ -46,8 +46,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     donatedCount 0..1 and
     frozenCount 0..1 and
     Role 0..1 and
-    collectionMethod 0..1 and
-    usageState 0..1 and
+    collectionMethod 0..* and
+    usageState 0..* and
     donorStimulationMethod 0..1
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 * property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
