@@ -9,7 +9,7 @@ Description: "VRIS patient profile. (ee VRIS patsiendi profiil. Roll modifierExt
     $nationality named nationality 0..1 and
     ExtensionEEVRISBirthSex named birthSex 0..1
     //ExtensionEEVRISRelatedClinic named relatedClinic 0..1 NB! SELLE katab ära ManagingOrganization
-* extension[role] ^short = "(ee Patsiendi roll VRIS-is: retsipient / doonor / partner / anonüümne doonor / säilitaja. Mõjutab andmete tõlgendamist ja privaatsust!)"
+* extension[role] ^short = "(ee Patsiendi roll VRIS-is: retsipient/doonor/partner/anonüümne doonor/säilitaja. Mõjutab andmete tõlgendamist ja privaatsust!)"
 * identifier 0..*
 * identifier ^short = "(ee Kohalik VRIS identifikaator. Ametlikud isikuandmed pärinevad MPI-st läbi link.other viite.)"
 * active 0..1
