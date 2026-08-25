@@ -2,7 +2,7 @@ Profile: EEVRISPatientChild
 Parent: EEMPIPatientVerified
 Id: ee-vris-patient-child
 Title: "Patient: EE VRIS Child"
-Description: "Child born from VRIS fertility treatment. Linked to recipient mother via Patient.link. (ee VRIS viljatusravi tulemusena sündinud laps.)"
+Description: "Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!)"
 * ^status = #draft
 
 * extension contains
@@ -15,7 +15,7 @@ Description: "Child born from VRIS fertility treatment. Linked to recipient moth
 * birthDate 0..1
 * deceasedDateTime ^short = "(ee Lapse surma kuupäev, Surmaregistrist)"
 
-* link 0..*
-* link.other only Reference(EEVRISRecipient)
-* link.other ^short = "(ee Viide ema retsipiendile)"
-* link.type = #seealso
+//* link 0..*
+//* link.other only Reference(EEVRISRecipient)
+//* link.other ^short = "(ee Viide ema retsipiendile)"
+//* link.type = #seealso

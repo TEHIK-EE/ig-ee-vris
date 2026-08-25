@@ -8,7 +8,7 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * category ^short = "(ee Fix kood: krüosäilitamine. NB! LOEND puudu!)"
 * code 1..1
 * code from $vris-cryopreservation-code-VS (preferred)
-* code ^short = "(ee Krüosäilitamise täpsem kood. NB! LOEND puudu!)"
+* code ^short = "(ee Krüosäilitamise täpsem kood (nt munaraku külmutamine jne). NB! LOEND puudu!)"
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)
 * subject ^short = "(ee Kelle materjali külmutati.)"

@@ -6,11 +6,12 @@ Description: "Profile for intrauterine insemination procedure sperm directly int
 * ^status = #draft
 
 * category 1..1
-* category ^short = "(ee Kategooria: inseminatsioon)"
+* category ^short = "(ee Kategooria nt 58533008 |Artificial insemination (procedure)|)"
 
 * code 1..1
 //* code.text = "TODO: SNOMED CT – otsi 'intrauterine insemination' / 'IUI'"
-* code ^short = "(ee NB! SNOMED kood vajab kontrolli)"
+* code ^short = "(ee IUI nt: 265064001 |Intrauterine artificial insemination (procedure)| Vajab üle kontrollimist ja kinnitust!
+)"
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
@@ -40,6 +41,6 @@ Description: "Profile for intrauterine insemination procedure sperm directly int
 
 * used 1..*
 * used only CodeableReference(EEVRISSperm)
-* used ^short = "(ee Viide kasutatud spermale – ainult sperma, mitte munarakk/embrüo)"
+* used ^short = "(ee Viide kasutatud spermale, NB! ainult sperma, mitte munarakk/embrüo)"
 
 * note 0..*
