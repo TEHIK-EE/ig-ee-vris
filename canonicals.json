@@ -1,0 +1,511 @@
+[{
+  "id" : "ee.fhir.vris",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris",
+  "version" : "0.1.0",
+  "name" : "EEVRIS"
+},
+{
+  "id" : "EEVRISPatientObservations",
+  "type" : "OperationDefinition",
+  "url" : "https://fhir.ee/vris/OperationDefinition/patient-observations",
+  "version" : "0.1.0",
+  "name" : "PatientObservations"
+},
+{
+  "id" : "ee-vris-additional-identifier",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-additional-identifier",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISAdditionalIdentifier"
+},
+{
+  "id" : "ee-vris-birth-sex",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-birth-sex",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISBirthSex"
+},
+{
+  "id" : "ee-vris-care-plan",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan",
+  "version" : "0.1.0",
+  "name" : "EEVRISCarePlan"
+},
+{
+  "id" : "ee-vris-cause-of-death",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-cause-of-death",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionCauseOfDeath"
+},
+{
+  "id" : "ee-vris-cell-preservation-reason",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISCellPreservationReason"
+},
+{
+  "id" : "ee-vris-condition-birth-defect",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-birth-defect",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionBirthDefect"
+},
+{
+  "id" : "ee-vris-condition-comorbidity",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-comorbidity",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionComorbidity"
+},
+{
+  "id" : "ee-vris-condition-donor-genetic-finding",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionDonorGeneticFinding"
+},
+{
+  "id" : "ee-vris-condition-fertility-indication-female",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionFertilityIndicationFemale"
+},
+{
+  "id" : "ee-vris-condition-fertility-indication-male",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-male",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionFertilityIndicationMale"
+},
+{
+  "id" : "ee-vris-condition-pregnancy",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-pregnancy",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionPregnancy"
+},
+{
+  "id" : "ee-vris-condition-treatment-complication",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-treatment-complication",
+  "version" : "0.1.0",
+  "name" : "EEVRISConditionTreatmentComplication"
+},
+{
+  "id" : "ee-vris-coverage",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-coverage",
+  "version" : "0.1.0",
+  "name" : "EEVRISCoverage"
+},
+{
+  "id" : "ee-vris-cryopreservation-date",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISCryopreservationDate"
+},
+{
+  "id" : "ee-vris-cycle-discontinuation-reason",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-cycle-discontinuation-reason",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISCycleDiscontinuationReason"
+},
+{
+  "id" : "ee-vris-donor",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-donor",
+  "version" : "0.1.0",
+  "name" : "EEVRISDonor"
+},
+{
+  "id" : "ee-vris-donor-anonymous",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-anonymous",
+  "version" : "0.1.0",
+  "name" : "EEVRISDonorAnonymous"
+},
+{
+  "id" : "ee-vris-donor-reference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISDonorReference"
+},
+{
+  "id" : "ee-vris-embryo",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-embryo",
+  "version" : "0.1.0",
+  "name" : "EEVRISEmbryo"
+},
+{
+  "id" : "ee-vris-encounter",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-encounter",
+  "version" : "0.1.0",
+  "name" : "EEVRISEncounter"
+},
+{
+  "id" : "ee-vris-episode-of-care",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care",
+  "version" : "0.1.0",
+  "name" : "EEVRISEpisodeOfCare"
+},
+{
+  "id" : "ee-vris-episode-of-care-pregnancy",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care-pregnancy",
+  "version" : "0.1.0",
+  "name" : "EEVRISEpisodeOfCarePregnancy"
+},
+{
+  "id" : "ee-vris-medication-administration",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration",
+  "version" : "0.1.0",
+  "name" : "EEVRISMedicationAdministration"
+},
+{
+  "id" : "ee-vris-observation-attempting-to-concieve",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-attempting-to-concieve",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationAttemptingToConcieve"
+},
+{
+  "id" : "ee-vris-observation-biochemical-pregnancy",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-biochemical-pregnancy",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationBiochemicalPregnancy"
+},
+{
+  "id" : "ee-vris-observation-birth-weight",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-birth-weight",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationBirthWeight"
+},
+{
+  "id" : "ee-vris-observation-blood-group",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationBloodGroup"
+},
+{
+  "id" : "ee-vris-observation-clinical-pregnancy",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-clinical-pregnancy",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationClinicalPregnancy"
+},
+{
+  "id" : "ee-vris-observation-education-level",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-education-level",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationEducationLevel"
+},
+{
+  "id" : "ee-vris-observation-embryo-lifecycle-counts",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationEmbryoLifecycleCounts"
+},
+{
+  "id" : "ee-vris-observation-fertilization-counts",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationFertilizationCounts"
+},
+{
+  "id" : "ee-vris-observation-fetus-reduction",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fetus-reduction",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationFetusReduction"
+},
+{
+  "id" : "ee-vris-observation-height",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-height",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationHeight"
+},
+{
+  "id" : "ee-vris-observation-marital-status",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-marital-status",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationMaritalStatus"
+},
+{
+  "id" : "ee-vris-observation-neonatal-intensive-care",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-neonatal-intensive-care",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationNeonatalIntensiveCare"
+},
+{
+  "id" : "ee-vris-observation-obstetric-history",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-obstetric-history",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationObstetricHistory"
+},
+{
+  "id" : "ee-vris-observation-physical-appearance",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-physical-appearance",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationPhysicalAppearance"
+},
+{
+  "id" : "ee-vris-observation-pregnancy-outcome",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-pregnancy-outcome",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationPregnancyOutcome"
+},
+{
+  "id" : "ee-vris-observation-prenatal-care-discontinued",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prenatal-care-discontinued",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationPrenatalCareDiscontinued"
+},
+{
+  "id" : "ee-vris-observation-prior-fertility-treatment",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prior-fertility-treatment",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationPriorFertilityTreatment"
+},
+{
+  "id" : "ee-vris-observation-stimulation-protocol",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationStimulationProtocol"
+},
+{
+  "id" : "ee-vris-observation-stimulation-protocol-embryo",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol-embryo",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationStimulationProtocolEmbryo"
+},
+{
+  "id" : "ee-vris-observation-tobacco-use",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-tobacco-use",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationTobaccoUse"
+},
+{
+  "id" : "ee-vris-observation-waist",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-waist",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationWaist"
+},
+{
+  "id" : "ee-vris-observation-weight",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-weight",
+  "version" : "0.1.0",
+  "name" : "EEVRISObservationWeight"
+},
+{
+  "id" : "ee-vris-oocyte",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte",
+  "version" : "0.1.0",
+  "name" : "EEVRISOocyte"
+},
+{
+  "id" : "ee-vris-packaged-product-definition",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition",
+  "version" : "0.1.0",
+  "name" : "EEVRISPackagedProductDefinition"
+},
+{
+  "id" : "ee-vris-patient-child",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child",
+  "version" : "0.1.0",
+  "name" : "EEVRISPatientChild"
+},
+{
+  "id" : "ee-vris-patient-child-unknown-id",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child-unknown-id",
+  "version" : "0.1.0",
+  "name" : "EEVRISPatientChildUnknownId"
+},
+{
+  "id" : "ee-vris-patient-universal",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal",
+  "version" : "0.1.0",
+  "name" : "EEVRISPatient"
+},
+{
+  "id" : "ee-vris-procedure",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedure"
+},
+{
+  "id" : "ee-vris-procedure-cryopreservation",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-cryopreservation",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureCryopreservation"
+},
+{
+  "id" : "ee-vris-procedure-destruction",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-destruction",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureDestruction"
+},
+{
+  "id" : "ee-vris-procedure-donation",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-donation",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureDonation"
+},
+{
+  "id" : "ee-vris-procedure-embryo-transfer",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureEmbryoTransfer"
+},
+{
+  "id" : "ee-vris-procedure-fertilization",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureFertilization"
+},
+{
+  "id" : "ee-vris-procedure-insemination",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-insemination",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureInsemination"
+},
+{
+  "id" : "ee-vris-procedure-oocyte-retrieval",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedureOocyteRetrieval"
+},
+{
+  "id" : "ee-vris-procedure-pgt",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-pgt",
+  "version" : "0.1.0",
+  "name" : "EEVRISProcedurePGT"
+},
+{
+  "id" : "ee-vris-recipient",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-recipient",
+  "version" : "0.1.0",
+  "name" : "EEVRISRecipient"
+},
+{
+  "id" : "ee-vris-recryo",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-recryo",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISReCryopreservation"
+},
+{
+  "id" : "ee-vris-related-clinic",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-related-clinic",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISRelatedClinic"
+},
+{
+  "id" : "ee-vris-related-person",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-related-person",
+  "version" : "0.1.0",
+  "name" : "EEVRISRelatedPerson"
+},
+{
+  "id" : "ee-vris-reproductive-tissue",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-tissue",
+  "version" : "0.1.0",
+  "name" : "EEVRISReproductiveTissue"
+},
+{
+  "id" : "ee-vris-role",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-role",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISRole"
+},
+{
+  "id" : "ee-vris-sperm",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm",
+  "version" : "0.1.0",
+  "name" : "EEVRISSperm"
+},
+{
+  "id" : "ee-vris-stimulation-method",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-stimulation-method",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISStimulationMethod"
+},
+{
+  "id" : "ee-vris-supplied-package",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISSuppliedPackage"
+},
+{
+  "id" : "ee-vris-supply-delivery",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery",
+  "version" : "0.1.0",
+  "name" : "EEVRISSupplyDelivery"
+},
+{
+  "id" : "ee-vris-terk-coverage",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-terk-coverage",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISCoverage"
+},
+{
+  "id" : "ee-vris-thawing",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-thawing",
+  "version" : "0.1.0",
+  "name" : "ExtensionEEVRISThawing"
+}]

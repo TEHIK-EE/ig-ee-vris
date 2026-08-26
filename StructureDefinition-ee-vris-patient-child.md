@@ -1,0 +1,176 @@
+# Patient: EE VRIS Child - VRIS - Viljatusravi infosüsteem v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Patient: EE VRIS Child**
+
+## Resource Profile: Patient: EE VRIS Child 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child | *Version*:0.1.0 |
+| Draft as of 2026-08-26 | *Computable Name*:EEVRISPatientChild |
+
+ 
+Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!) 
+
+**Usages:**
+
+* Refer to this Profile: [Condition: EE VRIS Cause of Death](StructureDefinition-ee-vris-cause-of-death.md), [Condition: EE VRIS Birth Defect](StructureDefinition-ee-vris-condition-birth-defect.md), [Encounter: EE VRIS Encounter](StructureDefinition-ee-vris-encounter.md), [EpisodeOfCare: EE VRIS Episode of Care](StructureDefinition-ee-vris-episode-of-care.md)... Show 3 more, [Observation: EE VRIS Birth Weight](StructureDefinition-ee-vris-observation-birth-weight.md), [Observation: EE VRIS Neonatal Intensive Care](StructureDefinition-ee-vris-observation-neonatal-intensive-care.md) and [Patient: EE VRIS Child](StructureDefinition-ee-vris-patient-child-unknown-id.md)
+* Examples for this Profile: [Patient/patientChild1](Patient-patientChild1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ee.fhir.vris|current/StructureDefinition/StructureDefinition-ee-vris-patient-child.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ee-vris-patient-child.csv), [Excel](StructureDefinition-ee-vris-patient-child.xlsx), [Schematron](StructureDefinition-ee-vris-patient-child.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ee-vris-patient-child",
+  "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child",
+  "version" : "0.1.0",
+  "name" : "EEVRISPatientChild",
+  "title" : "Patient: EE VRIS Child",
+  "status" : "draft",
+  "date" : "2026-08-26T08:01:11+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@tehik.ee"
+    }]
+  },
+  {
+    "name" : "TEHIK Andmekorraldus",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "andmekorraldus@tehik.ee",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "interface",
+    "uri" : "http://hl7.org/fhir/interface",
+    "name" : "Interface Pattern"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 V2 Mapping"
+  },
+  {
+    "identity" : "loinc",
+    "uri" : "http://loinc.org",
+    "name" : "LOINC code for the element"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Patient",
+  "baseDefinition" : "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Patient",
+      "path" : "Patient"
+    },
+    {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Patient.extension:birthPlace",
+      "path" : "Patient.extension",
+      "sliceName" : "birthPlace",
+      "short" : "(ee Lapse sünniriik / sünnikoht)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/patient-birthPlace"]
+      }]
+    },
+    {
+      "id" : "Patient.identifier",
+      "path" : "Patient.identifier",
+      "short" : "(ee Lapse isikukood RR-st)"
+    },
+    {
+      "id" : "Patient.gender",
+      "path" : "Patient.gender",
+      "short" : "(ee Lapse sugu)",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.deceased[x]",
+      "path" : "Patient.deceased[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Patient.deceased[x]:deceasedDateTime",
+      "path" : "Patient.deceased[x]",
+      "sliceName" : "deceasedDateTime",
+      "short" : "(ee Lapse surma kuupäev, Surmaregistrist)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    }]
+  }
+}
+
+```

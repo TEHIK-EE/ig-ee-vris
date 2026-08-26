@@ -1,0 +1,534 @@
+{
+  "package": "ee.fhir.vris",
+  "version": "0.1.0",
+  "fhirVersion": "5.0.0",
+  "jurisdiction": "EE",
+  "extensions": [
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-additional-identifier",
+      "title": "Additional identifier",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-birth-sex",
+      "title": "Birth Sex",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason",
+      "title": "Cell preservation reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date",
+      "title": "Cryopreservation date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-cycle-discontinuation-reason",
+      "title": "Cycle Discontinuation Reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference",
+      "title": "Related person reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-recryo",
+      "title": "Re-cryopreservation date and count",
+      "types": [
+        "boolean",
+        "integer",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-related-clinic",
+      "title": "Related clinic",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-role",
+      "title": "Cell origin role",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-stimulation-method",
+      "title": "Stimulation method",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package",
+      "title": "Supplied package reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-terk-coverage",
+      "title": "Coverage",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-thawing",
+      "title": "Thawing date and count",
+      "types": [
+        "dateTime",
+        "integer",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "CarePlan": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan",
+        "title": "CarePlan: EEVRIS Cycle"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-cause-of-death",
+        "title": "Condition: EE VRIS Cause of Death"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-birth-defect",
+        "title": "Condition: EE VRIS Birth Defect"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-comorbidity",
+        "title": "Condition: EE VRIS Comorbidity"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding",
+        "title": "Condition: EE VRIS Donor Genetic Finding"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female",
+        "title": "Condition: EE VRIS Female Fertility Treatment Indication"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-male",
+        "title": "Condition: EE VRIS Male Fertility Treatment Indication"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-pregnancy",
+        "title": "Condition: EE VRIS Condition Pregnancy"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-treatment-complication",
+        "title": "Condition: EE VRIS Fertility Treatment Complication"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-coverage",
+        "title": "Coverage: EE VRIS Coverage"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-recipient",
+        "title": "Patient: EE VRIS Recipient"
+      }
+    ],
+    "BiologicallyDerivedProduct": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-tissue",
+        "title": "BiologicallyDerivedProduct: EE VRIS Reproductive Tissue"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm",
+        "title": "BiologicallyDerivedProduct: EE VRIS Sperm"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-encounter",
+        "title": "Encounter: EE VRIS Encounter"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care",
+        "title": "EpisodeOfCare: EE VRIS Episode of Care"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care-pregnancy",
+        "title": "EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration",
+        "title": "MedicationAdministration: EE VRIS Medication administred during procedure(s)"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-attempting-to-concieve",
+        "title": "Observation: EE VRIS Attempting to Concieve"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-biochemical-pregnancy",
+        "title": "Observation: EE VRIS Biochemical Pregnancy"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-birth-weight",
+        "title": "Observation: EE VRIS Birth Weight"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group",
+        "title": "Observation: EE VRIS Blood Group"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-clinical-pregnancy",
+        "title": "Observation: EE VRIS Clinical Pregnancy"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-education-level",
+        "title": "Observation: EE VRIS Education Level"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts",
+        "title": "Observation: EE VRIS Embryo Lifecycle Counts"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts",
+        "title": "Observation: EE VRIS Fertilization Counts"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fetus-reduction",
+        "title": "Observation: EE VRIS Fetus Reduction"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-height",
+        "title": "Observation: EE VRIS Height"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-marital-status",
+        "title": "Observation: EE VRIS Marital Status"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-neonatal-intensive-care",
+        "title": "Observation: EE VRIS Neonatal Intensive Care"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-obstetric-history",
+        "title": "Observation: EE VRIS Obstetric History"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-physical-appearance",
+        "title": "Observation: EE VRIS Physical Appearance"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-pregnancy-outcome",
+        "title": "Observation: EE VRIS Pregnancy Outcome"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prenatal-care-discontinued",
+        "title": "Observation: EE VRIS Prenatal Care Discontinued"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prior-fertility-treatment",
+        "title": "Observation: EE VRIS Prior Fertility Treatment"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol",
+        "title": "Observation: EE VRIS Ovarian Stimulation Protocol"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol-embryo",
+        "title": "Observation: EE VRIS Stimulation Protocol for Embryo Transfer"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-tobacco-use",
+        "title": "Observation: EE VRIS Tobacco Use"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-waist",
+        "title": "Observation: EE VRIS Waist"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-weight",
+        "title": "Observation: EE VRIS Weight"
+      }
+    ],
+    "PackagedProductDefinition": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition",
+        "title": "PackagedProductDefinition: EE VRIS Package"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure",
+        "title": "Procedure: EE VRIS Procedure"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-cryopreservation",
+        "title": "Procedure: EE VRIS Cryopreservation"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-destruction",
+        "title": "Procedure: EE VRIS Destruction"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-donation",
+        "title": "Procedure: EE VRIS Donation"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer",
+        "title": "Procedure: EE VRIS Embryo Transfer"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization",
+        "title": "Procedure: EE VRIS Fertilization"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-insemination",
+        "title": "Procedure: EE VRIS Intrauterine Insemination (IUI)"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval",
+        "title": "Procedure: EE VRIS Oocyte Retrieval"
+      },
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-pgt",
+        "title": "Procedure: EE VRIS Preimplantation Genetic Testing"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-related-person",
+        "title": "RelatedPerson: EE VRIS RelatedPerson"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery",
+        "title": "SupplyDelivery: EE VRIS Biological material movement"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient": [
+      "BiologicallyDerivedProduct"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://fhir.ee/base/StructureDefinition/ee-date-accuracy-indicator": [
+      "Patient.birthDate",
+      "Patient.deceased[x]"
+    ],
+    "https://fhir.ee/base/StructureDefinition/ee-patient-age": [
+      "Patient.birthDate"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-additional-identifier": [
+      "Patient"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-birth-sex": [
+      "Patient"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason": [
+      "BiologicallyDerivedProduct"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date": [
+      "BiologicallyDerivedProduct"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-cycle-discontinuation-reason": [
+      "CarePlan"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-recryo": [
+      "BiologicallyDerivedProduct"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-role": [
+      "Patient"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package": [
+      "SupplyDelivery"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-terk-coverage": [
+      "CarePlan"
+    ],
+    "https://fhir.ee/vris/StructureDefinition/ee-vris-thawing": [
+      "BiologicallyDerivedProduct"
+    ]
+  }
+}

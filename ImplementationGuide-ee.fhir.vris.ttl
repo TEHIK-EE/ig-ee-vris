@@ -1,0 +1,1985 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee.fhir.vris"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ee.fhir.vris</b></p><a name=\"ee.fhir.vris\"> </a><a name=\"hcee.fhir.vris\"> </a><h2>EEVRIS</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris</pre></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EEVRIS"] ; # 
+  fhir:title [ fhir:v "VRIS - Viljatusravi infosüsteem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-08-26T08:01:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@tehik.ee" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "TEHIK Andmekorraldus" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "andmekorraldus@tehik.ee" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "ee.fhir.vris"] ; # 
+  fhir:license [ fhir:v "MIT"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "7.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "ee_fhir_base" ] ;
+     fhir:uri [
+       fhir:v "https://fhir.ee/base/ImplementationGuide/ee.fhir.base"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/base/ImplementationGuide/ee.fhir.base>
+     ] ;
+     fhir:packageId [ fhir:v "ee.fhir.base" ] ;
+     fhir:version [ fhir:v "2.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ee_fhir_mpi" ] ;
+     fhir:uri [
+       fhir:v "https://fhir.ee/mpi/ImplementationGuide/ee.fhir.mpi"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/mpi/ImplementationGuide/ee.fhir.mpi>
+     ] ;
+     fhir:packageId [ fhir:v "ee.fhir.mpi" ] ;
+     fhir:version [ fhir:v "1.5.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#1.1.2"
+       ]
+     ] ) ;
+     fhir:grouping ( [
+       fhir:id [ fhir:v "GroupA" ] ;
+       fhir:name [ fhir:v "Persons" ] ;
+       fhir:description [ fhir:v "Donor-Recipient related profiles" ]
+     ] [
+       fhir:id [ fhir:v "GroupB" ] ;
+       fhir:name [ fhir:v "Biological material" ] ;
+       fhir:description [ fhir:v "Embryo and reproductive cell profiles" ]
+     ] [
+       fhir:id [ fhir:v "GroupC" ] ;
+       fhir:name [ fhir:v "Observations" ] ;
+       fhir:description [ fhir:v "Observation profiles" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/OperationDefinition/EEVRISPatientObservations> ;
+         fhir:reference [ fhir:v "OperationDefinition/EEVRISPatientObservations" ]
+       ] ;
+       fhir:name [ fhir:v "$patient-observations operation" ] ;
+       fhir:description [ fhir:v "TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-additional-identifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-additional-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Additional identifier" ] ;
+       fhir:description [ fhir:v "Extension for additional identifier. (ee Lisa-identifikaator)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-embryo> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-embryo" ]
+       ] ;
+       fhir:name [ fhir:v "BiologicallyDerivedProduct: EE VRIS Embryo" ] ;
+       fhir:description [ fhir:v "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressurss!)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupB" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-oocyte" ]
+       ] ;
+       fhir:name [ fhir:v "BiologicallyDerivedProduct: EE VRIS Oocyte" ] ;
+       fhir:description [ fhir:v "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupB" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-tissue> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-reproductive-tissue" ]
+       ] ;
+       fhir:name [ fhir:v "BiologicallyDerivedProduct: EE VRIS Reproductive Tissue" ] ;
+       fhir:description [ fhir:v "Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupB" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-sperm> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-sperm" ]
+       ] ;
+       fhir:name [ fhir:v "BiologicallyDerivedProduct: EE VRIS Sperm" ] ;
+       fhir:description [ fhir:v "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupB" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-birth-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-birth-sex" ]
+       ] ;
+       fhir:name [ fhir:v "Birth Sex" ] ;
+       fhir:description [ fhir:v "Extension for birth sex. (ee Sünnisugu)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-care-plan" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlan: EEVRIS Cycle" ] ;
+       fhir:description [ fhir:v "Profile for capturing infertility treatment cycle(s) on woman. (ee Ravisükkel. VÄRSKE või KÜLMUTATUD-SULATATUD)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-role" ]
+       ] ;
+       fhir:name [ fhir:v "Cell origin role" ] ;
+       fhir:description [ fhir:v "Extension for the role of donor/recipient of biological material. (ee Sperma/munaraku doonori/retsipiendi roll (viljatusravi saav naine, mittepartnerannetaja, partner, anonüümne, säilitaja jne).)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-cell-preservation-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Cell preservation reason" ] ;
+       fhir:description [ fhir:v "Extension for the reason of cell preservation. (ee Sperma/munaraku säilitamise põhjus. (Nt meditsiiniline, mittemeditsiiniline jne))" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-birth-defect> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-birth-defect" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Birth Defect" ] ;
+       fhir:description [ fhir:v "Congenital birth defect of newborn child. (ee Lapse väärarend. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-cause-of-death> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-cause-of-death" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Cause of Death" ] ;
+       fhir:description [ fhir:v "Profile for capturing cause and time of death. (ee Surma põhjus. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-comorbidity> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-comorbidity" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Comorbidity" ] ;
+       fhir:description [ fhir:v "Condition profile for comorbidities of a donor or recipient in the Estonian VRIS fertility system. (ee Kaasuv haigus. NB! Tulevikus viidata Diagnoosi-teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-pregnancy> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-pregnancy" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Condition Pregnancy" ] ;
+       fhir:description [ fhir:v "Condition profile for pregnancy in Estonian VRIS fertility system. (ee Rasedus kui näidustus, diagnoos. NB! Tulevikus viidata Diagnoosi-teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-donor-genetic-finding" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Donor Genetic Finding" ] ;
+       fhir:description [ fhir:v "Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. NB! Tulevikus viidata Diagnoosi-teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-fertility-indication-female" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Female Fertility Treatment Indication" ] ;
+       fhir:description [ fhir:v "Clinical indication or diagnosis that is the reason for infertility treatment for Female. (ee NAISE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-treatment-complication> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-treatment-complication" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Fertility Treatment Complication" ] ;
+       fhir:description [ fhir:v "Complication related to fertility treatment. (ee Viljatusraviga seotud (haiglaravi vajavad?) tüsistused. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-male> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-condition-fertility-indication-male" ]
+       ] ;
+       fhir:name [ fhir:v "Condition: EE VRIS Male Fertility Treatment Indication" ] ;
+       fhir:description [ fhir:v "Clinical indication or diagnosis that is the reason for infertility treatment for Male. (ee MEHE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-terk-coverage> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-terk-coverage" ]
+       ] ;
+       fhir:name [ fhir:v "Coverage" ] ;
+       fhir:description [ fhir:v "Extension for Tervisekassa coverage existence. (ee Kas (teenusel/ravil/tsüklil/vm on/ei ole Tervisekassa poolset kompensatsiooni patsiendile.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-coverage> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-coverage" ]
+       ] ;
+       fhir:name [ fhir:v "Coverage: EE VRIS Coverage" ] ;
+       fhir:description [ fhir:v "Coverage profile for fertility treatment in Estonian VRIS. Identifies the payer of treatment (Health Insurance Fund or self-pay). (ee Viljatusravi rahastamise allikas, Tervisekassa või omaosalus. KAS teeme selle profiiliga või lihtsa extensioni?)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-cryopreservation-date" ]
+       ] ;
+       fhir:name [ fhir:v "Cryopreservation date" ] ;
+       fhir:description [ fhir:v "Extension for cryopreservation date. (ee Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-cycle-discontinuation-reason> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-cycle-discontinuation-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Cycle Discontinuation Reason" ] ;
+       fhir:description [ fhir:v "Reason for fertility treatment cycle discontinuation. (ee Ravitsükli katkestamise põhjus.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "BiologicallyDerivedProduct"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/donor-embryo1> ;
+         fhir:reference [ fhir:v "BiologicallyDerivedProduct/donor-embryo1" ]
+       ] ;
+       fhir:name [ fhir:v "donor-embryo1" ] ;
+       fhir:description [ fhir:v "Example of embryo" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-embryo>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Condition/donor-genetic-finding-suspected1> ;
+         fhir:reference [ fhir:v "Condition/donor-genetic-finding-suspected1" ]
+       ] ;
+       fhir:name [ fhir:v "donor-genetic-finding-suspected1" ] ;
+       fhir:description [ fhir:v "Example of suspected condition of genetic disorder of donor" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Condition/donor-genetic-finding-verified1> ;
+         fhir:reference [ fhir:v "Condition/donor-genetic-finding-verified1" ]
+       ] ;
+       fhir:name [ fhir:v "donor-genetic-finding-verified1" ] ;
+       fhir:description [ fhir:v "Example of confirmed condition of donor's genetic disorder" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter: EE VRIS Encounter" ] ;
+       fhir:description [ fhir:v "Simple encounter profile for VRIS fertility treatment visits. (ee Visiidi ehk KONTAKTI profiil viljatusravi kontekstis. NB! Tulevikus tuleb viidata Encounter-EoC teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-episode-of-care" ]
+       ] ;
+       fhir:name [ fhir:v "EpisodeOfCare: EE VRIS Episode of Care" ] ;
+       fhir:description [ fhir:v "Episode of care profile for VRIS fertility treatment. Groups related encounters, procedures and observations within a longer treatment period. (ee Viljatusravi episood ühendab ravitsükli piires toimuvad visiidid, protseduurid ja vaatlused. NB! Tulevikus viidata Encounter-Episode teenusele!)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care-pregnancy> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-episode-of-care-pregnancy" ]
+       ] ;
+       fhir:name [ fhir:v "EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy" ] ;
+       fhir:description [ fhir:v "EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar. NB! Profiil peab järgima Encounter-EoC tuleviku struktuuri!)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Condition/female-fertility-indication-example1> ;
+         fhir:reference [ fhir:v "Condition/female-fertility-indication-example1" ]
+       ] ;
+       fhir:name [ fhir:v "female-fertility-indication-example1" ] ;
+       fhir:description [ fhir:v "Example of a female fertility treatment indication: anovulation disorder (ICD-10: N97.0)." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/CarePlan/carePlanIvfCycle2025> ;
+         fhir:reference [ fhir:v "CarePlan/carePlanIvfCycle2025" ]
+       ] ;
+       fhir:name [ fhir:v "IVF tsükkel #1 Märts 2025" ] ;
+       fhir:description [ fhir:v "Example of a fresh IVF treatment cycle CarePlan for female recipient." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration: EE VRIS Medication administred during procedure(s)" ] ;
+       fhir:description [ fhir:v "Profile for medication administration during infertility procedure(s). (ee Viljatusravi ajal manustatud ravim(id).)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationAdministration"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/MedicationAdministration/medicationAdministrationFollitropin1> ;
+         fhir:reference [ fhir:v "MedicationAdministration/medicationAdministrationFollitropin1" ]
+       ] ;
+       fhir:name [ fhir:v "medicationAdministrationFollitropin1" ] ;
+       fhir:description [ fhir:v "Example of follitropin administration during ovarian stimulation for IVF cycle" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-bloodgroup> ;
+         fhir:reference [ fhir:v "Observation/observation-bloodgroup" ]
+       ] ;
+       fhir:name [ fhir:v "observation-bloodgroup" ] ;
+       fhir:description [ fhir:v "Example of bloodgroup" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-embryo-lifecycle-counts> ;
+         fhir:reference [ fhir:v "Observation/observation-embryo-lifecycle-counts" ]
+       ] ;
+       fhir:name [ fhir:v "observation-embryo-lifecycle-counts" ] ;
+       fhir:description [ fhir:v "Example of embryo lifecycle counts summary for IVF cycle" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-fertilization-counts> ;
+         fhir:reference [ fhir:v "Observation/observation-fertilization-counts" ]
+       ] ;
+       fhir:name [ fhir:v "observation-fertilization-counts" ] ;
+       fhir:description [ fhir:v "Example of laboratory fertilization counts after IVF cycle" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-stimulation-protocol> ;
+         fhir:reference [ fhir:v "Observation/observation-stimulation-protocol" ]
+       ] ;
+       fhir:name [ fhir:v "observation-stimulation-protocol" ] ;
+       fhir:description [ fhir:v "Example of ovarian stimulation protocol for IVF cycle" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-attempting-to-concieve> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-attempting-to-concieve" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Attempting to Concieve" ] ;
+       fhir:description [ fhir:v "Observation profile for how long is woman attempting to concieve. (ee Rasestuda üritamine.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-biochemical-pregnancy> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-biochemical-pregnancy" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Biochemical Pregnancy" ] ;
+       fhir:description [ fhir:v "Biochemical pregnancy detected by blood test. (ee Biokeemiline rasedus, tuvastatud vereanalüüsiga.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-birth-weight> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-birth-weight" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Birth Weight" ] ;
+       fhir:description [ fhir:v "Birth weight of newborn child. (ee Lapse sünnikaal grammides.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-blood-group" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Blood Group" ] ;
+       fhir:description [ fhir:v "Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-clinical-pregnancy> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-clinical-pregnancy" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Clinical Pregnancy" ] ;
+       fhir:description [ fhir:v "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (ee Kliiniline rasedus, kinnitatud ultraheliuuringuga. LOOTEMUNADE arv ka! NB! Biokeemilise raseduse profiil on eraldi.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-education-level> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-education-level" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Education Level" ] ;
+       fhir:description [ fhir:v "Education level of a donor or recipient in the Estonian VRIS fertility system. (ee Haridustase. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-embryo-lifecycle-counts" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Embryo Lifecycle Counts" ] ;
+       fhir:description [ fhir:v "Summary counts of embryo lifecycle events in a fertility treatment cycle (frozen, transferred, destroyed). (ee Embrüote elutsükli kokkuvõtted: külmutatud, siirdatud, hävitatud arv tsüklis.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-fertilization-counts" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Fertilization Counts" ] ;
+       fhir:description [ fhir:v "Counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud erinevates staadiumites.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fetus-reduction> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-fetus-reduction" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Fetus Reduction" ] ;
+       fhir:description [ fhir:v "Observation profile for recording whether fetus reduction procedure was performed in multifetal pregnancy. (ee Loote/loodete reduktsiooni läbiviimine mitmikrasedusel.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-height> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-height" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Height" ] ;
+       fhir:description [ fhir:v "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-marital-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-marital-status" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Marital Status" ] ;
+       fhir:description [ fhir:v "Marital status of a donor or recipient in the Estonian VRIS fertility system. (ee Perekonnaseis. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-neonatal-intensive-care> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-neonatal-intensive-care" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Neonatal Intensive Care" ] ;
+       fhir:description [ fhir:v "Whether the child received neonatal intensive care during first 7 days of life. (ee Lapse intensiivravi esimese 7 elupäeva jooksul.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-obstetric-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-obstetric-history" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Obstetric History" ] ;
+       fhir:description [ fhir:v "Past obstetric history at the START of fertility treatment cycle. Records cumulative count of all prior pregnancies, deliveries, live births and stillbirths BEFORE current treatment. (ee Sünnitusanamnees ENNE käesolevat viljatusravi tsüklit. Varasemate raseduste, sünnituste ja sündide kumulatiivne arv.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-stimulation-protocol" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Ovarian Stimulation Protocol" ] ;
+       fhir:description [ fhir:v "Captures ovarian stimulation protocol details for fertility treatment cycle. (ee Munasarjade stimulatsiooni protokoll sisaldab meetodi, supressiooni, gonadotropiini ja eelneva ravi info.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-physical-appearance> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-physical-appearance" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Physical Appearance" ] ;
+       fhir:description [ fhir:v "Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-pregnancy-outcome> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-pregnancy-outcome" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Pregnancy Outcome" ] ;
+       fhir:description [ fhir:v "Pregnancy outcome including delivery, miscarriage, abortion details. (ee Raseduse lõpe sünnitus, katkemine või katkestamine koos detailidega.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prenatal-care-discontinued> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-prenatal-care-discontinued" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Prenatal Care Discontinued" ] ;
+       fhir:description [ fhir:v "Indicator whether prenatal care was discontinued by patient or for unknown reasons. (ee Rasedusaegne tervisekontroll katkestatud patsiendi poolt või teadmata põhjusel.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-prior-fertility-treatment> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-prior-fertility-treatment" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Prior Fertility Treatment" ] ;
+       fhir:description [ fhir:v "Prior fertility treatment history. Records whether IVF and/or IUI has been performed and the number of cycles. (ee Varasema viljatusravi anamnees)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol-embryo> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-stimulation-protocol-embryo" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Stimulation Protocol for Embryo Transfer" ] ;
+       fhir:description [ fhir:v "Captures stimulation protocol details for thawed embryo. (ee Sulatatud embrüo siirdamise protokoll jm.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-tobacco-use> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-tobacco-use" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Tobacco Use" ] ;
+       fhir:description [ fhir:v "Observation profile for tobacco use status in the Estonian VRIS fertility system. (ee Tubakatoodete kasutamine.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-waist> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-waist" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Waist" ] ;
+       fhir:description [ fhir:v "Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-weight> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-observation-weight" ]
+       ] ;
+       fhir:name [ fhir:v "Observation: EE VRIS Weight" ] ;
+       fhir:description [ fhir:v "Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupC" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "BiologicallyDerivedProduct"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/oocyte1> ;
+         fhir:reference [ fhir:v "BiologicallyDerivedProduct/oocyte1" ]
+       ] ;
+       fhir:name [ fhir:v "oocyte1" ] ;
+       fhir:description [ fhir:v "Example of oocyte" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Organization/organization-novavita1> ;
+         fhir:reference [ fhir:v "Organization/organization-novavita1" ]
+       ] ;
+       fhir:name [ fhir:v "organization-novavita1" ] ;
+       fhir:description [ fhir:v "Example Organization. (ee Näidis-Asutus. NB! Hiljem tuleb vahetada SPD vastu!)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PackagedProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/PackagedProductDefinition/packaged-sperm1> ;
+         fhir:reference [ fhir:v "PackagedProductDefinition/packaged-sperm1" ]
+       ] ;
+       fhir:name [ fhir:v "packaged-sperm1" ] ;
+       fhir:description [ fhir:v "Example of packaged sperm containing 3 doses." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-packaged-product-definition" ]
+       ] ;
+       fhir:name [ fhir:v "PackagedProductDefinition: EE VRIS Package" ] ;
+       fhir:description [ fhir:v "Profile for packaged doses of reproductive cells. (ee Suguraku pakendite profiil)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor-anonymous> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-donor-anonymous" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Anonymous Patient" ] ;
+       fhir:description [ fhir:v "Anonymous donor in the Estonian VRIS fertility system. (ee Anonüümne (välismaa) doonor VRIS-is.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-patient-child" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Child" ] ;
+       fhir:description [ fhir:v "Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child-unknown-id> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-patient-child-unknown-id" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Child" ] ;
+       fhir:description [ fhir:v "Child born from VRIS fertility treatment with UNKNOWN ID (and NO name) Identifier is generated by HC provider. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teadMATA! IK genereeritud TTO poolt.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-donor" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Donor" ] ;
+       fhir:description [ fhir:v "For use of donors. (ee Doonori profiil, kasutamiseks. Anonüümsete ja anonüümsete-välismaiste doonorite puhul on TEINE PROFIIL!)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-patient-universal" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Patient" ] ;
+       fhir:description [ fhir:v "VRIS patient profile. (ee EI KASUTA! VRIS patsiendi profiil. Roll modifierExtension'ina ning link viitab MPI ametlikule patsiendikirjele.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-recipient> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-recipient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient: EE VRIS Recipient" ] ;
+       fhir:description [ fhir:v "For use of patients who recieve care and are recipients of biologic material. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Kas partner on retsipient?)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Patient/patientChild1> ;
+         fhir:reference [ fhir:v "Patient/patientChild1" ]
+       ] ;
+       fhir:name [ fhir:v "patientChild1" ] ;
+       fhir:description [ fhir:v "Example of child born from VRIS fertility treatment" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Patient/patientDonorMale> ;
+         fhir:reference [ fhir:v "Patient/patientDonorMale" ]
+       ] ;
+       fhir:name [ fhir:v "patientDonorMale" ] ;
+       fhir:description [ fhir:v "Example of known Estonian male sperm donor" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-donor"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Patient/patientDonorunknown1> ;
+         fhir:reference [ fhir:v "Patient/patientDonorunknown1" ]
+       ] ;
+       fhir:name [ fhir:v "patientDonorunknown1" ] ;
+       fhir:description [ fhir:v "Example of anonymous foreign sperm donor" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-donor-anonymous"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor-anonymous>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+         fhir:reference [ fhir:v "Patient/patientFemale" ]
+       ] ;
+       fhir:name [ fhir:v "patientFemale" ] ;
+       fhir:description [ fhir:v "Example of verified female patient" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Practitioner/practitioner-doctor> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-doctor" ]
+       ] ;
+       fhir:name [ fhir:v "practitioner-doctor" ] ;
+       fhir:description [ fhir:v "Example of Practitioner D99876" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/PractitionerRole/practitionerrole-doctor> ;
+         fhir:reference [ fhir:v "PractitionerRole/practitionerrole-doctor" ]
+       ] ;
+       fhir:name [ fhir:v "practitionerrole-doctor" ] ;
+       fhir:description [ fhir:v "Example of doctor (PractitionerRole D99876) working at NovaVita" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-embryo-transfer> ;
+         fhir:reference [ fhir:v "Procedure/procedure-embryo-transfer" ]
+       ] ;
+       fhir:name [ fhir:v "procedure-embryo-transfer" ] ;
+       fhir:description [ fhir:v "Example of fresh embryo transfer procedure" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-fertilization1> ;
+         fhir:reference [ fhir:v "Procedure/procedure-fertilization1" ]
+       ] ;
+       fhir:name [ fhir:v "procedure-fertilization1" ] ;
+       fhir:description [ fhir:v "Example of IVF fertilization procedure using donor sperm" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-oocyte-retrieval> ;
+         fhir:reference [ fhir:v "Procedure/procedure-oocyte-retrieval" ]
+       ] ;
+       fhir:name [ fhir:v "procedure-oocyte-retrieval" ] ;
+       fhir:description [ fhir:v "Example of oocyte retrieval procedure in IVF cycle March 2025" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-cryopreservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-cryopreservation" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Cryopreservation" ] ;
+       fhir:description [ fhir:v "Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-destruction> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-destruction" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Destruction" ] ;
+       fhir:description [ fhir:v "Profile for destruction of biological material (sperm, oocyte, embryo, reproductive tissue). (ee Bioloogilise materjali hävitamise protseduur.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-donation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-donation" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Donation" ] ;
+       fhir:description [ fhir:v "Profile for donation of biological material (sperm, oocyte, reproductive tissue). (ee Bioloogilise materjali annetamise protseduur. KAS seda on vaja?)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-embryo-transfer" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Embryo Transfer" ] ;
+       fhir:description [ fhir:v "Procedure for embryo transfer to recipient. Records transfer date, number of embryos, outcome, or reason for non-transfer. (ee Embrüo siirdamise protseduur.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-fertilization" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Fertilization" ] ;
+       fhir:description [ fhir:v "Profile for oocyte fertilization procedure using IVF, ICSI, or both methods. (ee Munarakkude viljastamise protseduur.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-insemination> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-insemination" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Intrauterine Insemination (IUI)" ] ;
+       fhir:description [ fhir:v "Profile for intrauterine insemination procedure sperm directly introduced into the uterine cavity. (ee Emakasisene inseminatsioon (IUI).)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-oocyte-retrieval" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Oocyte Retrieval" ] ;
+       fhir:description [ fhir:v "Profile for oocyte retrieval (ovarian puncture) procedure. (ee Munasarjade punktsioon munarakkude saamise protseduur.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-pgt> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure-pgt" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Preimplantation Genetic Testing" ] ;
+       fhir:description [ fhir:v "Procedure for preimplantation genetic testing (PGT) of embryos. (ee Embrüodiagnostika protseduur enne siirdamist.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure: EE VRIS Procedure" ] ;
+       fhir:description [ fhir:v "Base profile for Procedure. For each specific procedure use their profiles(freezing, destroying, donating, dispensing etc)... (ee Baasprofiil erinevate protseduuride kirjeldamiseks. (Nt. Külmutamine, annetamine...))" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-recryo> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-recryo" ]
+       ] ;
+       fhir:name [ fhir:v "Re-cryopreservation date and count" ] ;
+       fhir:description [ fhir:v "Extension for re-cryopreservation information. (ee Bioloogilise materjali taaskülmutamine ja arv.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-related-clinic> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-related-clinic" ]
+       ] ;
+       fhir:name [ fhir:v "Related clinic" ] ;
+       fhir:description [ fhir:v "Extension for related (fertility) clinic who has more rights to see their patient data. (ee Patsiendiga seotud (viljatusravikliinik)/TTO)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor-reference> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-donor-reference" ]
+       ] ;
+       fhir:name [ fhir:v "Related person reference" ] ;
+       fhir:description [ fhir:v "Extension for referencing related person. (ee Viide seotud isikule/doonorile.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-related-person> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-related-person" ]
+       ] ;
+       fhir:name [ fhir:v "RelatedPerson: EE VRIS RelatedPerson" ] ;
+       fhir:description [ fhir:v "Related person profile for VRIS. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "GroupA" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "BiologicallyDerivedProduct"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1> ;
+         fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1" ]
+       ] ;
+       fhir:name [ fhir:v "sperm1" ] ;
+       fhir:description [ fhir:v "Example of donor spermn" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-sperm>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-stimulation-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-stimulation-method" ]
+       ] ;
+       fhir:name [ fhir:v "Stimulation method" ] ;
+       fhir:description [ fhir:v "Extension for describing which stimulation method is/was used. (ee Bioloogilise materjali stimulatsiooni meetod.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-supplied-package" ]
+       ] ;
+       fhir:name [ fhir:v "Supplied package reference" ] ;
+       fhir:description [ fhir:v "Extension for referencing supplied package. (ee Viide väljastatud/vastuvõetud pakendile.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-supply-delivery" ]
+       ] ;
+       fhir:name [ fhir:v "SupplyDelivery: EE VRIS Biological material movement" ] ;
+       fhir:description [ fhir:v "Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/SupplyDelivery/supplyDeliverySperm1> ;
+         fhir:reference [ fhir:v "SupplyDelivery/supplyDeliverySperm1" ]
+       ] ;
+       fhir:name [ fhir:v "supplyDeliverySperm1" ] ;
+       fhir:description [ fhir:v "Example of sperm package delivery from Nova Vita to PERH, 4 doses of donor sperm" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-thawing> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-vris-thawing" ]
+       ] ;
+       fhir:name [ fhir:v "Thawing date and count" ] ;
+       fhir:description [ fhir:v "Extension for thawing information. (ee Bioloogilise materjali sulatamise kuupäev ja arv.)" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "page1.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "page1.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Diagram examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "page2.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "page2.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Sample page 2" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "contacts.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "contacts.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Contacts" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "search.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "search.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Search" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2025+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "draft" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "validation" ]
+       ] ;
+       fhir:value [ fhir:v "allow-any-extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://fhir.ee/vris/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

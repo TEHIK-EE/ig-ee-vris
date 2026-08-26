@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1> a fhir:BiologicallyDerivedProduct ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sperm1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-sperm>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct sperm1</b></p><a name=\"sperm1\"> </a><a name=\"hcsperm1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-sperm.html\">BiologicallyDerivedProduct: EE VRIS Sperm</a></p></div><p><b>Cryopreservation date</b>: 2025-02-20</p><p><b>Cell preservation reason</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">For donation</span></p><p><b>BiologicallyDerivedProduct Intended Recipient</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik sperm}\">Seemnerakud</span></p><p><b>biologicalSourceEvent</b>: ABC123</p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientDonorMale.html\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR)</a></td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp donated-count}\">donated-count</span></p><p><b>value</b>: 4</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-count}\">frozen-count</span></p><p><b>value</b>: 4</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp cell-origin-role}\">cell-origin-role</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Non-partner donor</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp collection-method}\">collection-method</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Ejaculation</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp usage-state}\">usage-state</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Thawed from frozen</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp donor-stimulation-method}\">donor-stimulation-method</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Follitropin + Chorionic gonadotropin</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2025-02-20"^^xsd:date
+     ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "For donation" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+       fhir:reference [ fhir:v "Patient/patientFemale" ]
+     ]
+  ] ) ; # 
+  fhir:productCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sperm" ] ;
+       fhir:display [ fhir:v "Seemnerakud" ]
+     ] )
+  ] ; # 
+  fhir:biologicalSourceEvent [
+     fhir:value [ fhir:v "ABC123" ]
+  ] ; # 
+  fhir:productStatus [
+     fhir:code [ fhir:v "available" ]
+  ] ; # 
+  fhir:collection [
+     fhir:source [
+       fhir:link <https://fhir.ee/vris/Patient/patientDonorMale> ;
+       fhir:reference [ fhir:v "Patient/patientDonorMale" ]
+     ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "donated-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 4
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "frozen-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 4
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cell-origin-role" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Non-partner donor" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "collection-method" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Ejaculation" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-state" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Thawed from frozen" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "donor-stimulation-method" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Follitropin + Chorionic gonadotropin" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

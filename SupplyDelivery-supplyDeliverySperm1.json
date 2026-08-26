@@ -1,0 +1,48 @@
+{
+  "resourceType" : "SupplyDelivery",
+  "id" : "supplyDeliverySperm1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery supplyDeliverySperm1</b></p><a name=\"supplyDeliverySperm1\"> </a><a name=\"hcsupplyDeliverySperm1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-supply-delivery.html\">SupplyDelivery: EE VRIS Biological material movement</a></p></div><p><b>Supplied package reference</b>: <a href=\"PackagedProductDefinition-packaged-sperm1.html\">PackagedProductDefinition Sperma pakend</a></p><p><b>identifier</b>: SD-2025-04-15-001</p><p><b>status</b>: Delivered</p><p><b>type</b>: <span title=\"Codes:\">biologicallyderivedproduct</span></p><h3>SuppliedItems</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>4 doosi</td><td><a href=\"BiologicallyDerivedProduct-sperm1.html\">BiologicallyDerivedProduct: extension = 2025-02-20,For donation,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></td></tr></table><p><b>occurrence</b>: 2025-04-15 10:30:00+0200</p><p><b>supplier</b>: <a href=\"Organization-organization-novavita1.html\">Nova Vita Kliinik</a></p><p><b>destination</b>: <a href=\"https://example.org/fhir/Location/perhFertilityClinic\">PERH Fertility Clinic</a></p><p><b>receiver</b>: <a href=\"https://example.org/fhir/Organization/perh\">Põhja-Eesti Regionaalhaigla</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package",
+    "valueReference" : {
+      "reference" : "PackagedProductDefinition/packaged-sperm1"
+    }
+  }],
+  "identifier" : [{
+    "value" : "SD-2025-04-15-001"
+  }],
+  "status" : "completed",
+  "type" : {
+    "coding" : [{
+      "code" : "biologicallyderivedproduct"
+    }]
+  },
+  "suppliedItem" : [{
+    "quantity" : {
+      "value" : 4,
+      "unit" : "doosi"
+    },
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/sperm1"
+    }
+  }],
+  "occurrenceDateTime" : "2025-04-15T10:30:00+02:00",
+  "supplier" : {
+    "reference" : "Organization/organization-novavita1",
+    "display" : "Nova Vita Kliinik"
+  },
+  "destination" : {
+    "reference" : "https://example.org/fhir/Location/perhFertilityClinic",
+    "display" : "PERH Fertility Clinic"
+  },
+  "receiver" : [{
+    "reference" : "https://example.org/fhir/Organization/perh",
+    "display" : "Põhja-Eesti Regionaalhaigla"
+  }]
+}

@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/CarePlan/carePlanIvfCycle2025> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "carePlanIvfCycle2025"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan carePlanIvfCycle2025</b></p><a name=\"carePlanIvfCycle2025\"> </a><a name=\"hccarePlanIvfCycle2025\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-care-plan.html\">CarePlan: EEVRIS Cycle</a></p></div><p><b>Coverage</b>: true</p><p><b>identifier</b>: IVF-CYCLE-2025-001</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Fresh IVF cycle</span></p><p><b>title</b>: IVF tsükkel #1 Märts 2025</p><p><b>description</b>: Värske IVF tsükkel doonori spermat ja retsipiendi enda munarakke kasutades</p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>period</b>: 2025-03-01 --&gt; 2025-04-20</p><p><b>created</b>: 2025-03-01</p><p><b>custodian</b>: <a href=\"Practitioner-practitioner-doctor.html\">Practitioner Toktor Arst </a></p><h3>Addresses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-female-fertility-indication-example1.html\">Condition Anovulatsiooniga seotud naisinfertiiilsus</a></td></tr></table><p><b>supportingInfo</b>: <a href=\"Patient-patientDonorMale.html\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR)</a></p><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Procedure-procedure-oocyte-retrieval.html\">Procedure Oocyte recovery</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Procedure-procedure-fertilization1.html\">Procedure IVF</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Procedure-procedure-embryo-transfer.html\">Procedure Embryo transfer</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationAdministration-medicationAdministrationFollitropin1.html\">MedicationAdministration: status = completed; category = Outpatient medication administration; occurence[x] = 2025-03-18 08:30:00+0200; recorded = 2025-03-18 08:35:00+0200; note = Stimulatsiooni 5. päev. Patsient talub ravimit hästi.</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-observation-stimulation-protocol.html\">Observation Assisted fertilization</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-observation-fertilization-counts.html\">Observation Fertilization counts</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>PerformedActivities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-observation-embryo-lifecycle-counts.html\">Observation Embryo lifecycle summary</a></td></tr></table></blockquote><p><b>note</b>: </p><blockquote><div><p>Esimene IVF tsükkel patsiendi jaoks. Tulemus: kliiniline rasedus tuvastatud 12. nädalal.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-terk-coverage"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "IVF-CYCLE-2025-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Fresh IVF cycle" ]
+     ] )
+  ] ) ; # 
+  fhir:title [ fhir:v "IVF tsükkel #1 Märts 2025"] ; # 
+  fhir:description [ fhir:v "Värske IVF tsükkel doonori spermat ja retsipiendi enda munarakke kasutades"] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+     fhir:reference [ fhir:v "Patient/patientFemale" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-03-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-04-20"^^xsd:date ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-03-01"^^xsd:date] ; # 
+  fhir:custodian [
+     fhir:link <https://fhir.ee/vris/Practitioner/practitioner-doctor> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-doctor" ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:reference [
+       fhir:link <https://fhir.ee/vris/Condition/female-fertility-indication-example1> ;
+       fhir:reference [ fhir:v "Condition/female-fertility-indication-example1" ]
+     ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <https://fhir.ee/vris/Patient/patientDonorMale> ;
+     fhir:reference [ fhir:v "Patient/patientDonorMale" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-oocyte-retrieval> ;
+         fhir:reference [ fhir:v "Procedure/procedure-oocyte-retrieval" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-fertilization1> ;
+         fhir:reference [ fhir:v "Procedure/procedure-fertilization1" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Procedure/procedure-embryo-transfer> ;
+         fhir:reference [ fhir:v "Procedure/procedure-embryo-transfer" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/MedicationAdministration/medicationAdministrationFollitropin1> ;
+         fhir:reference [ fhir:v "MedicationAdministration/medicationAdministrationFollitropin1" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-stimulation-protocol> ;
+         fhir:reference [ fhir:v "Observation/observation-stimulation-protocol" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-fertilization-counts> ;
+         fhir:reference [ fhir:v "Observation/observation-fertilization-counts" ]
+       ]
+     ] )
+  ] [
+     fhir:performedActivity ( [
+       fhir:reference [
+         fhir:link <https://fhir.ee/vris/Observation/observation-embryo-lifecycle-counts> ;
+         fhir:reference [ fhir:v "Observation/observation-embryo-lifecycle-counts" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Esimene IVF tsükkel patsiendi jaoks. Tulemus: kliiniline rasedus tuvastatud 12. nädalal." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

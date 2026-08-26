@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/PractitionerRole/practitionerrole-doctor> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitionerrole-doctor"] ; # 
+  fhir:language [ fhir:v "et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole practitionerrole-doctor</b></p><a name=\"practitionerrole-doctor\"> </a><a name=\"hcpractitionerrole-doctor\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p></div><p><b>identifier</b>: <code>https://fhir.ee/sid/pro/est/pho</code>/D99876</p><p><b>active</b>: true</p><p><b>period</b>: 2008-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner-doctor.html\">Practitioner Toktor Arst </a></p><p><b>organization</b>: <a href=\"Organization-organization-novavita1.html\">Organization Nova Vita Kliinik AS</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pro/est/pho"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "D99876" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2008-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://fhir.ee/vris/Practitioner/practitioner-doctor> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-doctor" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://fhir.ee/vris/Organization/organization-novavita1> ;
+     fhir:reference [ fhir:v "Organization/organization-novavita1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

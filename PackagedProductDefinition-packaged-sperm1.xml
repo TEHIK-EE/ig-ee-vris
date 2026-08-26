@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackagedProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="packaged-sperm1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PackagedProductDefinition packaged-sperm1</b></p><a name="packaged-sperm1"> </a><a name="hcpackaged-sperm1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-packaged-product-definition.html">PackagedProductDefinition: EE VRIS Package</a></p></div><p><b>identifier</b>: <code>https://fhir.ee/vris/identifier/packaged-product</code>/PKG-2024-SP-001</p><p><b>name</b>: Sperma pakend</p><p><b>status</b>: <span title="Codes:">active</span></p><p><b>description</b>: </p><div><p>Pakend sisaldab 3 krüosäilitatud sperma doosi.</p>
+</div><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title="Codes:">Krüosäilitamise konteiner</span></p><blockquote><p><b>containedItem</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="BiologicallyDerivedProduct-sperm1.html">BiologicallyDerivedProduct: extension = 2025-02-20,For donation,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></td></tr></table><p><b>amount</b>: 3</p></blockquote></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/vris/identifier/packaged-product"/>
+    <value value="PKG-2024-SP-001"/>
+  </identifier>
+  <name value="Sperma pakend"/>
+  <status>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </status>
+  <description value="Pakend sisaldab 3 krüosäilitatud sperma doosi."/>
+  <packaging>
+    <type>
+      <text value="Krüosäilitamise konteiner"/>
+    </type>
+    <containedItem>
+      <item>
+        <reference>
+          <reference value="BiologicallyDerivedProduct/sperm1"/>
+        </reference>
+      </item>
+      <amount>
+        <value value="3"/>
+      </amount>
+    </containedItem>
+  </packaging>
+</PackagedProductDefinition>

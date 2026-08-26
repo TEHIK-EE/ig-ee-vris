@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/SupplyDelivery/supplyDeliverySperm1> a fhir:SupplyDelivery ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "supplyDeliverySperm1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery supplyDeliverySperm1</b></p><a name=\"supplyDeliverySperm1\"> </a><a name=\"hcsupplyDeliverySperm1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-supply-delivery.html\">SupplyDelivery: EE VRIS Biological material movement</a></p></div><p><b>Supplied package reference</b>: <a href=\"PackagedProductDefinition-packaged-sperm1.html\">PackagedProductDefinition Sperma pakend</a></p><p><b>identifier</b>: SD-2025-04-15-001</p><p><b>status</b>: Delivered</p><p><b>type</b>: <span title=\"Codes:\">biologicallyderivedproduct</span></p><h3>SuppliedItems</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>4 doosi</td><td><a href=\"BiologicallyDerivedProduct-sperm1.html\">BiologicallyDerivedProduct: extension = 2025-02-20,For donation,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></td></tr></table><p><b>occurrence</b>: 2025-04-15 10:30:00+0200</p><p><b>supplier</b>: <a href=\"Organization-organization-novavita1.html\">Nova Vita Kliinik</a></p><p><b>destination</b>: <a href=\"https://example.org/fhir/Location/perhFertilityClinic\">PERH Fertility Clinic</a></p><p><b>receiver</b>: <a href=\"https://example.org/fhir/Organization/perh\">Põhja-Eesti Regionaalhaigla</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-supplied-package"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/PackagedProductDefinition/packaged-sperm1> ;
+       fhir:reference [ fhir:v "PackagedProductDefinition/packaged-sperm1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "SD-2025-04-15-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:code [ fhir:v "biologicallyderivedproduct" ]
+     ] )
+  ] ; # 
+  fhir:suppliedItem ( [
+     fhir:quantity [
+       fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "doosi" ]
+     ] ;
+     fhir:item [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1" ]
+     ]
+  ] ) ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-04-15T10:30:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:supplier [
+     fhir:link <https://fhir.ee/vris/Organization/organization-novavita1> ;
+     fhir:reference [ fhir:v "Organization/organization-novavita1" ] ;
+     fhir:display [ fhir:v "Nova Vita Kliinik" ]
+  ] ; # 
+  fhir:destination [
+     fhir:link <https://example.org/fhir/Location/perhFertilityClinic> ;
+     fhir:reference [ fhir:v "https://example.org/fhir/Location/perhFertilityClinic" ] ;
+     fhir:display [ fhir:v "PERH Fertility Clinic" ]
+  ] ; # 
+  fhir:receiver ( [
+     fhir:link <https://example.org/fhir/Organization/perh> ;
+     fhir:reference [ fhir:v "https://example.org/fhir/Organization/perh" ] ;
+     fhir:display [ fhir:v "Põhja-Eesti Regionaalhaigla" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

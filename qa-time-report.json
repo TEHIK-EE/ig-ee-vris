@@ -1,0 +1,4838 @@
+{
+  "date" : "Wed, 26 Aug, 2026 08:01:11 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-ee.fhir.vris.json",
+    "size" : 41116,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 80,
+      "length" : 10
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 83,
+      "length" : 42
+    },
+    {
+      "activity" : "validate",
+      "start" : 244,
+      "length" : 5083
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 154
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 160
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/BiologicallyDerivedProduct-donor-embryo1.json",
+    "size" : 2418,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 7
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 83,
+      "length" : 508
+    },
+    {
+      "activity" : "validate",
+      "start" : 249,
+      "length" : 1274
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 16
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 373,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/BiologicallyDerivedProduct-oocyte1.json",
+    "size" : 4712,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 84,
+      "length" : 3045
+    },
+    {
+      "activity" : "validate",
+      "start" : 250,
+      "length" : 4061
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/BiologicallyDerivedProduct-sperm1.json",
+    "size" : 3356,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 87,
+      "length" : 502
+    },
+    {
+      "activity" : "validate",
+      "start" : 254,
+      "length" : 1720
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CarePlan-carePlanIvfCycle2025.json",
+    "size" : 2606,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 87,
+      "length" : 1158
+    },
+    {
+      "activity" : "validate",
+      "start" : 256,
+      "length" : 244
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-donor-genetic-finding-suspected1.json",
+    "size" : 1139,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 89,
+      "length" : 3
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 256,
+      "length" : 1431
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-donor-genetic-finding-verified1.json",
+    "size" : 1188,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 89,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 258,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-female-fertility-indication-example1.json",
+    "size" : 1135,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 89,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 258,
+      "length" : 946
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationAdministration-medicationAdministrationFollitropin1.json",
+    "size" : 1982,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 89,
+      "length" : 720
+    },
+    {
+      "activity" : "validate",
+      "start" : 259,
+      "length" : 2398
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-observation-bloodgroup.json",
+    "size" : 1439,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 89,
+      "length" : 1678
+    },
+    {
+      "activity" : "validate",
+      "start" : 261,
+      "length" : 3583
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-observation-embryo-lifecycle-counts.json",
+    "size" : 1282,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 265,
+      "length" : 241
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-observation-fertilization-counts.json",
+    "size" : 1466,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 244,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 265,
+      "length" : 245
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-observation-stimulation-protocol.json",
+    "size" : 2069,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 274
+    },
+    {
+      "activity" : "validate",
+      "start" : 265,
+      "length" : 1207
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/OperationDefinition-EEVRISPatientObservations.json",
+    "size" : 3234,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 8
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 242,
+      "length" : 1778
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 17
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Organization-organization-novavita1.json",
+    "size" : 359,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 266,
+      "length" : 1901
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/PackagedProductDefinition-packaged-sperm1.json",
+    "size" : 826,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 268,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-patientChild1.json",
+    "size" : 938,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 268,
+      "length" : 4593
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-patientDonorMale.json",
+    "size" : 2063,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 42
+    },
+    {
+      "activity" : "validate",
+      "start" : 273,
+      "length" : 1703
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-patientDonorunknown1.json",
+    "size" : 1803,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 274,
+      "length" : 1963
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-patientFemale.json",
+    "size" : 797,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 276,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Practitioner-practitioner-doctor.json",
+    "size" : 442,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 276,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/PractitionerRole-practitionerrole-doctor.json",
+    "size" : 426,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 276,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-procedure-embryo-transfer.json",
+    "size" : 1179,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 276,
+      "length" : 479
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-procedure-fertilization1.json",
+    "size" : 1272,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 277,
+      "length" : 717
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-procedure-oocyte-retrieval.json",
+    "size" : 1144,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 278,
+      "length" : 478
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-additional-identifier.json",
+    "size" : 1470,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 53
+    },
+    {
+      "activity" : "validate",
+      "start" : 114,
+      "length" : 9055
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 28
+    },
+    {
+      "activity" : "generate2",
+      "start" : 308,
+      "length" : 560
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 278
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-birth-sex.json",
+    "size" : 1393,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 123,
+      "length" : 927
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 34
+    },
+    {
+      "activity" : "generate2",
+      "start" : 309,
+      "length" : 122
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 71
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-care-plan.json",
+    "size" : 9136,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 36
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 768
+    },
+    {
+      "activity" : "validate",
+      "start" : 124,
+      "length" : 10184
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 195
+    },
+    {
+      "activity" : "generate2",
+      "start" : 309,
+      "length" : 333
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 265
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-cause-of-death.json",
+    "size" : 3361,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 26
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 92,
+      "length" : 740
+    },
+    {
+      "activity" : "validate",
+      "start" : 134,
+      "length" : 3532
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 142
+    },
+    {
+      "activity" : "generate2",
+      "start" : 309,
+      "length" : 196
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 161
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-cell-preservation-reason.json",
+    "size" : 1635,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 93,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 137,
+      "length" : 272
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 26
+    },
+    {
+      "activity" : "generate2",
+      "start" : 309,
+      "length" : 71
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 34
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-birth-defect.json",
+    "size" : 2467,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 27
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 93,
+      "length" : 17
+    },
+    {
+      "activity" : "validate",
+      "start" : 138,
+      "length" : 1114
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 125
+    },
+    {
+      "activity" : "generate2",
+      "start" : 310,
+      "length" : 175
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 149
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-comorbidity.json",
+    "size" : 3861,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 93,
+      "length" : 15
+    },
+    {
+      "activity" : "validate",
+      "start" : 139,
+      "length" : 371
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 279,
+      "length" : 128
+    },
+    {
+      "activity" : "generate2",
+      "start" : 310,
+      "length" : 942
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 132
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-donor-genetic-finding.json",
+    "size" : 4839,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 50
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 93,
+      "length" : 738
+    },
+    {
+      "activity" : "validate",
+      "start" : 139,
+      "length" : 1752
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 147
+    },
+    {
+      "activity" : "generate2",
+      "start" : 311,
+      "length" : 962
+    },
+    {
+      "activity" : "generate2",
+      "start" : 335,
+      "length" : 151
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-fertility-indication-female.json",
+    "size" : 3852,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 16
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 141,
+      "length" : 311
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 135
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 187
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 111
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-fertility-indication-male.json",
+    "size" : 3835,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 80,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 141,
+      "length" : 296
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 127
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 169
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 99
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-pregnancy.json",
+    "size" : 2172,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 142,
+      "length" : 302
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 104
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 150
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 96
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-condition-treatment-complication.json",
+    "size" : 3328,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 18
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 142,
+      "length" : 297
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 115
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 167
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 102
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-coverage.json",
+    "size" : 3391,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 59
+    },
+    {
+      "activity" : "validate",
+      "start" : 142,
+      "length" : 2620
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 152
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 171
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 118
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-cryopreservation-date.json",
+    "size" : 1612,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 145,
+      "length" : 253
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 29
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 74
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 23
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-cycle-discontinuation-reason.json",
+    "size" : 1607,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 145,
+      "length" : 1689
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 25
+    },
+    {
+      "activity" : "generate2",
+      "start" : 313,
+      "length" : 73
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 26
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-donor-anonymous.json",
+    "size" : 3410,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 46
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 147,
+      "length" : 7343
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 280,
+      "length" : 283
+    },
+    {
+      "activity" : "generate2",
+      "start" : 313,
+      "length" : 1350
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 270
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-donor-reference.json",
+    "size" : 1665,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 249
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 25
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 56
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 21
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-donor.json",
+    "size" : 3990,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 44
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 380
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 247
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 296
+    },
+    {
+      "activity" : "generate2",
+      "start" : 336,
+      "length" : 219
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-embryo.json",
+    "size" : 8573,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 29
+    },
+    {
+      "activity" : "scan",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 739
+    },
+    {
+      "activity" : "validate",
+      "start" : 155,
+      "length" : 2304
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 161
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 163
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 84
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-encounter.json",
+    "size" : 2573,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 38
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 15
+    },
+    {
+      "activity" : "validate",
+      "start" : 157,
+      "length" : 1455
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 150
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 270
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 113
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 345,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-episode-of-care-pregnancy.json",
+    "size" : 4630,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 43
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 158,
+      "length" : 296
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 152
+    },
+    {
+      "activity" : "generate2",
+      "start" : 315,
+      "length" : 190
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 75
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-episode-of-care.json",
+    "size" : 2407,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 159,
+      "length" : 278
+    },
+    {
+      "activity" : "generate1",
+      "start" : 281,
+      "length" : 92
+    },
+    {
+      "activity" : "generate2",
+      "start" : 315,
+      "length" : 156
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 58
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-medication-administration.json",
+    "size" : 2766,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 19
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 159,
+      "length" : 860
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 106
+    },
+    {
+      "activity" : "generate2",
+      "start" : 315,
+      "length" : 183
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 90
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-attempting-to-concieve.json",
+    "size" : 4416,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 29
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 728
+    },
+    {
+      "activity" : "validate",
+      "start" : 160,
+      "length" : 3584
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 194
+    },
+    {
+      "activity" : "generate2",
+      "start" : 315,
+      "length" : 253
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 92
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-biochemical-pregnancy.json",
+    "size" : 4065,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 28
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 163,
+      "length" : 632
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 192
+    },
+    {
+      "activity" : "generate2",
+      "start" : 316,
+      "length" : 902
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 122
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-birth-weight.json",
+    "size" : 2610,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 29
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 164,
+      "length" : 572
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 179
+    },
+    {
+      "activity" : "generate2",
+      "start" : 316,
+      "length" : 534
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 98
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-blood-group.json",
+    "size" : 5271,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 34
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 35
+    },
+    {
+      "activity" : "validate",
+      "start" : 165,
+      "length" : 1797
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 250
+    },
+    {
+      "activity" : "generate2",
+      "start" : 317,
+      "length" : 1694
+    },
+    {
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 109
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-clinical-pregnancy.json",
+    "size" : 5591,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 78
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 28
+    },
+    {
+      "activity" : "validate",
+      "start" : 166,
+      "length" : 1137
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 282,
+      "length" : 258
+    },
+    {
+      "activity" : "generate2",
+      "start" : 319,
+      "length" : 1012
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 109
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-education-level.json",
+    "size" : 1404,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 30
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 168,
+      "length" : 1310
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 283,
+      "length" : 187
+    },
+    {
+      "activity" : "generate2",
+      "start" : 320,
+      "length" : 1163
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 115
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-embryo-lifecycle-counts.json",
+    "size" : 4969,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 37
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 169,
+      "length" : 351
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 283,
+      "length" : 270
+    },
+    {
+      "activity" : "generate2",
+      "start" : 321,
+      "length" : 210
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 122
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-fertilization-counts.json",
+    "size" : 6548,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 46
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 24
+    },
+    {
+      "activity" : "validate",
+      "start" : 169,
+      "length" : 398
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 283,
+      "length" : 345
+    },
+    {
+      "activity" : "generate2",
+      "start" : 321,
+      "length" : 463
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 366
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-fetus-reduction.json",
+    "size" : 4621,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 170,
+      "length" : 571
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 284,
+      "length" : 200
+    },
+    {
+      "activity" : "generate2",
+      "start" : 321,
+      "length" : 455
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 150
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-height.json",
+    "size" : 4679,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 170,
+      "length" : 611
+    },
+    {
+      "activity" : "generate1",
+      "start" : 284,
+      "length" : 213
+    },
+    {
+      "activity" : "generate2",
+      "start" : 322,
+      "length" : 457
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 115
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-marital-status.json",
+    "size" : 1399,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 26
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 171,
+      "length" : 565
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 284,
+      "length" : 155
+    },
+    {
+      "activity" : "generate2",
+      "start" : 322,
+      "length" : 258
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 107
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-neonatal-intensive-care.json",
+    "size" : 2458,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 171,
+      "length" : 582
+    },
+    {
+      "activity" : "generate1",
+      "start" : 284,
+      "length" : 162
+    },
+    {
+      "activity" : "generate2",
+      "start" : 323,
+      "length" : 420
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 94
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-obstetric-history.json",
+    "size" : 10787,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 43
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 29
+    },
+    {
+      "activity" : "validate",
+      "start" : 172,
+      "length" : 1974
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 284,
+      "length" : 401
+    },
+    {
+      "activity" : "generate2",
+      "start" : 323,
+      "length" : 1909
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 175
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-physical-appearance.json",
+    "size" : 7694,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 40
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 2895
+    },
+    {
+      "activity" : "validate",
+      "start" : 174,
+      "length" : 7330
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 285,
+      "length" : 330
+    },
+    {
+      "activity" : "generate2",
+      "start" : 325,
+      "length" : 1495
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 191
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 12
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-pregnancy-outcome.json",
+    "size" : 13242,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 64
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 98,
+      "length" : 32
+    },
+    {
+      "activity" : "validate",
+      "start" : 181,
+      "length" : 2417
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 285,
+      "length" : 538
+    },
+    {
+      "activity" : "generate2",
+      "start" : 326,
+      "length" : 2329
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 198
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 11
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-prenatal-care-discontinued.json",
+    "size" : 1958,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 23
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 98,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 184,
+      "length" : 545
+    },
+    {
+      "activity" : "generate1",
+      "start" : 286,
+      "length" : 149
+    },
+    {
+      "activity" : "generate2",
+      "start" : 329,
+      "length" : 382
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 124
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-prior-fertility-treatment.json",
+    "size" : 10091,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 34
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 98,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 184,
+      "length" : 1827
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 286,
+      "length" : 377
+    },
+    {
+      "activity" : "generate2",
+      "start" : 329,
+      "length" : 250
+    },
+    {
+      "activity" : "generate2",
+      "start" : 339,
+      "length" : 120
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 8
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-stimulation-protocol-embryo.json",
+    "size" : 5919,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 30
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 98,
+      "length" : 743
+    },
+    {
+      "activity" : "validate",
+      "start" : 186,
+      "length" : 2064
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 286,
+      "length" : 270
+    },
+    {
+      "activity" : "generate2",
+      "start" : 329,
+      "length" : 188
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 102
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-stimulation-protocol.json",
+    "size" : 10605,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 53
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 99,
+      "length" : 3831
+    },
+    {
+      "activity" : "validate",
+      "start" : 188,
+      "length" : 7803
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 286,
+      "length" : 490
+    },
+    {
+      "activity" : "generate2",
+      "start" : 330,
+      "length" : 309
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 225
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-tobacco-use.json",
+    "size" : 4785,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 81,
+      "length" : 20
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 103,
+      "length" : 749
+    },
+    {
+      "activity" : "validate",
+      "start" : 196,
+      "length" : 1985
+    },
+    {
+      "activity" : "generate1",
+      "start" : 287,
+      "length" : 201
+    },
+    {
+      "activity" : "generate2",
+      "start" : 330,
+      "length" : 199
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 72
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-waist.json",
+    "size" : 4704,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 104,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 198,
+      "length" : 570
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 287,
+      "length" : 212
+    },
+    {
+      "activity" : "generate2",
+      "start" : 330,
+      "length" : 410
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 77
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-observation-weight.json",
+    "size" : 4673,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 22
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 104,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 199,
+      "length" : 557
+    },
+    {
+      "activity" : "generate1",
+      "start" : 287,
+      "length" : 214
+    },
+    {
+      "activity" : "generate2",
+      "start" : 331,
+      "length" : 190
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 77
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-oocyte.json",
+    "size" : 14748,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 7
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 35
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 104,
+      "length" : 4516
+    },
+    {
+      "activity" : "validate",
+      "start" : 199,
+      "length" : 9444
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 287,
+      "length" : 415
+    },
+    {
+      "activity" : "generate2",
+      "start" : 331,
+      "length" : 292
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 129
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-packaged-product-definition.json",
+    "size" : 4918,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 108,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 209,
+      "length" : 1432
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 151
+    },
+    {
+      "activity" : "generate2",
+      "start" : 331,
+      "length" : 158
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 55
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-patient-child-unknown-id.json",
+    "size" : 3145,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 31
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 108,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 210,
+      "length" : 395
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 224
+    },
+    {
+      "activity" : "generate2",
+      "start" : 331,
+      "length" : 206
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 127
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-patient-child.json",
+    "size" : 2271,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 29
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 108,
+      "length" : 12
+    },
+    {
+      "activity" : "validate",
+      "start" : 210,
+      "length" : 374
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 207
+    },
+    {
+      "activity" : "generate2",
+      "start" : 331,
+      "length" : 237
+    },
+    {
+      "activity" : "generate2",
+      "start" : 340,
+      "length" : 150
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-patient-universal.json",
+    "size" : 5983,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 108,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 211,
+      "length" : 321
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 163
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 123
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 69
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 345,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-cryopreservation.json",
+    "size" : 4042,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 26
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 108,
+      "length" : 2250
+    },
+    {
+      "activity" : "validate",
+      "start" : 211,
+      "length" : 5538
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 133
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 121
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 55
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-destruction.json",
+    "size" : 2817,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 11
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 741
+    },
+    {
+      "activity" : "validate",
+      "start" : 217,
+      "length" : 1968
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 119
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 101
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 56
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-donation.json",
+    "size" : 2571,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 11
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 219,
+      "length" : 527
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 117
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 107
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 57
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-embryo-transfer.json",
+    "size" : 3109,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 219,
+      "length" : 293
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 130
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 103
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 58
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-fertilization.json",
+    "size" : 2433,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 17
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 219,
+      "length" : 285
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 112
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 97
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 55
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-insemination.json",
+    "size" : 2950,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 220,
+      "length" : 285
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 125
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 118
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 55
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-oocyte-retrieval.json",
+    "size" : 3129,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 220,
+      "length" : 531
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 137
+    },
+    {
+      "activity" : "generate2",
+      "start" : 332,
+      "length" : 101
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 55
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure-pgt.json",
+    "size" : 2359,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 220,
+      "length" : 295
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 126
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 97
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 102
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-procedure.json",
+    "size" : 3280,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 221,
+      "length" : 322
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 145
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 118
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 72
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-recipient.json",
+    "size" : 2752,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 33
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 15
+    },
+    {
+      "activity" : "validate",
+      "start" : 221,
+      "length" : 358
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 232
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 278
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 164
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-recryo.json",
+    "size" : 3530,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 221,
+      "length" : 12466
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 75
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 107
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 34
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-related-clinic.json",
+    "size" : 1502,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 234,
+      "length" : 243
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 71
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 16
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-related-person.json",
+    "size" : 3487,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 16
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 111,
+      "length" : 750
+    },
+    {
+      "activity" : "validate",
+      "start" : 234,
+      "length" : 2666
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 157
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 180
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 90
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-reproductive-tissue.json",
+    "size" : 9467,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 23
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 237,
+      "length" : 331
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 249
+    },
+    {
+      "activity" : "generate2",
+      "start" : 333,
+      "length" : 259
+    },
+    {
+      "activity" : "generate2",
+      "start" : 341,
+      "length" : 103
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-role.json",
+    "size" : 1720,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 237,
+      "length" : 242
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 73
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-sperm.json",
+    "size" : 11652,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 25
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 1496
+    },
+    {
+      "activity" : "validate",
+      "start" : 237,
+      "length" : 3230
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 313
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 273
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 126
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-stimulation-method.json",
+    "size" : 1624,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 241,
+      "length" : 245
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 25
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 48
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 14
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-supplied-package.json",
+    "size" : 1657,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 241,
+      "length" : 241
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 49
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-supply-delivery.json",
+    "size" : 5838,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 241,
+      "length" : 283
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 249,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 140
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 104
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 58
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 435,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-terk-coverage.json",
+    "size" : 1456,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 2
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 241,
+      "length" : 248
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 47
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-vris-thawing.json",
+    "size" : 2841,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 82,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 242,
+      "length" : 267
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 57
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 64
+    },
+    {
+      "activity" : "generate2",
+      "start" : 342,
+      "length" : 25
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 374,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/SupplyDelivery-supplyDeliverySperm1.json",
+    "size" : 1242,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 80,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 114,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 278,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1726,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 7865
+  },
+  {
+    "name" : "/input/pagecontent/contacts.md",
+    "size" : 370
+  },
+  {
+    "name" : "/input/pagecontent/page1.md",
+    "size" : 526
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 931,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/page2.md",
+    "size" : 209
+  },
+  {
+    "name" : "/input/pagecontent/downloads.xml",
+    "size" : 1148,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 54
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/search.xml",
+    "size" : 446,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 38
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/robots.txt",
+    "size" : 24,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/sample.png",
+    "size" : 2028720,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 49089,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 334,
+      "length" : 2
+    }]
+  }]
+}

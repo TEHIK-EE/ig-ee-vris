@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="donor-genetic-finding-verified1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition donor-genetic-finding-verified1</b></p><a name="donor-genetic-finding-verified1"> </a><a name="hcdonor-genetic-finding-verified1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-condition-donor-genetic-finding.html">Condition: EE VRIS Donor Genetic Finding</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-geneetilise-leiu-tyyp autosomal-recessive-carrier}">Autosoom-retsessiivse geenivariandi kandlus</span></p><p><b>code</b>: <span title="Codes:">CFTR geeni c.1521_1523delCTT (p.Phe508del) variant — tsüstilise fibroosi kandlus</span></p><p><b>subject</b>: <a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>note</b>: </p><blockquote><div><p>Doonori lapsel diagnoositi tsüstiline fibroos. Doonori DNA-test kinnitas CFTR geeni heterosügootset kandlust.</p>
+</div></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/vris-geneetilise-leiu-tyyp"/>
+      <code value="autosomal-recessive-carrier"/>
+      <display value="Autosoom-retsessiivse geenivariandi kandlus"/>
+    </coding>
+  </category>
+  <code>
+    <text value="CFTR geeni c.1521_1523delCTT (p.Phe508del) variant — tsüstilise fibroosi kandlus"/>
+  </code>
+  <subject>
+    <reference value="Patient/patientFemale"/>
+  </subject>
+  <note>
+    <text value="Doonori lapsel diagnoositi tsüstiline fibroos. Doonori DNA-test kinnitas CFTR geeni heterosügootset kandlust."/>
+  </note>
+</Condition>

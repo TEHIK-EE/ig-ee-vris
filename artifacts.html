@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - VRIS - Viljatusravi infosüsteem v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/tehik.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="https://www.tehik.ee">
+    <img height="70" src="assets/images/tehik-logo.png"/>
+  </a>
+</div>
+
+<!-- Right logo - for example the FHIR logo --><!-- Make sure you have authorization to use the FHIR logo --><!--
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+  </div>
+-->
+<!-- search icon - if you want -->
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="search.html"><img alt="Search FHIR"
+      src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">VRIS - Viljatusravi infosüsteem</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  Estonia
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="page1.html">Page1</a>
+      </li>
+      <li>
+        <a href="page2.html">Page2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">VRIS - Viljatusravi infosüsteem - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir.ee/vris/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Persons</a>
+      </li>
+      <li>
+         <a href="#2">Biological material</a>
+      </li>
+      <li>
+         <a href="#3">Observations</a>
+      </li>
+      <li>
+         <a href="#4">Behavior: Operation Definitions</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#6">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Persons </h3>
+    <p>Donor-Recipient related profiles</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-donor-anonymous.html"
+                  title="StructureDefinition/ee-vris-donor-anonymous">Patient: EE VRIS Anonymous Patient</a>
+            </td>
+            <td>
+<p>Anonymous donor in the Estonian VRIS fertility system. (ee Anonüümne (välismaa) doonor VRIS-is.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-patient-child.html"
+                  title="StructureDefinition/ee-vris-patient-child">Patient: EE VRIS Child</a>
+            </td>
+            <td>
+<p>Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-patient-child-unknown-id.html"
+                  title="StructureDefinition/ee-vris-patient-child-unknown-id">Patient: EE VRIS Child</a>
+            </td>
+            <td>
+<p>Child born from VRIS fertility treatment with UNKNOWN ID (and NO name) Identifier is generated by HC provider. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teadMATA! IK genereeritud TTO poolt.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-donor.html"
+                  title="StructureDefinition/ee-vris-donor">Patient: EE VRIS Donor</a>
+            </td>
+            <td>
+<p>For use of donors. (ee Doonori profiil, kasutamiseks. Anonüümsete ja anonüümsete-välismaiste doonorite puhul on TEINE PROFIIL!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-patient-universal.html"
+                  title="StructureDefinition/ee-vris-patient-universal">Patient: EE VRIS Patient</a>
+            </td>
+            <td>
+<p>VRIS patient profile. (ee EI KASUTA! VRIS patsiendi profiil. Roll modifierExtension'ina ning link viitab MPI ametlikule patsiendikirjele.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-recipient.html"
+                  title="StructureDefinition/ee-vris-recipient">Patient: EE VRIS Recipient</a>
+            </td>
+            <td>
+<p>For use of patients who recieve care and are recipients of biologic material. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Kas partner on retsipient?)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-related-person.html"
+                  title="StructureDefinition/ee-vris-related-person">RelatedPerson: EE VRIS RelatedPerson</a>
+            </td>
+            <td>
+<p>Related person profile for VRIS. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Biological material </h3>
+    <p>Embryo and reproductive cell profiles</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-embryo.html"
+                  title="StructureDefinition/ee-vris-embryo">BiologicallyDerivedProduct: EE VRIS Embryo</a>
+            </td>
+            <td>
+<p>Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressurss!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-oocyte.html"
+                  title="StructureDefinition/ee-vris-oocyte">BiologicallyDerivedProduct: EE VRIS Oocyte</a>
+            </td>
+            <td>
+<p>Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-reproductive-tissue.html"
+                  title="StructureDefinition/ee-vris-reproductive-tissue">BiologicallyDerivedProduct: EE VRIS Reproductive Tissue</a>
+            </td>
+            <td>
+<p>Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-sperm.html"
+                  title="StructureDefinition/ee-vris-sperm">BiologicallyDerivedProduct: EE VRIS Sperm</a>
+            </td>
+            <td>
+<p>Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Observations </h3>
+    <p>Observation profiles</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-attempting-to-concieve.html"
+                  title="StructureDefinition/ee-vris-observation-attempting-to-concieve">Observation: EE VRIS Attempting to Concieve</a>
+            </td>
+            <td>
+<p>Observation profile for how long is woman attempting to concieve. (ee Rasestuda üritamine.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-biochemical-pregnancy.html"
+                  title="StructureDefinition/ee-vris-observation-biochemical-pregnancy">Observation: EE VRIS Biochemical Pregnancy</a>
+            </td>
+            <td>
+<p>Biochemical pregnancy detected by blood test. (ee Biokeemiline rasedus, tuvastatud vereanalüüsiga.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-birth-weight.html"
+                  title="StructureDefinition/ee-vris-observation-birth-weight">Observation: EE VRIS Birth Weight</a>
+            </td>
+            <td>
+<p>Birth weight of newborn child. (ee Lapse sünnikaal grammides.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-blood-group.html"
+                  title="StructureDefinition/ee-vris-observation-blood-group">Observation: EE VRIS Blood Group</a>
+            </td>
+            <td>
+<p>Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-clinical-pregnancy.html"
+                  title="StructureDefinition/ee-vris-observation-clinical-pregnancy">Observation: EE VRIS Clinical Pregnancy</a>
+            </td>
+            <td>
+<p>Clinical pregnancy, confirmed by ultrasound AND number of fetus. (ee Kliiniline rasedus, kinnitatud ultraheliuuringuga. LOOTEMUNADE arv ka! NB! Biokeemilise raseduse profiil on eraldi.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-education-level.html"
+                  title="StructureDefinition/ee-vris-observation-education-level">Observation: EE VRIS Education Level</a>
+            </td>
+            <td>
+<p>Education level of a donor or recipient in the Estonian VRIS fertility system. (ee Haridustase. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-embryo-lifecycle-counts.html"
+                  title="StructureDefinition/ee-vris-observation-embryo-lifecycle-counts">Observation: EE VRIS Embryo Lifecycle Counts</a>
+            </td>
+            <td>
+<p>Summary counts of embryo lifecycle events in a fertility treatment cycle (frozen, transferred, destroyed). (ee Embrüote elutsükli kokkuvõtted: külmutatud, siirdatud, hävitatud arv tsüklis.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-fertilization-counts.html"
+                  title="StructureDefinition/ee-vris-observation-fertilization-counts">Observation: EE VRIS Fertilization Counts</a>
+            </td>
+            <td>
+<p>Counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud erinevates staadiumites.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-fetus-reduction.html"
+                  title="StructureDefinition/ee-vris-observation-fetus-reduction">Observation: EE VRIS Fetus Reduction</a>
+            </td>
+            <td>
+<p>Observation profile for recording whether fetus reduction procedure was performed in multifetal pregnancy. (ee Loote/loodete reduktsiooni läbiviimine mitmikrasedusel.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-height.html"
+                  title="StructureDefinition/ee-vris-observation-height">Observation: EE VRIS Height</a>
+            </td>
+            <td>
+<p>Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-marital-status.html"
+                  title="StructureDefinition/ee-vris-observation-marital-status">Observation: EE VRIS Marital Status</a>
+            </td>
+            <td>
+<p>Marital status of a donor or recipient in the Estonian VRIS fertility system. (ee Perekonnaseis. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-neonatal-intensive-care.html"
+                  title="StructureDefinition/ee-vris-observation-neonatal-intensive-care">Observation: EE VRIS Neonatal Intensive Care</a>
+            </td>
+            <td>
+<p>Whether the child received neonatal intensive care during first 7 days of life. (ee Lapse intensiivravi esimese 7 elupäeva jooksul.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-obstetric-history.html"
+                  title="StructureDefinition/ee-vris-observation-obstetric-history">Observation: EE VRIS Obstetric History</a>
+            </td>
+            <td>
+<p>Past obstetric history at the START of fertility treatment cycle. Records cumulative count of all prior pregnancies, deliveries, live births and stillbirths BEFORE current treatment. (ee Sünnitusanamnees ENNE käesolevat viljatusravi tsüklit. Varasemate raseduste, sünnituste ja sündide kumulatiivne arv.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-stimulation-protocol.html"
+                  title="StructureDefinition/ee-vris-observation-stimulation-protocol">Observation: EE VRIS Ovarian Stimulation Protocol</a>
+            </td>
+            <td>
+<p>Captures ovarian stimulation protocol details for fertility treatment cycle. (ee Munasarjade stimulatsiooni protokoll sisaldab meetodi, supressiooni, gonadotropiini ja eelneva ravi info.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-physical-appearance.html"
+                  title="StructureDefinition/ee-vris-observation-physical-appearance">Observation: EE VRIS Physical Appearance</a>
+            </td>
+            <td>
+<p>Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-pregnancy-outcome.html"
+                  title="StructureDefinition/ee-vris-observation-pregnancy-outcome">Observation: EE VRIS Pregnancy Outcome</a>
+            </td>
+            <td>
+<p>Pregnancy outcome including delivery, miscarriage, abortion details. (ee Raseduse lõpe sünnitus, katkemine või katkestamine koos detailidega.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-prenatal-care-discontinued.html"
+                  title="StructureDefinition/ee-vris-observation-prenatal-care-discontinued">Observation: EE VRIS Prenatal Care Discontinued</a>
+            </td>
+            <td>
+<p>Indicator whether prenatal care was discontinued by patient or for unknown reasons. (ee Rasedusaegne tervisekontroll katkestatud patsiendi poolt või teadmata põhjusel.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-prior-fertility-treatment.html"
+                  title="StructureDefinition/ee-vris-observation-prior-fertility-treatment">Observation: EE VRIS Prior Fertility Treatment</a>
+            </td>
+            <td>
+<p>Prior fertility treatment history. Records whether IVF and/or IUI has been performed and the number of cycles. (ee Varasema viljatusravi anamnees)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-stimulation-protocol-embryo.html"
+                  title="StructureDefinition/ee-vris-observation-stimulation-protocol-embryo">Observation: EE VRIS Stimulation Protocol for Embryo Transfer</a>
+            </td>
+            <td>
+<p>Captures stimulation protocol details for thawed embryo. (ee Sulatatud embrüo siirdamise protokoll jm.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-tobacco-use.html"
+                  title="StructureDefinition/ee-vris-observation-tobacco-use">Observation: EE VRIS Tobacco Use</a>
+            </td>
+            <td>
+<p>Observation profile for tobacco use status in the Estonian VRIS fertility system. (ee Tubakatoodete kasutamine.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-waist.html"
+                  title="StructureDefinition/ee-vris-observation-waist">Observation: EE VRIS Waist</a>
+            </td>
+            <td>
+<p>Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-observation-weight.html"
+                  title="StructureDefinition/ee-vris-observation-weight">Observation: EE VRIS Weight</a>
+            </td>
+            <td>
+<p>Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="OperationDefinition-EEVRISPatientObservations.html"
+                  title="OperationDefinition/EEVRISPatientObservations">$patient-observations operation</a>
+            </td>
+            <td>
+<p>TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-care-plan.html"
+                  title="StructureDefinition/ee-vris-care-plan">CarePlan: EEVRIS Cycle</a>
+            </td>
+            <td>
+<p>Profile for capturing infertility treatment cycle(s) on woman. (ee Ravisükkel. VÄRSKE või KÜLMUTATUD-SULATATUD)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-birth-defect.html"
+                  title="StructureDefinition/ee-vris-condition-birth-defect">Condition: EE VRIS Birth Defect</a>
+            </td>
+            <td>
+<p>Congenital birth defect of newborn child. (ee Lapse väärarend. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-cause-of-death.html"
+                  title="StructureDefinition/ee-vris-cause-of-death">Condition: EE VRIS Cause of Death</a>
+            </td>
+            <td>
+<p>Profile for capturing cause and time of death. (ee Surma põhjus. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-comorbidity.html"
+                  title="StructureDefinition/ee-vris-condition-comorbidity">Condition: EE VRIS Comorbidity</a>
+            </td>
+            <td>
+<p>Condition profile for comorbidities of a donor or recipient in the Estonian VRIS fertility system. (ee Kaasuv haigus. NB! Tulevikus viidata Diagnoosi-teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-pregnancy.html"
+                  title="StructureDefinition/ee-vris-condition-pregnancy">Condition: EE VRIS Condition Pregnancy</a>
+            </td>
+            <td>
+<p>Condition profile for pregnancy in Estonian VRIS fertility system. (ee Rasedus kui näidustus, diagnoos. NB! Tulevikus viidata Diagnoosi-teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-donor-genetic-finding.html"
+                  title="StructureDefinition/ee-vris-condition-donor-genetic-finding">Condition: EE VRIS Donor Genetic Finding</a>
+            </td>
+            <td>
+<p>Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. NB! Tulevikus viidata Diagnoosi-teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-fertility-indication-female.html"
+                  title="StructureDefinition/ee-vris-condition-fertility-indication-female">Condition: EE VRIS Female Fertility Treatment Indication</a>
+            </td>
+            <td>
+<p>Clinical indication or diagnosis that is the reason for infertility treatment for Female. (ee NAISE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-treatment-complication.html"
+                  title="StructureDefinition/ee-vris-condition-treatment-complication">Condition: EE VRIS Fertility Treatment Complication</a>
+            </td>
+            <td>
+<p>Complication related to fertility treatment. (ee Viljatusraviga seotud (haiglaravi vajavad?) tüsistused. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-condition-fertility-indication-male.html"
+                  title="StructureDefinition/ee-vris-condition-fertility-indication-male">Condition: EE VRIS Male Fertility Treatment Indication</a>
+            </td>
+            <td>
+<p>Clinical indication or diagnosis that is the reason for infertility treatment for Male. (ee MEHE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-coverage.html"
+                  title="StructureDefinition/ee-vris-coverage">Coverage: EE VRIS Coverage</a>
+            </td>
+            <td>
+<p>Coverage profile for fertility treatment in Estonian VRIS. Identifies the payer of treatment (Health Insurance Fund or self-pay). (ee Viljatusravi rahastamise allikas, Tervisekassa või omaosalus. KAS teeme selle profiiliga või lihtsa extensioni?)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-encounter.html"
+                  title="StructureDefinition/ee-vris-encounter">Encounter: EE VRIS Encounter</a>
+            </td>
+            <td>
+<p>Simple encounter profile for VRIS fertility treatment visits. (ee Visiidi ehk KONTAKTI profiil viljatusravi kontekstis. NB! Tulevikus tuleb viidata Encounter-EoC teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-episode-of-care.html"
+                  title="StructureDefinition/ee-vris-episode-of-care">EpisodeOfCare: EE VRIS Episode of Care</a>
+            </td>
+            <td>
+<p>Episode of care profile for VRIS fertility treatment. Groups related encounters, procedures and observations within a longer treatment period. (ee Viljatusravi episood ühendab ravitsükli piires toimuvad visiidid, protseduurid ja vaatlused. NB! Tulevikus viidata Encounter-Episode teenusele!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-episode-of-care-pregnancy.html"
+                  title="StructureDefinition/ee-vris-episode-of-care-pregnancy">EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy</a>
+            </td>
+            <td>
+<p>EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar. NB! Profiil peab järgima Encounter-EoC tuleviku struktuuri!).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-medication-administration.html"
+                  title="StructureDefinition/ee-vris-medication-administration">MedicationAdministration: EE VRIS Medication administred during procedure(s)</a>
+            </td>
+            <td>
+<p>Profile for medication administration during infertility procedure(s). (ee Viljatusravi ajal manustatud ravim(id).)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-packaged-product-definition.html"
+                  title="StructureDefinition/ee-vris-packaged-product-definition">PackagedProductDefinition: EE VRIS Package</a>
+            </td>
+            <td>
+<p>Profile for packaged doses of reproductive cells. (ee Suguraku pakendite profiil)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-cryopreservation.html"
+                  title="StructureDefinition/ee-vris-procedure-cryopreservation">Procedure: EE VRIS Cryopreservation</a>
+            </td>
+            <td>
+<p>Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-destruction.html"
+                  title="StructureDefinition/ee-vris-procedure-destruction">Procedure: EE VRIS Destruction</a>
+            </td>
+            <td>
+<p>Profile for destruction of biological material (sperm, oocyte, embryo, reproductive tissue). (ee Bioloogilise materjali hävitamise protseduur.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-donation.html"
+                  title="StructureDefinition/ee-vris-procedure-donation">Procedure: EE VRIS Donation</a>
+            </td>
+            <td>
+<p>Profile for donation of biological material (sperm, oocyte, reproductive tissue). (ee Bioloogilise materjali annetamise protseduur. KAS seda on vaja?)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-embryo-transfer.html"
+                  title="StructureDefinition/ee-vris-procedure-embryo-transfer">Procedure: EE VRIS Embryo Transfer</a>
+            </td>
+            <td>
+<p>Procedure for embryo transfer to recipient. Records transfer date, number of embryos, outcome, or reason for non-transfer. (ee Embrüo siirdamise protseduur.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-fertilization.html"
+                  title="StructureDefinition/ee-vris-procedure-fertilization">Procedure: EE VRIS Fertilization</a>
+            </td>
+            <td>
+<p>Profile for oocyte fertilization procedure using IVF, ICSI, or both methods. (ee Munarakkude viljastamise protseduur.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-insemination.html"
+                  title="StructureDefinition/ee-vris-procedure-insemination">Procedure: EE VRIS Intrauterine Insemination (IUI)</a>
+            </td>
+            <td>
+<p>Profile for intrauterine insemination procedure sperm directly introduced into the uterine cavity. (ee Emakasisene inseminatsioon (IUI).)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-oocyte-retrieval.html"
+                  title="StructureDefinition/ee-vris-procedure-oocyte-retrieval">Procedure: EE VRIS Oocyte Retrieval</a>
+            </td>
+            <td>
+<p>Profile for oocyte retrieval (ovarian puncture) procedure. (ee Munasarjade punktsioon munarakkude saamise protseduur.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure-pgt.html"
+                  title="StructureDefinition/ee-vris-procedure-pgt">Procedure: EE VRIS Preimplantation Genetic Testing</a>
+            </td>
+            <td>
+<p>Procedure for preimplantation genetic testing (PGT) of embryos. (ee Embrüodiagnostika protseduur enne siirdamist.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-procedure.html"
+                  title="StructureDefinition/ee-vris-procedure">Procedure: EE VRIS Procedure</a>
+            </td>
+            <td>
+<p>Base profile for Procedure. For each specific procedure use their profiles(freezing, destroying, donating, dispensing etc)… (ee Baasprofiil erinevate protseduuride kirjeldamiseks. (Nt. Külmutamine, annetamine…))</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-supply-delivery.html"
+                  title="StructureDefinition/ee-vris-supply-delivery">SupplyDelivery: EE VRIS Biological material movement</a>
+            </td>
+            <td>
+<p>Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-additional-identifier.html"
+                  title="StructureDefinition/ee-vris-additional-identifier">Additional identifier</a>
+            </td>
+            <td>
+<p>Extension for additional identifier. (ee Lisa-identifikaator)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-birth-sex.html"
+                  title="StructureDefinition/ee-vris-birth-sex">Birth Sex</a>
+            </td>
+            <td>
+<p>Extension for birth sex. (ee Sünnisugu)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-role.html"
+                  title="StructureDefinition/ee-vris-role">Cell origin role</a>
+            </td>
+            <td>
+<p>Extension for the role of donor/recipient of biological material. (ee Sperma/munaraku doonori/retsipiendi roll (viljatusravi saav naine, mittepartnerannetaja, partner, anonüümne, säilitaja jne).)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-cell-preservation-reason.html"
+                  title="StructureDefinition/ee-vris-cell-preservation-reason">Cell preservation reason</a>
+            </td>
+            <td>
+<p>Extension for the reason of cell preservation. (ee Sperma/munaraku säilitamise põhjus. (Nt meditsiiniline, mittemeditsiiniline jne))</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-terk-coverage.html"
+                  title="StructureDefinition/ee-vris-terk-coverage">Coverage</a>
+            </td>
+            <td>
+<p>Extension for Tervisekassa coverage existence. (ee Kas (teenusel/ravil/tsüklil/vm on/ei ole Tervisekassa poolset kompensatsiooni patsiendile.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-cryopreservation-date.html"
+                  title="StructureDefinition/ee-vris-cryopreservation-date">Cryopreservation date</a>
+            </td>
+            <td>
+<p>Extension for cryopreservation date. (ee Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-cycle-discontinuation-reason.html"
+                  title="StructureDefinition/ee-vris-cycle-discontinuation-reason">Cycle Discontinuation Reason</a>
+            </td>
+            <td>
+<p>Reason for fertility treatment cycle discontinuation. (ee Ravitsükli katkestamise põhjus.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-recryo.html"
+                  title="StructureDefinition/ee-vris-recryo">Re-cryopreservation date and count</a>
+            </td>
+            <td>
+<p>Extension for re-cryopreservation information. (ee Bioloogilise materjali taaskülmutamine ja arv.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-related-clinic.html"
+                  title="StructureDefinition/ee-vris-related-clinic">Related clinic</a>
+            </td>
+            <td>
+<p>Extension for related (fertility) clinic who has more rights to see their patient data. (ee Patsiendiga seotud (viljatusravikliinik)/TTO)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-donor-reference.html"
+                  title="StructureDefinition/ee-vris-donor-reference">Related person reference</a>
+            </td>
+            <td>
+<p>Extension for referencing related person. (ee Viide seotud isikule/doonorile.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-stimulation-method.html"
+                  title="StructureDefinition/ee-vris-stimulation-method">Stimulation method</a>
+            </td>
+            <td>
+<p>Extension for describing which stimulation method is/was used. (ee Bioloogilise materjali stimulatsiooni meetod.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-supplied-package.html"
+                  title="StructureDefinition/ee-vris-supplied-package">Supplied package reference</a>
+            </td>
+            <td>
+<p>Extension for referencing supplied package. (ee Viide väljastatud/vastuvõetud pakendile.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ee-vris-thawing.html"
+                  title="StructureDefinition/ee-vris-thawing">Thawing date and count</a>
+            </td>
+            <td>
+<p>Extension for thawing information. (ee Bioloogilise materjali sulatamise kuupäev ja arv.)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-carePlanIvfCycle2025.html"
+                  title="CarePlan/carePlanIvfCycle2025">IVF tsükkel #1 Märts 2025</a>
+            </td>
+            <td>
+<p>Example of a fresh IVF treatment cycle CarePlan for female recipient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="BiologicallyDerivedProduct-donor-embryo1.html"
+                  title="BiologicallyDerivedProduct/donor-embryo1">donor-embryo1</a>
+            </td>
+            <td>
+<p>Example of embryo</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-donor-genetic-finding-suspected1.html"
+                  title="Condition/donor-genetic-finding-suspected1">donor-genetic-finding-suspected1</a>
+            </td>
+            <td>
+<p>Example of suspected condition of genetic disorder of donor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-donor-genetic-finding-verified1.html"
+                  title="Condition/donor-genetic-finding-verified1">donor-genetic-finding-verified1</a>
+            </td>
+            <td>
+<p>Example of confirmed condition of donor's genetic disorder</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-female-fertility-indication-example1.html"
+                  title="Condition/female-fertility-indication-example1">female-fertility-indication-example1</a>
+            </td>
+            <td>
+<p>Example of a female fertility treatment indication: anovulation disorder (ICD-10: N97.0).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-medicationAdministrationFollitropin1.html"
+                  title="MedicationAdministration/medicationAdministrationFollitropin1">medicationAdministrationFollitropin1</a>
+            </td>
+            <td>
+<p>Example of follitropin administration during ovarian stimulation for IVF cycle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-bloodgroup.html"
+                  title="Observation/observation-bloodgroup">observation-bloodgroup</a>
+            </td>
+            <td>
+<p>Example of bloodgroup</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-embryo-lifecycle-counts.html"
+                  title="Observation/observation-embryo-lifecycle-counts">observation-embryo-lifecycle-counts</a>
+            </td>
+            <td>
+<p>Example of embryo lifecycle counts summary for IVF cycle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-fertilization-counts.html"
+                  title="Observation/observation-fertilization-counts">observation-fertilization-counts</a>
+            </td>
+            <td>
+<p>Example of laboratory fertilization counts after IVF cycle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-stimulation-protocol.html"
+                  title="Observation/observation-stimulation-protocol">observation-stimulation-protocol</a>
+            </td>
+            <td>
+<p>Example of ovarian stimulation protocol for IVF cycle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="BiologicallyDerivedProduct-oocyte1.html"
+                  title="BiologicallyDerivedProduct/oocyte1">oocyte1</a>
+            </td>
+            <td>
+<p>Example of oocyte</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-novavita1.html"
+                  title="Organization/organization-novavita1">organization-novavita1</a>
+            </td>
+            <td>
+<p>Example Organization. (ee Näidis-Asutus. NB! Hiljem tuleb vahetada SPD vastu!)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PackagedProductDefinition-packaged-sperm1.html"
+                  title="PackagedProductDefinition/packaged-sperm1">packaged-sperm1</a>
+            </td>
+            <td>
+<p>Example of packaged sperm containing 3 doses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patientChild1.html" title="Patient/patientChild1">patientChild1</a>
+            </td>
+            <td>
+<p>Example of child born from VRIS fertility treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patientDonorMale.html" title="Patient/patientDonorMale">patientDonorMale</a>
+            </td>
+            <td>
+<p>Example of known Estonian male sperm donor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patientDonorunknown1.html"
+                  title="Patient/patientDonorunknown1">patientDonorunknown1</a>
+            </td>
+            <td>
+<p>Example of anonymous foreign sperm donor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patientFemale.html" title="Patient/patientFemale">patientFemale</a>
+            </td>
+            <td>
+<p>Example of verified female patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-doctor.html"
+                  title="Practitioner/practitioner-doctor">practitioner-doctor</a>
+            </td>
+            <td>
+<p>Example of Practitioner D99876</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-practitionerrole-doctor.html"
+                  title="PractitionerRole/practitionerrole-doctor">practitionerrole-doctor</a>
+            </td>
+            <td>
+<p>Example of doctor (PractitionerRole D99876) working at NovaVita</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-embryo-transfer.html"
+                  title="Procedure/procedure-embryo-transfer">procedure-embryo-transfer</a>
+            </td>
+            <td>
+<p>Example of fresh embryo transfer procedure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-fertilization1.html"
+                  title="Procedure/procedure-fertilization1">procedure-fertilization1</a>
+            </td>
+            <td>
+<p>Example of IVF fertilization procedure using donor sperm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-oocyte-retrieval.html"
+                  title="Procedure/procedure-oocyte-retrieval">procedure-oocyte-retrieval</a>
+            </td>
+            <td>
+<p>Example of oocyte retrieval procedure in IVF cycle March 2025</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="BiologicallyDerivedProduct-sperm1.html"
+                  title="BiologicallyDerivedProduct/sperm1">sperm1</a>
+            </td>
+            <td>
+<p>Example of donor spermn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-supplyDeliverySperm1.html"
+                  title="SupplyDelivery/supplyDeliverySperm1">supplyDeliverySperm1</a>
+            </td>
+            <td>
+<p>Example of sperm package delivery from Nova Vita to PERH, 4 doses of donor sperm</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.tehik.ee">TEHIK</a>.  Package ee.fhir.vris#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Aug 26, 2026 08:01+0000">2026-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BiologicallyDerivedProduct xmlns="http://hl7.org/fhir">
+  <id value="oocyte1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: BiologicallyDerivedProduct oocyte1</b></p><a name="oocyte1"> </a><a name="hcoocyte1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-oocyte.html">BiologicallyDerivedProduct: EE VRIS Oocyte</a></p></div><p><b>Cryopreservation date</b>: 2025-02-20</p><p><b>Cell preservation reason</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-pohjused medical}">Meditsiiniline põhjus</span></p><p><b>BiologicallyDerivedProduct Intended Recipient</b>: <a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><blockquote><p><b>Thawing date and count</b></p><ul><li>thawingDate: 2025-06-15</li><li>thawingCount: 1</li></ul></blockquote><p><b>productCode</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik oocyte}">Munarakk</span></p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Source</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp donated-count}">donated-count</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-count}">frozen-count</span></p><p><b>value</b>: 5</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp meta-phase-2-count}">meta-phase-2-count</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp cell-origin-role}">cell-origin-role</span></p><p><b>value</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-pohjused endale}">Säilitaja</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp collection-method}">collection-method</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct TODO}">Follicular puncture</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp oocyte-origin}">oocyte-origin</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct TODO}">Patient's own oocyte</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp oocyte-type}">oocyte-type</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct TODO}">Fresh, retrieved on fertilization day</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp intended-use}">intended-use</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct TODO}">For self use</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-reason}">preservation-reason</span></p><p><b>value</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-pohjused nononco}">Mitte-onkoloogiline terviseprobleem</span></p></blockquote></div>
+  </text>
+  <extension url="https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date">
+    <valueDateTime value="2025-02-20"/>
+  </extension>
+  <extension url="https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/vris-pohjused"/>
+        <code value="medical"/>
+        <display value="Meditsiiniline põhjus"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient">
+    <valueReference>
+      <reference value="Patient/patientFemale"/>
+    </valueReference>
+  </extension>
+  <extension url="https://fhir.ee/vris/StructureDefinition/ee-vris-thawing">
+    <extension url="thawingDate">
+      <valueDateTime value="2025-06-15"/>
+    </extension>
+    <extension url="thawingCount">
+      <valueInteger value="1"/>
+    </extension>
+  </extension>
+  <productCode>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"/>
+      <code value="oocyte"/>
+      <display value="Munarakk"/>
+    </coding>
+  </productCode>
+  <productStatus>
+    <code value="available"/>
+  </productStatus>
+  <collection>
+    <source>
+      <reference value="Patient/patientFemale"/>
+    </source>
+  </collection>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="donated-count"/>
+      </coding>
+    </type>
+    <valueInteger value="8"/>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="frozen-count"/>
+      </coding>
+    </type>
+    <valueInteger value="5"/>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="meta-phase-2-count"/>
+      </coding>
+    </type>
+    <valueInteger value="6"/>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="cell-origin-role"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/vris-pohjused"/>
+        <code value="endale"/>
+        <display value="Säilitaja"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="collection-method"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Follicular puncture"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="oocyte-origin"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Patient's own oocyte"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="oocyte-type"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Fresh, retrieved on fertilization day"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="intended-use"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="For self use"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="preservation-reason"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/vris-pohjused"/>
+        <code value="nononco"/>
+        <display value="Mitte-onkoloogiline terviseprobleem"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+</BiologicallyDerivedProduct>

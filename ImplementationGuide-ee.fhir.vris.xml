@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ee.fhir.vris"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ee.fhir.vris</b></p><a name="ee.fhir.vris"> </a><a name="hcee.fhir.vris"> </a><h2>EEVRIS</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris</pre></div>
+  </text>
+  <url value="https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris"/>
+  <version value="0.1.0"/>
+  <name value="EEVRIS"/>
+  <title value="VRIS - Viljatusravi infosüsteem"/>
+  <status value="draft"/>
+  <date value="2026-08-26T08:01:11+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@tehik.ee"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="TEHIK Andmekorraldus"/>
+    <telecom>
+      <system value="email"/>
+      <value value="andmekorraldus@tehik.ee"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ee.fhir.vris"/>
+  <license value="MIT"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="7.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="ee_fhir_base">
+    <uri value="https://fhir.ee/base/ImplementationGuide/ee.fhir.base"/>
+    <packageId value="ee.fhir.base"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="ee_fhir_mpi">
+    <uri value="https://fhir.ee/mpi/ImplementationGuide/ee.fhir.mpi"/>
+    <packageId value="ee.fhir.mpi"/>
+    <version value="1.5.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r5#1.1.2"/>
+    </extension>
+    <grouping id="GroupA">
+      <name value="Persons"/>
+      <description value="Donor-Recipient related profiles"/>
+    </grouping>
+    <grouping id="GroupB">
+      <name value="Biological material"/>
+      <description value="Embryo and reproductive cell profiles"/>
+    </grouping>
+    <grouping id="GroupC">
+      <name value="Observations"/>
+      <description value="Observation profiles"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/EEVRISPatientObservations"/>
+      </reference>
+      <name value="$patient-observations operation"/>
+      <description value="TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-additional-identifier"/>
+      </reference>
+      <name value="Additional identifier"/>
+      <description value="Extension for additional identifier. (ee Lisa-identifikaator)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-embryo"/>
+      </reference>
+      <name value="BiologicallyDerivedProduct: EE VRIS Embryo"/>
+      <description value="Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressurss!)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-oocyte"/>
+      </reference>
+      <name value="BiologicallyDerivedProduct: EE VRIS Oocyte"/>
+      <description value="Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-reproductive-tissue"/>
+      </reference>
+      <name value="BiologicallyDerivedProduct: EE VRIS Reproductive Tissue"/>
+      <description value="Profile for reproductive tissue (testicular tissue, ovarian tissue). Used mainly for fertility preservation. (ee Bioloogiline materjal (munandi kude, munasarja kude). Kasutatakse peamiselt viljakuse säilitamiseks.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-sperm"/>
+      </reference>
+      <name value="BiologicallyDerivedProduct: EE VRIS Sperm"/>
+      <description value="Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-birth-sex"/>
+      </reference>
+      <name value="Birth Sex"/>
+      <description value="Extension for birth sex. (ee Sünnisugu)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-care-plan"/>
+      </reference>
+      <name value="CarePlan: EEVRIS Cycle"/>
+      <description value="Profile for capturing infertility treatment cycle(s) on woman. (ee Ravisükkel. VÄRSKE või KÜLMUTATUD-SULATATUD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-role"/>
+      </reference>
+      <name value="Cell origin role"/>
+      <description value="Extension for the role of donor/recipient of biological material. (ee Sperma/munaraku doonori/retsipiendi roll (viljatusravi saav naine, mittepartnerannetaja, partner, anonüümne, säilitaja jne).)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-cell-preservation-reason"/>
+      </reference>
+      <name value="Cell preservation reason"/>
+      <description value="Extension for the reason of cell preservation. (ee Sperma/munaraku säilitamise põhjus. (Nt meditsiiniline, mittemeditsiiniline jne))"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-birth-defect"/>
+      </reference>
+      <name value="Condition: EE VRIS Birth Defect"/>
+      <description value="Congenital birth defect of newborn child. (ee Lapse väärarend. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-cause-of-death"/>
+      </reference>
+      <name value="Condition: EE VRIS Cause of Death"/>
+      <description value="Profile for capturing cause and time of death. (ee Surma põhjus. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-comorbidity"/>
+      </reference>
+      <name value="Condition: EE VRIS Comorbidity"/>
+      <description value="Condition profile for comorbidities of a donor or recipient in the Estonian VRIS fertility system. (ee Kaasuv haigus. NB! Tulevikus viidata Diagnoosi-teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-pregnancy"/>
+      </reference>
+      <name value="Condition: EE VRIS Condition Pregnancy"/>
+      <description value="Condition profile for pregnancy in Estonian VRIS fertility system. (ee Rasedus kui näidustus, diagnoos. NB! Tulevikus viidata Diagnoosi-teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-donor-genetic-finding"/>
+      </reference>
+      <name value="Condition: EE VRIS Donor Genetic Finding"/>
+      <description value="Genetic finding of cell donor that appears later in life. (ee Tagantjärgi ilmnenud doonori geneetiline haigus või kandlus. NB! Tulevikus viidata Diagnoosi-teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-fertility-indication-female"/>
+      </reference>
+      <name value="Condition: EE VRIS Female Fertility Treatment Indication"/>
+      <description value="Clinical indication or diagnosis that is the reason for infertility treatment for Female. (ee NAISE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-treatment-complication"/>
+      </reference>
+      <name value="Condition: EE VRIS Fertility Treatment Complication"/>
+      <description value="Complication related to fertility treatment. (ee Viljatusraviga seotud (haiglaravi vajavad?) tüsistused. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-condition-fertility-indication-male"/>
+      </reference>
+      <name value="Condition: EE VRIS Male Fertility Treatment Indication"/>
+      <description value="Clinical indication or diagnosis that is the reason for infertility treatment for Male. (ee MEHE kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-terk-coverage"/>
+      </reference>
+      <name value="Coverage"/>
+      <description value="Extension for Tervisekassa coverage existence. (ee Kas (teenusel/ravil/tsüklil/vm on/ei ole Tervisekassa poolset kompensatsiooni patsiendile.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-coverage"/>
+      </reference>
+      <name value="Coverage: EE VRIS Coverage"/>
+      <description value="Coverage profile for fertility treatment in Estonian VRIS. Identifies the payer of treatment (Health Insurance Fund or self-pay). (ee Viljatusravi rahastamise allikas, Tervisekassa või omaosalus. KAS teeme selle profiiliga või lihtsa extensioni?)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-cryopreservation-date"/>
+      </reference>
+      <name value="Cryopreservation date"/>
+      <description value="Extension for cryopreservation date. (ee Bioloogilise materjali külmutamise (krüopreservatsiooni) kuupäev.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-cycle-discontinuation-reason"/>
+      </reference>
+      <name value="Cycle Discontinuation Reason"/>
+      <description value="Reason for fertility treatment cycle discontinuation. (ee Ravitsükli katkestamise põhjus.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BiologicallyDerivedProduct"/>
+      </extension>
+      <reference>
+        <reference value="BiologicallyDerivedProduct/donor-embryo1"/>
+      </reference>
+      <name value="donor-embryo1"/>
+      <description value="Example of embryo"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/donor-genetic-finding-suspected1"/>
+      </reference>
+      <name value="donor-genetic-finding-suspected1"/>
+      <description value="Example of suspected condition of genetic disorder of donor"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/donor-genetic-finding-verified1"/>
+      </reference>
+      <name value="donor-genetic-finding-verified1"/>
+      <description value="Example of confirmed condition of donor's genetic disorder"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-encounter"/>
+      </reference>
+      <name value="Encounter: EE VRIS Encounter"/>
+      <description value="Simple encounter profile for VRIS fertility treatment visits. (ee Visiidi ehk KONTAKTI profiil viljatusravi kontekstis. NB! Tulevikus tuleb viidata Encounter-EoC teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-episode-of-care"/>
+      </reference>
+      <name value="EpisodeOfCare: EE VRIS Episode of Care"/>
+      <description value="Episode of care profile for VRIS fertility treatment. Groups related encounters, procedures and observations within a longer treatment period. (ee Viljatusravi episood ühendab ravitsükli piires toimuvad visiidid, protseduurid ja vaatlused. NB! Tulevikus viidata Encounter-Episode teenusele!)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-episode-of-care-pregnancy"/>
+      </reference>
+      <name value="EpisodeOfCare: EE VRIS EpisodeOfCare Pregnancy"/>
+      <description value="EpisodeOfCare profile for the WHOLE pregnancy, starting before conception and ending with childbirth. (ee Raseduse kogu elukaar. NB! Profiil peab järgima Encounter-EoC tuleviku struktuuri!)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/female-fertility-indication-example1"/>
+      </reference>
+      <name value="female-fertility-indication-example1"/>
+      <description value="Example of a female fertility treatment indication: anovulation disorder (ICD-10: N97.0)."/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-condition-fertility-indication-female"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/carePlanIvfCycle2025"/>
+      </reference>
+      <name value="IVF tsükkel #1 Märts 2025"/>
+      <description value="Example of a fresh IVF treatment cycle CarePlan for female recipient."/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-care-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-medication-administration"/>
+      </reference>
+      <name value="MedicationAdministration: EE VRIS Medication administred during procedure(s)"/>
+      <description value="Profile for medication administration during infertility procedure(s). (ee Viljatusravi ajal manustatud ravim(id).)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medicationAdministrationFollitropin1"/>
+      </reference>
+      <name value="medicationAdministrationFollitropin1"/>
+      <description value="Example of follitropin administration during ovarian stimulation for IVF cycle"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-bloodgroup"/>
+      </reference>
+      <name value="observation-bloodgroup"/>
+      <description value="Example of bloodgroup"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-embryo-lifecycle-counts"/>
+      </reference>
+      <name value="observation-embryo-lifecycle-counts"/>
+      <description value="Example of embryo lifecycle counts summary for IVF cycle"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-fertilization-counts"/>
+      </reference>
+      <name value="observation-fertilization-counts"/>
+      <description value="Example of laboratory fertilization counts after IVF cycle"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-stimulation-protocol"/>
+      </reference>
+      <name value="observation-stimulation-protocol"/>
+      <description value="Example of ovarian stimulation protocol for IVF cycle"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-attempting-to-concieve"/>
+      </reference>
+      <name value="Observation: EE VRIS Attempting to Concieve"/>
+      <description value="Observation profile for how long is woman attempting to concieve. (ee Rasestuda üritamine.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-biochemical-pregnancy"/>
+      </reference>
+      <name value="Observation: EE VRIS Biochemical Pregnancy"/>
+      <description value="Biochemical pregnancy detected by blood test. (ee Biokeemiline rasedus, tuvastatud vereanalüüsiga.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-birth-weight"/>
+      </reference>
+      <name value="Observation: EE VRIS Birth Weight"/>
+      <description value="Birth weight of newborn child. (ee Lapse sünnikaal grammides.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-blood-group"/>
+      </reference>
+      <name value="Observation: EE VRIS Blood Group"/>
+      <description value="Observation profile for recording the ABO and Rh(D) blood group in the Estonian VRIS fertility system. (ee Veregrupp.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-clinical-pregnancy"/>
+      </reference>
+      <name value="Observation: EE VRIS Clinical Pregnancy"/>
+      <description value="Clinical pregnancy, confirmed by ultrasound AND number of fetus. (ee Kliiniline rasedus, kinnitatud ultraheliuuringuga. LOOTEMUNADE arv ka! NB! Biokeemilise raseduse profiil on eraldi.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-education-level"/>
+      </reference>
+      <name value="Observation: EE VRIS Education Level"/>
+      <description value="Education level of a donor or recipient in the Estonian VRIS fertility system. (ee Haridustase. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-embryo-lifecycle-counts"/>
+      </reference>
+      <name value="Observation: EE VRIS Embryo Lifecycle Counts"/>
+      <description value="Summary counts of embryo lifecycle events in a fertility treatment cycle (frozen, transferred, destroyed). (ee Embrüote elutsükli kokkuvõtted: külmutatud, siirdatud, hävitatud arv tsüklis.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-fertilization-counts"/>
+      </reference>
+      <name value="Observation: EE VRIS Fertilization Counts"/>
+      <description value="Counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud erinevates staadiumites.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-fetus-reduction"/>
+      </reference>
+      <name value="Observation: EE VRIS Fetus Reduction"/>
+      <description value="Observation profile for recording whether fetus reduction procedure was performed in multifetal pregnancy. (ee Loote/loodete reduktsiooni läbiviimine mitmikrasedusel.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-height"/>
+      </reference>
+      <name value="Observation: EE VRIS Height"/>
+      <description value="Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-marital-status"/>
+      </reference>
+      <name value="Observation: EE VRIS Marital Status"/>
+      <description value="Marital status of a donor or recipient in the Estonian VRIS fertility system. (ee Perekonnaseis. NB! Pärimisel kasutada MPI profiili, sisestamisel või kui patsienti pole rahvastikuregistris, kasuta VRIS profiili.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-neonatal-intensive-care"/>
+      </reference>
+      <name value="Observation: EE VRIS Neonatal Intensive Care"/>
+      <description value="Whether the child received neonatal intensive care during first 7 days of life. (ee Lapse intensiivravi esimese 7 elupäeva jooksul.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-obstetric-history"/>
+      </reference>
+      <name value="Observation: EE VRIS Obstetric History"/>
+      <description value="Past obstetric history at the START of fertility treatment cycle. Records cumulative count of all prior pregnancies, deliveries, live births and stillbirths BEFORE current treatment. (ee Sünnitusanamnees ENNE käesolevat viljatusravi tsüklit. Varasemate raseduste, sünnituste ja sündide kumulatiivne arv.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-stimulation-protocol"/>
+      </reference>
+      <name value="Observation: EE VRIS Ovarian Stimulation Protocol"/>
+      <description value="Captures ovarian stimulation protocol details for fertility treatment cycle. (ee Munasarjade stimulatsiooni protokoll sisaldab meetodi, supressiooni, gonadotropiini ja eelneva ravi info.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-physical-appearance"/>
+      </reference>
+      <name value="Observation: EE VRIS Physical Appearance"/>
+      <description value="Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-pregnancy-outcome"/>
+      </reference>
+      <name value="Observation: EE VRIS Pregnancy Outcome"/>
+      <description value="Pregnancy outcome including delivery, miscarriage, abortion details. (ee Raseduse lõpe sünnitus, katkemine või katkestamine koos detailidega.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-prenatal-care-discontinued"/>
+      </reference>
+      <name value="Observation: EE VRIS Prenatal Care Discontinued"/>
+      <description value="Indicator whether prenatal care was discontinued by patient or for unknown reasons. (ee Rasedusaegne tervisekontroll katkestatud patsiendi poolt või teadmata põhjusel.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-prior-fertility-treatment"/>
+      </reference>
+      <name value="Observation: EE VRIS Prior Fertility Treatment"/>
+      <description value="Prior fertility treatment history. Records whether IVF and/or IUI has been performed and the number of cycles. (ee Varasema viljatusravi anamnees)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-stimulation-protocol-embryo"/>
+      </reference>
+      <name value="Observation: EE VRIS Stimulation Protocol for Embryo Transfer"/>
+      <description value="Captures stimulation protocol details for thawed embryo. (ee Sulatatud embrüo siirdamise protokoll jm.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-tobacco-use"/>
+      </reference>
+      <name value="Observation: EE VRIS Tobacco Use"/>
+      <description value="Observation profile for tobacco use status in the Estonian VRIS fertility system. (ee Tubakatoodete kasutamine.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-waist"/>
+      </reference>
+      <name value="Observation: EE VRIS Waist"/>
+      <description value="Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-observation-weight"/>
+      </reference>
+      <name value="Observation: EE VRIS Weight"/>
+      <description value="Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BiologicallyDerivedProduct"/>
+      </extension>
+      <reference>
+        <reference value="BiologicallyDerivedProduct/oocyte1"/>
+      </reference>
+      <name value="oocyte1"/>
+      <description value="Example of oocyte"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-novavita1"/>
+      </reference>
+      <name value="organization-novavita1"/>
+      <description value="Example Organization. (ee Näidis-Asutus. NB! Hiljem tuleb vahetada SPD vastu!)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/packaged-sperm1"/>
+      </reference>
+      <name value="packaged-sperm1"/>
+      <description value="Example of packaged sperm containing 3 doses."/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-packaged-product-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-packaged-product-definition"/>
+      </reference>
+      <name value="PackagedProductDefinition: EE VRIS Package"/>
+      <description value="Profile for packaged doses of reproductive cells. (ee Suguraku pakendite profiil)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-donor-anonymous"/>
+      </reference>
+      <name value="Patient: EE VRIS Anonymous Patient"/>
+      <description value="Anonymous donor in the Estonian VRIS fertility system. (ee Anonüümne (välismaa) doonor VRIS-is.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-patient-child"/>
+      </reference>
+      <name value="Patient: EE VRIS Child"/>
+      <description value="Child born from VRIS fertility treatment. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teada!)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-patient-child-unknown-id"/>
+      </reference>
+      <name value="Patient: EE VRIS Child"/>
+      <description value="Child born from VRIS fertility treatment with UNKNOWN ID (and NO name) Identifier is generated by HC provider. (ee VRIS viljatusravi tulemusena sündinud laps. ISIKUKOOD teadMATA! IK genereeritud TTO poolt.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-donor"/>
+      </reference>
+      <name value="Patient: EE VRIS Donor"/>
+      <description value="For use of donors. (ee Doonori profiil, kasutamiseks. Anonüümsete ja anonüümsete-välismaiste doonorite puhul on TEINE PROFIIL!)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-patient-universal"/>
+      </reference>
+      <name value="Patient: EE VRIS Patient"/>
+      <description value="VRIS patient profile. (ee EI KASUTA! VRIS patsiendi profiil. Roll modifierExtension'ina ning link viitab MPI ametlikule patsiendikirjele.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-recipient"/>
+      </reference>
+      <name value="Patient: EE VRIS Recipient"/>
+      <description value="For use of patients who recieve care and are recipients of biologic material. (ee retsipienti profiil. NB! alati MPI-s registreeritud. NB! Kas partner on retsipient?)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patientChild1"/>
+      </reference>
+      <name value="patientChild1"/>
+      <description value="Example of child born from VRIS fertility treatment"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-patient-child"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patientDonorMale"/>
+      </reference>
+      <name value="patientDonorMale"/>
+      <description value="Example of known Estonian male sperm donor"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-donor"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patientDonorunknown1"/>
+      </reference>
+      <name value="patientDonorunknown1"/>
+      <description value="Example of anonymous foreign sperm donor"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-donor-anonymous"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patientFemale"/>
+      </reference>
+      <name value="patientFemale"/>
+      <description value="Example of verified female patient"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-doctor"/>
+      </reference>
+      <name value="practitioner-doctor"/>
+      <description value="Example of Practitioner D99876"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole-doctor"/>
+      </reference>
+      <name value="practitionerrole-doctor"/>
+      <description value="Example of doctor (PractitionerRole D99876) working at NovaVita"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-embryo-transfer"/>
+      </reference>
+      <name value="procedure-embryo-transfer"/>
+      <description value="Example of fresh embryo transfer procedure"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-fertilization1"/>
+      </reference>
+      <name value="procedure-fertilization1"/>
+      <description value="Example of IVF fertilization procedure using donor sperm"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-oocyte-retrieval"/>
+      </reference>
+      <name value="procedure-oocyte-retrieval"/>
+      <description value="Example of oocyte retrieval procedure in IVF cycle March 2025"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-cryopreservation"/>
+      </reference>
+      <name value="Procedure: EE VRIS Cryopreservation"/>
+      <description value="Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-destruction"/>
+      </reference>
+      <name value="Procedure: EE VRIS Destruction"/>
+      <description value="Profile for destruction of biological material (sperm, oocyte, embryo, reproductive tissue). (ee Bioloogilise materjali hävitamise protseduur.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-donation"/>
+      </reference>
+      <name value="Procedure: EE VRIS Donation"/>
+      <description value="Profile for donation of biological material (sperm, oocyte, reproductive tissue). (ee Bioloogilise materjali annetamise protseduur. KAS seda on vaja?)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-embryo-transfer"/>
+      </reference>
+      <name value="Procedure: EE VRIS Embryo Transfer"/>
+      <description value="Procedure for embryo transfer to recipient. Records transfer date, number of embryos, outcome, or reason for non-transfer. (ee Embrüo siirdamise protseduur.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-fertilization"/>
+      </reference>
+      <name value="Procedure: EE VRIS Fertilization"/>
+      <description value="Profile for oocyte fertilization procedure using IVF, ICSI, or both methods. (ee Munarakkude viljastamise protseduur.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-insemination"/>
+      </reference>
+      <name value="Procedure: EE VRIS Intrauterine Insemination (IUI)"/>
+      <description value="Profile for intrauterine insemination procedure sperm directly introduced into the uterine cavity. (ee Emakasisene inseminatsioon (IUI).)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-oocyte-retrieval"/>
+      </reference>
+      <name value="Procedure: EE VRIS Oocyte Retrieval"/>
+      <description value="Profile for oocyte retrieval (ovarian puncture) procedure. (ee Munasarjade punktsioon munarakkude saamise protseduur.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure-pgt"/>
+      </reference>
+      <name value="Procedure: EE VRIS Preimplantation Genetic Testing"/>
+      <description value="Procedure for preimplantation genetic testing (PGT) of embryos. (ee Embrüodiagnostika protseduur enne siirdamist.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-procedure"/>
+      </reference>
+      <name value="Procedure: EE VRIS Procedure"/>
+      <description value="Base profile for Procedure. For each specific procedure use their profiles(freezing, destroying, donating, dispensing etc)... (ee Baasprofiil erinevate protseduuride kirjeldamiseks. (Nt. Külmutamine, annetamine...))"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-recryo"/>
+      </reference>
+      <name value="Re-cryopreservation date and count"/>
+      <description value="Extension for re-cryopreservation information. (ee Bioloogilise materjali taaskülmutamine ja arv.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-related-clinic"/>
+      </reference>
+      <name value="Related clinic"/>
+      <description value="Extension for related (fertility) clinic who has more rights to see their patient data. (ee Patsiendiga seotud (viljatusravikliinik)/TTO)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-donor-reference"/>
+      </reference>
+      <name value="Related person reference"/>
+      <description value="Extension for referencing related person. (ee Viide seotud isikule/doonorile.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-related-person"/>
+      </reference>
+      <name value="RelatedPerson: EE VRIS RelatedPerson"/>
+      <description value="Related person profile for VRIS. (ee Seotud isiku profiil näitab seost patsiendi või retsipiendiga. Doonori ja retsipiendi vahelise SUHTE kirjeldus.)"/>
+      <isExample value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BiologicallyDerivedProduct"/>
+      </extension>
+      <reference>
+        <reference value="BiologicallyDerivedProduct/sperm1"/>
+      </reference>
+      <name value="sperm1"/>
+      <description value="Example of donor spermn"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-stimulation-method"/>
+      </reference>
+      <name value="Stimulation method"/>
+      <description value="Extension for describing which stimulation method is/was used. (ee Bioloogilise materjali stimulatsiooni meetod.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-supplied-package"/>
+      </reference>
+      <name value="Supplied package reference"/>
+      <description value="Extension for referencing supplied package. (ee Viide väljastatud/vastuvõetud pakendile.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-supply-delivery"/>
+      </reference>
+      <name value="SupplyDelivery: EE VRIS Biological material movement"/>
+      <description value="Use this profile for describing when the biological material (sperm, oocyte, embryo) is transferred from one place to another. (ee Eestis annetatud bioloogiline materjali (sperma, munarakud, embrüo) liikumine TTO-sse/sealt välja"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyDelivery"/>
+      </extension>
+      <reference>
+        <reference value="SupplyDelivery/supplyDeliverySperm1"/>
+      </reference>
+      <name value="supplyDeliverySperm1"/>
+      <description value="Example of sperm package delivery from Nova Vita to PERH, 4 doses of donor sperm"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-vris-thawing"/>
+      </reference>
+      <name value="Thawing date and count"/>
+      <description value="Extension for thawing information. (ee Bioloogilise materjali sulatamise kuupäev ja arv.)"/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="page1.html"/>
+        <name value="page1.html"/>
+        <title value="Diagram examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="page2.html"/>
+        <name value="page2.html"/>
+        <title value="Sample page 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="contacts.html"/>
+        <name value="contacts.html"/>
+        <title value="Contacts"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="search.html"/>
+        <name value="search.html"/>
+        <title value="Search"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2025+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="draft"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludettl"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="validation"/>
+      </code>
+      <value value="allow-any-extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="show-inherited-invariants"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://fhir.ee/vris/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

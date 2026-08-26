@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-embryo-lifecycle-counts"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-embryo-lifecycle-counts</b></p><a name="observation-embryo-lifecycle-counts"> </a><a name="hcobservation-embryo-lifecycle-counts"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-observation-embryo-lifecycle-counts.html">Observation: EE VRIS Embryo Lifecycle Counts</a></p></div><p><b>partOf</b>: <a href="Procedure-procedure-fertilization1.html">Procedure IVF</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">Embryo lifecycle summary</span></p><p><b>subject</b>: <a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>focus</b>: <a href="BiologicallyDerivedProduct-donor-embryo1.html">BiologicallyDerivedProduct: extension = 2025-02-20,PGT,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216),,; productCategory = cells (cells); productCode = Entire embryo; biologicalSourceEvent = https://fhir.ee/sid/vris/procedure#fertilization-2025-02-15-001; productStatus = available (available)</a></p><p><b>effective</b>: 2025-04-01</p><p><b>note</b>: </p><blockquote><div><p>6 viljastunud embrüost: 1 siirdatud värskelt, 4 külmutatud, 1 hävitatud kvaliteedi tõttu.</p>
+</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">2345123</span></p><p><b>value</b>: 4</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">2345124</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">2345129</span></p><p><b>value</b>: 1</p></blockquote></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/procedure-fertilization1"/>
+  </partOf>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="TODO"/>
+      <display value="Embryo lifecycle summary"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patientFemale"/>
+  </subject>
+  <focus>
+    <reference value="BiologicallyDerivedProduct/donor-embryo1"/>
+  </focus>
+  <effectiveDateTime value="2025-04-01"/>
+  <note>
+    <text value="6 viljastunud embrüost: 1 siirdatud värskelt, 4 külmutatud, 1 hävitatud kvaliteedi tõttu."/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <code value="2345123"/>
+      </coding>
+    </code>
+    <valueInteger value="4"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="2345124"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="2345129"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+</Observation>

@@ -1,0 +1,423 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>$patient-observations operation - JSON Representation - VRIS - Viljatusravi infosüsteem v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/tehik.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.34"}
+    h3,h4,h5,h6{--heading-prefix:"7.34"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="https://www.tehik.ee">
+    <img height="70" src="assets/images/tehik-logo.png"/>
+  </a>
+</div>
+
+<!-- Right logo - for example the FHIR logo --><!-- Make sure you have authorization to use the FHIR logo --><!--
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+  </div>
+-->
+<!-- search icon - if you want -->
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="search.html"><img alt="Search FHIR"
+      src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">VRIS - Viljatusravi infosüsteem</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  Estonia
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="page1.html">Page1</a>
+      </li>
+      <li>
+        <a href="page2.html">Page2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>$patient-observations operation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">VRIS - Viljatusravi infosüsteem - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir.ee/vris/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="OperationDefinition-EEVRISPatientObservations.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="OperationDefinition-EEVRISPatientObservations.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: $patient-observations operation - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2026-07-15
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="OperationDefinition-EEVRISPatientObservations.json" no-download="true">Raw json</a> | <a href="OperationDefinition-EEVRISPatientObservations.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition">resourceType</a>" : "OperationDefinition",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XOperationDefinition.id">id</a>" : "EEVRISPatientObservations",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XOperationDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition EEVRISPatientObservations&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;EEVRISPatientObservations\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcEEVRISPatientObservations\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/Patient/$patient-observations&lt;/p&gt;&lt;p&gt;URL: [base]/Patient/[id]/$patient-observations&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;patient&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/references.html#Reference\&quot;&gt;Reference&lt;/a&gt; (&lt;a href=\&quot;StructureDefinition-ee-vris-patient-universal.html\&quot; title=\&quot;https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal\&quot;&gt;Patient: EE VRIS Patient&lt;/a&gt;, &lt;a href=\&quot;https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-verified.html\&quot; title=\&quot;https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified\&quot;&gt;EE MPI Patient Verified&lt;/a&gt;, &lt;a href=\&quot;https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-unknown.html\&quot; title=\&quot;https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown\&quot;&gt;EE MPI Patient Unknown&lt;/a&gt;)&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Reference to the patient whose observations are being requested. Required when invoked at type level; optional (implied) when invoked at instance level.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;profile&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#canonical\&quot;&gt;canonical&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter results to include only Observations conforming to specified profile(s). Multiple profiles can be provided (OR condition).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;category&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter by Observation.category value(s) (e.g., laboratory, exam, procedure, social-history).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter by Observation.code value(s) (e.g., specific LOINC or SNOMED CT codes).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;date-from&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Include only Observations with effective date on or after this date.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;date-to&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Include only Observations with effective date on or before this date.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter by Observation.status (e.g., final, amended, corrected, cancelled).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/bundle.html\&quot;&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bundle of type 'searchset' containing all matching Observation resources. Empty Bundle if patient has no observations.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div&gt;&lt;p&gt;This operation returns all Observation resources associated with a given patient, optionally filtered by profile, category, code, or effective date range.&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.url">url</a>" : "https://fhir.ee/vris/OperationDefinition/patient-observations",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.name">name</a>" : "PatientObservations",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.title">title</a>" : "$patient-observations operation",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.kind">kind</a>" : "operation",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.date">date</a>" : "2026-07-15",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.publisher">publisher</a>" : "TEHIK",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "TEHIK",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "https://www.tehik.ee"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "fhir@tehik.ee"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "TEHIK Andmekorraldus",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "andmekorraldus@tehik.ee",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.description">description</a>" : "TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "EE",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Estonia"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.affectsState">affectsState</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.code">code</a>" : "patient-observations",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.comment">comment</a>" : "This operation returns all Observation resources associated with a given patient, optionally filtered by profile, category, code, or effective date range.",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.resource">resource</a>" : [
+    "Patient"
+  ],
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.system">system</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.type">type</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.instance">instance</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter">parameter</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "patient",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Reference to the patient whose observations are being requested. Required when invoked at type level; optional (implied) when invoked at instance level.",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "Reference",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.targetProfile">targetProfile</a>" : [
+        <a href="StructureDefinition-ee-vris-patient-universal.html" style="color: Maroon">&#x1F517;</a> "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal"<a href="https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-verified.html" style="color: Maroon">&#x1F517;</a> ,
+        "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified"<a href="https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-unknown.html" style="color: Maroon">&#x1F517;</a> ,
+        "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown"
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "profile",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "*",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Filter results to include only Observations conforming to specified profile(s). Multiple profiles can be provided (OR condition).",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "canonical"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "category",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "*",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Filter by Observation.category value(s) (e.g., laboratory, exam, procedure, social-history).",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "CodeableConcept"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "code",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "*",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Filter by Observation.code value(s) (e.g., specific LOINC or SNOMED CT codes).",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "CodeableConcept"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "date-from",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Include only Observations with effective date on or after this date.",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "dateTime"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "date-to",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Include only Observations with effective date on or before this date.",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "dateTime"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "status",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "*",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Filter by Observation.status (e.g., final, amended, corrected, cancelled).",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "code"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.name">name</a>" : "return",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.use">use</a>" : "out",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.min">min</a>" : 1,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.documentation">documentation</a>" : "Bundle of type 'searchset' containing all matching Observation resources. Empty Bundle if patient has no observations.",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#XOperationDefinition.parameter.type">type</a>" : "Bundle"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.tehik.ee">TEHIK</a>.  Package ee.fhir.vris#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Aug 26, 2026 08:01+0000">2026-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

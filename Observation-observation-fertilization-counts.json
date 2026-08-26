@@ -1,0 +1,69 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-fertilization-counts",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-fertilization-counts</b></p><a name=\"observation-fertilization-counts\"> </a><a name=\"hcobservation-fertilization-counts\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-observation-fertilization-counts.html\">Observation: EE VRIS Fertilization Counts</a></p></div><p><b>partOf</b>: <a href=\"Procedure-procedure-fertilization1.html\">Procedure IVF</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Fertilization counts</span></p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>effective</b>: 2025-03-26 10:00:00+0200</p><p><b>note</b>: </p><blockquote><div><p>Kõik 8 munarakku kasutati IVF meetodiks, 6 viljastusid korrektselt.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">12345678</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">22345678</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">32345678</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">42345678</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">52345678</span></p><p><b>value</b>: 6</p></blockquote></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/procedure-fertilization1"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "TODO",
+      "display" : "Fertilization counts"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patientFemale"
+  },
+  "effectiveDateTime" : "2025-03-26T10:00:00+02:00",
+  "note" : [{
+    "text" : "Kõik 8 munarakku kasutati IVF meetodiks, 6 viljastusid korrektselt."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "code" : "12345678"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "22345678"
+      }]
+    },
+    "valueInteger" : 8
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "32345678"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "42345678"
+      }]
+    },
+    "valueInteger" : 6
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "52345678"
+      }]
+    },
+    "valueInteger" : 6
+  }]
+}

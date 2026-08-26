@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/biologicallyderived-product-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "BiologicallyDerivedProductStatus",
+    "title" : "Biologically Derived Product Status",
+    "description" : "Biologically Derived Product Status.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1997"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-biologicallyderived-product-status.html" : "Biologically Derived Product Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/product-category",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "BiologicallyDerivedProductCategory",
+    "title" : "Biologically Derived Product Category",
+    "description" : "Biologically Derived Product Category.",
+    "oids" : ["2.16.840.1.113883.4.642.4.901"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-product-category.html" : "Biologically Derived Product Category"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-condition-ver-status.html" : "Condition Verification Status"
+  }]
+}
