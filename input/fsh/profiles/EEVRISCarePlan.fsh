@@ -12,9 +12,9 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * basedOn 0..*
-* basedOn ^short = "KAS SIIA viide varasematele tsükklitele? SEOS?"
+* basedOn ^short = "(ee KAS SIIA viide varasematele tsükklitele? SEOS?)"
 * replaces 0..*
-* replaces ^short = "(ee Sii tuleb viide eelmisele tsükklile mida praegune tsükkel asendab.)"
+* replaces ^short = "(ee Siia tuleb viide eelmisele tsükklile mida praegune tsükkel asendab.)"
 * partOf 0..*
 * partOf ^short = "(ee Siia tuleb viide kui tsükkel on osa SUUREMASt peamisest viljatusraviplaanist.)"
 * status 1..1

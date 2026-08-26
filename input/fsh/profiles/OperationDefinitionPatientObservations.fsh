@@ -2,7 +2,7 @@ Instance: EEVRISPatientObservations
 InstanceOf: OperationDefinition
 Usage: #definition
 Title: "$patient-observations operation"
-Description: "TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)"
+Description: "TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)"
 
 * url = "https://fhir.ee/vris/OperationDefinition/patient-observations"
 * version = "0.1.0"

@@ -11,7 +11,7 @@ Description: "Use this profile for describing when the biological material (sper
 * basedOn 0..0
 * partOf 0..0
 * status 0..1
-* status ^short = "(ee Võtan vastu checkbox? |in-progress| = pole veel vastu võetud; |completed| = vastu võetud.)"
+* status ^short = "(ee Võtan vastu checkbox? |in-progress| = pole veel vastu võetud; |completed| = vastu võetud; |abandoned| = tagasilükatud/mitte vastu võetud)"
 * patient 0..1
 * patient ^short = "(ee KAS seda on vaja? Liigub ainult materjal ja materjali küljes on viide KELLELE)"
 * type 0..1

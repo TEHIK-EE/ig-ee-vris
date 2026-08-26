@@ -129,6 +129,7 @@ groups:
       - StructureDefinition/ee-vris-related-person
       - StructureDefinition/ee-vris-donor-anonymous
       - StructureDefinition/ee-vris-patient-child
+      - StructureDefinition/ee-vris-patient-child-unknown-id
       - StructureDefinition/ee-vris-patient-universal
   GroupB:
     name: Biological material
