@@ -2,7 +2,7 @@ Profile: EEVRISProcedureOocyteRetrieval
 Parent: EEVRISProcedure
 Id: ee-vris-procedure-oocyte-retrieval
 Title: "Procedure: EE VRIS Oocyte Retrieval"
-Description: "Profile for oocyte retrieval (ovarian puncture) procedure. (ee Munasarjade punktsioon munarakkude saamise protseduur.)"
+Description: "Profile for oocyte retrieval (ovarian puncture) procedure. (ee Munasarjade punktsioon, munarakkude saamise protseduur.)"
 * ^status = #draft
 
 * category 1..1

@@ -1,8 +1,8 @@
-Profile: EEVRISConditionFertilityIndicationMale
+Profile: EEVRISConditionFertilityIndicationEtiologyMale
 Parent: Condition
-Id: ee-vris-condition-fertility-indication-male
-Title: "Condition: EE VRIS Male Fertility Treatment Indication"
-Description: "Clinical indication or diagnosis that is the reason for infertility treatment for Male. (ee FENOTÜÜP. MEHEpoolne kunstliku viljastamise näidustus, kliiniline diagnoos või seisund, mis on viljatusravi põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)"
+Id: ee-vris-condition-fertility-indication-etiology-male
+Title: "Condition: EE VRIS Male Fertility Etiology Indication"
+Description: "Etiological cause of male infertility. (ee MEHE viljatuse etioloogiline põhjus. NB! Tulevikus viidata Diagnoosi-teenusele!)"
 * ^status = #draft
 * identifier 0..*
 * identifier ^short = "(ee Näidustuse identifikaator)"
@@ -14,7 +14,7 @@ Description: "Clinical indication or diagnosis that is the reason for infertilit
 
 * code 1..1
 * code from $RHK-10 (preferred)
-* code ^short = "(ee Näidustuse kood RHK-10 järgi. meeste loend VAJA!)"
+* code ^short = "(ee Nt idiopaatiline viljatus, pretestikulaarne põhjus, krüptorhism, sotsiaalne põhjus jne jne. LOENDit VAJA! VIST ei saa RHK-ga? SNOMED?)"
 
 * bodySite 0..0
 
