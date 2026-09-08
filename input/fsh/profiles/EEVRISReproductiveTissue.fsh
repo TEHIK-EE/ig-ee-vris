@@ -8,11 +8,11 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
-    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+    ExtensionEEVRISCellPreservationReason named preservationReason 0..1 and
     $intended-recipient named recipient 0..1
 
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
-* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus, nt enne onkoloogilist ravi)"
+* extension[preservationReason] ^short = "(ee VILJAKUSE säilitamise põhjus, nt enne onkoloogilist ravi)"
 * extension[recipient] ^short = "(ee Retsipiendi viide. Tavaliselt on retsipient sama isik kes doonor (autoloogne säilitamine).)"
 
 * productCategory 0..1

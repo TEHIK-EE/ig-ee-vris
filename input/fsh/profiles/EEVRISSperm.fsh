@@ -9,7 +9,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
-    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+//    ExtensionEEVRISCellPreservationReason named preservationReason 0..1 and
+//    ExtensionEEVRISFertilityPreservationMethod named preservationMethod 0..1 and
 //    ExtensionEEVRISCellUsageState named usageState 0..1 and 
 //    ExtensionEEVRISRole named cellOrigin 0..1 and
 //    ExtensionEEVRISCollectionMethod named collection 0..1 and
@@ -17,7 +18,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 //    ExtensionEEVRISSpermDonorStimulationMethod named donorStimulationMethod 0..1
 
 * extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
-* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
+//* extension[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
+//* extension[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 //* extension[collection] ^short = "(ee Suguraku (sperma) KOGUMISE meetod)"
 //* extension[cellOrigin] ^short = "(ee Suguraku päritolu roll, partner-annetaja, mittepartner jne)"
 * extension[recipient] ^short = "(ee Kui on vaja retsipiendi seost, siis see tuleb täita patsiendi referentsiga.)"
@@ -36,6 +38,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * collection.source only Reference(EEVRISDonor or EEVRISDonorAnonymous)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
+* collection.collectedDateTime ^short = "(ee AEG, millal sugurakud koguti ehk ANNETATI)"
 //* property.type.coding from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type.coding" //"type.coding.code.value"
@@ -48,13 +51,18 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     Role 0..1 and
     collectionMethod 0..* and
     usageState 0..* and
-    donorStimulationMethod 0..1
+    donorStimulationMethod 0..1 and
+    preservationReason 0..1 and
+    preservationMethod 0..1
+
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 * property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
 * property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
 * property[collectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
 * property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja stimulatsioon: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
+* property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
+* property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 
 * property[donatedCount].type.coding = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
@@ -77,6 +85,15 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[donorStimulationMethod].type.coding = $vris-property-type#donor-stimulation-method
 * property[donorStimulationMethod].value[x] only CodeableConcept
 * property[donorStimulationMethod].valueCodeableConcept from $vris-sperm-donor-stimulation-method (required)
+
+* property[preservationReason].type.coding = $vris-property-type#preservation-reason
+* property[preservationReason].value[x] only CodeableConcept
+* property[preservationReason].valueCodeableConcept from $vris-cell-preservation-reason (required)
+
+* property[preservationMethod].type.coding = $vris-property-type#preservation-method
+* property[preservationMethod].value[x] only CodeableConcept
+* property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
+
 * parent 0..0
 * request 0..0
 * division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust?"

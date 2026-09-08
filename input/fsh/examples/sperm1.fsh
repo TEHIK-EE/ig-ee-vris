@@ -23,9 +23,9 @@ Usage: #example
 Description: "Example of donor spermn"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"
 * extension[cryopreservationDate].valueDateTime = "2025-02-20"
-* extension[cryopreservationReason].valueCodeableConcept.coding.system = $sct
-* extension[cryopreservationReason].valueCodeableConcept.coding.code = #TODO
-* extension[cryopreservationReason].valueCodeableConcept.coding.display = "For donation"
+//* extension[preservationReason].valueCodeableConcept.coding.system = $sct
+//* extension[preservationReason].valueCodeableConcept.coding.code = #TODO
+//* extension[preservationReason].valueCodeableConcept.coding.display = "For donation"
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
 * productCode = $biological-material-type#sperm "Seemnerakud"
 * productStatus = #available
@@ -47,6 +47,14 @@ Description: "Example of donor spermn"
 * property[donorStimulationMethod].valueCodeableConcept.coding.system = $sct
 * property[donorStimulationMethod].valueCodeableConcept.coding.code = #TODO
 * property[donorStimulationMethod].valueCodeableConcept.coding.display = "Follitropin + Chorionic gonadotropin"
+
+* property[preservationReason].valueCodeableConcept.coding.system = $sct
+* property[preservationReason].valueCodeableConcept.coding.code = #3428006
+* property[preservationReason].valueCodeableConcept.coding.display = "|Oncologic (qualifier value)|"
+
+* property[preservationMethod].valueCodeableConcept.coding.system = $sct
+* property[preservationMethod].valueCodeableConcept.coding.code = #TODO
+* property[preservationMethod].valueCodeableConcept.coding.display = "Kirurgiliselt saadud seemnerakkude säilitamine"
 
 //* biologicalSourceEvent.system = $identifier-domain
 * biologicalSourceEvent.value = "ABC123"

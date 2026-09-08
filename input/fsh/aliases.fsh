@@ -77,7 +77,8 @@ Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-tsykli
 Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-munaraku-kasutusotstarve
 Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
 Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-spermadoonori-stimulatsiooni-meetod
-
+//Alias: $vris-cell-preservation-reason = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
+Alias: $vris-fertility-preservation-method = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
 
 Alias: $vris-cell-origin-role = https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll
 Alias: $vris-collection-method = https://fhir.ee/ValueSet/vris-kogumise-meetod
