@@ -35,6 +35,7 @@ Alias: $skin-CS = https://fhir.ee/CodeSystem/vris-naha-varvus
 Alias: $skin = https://fhir.ee/ValueSet/vris-naha-varvus
 Alias: $body-CS = https://fhir.ee/CodeSystem/vris-kehaehitus
 Alias: $body = https://fhir.ee/ValueSet/vris-kehaehitus
+Alias: $eyeDetail = https://fhir.ee/ValueSet/vris-silmade-varvuse-tapsustus
 
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org

@@ -23,6 +23,7 @@ Description: "Observation profile for recording characteristics of physical appe
 * component ^slicing.description = "Sliced by physical appearance characteristic. (ee NB! Loendi viited ja koodid EI OLE lõplikud!)"
 * component contains
     eyecolor     0..1 and
+    eyecolorDetail 0..1 and
     haircolor    0..1 and
     skincolor    0..1 and
     bodyStructure 0..1
@@ -32,6 +33,12 @@ Description: "Observation profile for recording characteristics of physical appe
 * component[eyecolor].value[x] 1..1
 * component[eyecolor].value[x] only CodeableConcept
 * component[eyecolor].value[x] from $eye (required)
+* component[eyecolorDetail] ^short = "Silmade värvuse täpsustus. Hele/tume. LOEND VAJA!"
+//* component[eyecolor].code 1..1
+* component[eyecolorDetail].code = $sct#247029001 //|Iris pigmentation (observable entity)|
+* component[eyecolorDetail].value[x] 1..1
+* component[eyecolorDetail].value[x] only CodeableConcept
+* component[eyecolorDetail].value[x] from $eyeDetail (required)
 * component[haircolor] ^short = "Juuste värvus"
 //* component[haircolor].code 1..1
 * component[haircolor].code = $sct#80040005
