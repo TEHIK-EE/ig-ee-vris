@@ -41,10 +41,12 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * collection.collectedDateTime ^short = "(ee AEG, millal sugurakud koguti ehk ANNETATI)"
 //* property.type.coding from $vris-property-type-VS
 * property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "type.coding" //"type.coding.code.value"
+* property ^slicing.discriminator.path = "type" //"type.coding.code.value"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
 * property ^slicing.description = "Characteristics of biologic material. (ee Bioloogilise materjali omadused)"
+* property.type from $vris-property-type (required)
+* property.type ^short = "(ee Omaduse tüüp VRIS loendist. NB! LOEND ja koodid võivad veel muutuda!)"
 * property contains
     donatedCount 0..1 and
     frozenCount 0..1 and
@@ -64,33 +66,33 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
 * property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 
-* property[donatedCount].type.coding = $vris-property-type#donated-count
+* property[donatedCount].type = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
 
-* property[frozenCount].type.coding = $vris-property-type#frozen-count
+* property[frozenCount].type = $vris-property-type#frozen-count
 * property[frozenCount].value[x] only integer
 
-* property[Role].type.coding = $vris-property-type#cell-origin-role
+* property[Role].type = $vris-property-type#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
-* property[collectionMethod].type.coding = $vris-property-type#collection-method
+* property[collectionMethod].type = $vris-property-type#collection-method
 * property[collectionMethod].value[x] only CodeableConcept
 * property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
 
-* property[usageState].type.coding = $vris-property-type#usage-state
+* property[usageState].type = $vris-property-type#usage-state
 * property[usageState].value[x] only CodeableConcept
 * property[usageState].valueCodeableConcept from $vris-cell-usage-state (required)
 
-* property[donorStimulationMethod].type.coding = $vris-property-type#donor-stimulation-method
+* property[donorStimulationMethod].type = $vris-property-type#donor-stimulation-method
 * property[donorStimulationMethod].value[x] only CodeableConcept
 * property[donorStimulationMethod].valueCodeableConcept from $vris-sperm-donor-stimulation-method (required)
 
-* property[preservationReason].type.coding = $vris-property-type#preservation-reason
+* property[preservationReason].type = $vris-property-type#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-cell-preservation-reason (required)
 
-* property[preservationMethod].type.coding = $vris-property-type#preservation-method
+* property[preservationMethod].type = $vris-property-type#preservation-method
 * property[preservationMethod].value[x] only CodeableConcept
 * property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
 
