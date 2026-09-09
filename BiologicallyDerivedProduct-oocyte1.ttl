@@ -1,0 +1,208 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/BiologicallyDerivedProduct/oocyte1> a fhir:BiologicallyDerivedProduct ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oocyte1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct oocyte1</b></p><a name=\"oocyte1\"> </a><a name=\"hcoocyte1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-oocyte.html\">BiologicallyDerivedProduct: EE VRIS Oocyte</a></p></div><p><b>Cryopreservation date</b>: 2025-02-20</p><p><b>Cell preservation reason</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-pohjused medical}\">Meditsiiniline põhjus</span></p><p><b>BiologicallyDerivedProduct Intended Recipient</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><blockquote><p><b>Thawing date and count</b></p><ul><li>thawingDate: 2025-06-15</li><li>thawingCount: 1</li></ul></blockquote><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik oocyte}\">Munarakk</span></p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp donated-count}\">donated-count</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-count}\">frozen-count</span></p><p><b>value</b>: 5</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp meta-phase-2-count}\">meta-phase-2-count</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp cell-origin-role}\">cell-origin-role</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-pohjused endale}\">Säilitaja</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp collection-method}\">collection-method</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Follicular puncture</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp oocyte-origin}\">oocyte-origin</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Patient's own oocyte</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp oocyte-type}\">oocyte-type</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Fresh, retrieved on fertilization day</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp intended-use}\">intended-use</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">For self use</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-reason}\">preservation-reason</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-pohjused nononco}\">Mitte-onkoloogiline terviseprobleem</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2025-02-20"^^xsd:date
+     ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-cell-preservation-reason"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-pohjused"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "medical" ] ;
+         fhir:display [ fhir:v "Meditsiiniline põhjus" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+       fhir:reference [ fhir:v "Patient/patientFemale" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "thawingDate"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2025-06-15"^^xsd:date
+       ]
+     ] [
+       fhir:url [ fhir:v "thawingCount"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 1
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-thawing"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:productCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "oocyte" ] ;
+       fhir:display [ fhir:v "Munarakk" ]
+     ] )
+  ] ; # 
+  fhir:productStatus [
+     fhir:code [ fhir:v "available" ]
+  ] ; # 
+  fhir:collection [
+     fhir:source [
+       fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+       fhir:reference [ fhir:v "Patient/patientFemale" ]
+     ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "donated-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 8
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "frozen-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 5
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "meta-phase-2-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 6
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cell-origin-role" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-pohjused"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "endale" ] ;
+         fhir:display [ fhir:v "Säilitaja" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "collection-method" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Follicular puncture" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "oocyte-origin" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Patient's own oocyte" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "oocyte-type" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Fresh, retrieved on fertilization day" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "intended-use" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "For self use" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "preservation-reason" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-pohjused"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "nononco" ] ;
+         fhir:display [ fhir:v "Mitte-onkoloogiline terviseprobleem" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

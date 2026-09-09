@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/biologicallyderived-product-status,5.0.0,active,"2.16.840.1.113883.4.642.4.1997",BiologicallyDerivedProductStatus,Biologically Derived Product Status,"Biologically Derived Product Status.","ValueSet/biologicallyderived-product-status"
+http://hl7.org/fhir/product-category,5.0.0,active,"2.16.840.1.113883.4.642.4.901",BiologicallyDerivedProductCategory,Biologically Derived Product Category,"Biologically Derived Product Category.","ValueSet/product-category"
+http://terminology.hl7.org/CodeSystem/condition-clinical,3.0.0,active,"2.16.840.1.113883.4.642.1.1074",ConditionClinicalStatusCodes,Condition Clinical Status Codes,"Preferred value set for Condition Clinical Status.","ValueSet/condition-clinical"
+http://terminology.hl7.org/CodeSystem/condition-ver-status,2.0.1,active,"2.16.840.1.113883.4.642.1.1075",ConditionVerificationStatus,ConditionVerificationStatus,"The verification status to support or decline the clinical status of the condition or diagnosis.","ValueSet/condition-ver-status"

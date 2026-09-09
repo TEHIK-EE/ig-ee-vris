@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Observation/observation-embryo-lifecycle-counts> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-embryo-lifecycle-counts"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-embryo-lifecycle-counts>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-embryo-lifecycle-counts</b></p><a name=\"observation-embryo-lifecycle-counts\"> </a><a name=\"hcobservation-embryo-lifecycle-counts\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-observation-embryo-lifecycle-counts.html\">Observation: EE VRIS Embryo Lifecycle Counts</a></p></div><p><b>partOf</b>: <a href=\"Procedure-procedure-fertilization1.html\">Procedure IVF</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Embryo lifecycle summary</span></p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>focus</b>: <a href=\"BiologicallyDerivedProduct-donor-embryo1.html\">BiologicallyDerivedProduct: extension = 2025-02-20,PGT,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216),,; productCategory = cells (cells); productCode = Entire embryo; biologicalSourceEvent = https://fhir.ee/sid/vris/procedure#fertilization-2025-02-15-001; productStatus = available (available)</a></p><p><b>effective</b>: 2025-04-01</p><p><b>note</b>: </p><blockquote><div><p>6 viljastunud embrüost: 1 siirdatud värskelt, 4 külmutatud, 1 hävitatud kvaliteedi tõttu.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">2345123</span></p><p><b>value</b>: 4</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">2345124</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">2345129</span></p><p><b>value</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:partOf ( [
+     fhir:link <https://fhir.ee/vris/Procedure/procedure-fertilization1> ;
+     fhir:reference [ fhir:v "Procedure/procedure-fertilization1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Embryo lifecycle summary" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+     fhir:reference [ fhir:v "Patient/patientFemale" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/donor-embryo1> ;
+     fhir:reference [ fhir:v "BiologicallyDerivedProduct/donor-embryo1" ]
+  ] ) ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-04-01"^^xsd:date
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "6 viljastunud embrüost: 1 siirdatud värskelt, 4 külmutatud, 1 hävitatud kvaliteedi tõttu." ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "2345123" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 4
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "2345124" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "2345129" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

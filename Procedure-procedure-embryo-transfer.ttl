@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Procedure/procedure-embryo-transfer> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "procedure-embryo-transfer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-embryo-transfer</b></p><a name=\"procedure-embryo-transfer\"> </a><a name=\"hcprocedure-embryo-transfer\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-procedure-embryo-transfer.html\">Procedure: EE VRIS Embryo Transfer</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Embryo transfer</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Embryo transfer</span></p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>occurrence</b>: 2025-03-30 10:00:00+0200</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-practitionerrole-doctor.html\">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td></tr></table><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Successful transfer</span></p><p><b>note</b>: </p><blockquote><div><p>Üks embrüo siirdatud, arengupäev 5.</p>\n</div></blockquote><h3>Useds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"BiologicallyDerivedProduct-donor-embryo1.html\">BiologicallyDerivedProduct: extension = 2025-02-20,PGT,-&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216),,; productCategory = cells (cells); productCode = Entire embryo; biologicalSourceEvent = https://fhir.ee/sid/vris/procedure#fertilization-2025-02-15-001; productStatus = available (available)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Embryo transfer" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Embryo transfer" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+     fhir:reference [ fhir:v "Patient/patientFemale" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-03-30T10:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://fhir.ee/vris/PractitionerRole/practitionerrole-doctor> ;
+       fhir:reference [ fhir:v "PractitionerRole/practitionerrole-doctor" ]
+     ]
+  ] ) ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Successful transfer" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Üks embrüo siirdatud, arengupäev 5." ]
+  ] ) ; # 
+  fhir:used ( [
+     fhir:reference [
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/donor-embryo1> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/donor-embryo1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
