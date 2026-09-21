@@ -29,7 +29,7 @@ Description: "Example of a fresh IVF treatment cycle CarePlan for female recipie
 * activity[+].performedActivity[observation].reference = Reference(Observation/observation-fertilization-counts)
 * activity[+].performedActivity[observation].reference = Reference(Observation/observation-embryo-lifecycle-counts)
 
-* extension[coverage].valueBoolean = true
+* extension[coverage].valueCodeableConcept = $sct#89780004 "Combined"
 //* extension[coverage].valueCodeableConcept.coding.code = #TODO
 //* extension[coverage].valueCodeableConcept.coding.display = "Health Insurance Fund covered"
 

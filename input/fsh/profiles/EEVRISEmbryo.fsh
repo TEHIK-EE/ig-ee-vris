@@ -31,7 +31,7 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 * collection.source ^short = "(ee Doonori viide! NB kas seda on vaja? Kui parent viitab sperma ja munaraku doonoritele?)"
 //* property.type from $vris-property-type
 * property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "type.coding"
+* property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
 * property ^slicing.ordered = false
 * property ^slicing.description = "embrüo(de) omadused"
@@ -45,7 +45,7 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 //* property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
 * property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"
-* property[developmentDay].type.coding = #arengupäev //$vris-property-type-VS
+* property[developmentDay].type = #arengupäev //$vris-property-type-VS
 * property[developmentDay].value[x] only integer
 //* property[frozenCount] ^short = "Külmutatud embrüote arv"
 //* property[frozenCount].type.coding.code = #frozen-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count

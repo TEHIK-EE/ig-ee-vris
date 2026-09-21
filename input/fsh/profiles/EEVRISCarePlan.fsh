@@ -18,6 +18,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * partOf 0..*
 * partOf ^short = "(ee Siia tuleb viide kui tsükkel on osa SUUREMASt peamisest viljatusraviplaanist.)"
 * status 1..1
+* status ^short = "(ee Kasutada staatuseid kui katkestatakse |revoked| või lõpetatakse |completed| tsükkel)"
 * intent 1..1
 * category 1..*
 * category ^short = "(ee Siia LOEND, mis tüüpi ravitsükkel on. |Värske tsükkel|Külmutatud embrüo siirdamine|Emakasisene inseminatsioon (IUI))"

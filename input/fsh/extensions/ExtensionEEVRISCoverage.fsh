@@ -6,5 +6,5 @@ Context: CarePlan
 * ^context.type = #element
 * ^status = #draft
 
-* value[x] only boolean
-* valueBoolean ^short = "(ee true = ON Tervisekassa poolt kompenseeritud, false = EI ole tervisekassa kompenseeritud)"
+* value[x] only CodeableConcept
+* value[x] ^short = "(ee VAJA LOENDIT jah/ei/kombineeritud)"

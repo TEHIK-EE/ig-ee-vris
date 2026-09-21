@@ -6,8 +6,11 @@ Description: "Profile for destruction of biological material (sperm, oocyte, emb
 * ^status = #draft
 
 * category 1..1
-* category = $vris-procedure-category#destruction
+* category = $vris-procedure-category#destruction //64597002 |Destruktiivne protseduur|
 * category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel! Fake kood hetkel!)"
+
+* code from $vris-destruction-code-VS (preferred)
+* code ^short = "(ee KAS siin on codde vaja või piisab ainult categoryst?!?! Hävitamise täpsem kood (nt munaraku hävitamine jne). NB! LOEND puudu!)"
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)

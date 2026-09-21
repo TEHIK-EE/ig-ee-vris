@@ -92,3 +92,4 @@ Alias: $vris-oocyte-origin = https://fhir.ee/ValueSet/vris-munaraku-paritolu
 Alias: $vris-oocyte-type = https://fhir.ee/ValueSet/vris-munaraku-tyyp
 Alias: $vris-female-stimulation-method-VS = https://fhir.ee/ValueSet/vris-naise-stimulatsiooni-meetod
 Alias: $vris-preparation-protocol-VS = https://fhir.ee/ValueSet/vris-ettevalmistuse-protokoll
+Alias: $vris-destruction-code-VS = https://fhir.ee/ValueSet/vris-havitamine

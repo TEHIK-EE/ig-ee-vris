@@ -1,4 +1,4 @@
-Profile: EEVRISCoverage
+/*Profile: EEVRISCoverage
 Parent: Coverage
 Id: ee-vris-coverage
 Title: "Coverage: EE VRIS Coverage"
@@ -36,3 +36,4 @@ Description: "Coverage profile for fertility treatment in Estonian VRIS. Identif
 * costToBeneficiary 0..0
 * subrogation 0..0
 * contract 0..0
+*/
