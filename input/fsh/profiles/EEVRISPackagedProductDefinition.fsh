@@ -36,7 +36,7 @@ Description: "Profile for packaged doses of reproductive cells. (ee Suguraku pak
 * packaging.containedItem.modifierExtension 0..0
 * packaging.containedItem.item 1..1
 * packaging.containedItem.item ^short = "(ee SIIA pakendi sisu)"
-* packaging.containedItem.item only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte)
+* packaging.containedItem.item only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte or EEVRISReproductiveTissue)
 * packaging.containedItem ^short = "(ee Kogus pakendis ja referents bioloogilisele materjalile)"
 * packaging.containedItem.amount 1..1
 * packaging.containedItem.amount ^short = "(ee See on pakend, milles on teatud arv doose. Väljendatud täisarvuna ilma ühikuteta. Siit saab edasi arvutada, mis võeti ja mis jäi?)"

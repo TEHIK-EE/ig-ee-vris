@@ -22,7 +22,7 @@ Description: "Use this profile for describing when the biological material (sper
 * suppliedItem.quantity 0..1
 * suppliedItem.quantity ^short = "(ee Kogus, dooside arv, mida liigutatakse.)"
 * suppliedItem.item[x] 1..1
-* suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISSperm or EEVRISOocyte)
+* suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISSperm or EEVRISOocyte or EEVRISReproductiveTissue)
 * occurrence[x] 1..1
 * occurrence[x] ^short = "(ee Üle andmise/vastu võtmise kuupäev. AEG, millal sündmus aset leiab)"
 * supplier 1..1
