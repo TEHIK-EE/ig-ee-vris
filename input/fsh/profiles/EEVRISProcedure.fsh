@@ -7,6 +7,7 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * instantiatesCanonical 0..*
 * instantiatesUri 0..*
 * basedOn 0..*
+* basedOn ^short = "(ee Siia tuleb viide CarePlanile, millest osa see protseduur on. NB! Protseduur EI pruugi olla tsükliga seotud, siis tuleb tühjaks jätta.)"
 * partOf 0..*
 * status 1..1   // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
 * status ^short = "(ee See on kohustuslik!)"
@@ -43,6 +44,6 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * note ^short = "(ee lisainfo)"
 * focalDevice 0..0
 * used 0..*
-* used ^short = "(ee Siia referents biolooogilisele materjalile sperma/embrüo/munarakk, mille ümber protseduur toimub)"
+* used ^short = "(ee Siia referents biolooogilisele materjalile sperma/embrüo/munarakk/kude, mida kasutati.)"
 * supportingInfo 0..*
-* supportingInfo ^short = "(ee siia saab panna ükskõik mis referentsi kui vaja! Nt SupplyDelivery?)"
+* supportingInfo ^short = "(ee siia saab panna ükskõik mis referentsi kui vaja! Nt SupplyDelivery? Või viide teisele protseduurile, nt broneerimisele)"

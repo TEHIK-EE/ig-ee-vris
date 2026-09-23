@@ -26,3 +26,7 @@ Description: "Profile for allocation of biological material (sperm, oocyte, embr
 * used 1..*
 * used ^short = "(ee Viide broneeritud bioloogilisele materjalile)"
 * used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte or EEVRISReproductiveTissue)
+
+* supportingInfo 0..*
+* supportingInfo only Reference(EEVRISProcedureAllocation or EEVRISProcedureCryopreservation)
+* supportingInfo ^short = "(ee Viide teisele protseduurile, näiteks broneerimisele. Kui used=supportingInfo siis on broneeritud materjal kasutatud. Broneering võib olla |Tsüklile broneeritud|, |Retsipiendile, tsüklit veel pole,|Väljasaatmine teise asutusse|)"

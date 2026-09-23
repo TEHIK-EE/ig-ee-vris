@@ -32,4 +32,5 @@ Description: "Profile for oocyte fertilization procedure using IVF, ICSI, or bot
 * used ^short = "(ee Viited munarakkudele ja spermale)"
 * used only CodeableReference(EEVRISOocyte or EEVRISSperm)
 
+* supportingInfo ^short = "(ee Siit kaudu viide broneerimisele) "
 * note 0..*
