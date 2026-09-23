@@ -1,4 +1,4 @@
-Profile: EEVRISPackagedProductDefinition
+/*Profile: EEVRISPackagedProductDefinition
 Parent: PackagedProductDefinition
 Id: ee-vris-packaged-product-definition
 Title: "PackagedProductDefinition: EE VRIS Package"
@@ -42,3 +42,4 @@ Description: "Profile for packaged doses of reproductive cells. (ee Suguraku pak
 * packaging.containedItem.amount ^short = "(ee See on pakend, milles on teatud arv doose. Väljendatud täisarvuna ilma ühikuteta. Siit saab edasi arvutada, mis võeti ja mis jäi?)"
 * packaging.packaging 0..0
 * characteristic 0..0
+*/

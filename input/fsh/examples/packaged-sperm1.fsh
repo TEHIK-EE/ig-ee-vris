@@ -1,4 +1,4 @@
-Instance: packaged-sperm1
+/*Instance: packaged-sperm1
 InstanceOf: EEVRISPackagedProductDefinition
 Description: "Example of packaged sperm containing 3 doses."
 Usage: #example
@@ -13,3 +13,4 @@ Usage: #example
 //* packaging.containedItem[0].amount.unit = "doos"
 //* packaging.containedItem[0].amount.system = "http://unitsofmeasure.org"
 //* packaging.containedItem[0].amount.code = #dose
+*/

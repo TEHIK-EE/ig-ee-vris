@@ -7,7 +7,7 @@ Description: "Example of sperm package delivery from Nova Vita to PERH, 4 doses 
 * identifier.value = "SD-2025-04-15-001"
 * status = #completed
 * type = #biologicallyderivedproduct
-* extension[suppliedPackage].valueReference = Reference(PackagedProductDefinition/packaged-sperm1)
+//* extension[suppliedPackage].valueReference = Reference(PackagedProductDefinition/packaged-sperm1)
 * suppliedItem[0].quantity.value = 4
 * suppliedItem[=].quantity.unit = "doosi"
 * suppliedItem[=].itemReference = Reference(BiologicallyDerivedProduct/sperm1)
