@@ -74,7 +74,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
     procedure 0..* and
     observation 0..*
 * activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
-* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination)
+* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureAllocation or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination)
 * activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol or EEVRISObservationStimulationProtocolEmbryo or EEVRISObservationFertilizationCounts or EEVRISObservationNeonatalIntensiveCare or EEVRISObservationEmbryoLifecycleCounts)
 * activity.extension 0..*
 * activity.modifierExtension 0..*

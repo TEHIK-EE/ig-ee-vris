@@ -33,7 +33,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * productCode ^short = "(ee Sperma, fix kood! Vaja loendit! KAS on vaja kui igal sugurakul on oma profiil???)"
 * productStatus 1..
 * productStatus ^short = "(ee Staatuse kaudu saab broneeringut teha? NB Vaja loendit!)"
-* collection 1..
+* collection 0..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor or EEVRISDonorAnonymous)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
@@ -49,16 +49,17 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property.type ^short = "(ee Omaduse tüüp VRIS loendist. NB! LOEND ja koodid võivad veel muutuda!)"
 * property contains
     donatedCount 0..1 and
-    frozenCount 0..1 and
+//    frozenCount 0..1 and
     Role 0..1 and
     collectionMethod 0..* and
     usageState 0..* and
     donorStimulationMethod 0..1 and
     preservationReason 0..1 and
-    preservationMethod 0..1
+    preservationMethod 0..1 and 
+    preservationState 0..1
 
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
-* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
+//* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
 * property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
 * property[collectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon)"
 * property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
@@ -69,8 +70,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[donatedCount].type = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
 
-* property[frozenCount].type = $vris-property-type#frozen-count
-* property[frozenCount].value[x] only integer
+//* property[frozenCount].type = $vris-property-type#frozen-count
+//* property[frozenCount].value[x] only integer
 
 * property[Role].type = $vris-property-type#cell-origin-role
 * property[Role].value[x] only CodeableConcept
@@ -96,9 +97,37 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationMethod].value[x] only CodeableConcept
 * property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
 
-* parent 0..0
+* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].value[x] only CodeableConcept
+* property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
 * request 0..0
-* division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust?"
-* expirationDate 0..0
-* storageTempRequirements 0..0
-* biologicalSourceEvent ^short = "Kas selle kaudu saaks viidata KÜLMUTAMISELE/vm protseduurile?"
+
+* expirationDate 0..1
+* storageTempRequirements 0..1
+* biologicalSourceEvent ^short = "(ee See on viide pakenditeülesele ühisele identifikaatorile, division näitab erineva pakendi numbrit)"
+
+* division ^short = "(ee Pakendi number kogumissündmuse sees: 1, 2, 3...)"
+* parent ^short = "(ee Viide lähtematerjalile, millest see pakend eraldati)"
+
+* obeys vris-bdp-1 and vris-bdp-2 and vris-bdp-3 and vris-bdp-4
+
+Invariant: vris-bdp-1
+Description: "An aliquot must reference its parent product (ee Pakendil peab olema viide vanemmaterjalile)"
+Severity: #error
+Expression: "division.exists() implies parent.exists()"
+
+Invariant: vris-bdp-2
+Description: "Cryopreserved material must have storage temperature requirements (ee Külmutatud materjalil peab olema hoiustamistemperatuur)"
+Severity: #error
+Expression: "property.where(type.coding.code='preservation-state').value.ofType(CodeableConcept).coding.code='cryopreserved' implies storageTempRequirements.exists()"
+
+Invariant: vris-bdp-3
+Description: "Fresh material must have an expiration date (ee Värskel materjalil peab olema kehtivusaeg)"
+Severity: #error
+Expression: "property.where(type.coding.code='preservation-state').value.ofType(CodeableConcept).coding.code='fresh' implies expirationDate.exists()"
+
+Invariant: vris-bdp-4
+Description: "Source material must record collection details (ee Lähtematerjalil peavad olema kogumisandmed)"
+Severity: #error
+Expression: "division.empty() implies collection.exists()"

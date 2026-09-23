@@ -1,0 +1,16 @@
+Instance: sperm1-2
+InstanceOf: EEVRISSperm
+Usage: #example
+Description: "Package 2 of 3 - cryopreserved, available"
+//* identifier.system = $vris-bdp-id
+* identifier.value = "ABC123-2"
+* productCode = $biological-material-type#sperm "Seemnerakud"
+* productStatus = #available
+* biologicalSourceEvent.value = "ABC123"
+* parent = Reference(BiologicallyDerivedProduct/sperm1)
+* division = "2"
+* processingFacility = Reference(Organization/orgFertilityClinic)
+* storageTempRequirements.low = 196 '°C' "-196 °C"
+* storageTempRequirements.high = 196 '°C' "-196 °C"
+* property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
+* extension[cryopreservationDate].valueDateTime = "2025-02-20"

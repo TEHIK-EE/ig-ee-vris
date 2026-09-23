@@ -31,7 +31,7 @@ Description: "Example of donor spermn"
 * productStatus = #available
 * collection.source = Reference(Patient/patientDonorMale)
 * property[donatedCount].valueInteger = 4
-* property[frozenCount].valueInteger = 4
+//* property[frozenCount].valueInteger = 4
 * property[Role].valueCodeableConcept.coding.system = $sct
 * property[Role].valueCodeableConcept.coding.code = #TODO
 * property[Role].valueCodeableConcept.coding.display = "Non-partner donor"
