@@ -19,7 +19,7 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * subject 1..1
 * subject ^short = "(ee Siia tuleb viide KELLELE protseduur tehti.)"
 * focus 0..1
-* focus ^short = "(ee Kui on vaja lisaks subjektile teist patsienti ka. Nt. doonori viide siia, retsipiendi viide subject-i alla?)"
+* focus ^short = "(ee Kui on vaja lisaks subjektile teist patsienti ka.)"
 * encounter 0..1
 * occurrence[x] 0..1  
 * occurrence[x] ^short = "(ee Kuupäev, millal tegevus toimus)"

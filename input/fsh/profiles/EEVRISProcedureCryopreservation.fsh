@@ -2,7 +2,7 @@ Profile: EEVRISProcedureCryopreservation
 Parent: EEVRISProcedure
 Id: ee-vris-procedure-cryopreservation
 Title: "Procedure: EE VRIS Cryopreservation"
-Description: "Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur.)"
+Description: "Profile for cryopreservation of biological material (sperm, oocyte, embryo). (ee Bioloogilise materjali külmutamise protseduur. )"
 * category 1..1
 * category = $vris-procedure-category#cryopreservation
 * category ^short = "(ee Fix kood: krüosäilitamine. NB! LOEND puudu!)"
@@ -12,8 +12,6 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)
 * subject ^short = "(ee Kelle materjali külmutati.)"
-* focus 0..1
-* focus ^short = "(ee Kui materjal kuulub teisele isikule, siia tema viide)"
 * occurrence[x] 1..1
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "(ee Külmutamise kuupäev ja kellaaeg, kohustuslik)"
@@ -22,7 +20,7 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * performer.actor 1..1
 * reason 0..*
 * reason from $vris-cryopreservation-reason-VS (preferred)
-* reason ^short = "(ee Külmutamise põhjus, doonatsioon, iseendale säilitamine, mittesiirdamiseks vms (NB! LOEND puudu!))"
+* reason ^short = "(ee Külmutamise põhjus, donatsioon, iseendale säilitamine, mittesiirdamiseks vms (NB! LOEND puudu!))"
 * outcome 0..1
 * outcome from $vris-cryopreservation-outcome-VS (preferred)
 * outcome ^short = "(ee Külmutamise tulemus, edukas / ebaõnnestunud / osaliselt edukas (NB! LOEND puudu!))"

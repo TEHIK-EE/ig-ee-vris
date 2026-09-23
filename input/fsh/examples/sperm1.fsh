@@ -20,7 +20,7 @@ Description: "TEST Example of donor cell (sperm)"
 Instance: sperm1
 InstanceOf: EEVRISSperm
 Usage: #example
-Description: "Example of donor spermn"
+Description: "Example of donor sperm"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"
 * extension[cryopreservationDate].valueDateTime = "2025-02-20"
 //* extension[preservationReason].valueCodeableConcept.coding.system = $sct

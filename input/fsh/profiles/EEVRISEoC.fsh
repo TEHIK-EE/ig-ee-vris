@@ -4,12 +4,12 @@ Id: ee-vris-episode-of-care
 Title: "EpisodeOfCare: EE VRIS Episode of Care"
 Description: "Episode of care profile for VRIS fertility treatment. Groups related encounters, procedures and observations within a longer treatment period. (ee Viljatusravi episood ühendab ravitsükli piires toimuvad visiidid, protseduurid ja vaatlused. NB! Tulevikus viidata Encounter-Episode teenusele!)"
 * ^status = #draft
-
+* status ^short = "(ee Siin on episoodi staatus, kohustuslik! planned | waitlist | active | onhold | finished | cancelled | entered-in-error)"
 * identifier 0..*
 * identifier ^short = "(ee Episoodi identifikaator)"
 
 * type 0..*
-* type ^short = "(ee Episoodi tüüp, nt viljatusravi tsükkel)"
+* type ^short = "(ee Episoodi tüüp, nt viljatusRAVI, rasedus, ANNETAMINE, viljakuse säilitamine. NB! Vaja LOENDIT!)"
 
 * patient 1..1
 * patient only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous or $mpi-patient or EEVRISPatientChild)

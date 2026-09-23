@@ -9,7 +9,7 @@ Description: "Package 2 of 3 - cryopreserved, available"
 * biologicalSourceEvent.value = "ABC123"
 * parent = Reference(BiologicallyDerivedProduct/sperm1)
 * division = "2"
-* processingFacility = Reference(Organization/orgFertilityClinic)
+* processingFacility = Reference(Organization/organization-novavita1)
 * storageTempRequirements.low = 196 '°C' "-196 °C"
 * storageTempRequirements.high = 196 '°C' "-196 °C"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
