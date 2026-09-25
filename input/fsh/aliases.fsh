@@ -94,3 +94,4 @@ Alias: $vris-female-stimulation-method-VS = https://fhir.ee/ValueSet/vris-naise-
 Alias: $vris-preparation-protocol-VS = https://fhir.ee/ValueSet/vris-ettevalmistuse-protokoll
 Alias: $vris-destruction-code-VS = https://fhir.ee/ValueSet/vris-havitamine
 Alias: $vris-preservation-state = https://fhir.ee/ValueSet/vris-sailitamise-olek
+Alias: $vris-pubertal-status = https://fhir.ee/ValueSet/vris-puberteedi-staatus

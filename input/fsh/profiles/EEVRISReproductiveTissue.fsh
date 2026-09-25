@@ -15,7 +15,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 //* extension[preservationReason] ^short = "(ee VILJAKUSE säilitamise põhjus, nt enne onkoloogilist ravi)"
 * extension[recipient] ^short = "(ee Retsipiendi viide. Tavaliselt on retsipient sama isik kes doonor (autoloogne säilitamine).)"
 
-* productCategory 0..1
+* productCategory 0..0
 * productCategory ^short = "(ee Toote kategooria, kude (tissue) KAS SEDA ON  VAJA????)"
 * productCode 1..1
 * productCode from $biological-material-type-VS
@@ -23,7 +23,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * productStatus 1..1
 * collection 1..1
 * collection.source 1..1
-* collection.source only Reference(EEVRISDonor or EEVRISRecipient)
+* collection.source only Reference(EEVRISDonor)
 * collection.source ^short = "(ee Doonori/patsiendi viide, kellelt kude kogutud. Sama isik on doonor ja tulevane retsipient?)"
 * collection.collector 0..1
 * collection.collector ^short = "(ee Kude koguv tervishoiutöötaja)"
@@ -38,7 +38,9 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
     frozenFragmentCount 0..1 and
     Role 0..1 and
     collectionMethod 0..1 and
-    preservationReason 0..1
+    preservationReason 0..1 and 
+    pubertalStatus 0..1 and
+    preservationState 0..1
 
 * property[fragmentCount].value[x] ^short = "(ee Koetükkide arv)"
 * property[fragmentCount].type = $vris-property-type#fragment-count
@@ -48,7 +50,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[frozenFragmentCount].type = $vris-property-type#frozen-fragment-count
 * property[frozenFragmentCount].value[x] only integer
 
-* property[Role].value[x] ^short = "(ee Koe päritolu roll: autoloogne / doonorluseks jne)"
+* property[Role].value[x] ^short = "(ee Koe päritolu roll: enda tarbeks / doonorluseks jne)"
 * property[Role].type = $vris-property-type#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
@@ -61,11 +63,25 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS, nt enne onkoloogilist ravi)"
 * property[preservationReason].type = $vris-property-type#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
-* property[preservationReason].valueCodeableConcept from $vris-cell-preservation-reason (required)
+* property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
-* parent 0..0
+* property[pubertalStatus] ^short = "(ee Kas kude koguti puberteedieelselt või -järgselt)"
+* property[pubertalStatus].type = $vris-property-type#pubertal-status
+* property[pubertalStatus].value[x] only CodeableConcept
+* property[pubertalStatus].valueCodeableConcept from $vris-pubertal-status (required)
+
+* property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
+* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].value[x] only CodeableConcept
+* property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
 * request 0..0
-* division ^short = "(ee KAS seda saaks kasutada osaproovide/koetükkide identifikaatoriks?)"
+
+* division ^short = "(ee Pakendi number kogumissündmuse sees: 1, 2, 3...)"
+* parent ^short = "(ee Viide lähtematerjalile, millest see pakend eraldati)"
 * expirationDate 0..0
 * storageTempRequirements 0..0
-* biologicalSourceEvent ^short = "(ee Kas selle kaudu saaks viidata KOGUMISELE/biopsiale vm protseduurile?)"
+* biologicalSourceEvent ^short = "(ee See on viide pakenditeülesele ühisele identifikaatorile, division näitab erineva pakendi numbrit)"
+
+
+* obeys vris-bdp-1 and vris-bdp-2 and vris-bdp-3 and vris-bdp-4

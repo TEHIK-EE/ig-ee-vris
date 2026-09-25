@@ -3,7 +3,7 @@ InstanceOf: EEVRISSperm
 Usage: #example
 Description: "Example of donor sperm"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"
-* extension[cryopreservationDate].valueDateTime = "2025-02-20"
+//* extension[cryopreservationDate].valueDateTime = "2025-02-20"
 //* extension[preservationReason].valueCodeableConcept.coding.system = $sct
 //* extension[preservationReason].valueCodeableConcept.coding.code = #TODO
 //* extension[preservationReason].valueCodeableConcept.coding.display = "For donation"

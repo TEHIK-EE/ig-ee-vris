@@ -8,7 +8,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * . ^short = "Bioloogiline materjal, Seemnerakud."
 
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+//    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
 //    ExtensionEEVRISCellPreservationReason named preservationReason 0..1 and
 //    ExtensionEEVRISFertilityPreservationMethod named preservationMethod 0..1 and
 //    ExtensionEEVRISCellUsageState named usageState 0..1 and 
@@ -17,7 +17,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     $intended-recipient named recipient 0..1
 //    ExtensionEEVRISSpermDonorStimulationMethod named donorStimulationMethod 0..1
 
-* extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
+//* extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
 //* extension[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
 //* extension[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 //* extension[collection] ^short = "(ee Suguraku (sperma) KOGUMISE meetod)"
