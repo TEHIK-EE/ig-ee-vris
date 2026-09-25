@@ -84,4 +84,4 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * biologicalSourceEvent ^short = "(ee See on viide pakenditeülesele ühisele identifikaatorile, division näitab erineva pakendi numbrit)"
 
 
-* obeys vris-bdp-1 and vris-bdp-2 and vris-bdp-3 and vris-bdp-4
+* obeys vris-bdp-1 and vris-bdp-3 and vris-bdp-4

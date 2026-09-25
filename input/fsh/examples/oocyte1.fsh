@@ -4,11 +4,11 @@ Usage: #example
 Description: "Example of oocyte"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"
 
-* extension[cryopreservationDate].valueDateTime = "2025-02-20"
+//* extension[cryopreservationDate].valueDateTime = "2025-02-20"
 
-* extension[cryopreservationReason].valueCodeableConcept.coding.system = $reasons
-* extension[cryopreservationReason].valueCodeableConcept.coding.code = #medical
-* extension[cryopreservationReason].valueCodeableConcept.coding.display = "Meditsiiniline põhjus"
+//* extension[cryopreservationReason].valueCodeableConcept.coding.system = $reasons
+//* extension[cryopreservationReason].valueCodeableConcept.coding.code = #medical
+//* extension[cryopreservationReason].valueCodeableConcept.coding.display = "Meditsiiniline põhjus"
 
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
 

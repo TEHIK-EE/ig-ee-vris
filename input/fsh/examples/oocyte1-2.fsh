@@ -3,7 +3,7 @@ InstanceOf: EEVRISOocyte
 Usage: #example
 Description: "Package 2 of 3 - cryopreserved, in storage"
 * identifier.value = "OOC123-2"
-* extension[cryopreservationDate].valueDateTime = "2025-02-20"
+//* extension[cryopreservationDate].valueDateTime = "2025-02-20"
 * productCode = $biological-material-type#oocyte "Munarakk"
 * productStatus = #available
 * biologicalSourceEvent.value = "OOC123"

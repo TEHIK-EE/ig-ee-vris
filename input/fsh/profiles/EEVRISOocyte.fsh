@@ -8,13 +8,13 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * . ^short = "Bioloogiline materjal, munarakk."
 
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
-    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+//    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+//    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     $intended-recipient named recipient 0..1 and
     ExtensionEEVRISThawing named thawing 0..1
 
-* extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
-* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
+//* extension[cryopreservationDate] ^short = "(ee Külmutamise kuupäev)"
+//* extension[cryopreservationReason] ^short = "(ee Külmutamise põhjus)"
 * extension[recipient] ^short = "(ee Retsipiendi viide, kui on määratud)"
 * extension[thawing] ^short = "(ee Sulatamise kuupäev ja arv)"
 * productCategory 0..0

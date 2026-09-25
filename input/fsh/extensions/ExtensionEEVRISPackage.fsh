@@ -6,5 +6,5 @@ Context: BiologicallyDerivedProduct
 * ^context.type = #element
 * ^status = #draft
 
-* value[x] only Identifier
+* value[x] only Reference(BiologicallyDerivedProduct)
 * value[x] ^short = "(ee Pakendi identifikaator)"

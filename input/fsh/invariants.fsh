@@ -18,3 +18,18 @@ Invariant: vris-bdp-4
 Description: "Source material must record collection details (ee Lähtematerjalil peavad olema kogumisandmed)"
 Severity: #error
 Expression: "division.empty() implies collection.exists()"
+
+Invariant: vris-embryo-2
+Description: "Instants on kas pakend (division) või üksikembrüo (extension[package]), mitte mõlemat korraga"
+Expression: "division.exists() xor extension('https://fhir.ee/vris/StructureDefinition/ee-vris-package').exists()"
+Severity: #error
+
+Invariant: vris-embryo-4
+Description: "Üksikembrüol peavad olema nii munaraku- kui spermaviide"
+Expression: "extension('https://fhir.ee/vris/StructureDefinition/ee-vris-package').empty() or parent.count() >= 2"
+Severity: #warning
+
+Invariant: vris-embryo-5
+Description: "Pakendil ei tohi olla parent-viiteid; sisu viitab pakendile"
+Expression: "division.empty() or parent.empty()"
+Severity: #error

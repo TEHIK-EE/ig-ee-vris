@@ -2,27 +2,27 @@ Profile: EEVRISEmbryo
 Parent: BiologicallyDerivedProduct
 Id: ee-vris-embryo
 Title: "BiologicallyDerivedProduct: EE VRIS Embryo"
-Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressurss!)"
+Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressurss, mis kannab enda andmeid (arengupäev, parent-viited munarakule ja spermale). Füüsiline pakend (kõrs) on eraldi BDP-instants, mis kannab division-i ja säilitusandmeid (preservationState, temperatuur, sulatamine, taaskülmutamine). )"
 //* ^version = "1.0.0"
 * ^status = #active
 //* . ^short = "Doonori annetatud embrüo(d)"
 * extension contains 
-    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
+//    ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     $intended-recipient named recipient 0..1 and
     ExtensionEEVRISThawing named thawing 0..1 and
     ExtensionEEVRISReCryopreservation named reCryo 0..1 and
-    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+//    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
     ExtensionEEVRISPackage named package 0..1
 
-* extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
+//* extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
 * extension[recipient] ^short = "(ee retsipient)"
 * extension[thawing] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
 * extension[reCryo] ^short = "(ee Embrüo taaskülmutamine jah/ei; ja arv)"
-* extension[cryopreservationReason] ^short = "(ee Embrüo külmutamise põhjus)"
-* extension[package] ^short = "(ee Pakend, milles on mitu individuaalset embryot)"
+//* extension[cryopreservationReason] ^short = "(ee Embrüo külmutamise põhjus)"
+* extension[package] ^short = "(ee Pakend, milles on mitu individuaalset embryot. NB! See on ainult üksikembrüol, kes viitab pakendile. Üksikembrüo viitab pakendile extension[package] kaudu, pakend ise ei viita sisule.)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
-* productCategory 0..1
-* productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
+* productCategory 0..0
+//* productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
 * productCode 1..
 * productCode from $biological-material-type-VS // ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
 * productStatus 1..
@@ -39,30 +39,47 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 * property ^slicing.description = "embrüo(de) omadused"
 * property contains
 //    donatedCount 0..1 and
-    developmentDay 0..1
+    developmentDay 0..1 and
+    preservationState 0..1 and 
+    preservationReason 0..1
 //    frozenCount 0..1
 //    reCryo 0..1
 //* property[donatedCount] ^short = "Annetatud embrüote arv"
 //* property[donatedCount].type.coding.code = #donated-dose-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 //* property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
-* property[developmentDay] ^definition = "Embrüo arengupäev — päevade arv pärast viljastamist (nt 3, 5, 6)"
-* property[developmentDay].type = #arengupäev //$vris-property-type-VS
+* property[developmentDay] ^definition = "Embrüo arengupäev ehk päevade arv pärast viljastamist (nt 3, 5, 6)"
+* property[developmentDay].type = $vris-property-type#development-day
 * property[developmentDay].value[x] only integer
+* property[preservationState] ^short = "(ee Säilitusseisund: värske|külmutatud|sulatatud — pakendil)"
+* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].value[x] only CodeableConcept
+* property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+* property[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus: onkoloogiline, sooline üleminek jne)"
+* property[preservationReason].type = $vris-property-type#preservation-reason
+* property[preservationReason].value[x] only CodeableConcept
+* property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
+
 //* property[frozenCount] ^short = "Külmutatud embrüote arv"
 //* property[frozenCount].type.coding.code = #frozen-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 //* property[frozenCount].value[x] only integer
 //* property[reCryo] ^short = "Taaskülmutamine"
 //* property[reCryo].type.coding.code = #re-cryo-preservation //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 //* property[reCryo].value[x] only boolean
+* identifier 1..1
 * identifier ^short = "(ee Identifikaator, igal embrüol on oma eraldi identifikaator.)"
 * parent 0..*
 * parent only Reference(EEVRISSperm or EEVRISOocyte)
 * parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele)"
 * request 0..0
-* biologicalSourceEvent ^short = "(ee Seda vist pole vaja?)"
-* processingFacility ^short = "Kas seda on vaja? KLIINIKU viide??"
+* biologicalSourceEvent 0..1
+* biologicalSourceEvent ^short = "(ee Viljastamise sündmuse identifikaator, EI seo embrüot pakendiga)"
+* processingFacility 0..1
+* processingFacility ^short = "(ee Kliiniku/labori viide)"
 * division 0..1
-* division ^short = "(ee Embryo number kui ta on osa mitmest samaaegselt valminud embrüost)"
+* division ^short = "(ee Pakendi number viljastamise sündmuse sees: 1, 2, 3...)"
 * expirationDate 0..1
 * storageTempRequirements 0..1
+
+* obeys vris-bdp-3 and vris-bdp-4 and vris-embryo-2 and vris-embryo-4 and vris-embryo-5
+
