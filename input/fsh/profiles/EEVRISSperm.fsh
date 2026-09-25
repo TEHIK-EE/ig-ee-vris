@@ -66,6 +66,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja STIMULATSIOON: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu)"
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
 * property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
+* property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
 
 * property[donatedCount].type = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
@@ -111,23 +112,3 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * parent ^short = "(ee Viide lähtematerjalile, millest see pakend eraldati)"
 
 * obeys vris-bdp-1 and vris-bdp-2 and vris-bdp-3 and vris-bdp-4
-
-Invariant: vris-bdp-1
-Description: "An aliquot must reference its parent product (ee Pakendil peab olema viide vanemmaterjalile)"
-Severity: #error
-Expression: "division.exists() implies parent.exists()"
-
-Invariant: vris-bdp-2
-Description: "Cryopreserved material must have storage temperature requirements (ee Külmutatud materjalil peab olema hoiustamistemperatuur)"
-Severity: #error
-Expression: "property.where(type.coding.code='preservation-state').value.ofType(CodeableConcept).coding.code='cryopreserved' implies storageTempRequirements.exists()"
-
-Invariant: vris-bdp-3
-Description: "Fresh material must have an expiration date (ee Värskel materjalil peab olema kehtivusaeg)"
-Severity: #error
-Expression: "property.where(type.coding.code='preservation-state').value.ofType(CodeableConcept).coding.code='fresh' implies expirationDate.exists()"
-
-Invariant: vris-bdp-4
-Description: "Source material must record collection details (ee Lähtematerjalil peavad olema kogumisandmed)"
-Severity: #error
-Expression: "division.empty() implies collection.exists()"

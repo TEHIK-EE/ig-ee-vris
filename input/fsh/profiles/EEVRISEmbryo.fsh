@@ -9,15 +9,17 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 * extension contains 
     ExtensionEEVRISCryopreservationDate named cryopreservationDate 0..1 and
     $intended-recipient named recipient 0..1 and
-    ExtensionEEVRISThawing named thawning 0..1 and
+    ExtensionEEVRISThawing named thawing 0..1 and
     ExtensionEEVRISReCryopreservation named reCryo 0..1 and
-    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1
+    ExtensionEEVRISCellPreservationReason named cryopreservationReason 0..1 and
+    ExtensionEEVRISPackage named package 0..1
 
 * extension[cryopreservationDate] ^short = "(ee Embrüo külmutamise kuupäev)"
 * extension[recipient] ^short = "(ee retsipient)"
-* extension[thawning] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
+* extension[thawing] ^short = "(ee Embrüo sulatamise kuupäev ja arv)"
 * extension[reCryo] ^short = "(ee Embrüo taaskülmutamine jah/ei; ja arv)"
 * extension[cryopreservationReason] ^short = "(ee Embrüo külmutamise põhjus)"
+* extension[package] ^short = "(ee Pakend, milles on mitu individuaalset embryot)"
 //* extension[secondDonor] ^short = "(ee Embrüo viljastumiseks kasutatud teise doonori viide ehk spermadoonor)"
 * productCategory 0..1
 * productCategory ^binding.description = "LOEND! Kas seda andmevälja on üldse vaja?" //$product-category#cells (exactly)
@@ -53,13 +55,14 @@ Description: "Profile for embryo. (ee Embrüo. NB! IGA embrüo on omaette ressur
 //* property[reCryo] ^short = "Taaskülmutamine"
 //* property[reCryo].type.coding.code = #re-cryo-preservation //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count
 //* property[reCryo].value[x] only boolean
-* identifier ^short = "Tõenäoliselt väga oluline identifikaator?"
+* identifier ^short = "(ee Identifikaator, igal embrüol on oma eraldi identifikaator.)"
 * parent 0..*
 * parent only Reference(EEVRISSperm or EEVRISOocyte)
 * parent ^short = "(ee Embryo moodustub kahest sugurakust, siia viited nendele)"
 * request 0..0
-* biologicalSourceEvent ^short = "Kas seda on vaja? ANNETATUD EMBRYO???? Viide viljastamise protseduurile?!"
+* biologicalSourceEvent ^short = "(ee Seda vist pole vaja?)"
 * processingFacility ^short = "Kas seda on vaja? KLIINIKU viide??"
-* division 0..0
-* expirationDate 0..0
-* storageTempRequirements 0..0
+* division 0..1
+* division ^short = "(ee Embryo number kui ta on osa mitmest samaaegselt valminud embrüost)"
+* expirationDate 0..1
+* storageTempRequirements 0..1

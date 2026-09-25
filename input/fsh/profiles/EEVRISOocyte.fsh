@@ -42,7 +42,8 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     oocyteOrigin 0..1 and
     oocyteType 0..1 and
     intendedUse 0..1 and
-    preservationReason 0..1
+    preservationReason 0..1 and
+    preservationState 0..1
 
 * property[donatedCount] ^short = "(ee Annetatud/saadud munarakkude arv)"
 * property[donatedCount].type = $vris-property-type#donated-count
@@ -86,9 +87,15 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
-* parent 0..0
+* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].value[x] only CodeableConcept
+* property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
 * request 0..0
-* division ^short = "KAS seda saaks kasutada osaproovide identifikaatoriks? Kas on vaja sellist jaotust? Nt kui osa munarakke külmutati ja osa kasutati värskelt vm, kas siis saaks sellega eristada?"
-* expirationDate 0..0
-* storageTempRequirements 0..0
-* biologicalSourceEvent ^short = "Kas selle kaudu saaks viidata KÜLMUTAMISELE/vm protseduurile?"
+* division ^short = "(ee Pakendi number kogumissündmuse sees: 1, 2, 3...)"
+* parent ^short = "(ee Viide lähtematerjalile, millest see pakend eraldati)"
+* expirationDate 0..1
+* storageTempRequirements 0..1
+* biologicalSourceEvent ^short = "(ee See on viide pakenditeülesele ühisele identifikaatorile, division näitab erineva pakendi numbrit)"
+
+* obeys vris-bdp-1 and vris-bdp-2 and vris-bdp-3 and vris-bdp-4
