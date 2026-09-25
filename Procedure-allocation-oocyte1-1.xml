@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="allocation-oocyte1-1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-allocation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure allocation-oocyte1-1</b></p><a name="allocation-oocyte1-1"> </a><a name="hcallocation-oocyte1-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-procedure-allocation.html">Procedure: EE VRIS Allocation</a></p></div><p><b>basedOn</b>: <a href="CarePlan-carePlanIvfCycle2025.html">CarePlan IVF tsükkel #1 Märts 2025</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-protseduuri-kategooria allocation}">allocation</span></p><p><b>subject</b>: <a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>occurrence</b>: 2025-03-25 14:00:00+0200</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="PractitionerRole-practitionerrole-doctor.html">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td></tr></table><h3>Useds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="BiologicallyDerivedProduct-oocyte1-1.html">BiologicallyDerivedProduct: productCode = Munarakk; identifier = OOC123-1; biologicalSourceEvent = OOC123; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-02-20 18:00:00+0200</a></td></tr></table></div>
+  </text>
+  <basedOn>
+    <reference value="CarePlan/carePlanIvfCycle2025"/>
+  </basedOn>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="https://fhir.ee/ValueSet/vris-protseduuri-kategooria"/>
+      <code value="allocation"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/patientFemale"/>
+  </subject>
+  <occurrenceDateTime value="2025-03-25T14:00:00+02:00"/>
+  <performer>
+    <actor>
+      <reference value="PractitionerRole/practitionerrole-doctor"/>
+    </actor>
+  </performer>
+  <used>
+    <reference>
+      <reference value="BiologicallyDerivedProduct/oocyte1-1"/>
+    </reference>
+  </used>
+</Procedure>

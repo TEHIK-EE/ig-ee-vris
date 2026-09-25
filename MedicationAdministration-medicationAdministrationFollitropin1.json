@@ -1,0 +1,78 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "medicationAdministrationFollitropin1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-medication-administration"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medicationAdministrationFollitropin1</b></p><a name=\"medicationAdministrationFollitropin1\"> </a><a name=\"hcmedicationAdministrationFollitropin1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-medication-administration.html\">MedicationAdministration: EE VRIS Medication administred during procedure(s)</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-carePlanIvfCycle2025.html\">CarePlan IVF tsükkel #1 Märts 2025</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Outpatient medication administration</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/atc-ee G03GA05}\">Gonal-F</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>occurence</b>: 2025-03-18 08:30:00+0200</p><p><b>recorded</b>: 2025-03-18 08:35:00+0200</p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Nurse</span></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-practitionerrole-doctor.html\">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td></tr></table></blockquote><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 732970000}\">Controlled ovarian stimulation</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Stimulatsiooni 5. päev. Patsient talub ravimit hästi.</p>\n</div></blockquote><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>150 IU subkutaanselt kord päevas</td><td><span title=\"Codes:{http://snomed.info/sct 34206005}\">Subcutaneous route</span></td><td>150 IU<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[iU] = '[iU]')</span></td></tr></table></div>"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/carePlanIvfCycle2025"
+  }],
+  "status" : "completed",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "TODO",
+      "display" : "Outpatient medication administration"
+    }]
+  }],
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/atc-ee",
+        "code" : "G03GA05",
+        "display" : "Gonal-F"
+      }]
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/patientFemale"
+  },
+  "occurenceDateTime" : "2025-03-18T08:30:00+02:00",
+  "recorded" : "2025-03-18T08:35:00+02:00",
+  "performer" : [{
+    "function" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Nurse"
+      }]
+    },
+    "actor" : {
+      "reference" : {
+        "reference" : "PractitionerRole/practitionerrole-doctor"
+      }
+    }
+  }],
+  "reason" : [{
+    "concept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "732970000",
+        "display" : "Controlled ovarian stimulation"
+      }]
+    }
+  }],
+  "note" : [{
+    "text" : "Stimulatsiooni 5. päev. Patsient talub ravimit hästi."
+  }],
+  "dosage" : {
+    "text" : "150 IU subkutaanselt kord päevas",
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34206005",
+        "display" : "Subcutaneous route"
+      }]
+    },
+    "dose" : {
+      "value" : 150,
+      "unit" : "IU",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[iU]"
+    }
+  }
+}

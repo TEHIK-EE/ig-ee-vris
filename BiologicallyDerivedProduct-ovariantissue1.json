@@ -1,0 +1,114 @@
+{
+  "resourceType" : "BiologicallyDerivedProduct",
+  "id" : "ovariantissue1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-tissue"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct ovariantissue1</b></p><a name=\"ovariantissue1\"> </a><a name=\"hcovariantissue1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-reproductive-tissue.html\">BiologicallyDerivedProduct: EE VRIS Reproductive Tissue</a></p></div><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik ovarian-tissue}\">Munasarja kude</span></p><p><b>identifier</b>: OVT123</p><p><b>biologicalSourceEvent</b>: OVT123</p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collector</b></td><td><b>Source</b></td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-practitionerrole-doctor.html\">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td><td>2025-01-15</td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp fragment-count}\">fragment-count</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-fragment-count}\">frozen-fragment-count</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp cell-origin-role}\">cell-origin-role</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll own-use}\">Enda tarbeks</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp collection-method}\">collection-method</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-kogumise-meetod biopsy}\">Biopsia</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-reason}\">preservation-reason</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus oncological}\">Onkoloogiline ravi</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp pubertal-status}\">pubertal-status</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-puberteedi-staatus post-pubertal}\">Puberteedijärgne</span></p></blockquote></div>"
+  },
+  "productCode" : {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik",
+      "code" : "ovarian-tissue",
+      "display" : "Munasarja kude"
+    }]
+  },
+  "identifier" : [{
+    "value" : "OVT123"
+  }],
+  "biologicalSourceEvent" : {
+    "value" : "OVT123"
+  },
+  "productStatus" : {
+    "code" : "available"
+  },
+  "collection" : {
+    "collector" : {
+      "reference" : "PractitionerRole/practitionerrole-doctor"
+    },
+    "source" : {
+      "reference" : "Patient/patientFemale"
+    },
+    "collectedDateTime" : "2025-01-15"
+  },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "fragment-count"
+      }]
+    },
+    "valueInteger" : 8
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "frozen-fragment-count"
+      }]
+    },
+    "valueInteger" : 8
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "cell-origin-role"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll",
+        "code" : "own-use",
+        "display" : "Enda tarbeks"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "collection-method"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-kogumise-meetod",
+        "code" : "biopsy",
+        "display" : "Biopsia"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "preservation-reason"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus",
+        "code" : "oncological",
+        "display" : "Onkoloogiline ravi"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "pubertal-status"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-puberteedi-staatus",
+        "code" : "post-pubertal",
+        "display" : "Puberteedijärgne"
+      }]
+    }
+  }]
+}

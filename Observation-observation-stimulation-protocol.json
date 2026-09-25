@@ -1,0 +1,85 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-stimulation-protocol",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-stimulation-protocol</b></p><a name=\"observation-stimulation-protocol\"> </a><a name=\"hcobservation-stimulation-protocol\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-observation-stimulation-protocol.html\">Observation: EE VRIS Ovarian Stimulation Protocol</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 63487001}\">Assisted fertilization</span></p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>effective</b>: 2025-03-15</p><p><b>note</b>: </p><blockquote><div><p>Standardne antagonisti protokoll, patsient reageeris hästi.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 732970000}\">Controlled ovarian stimulation</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170960008}\">ostrogeen ja progestageen</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Gonadotropiini vabastajahormooni agonistid</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Inimese gonadotropiin (uFSH)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Loomulik ovulatsioon</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Progesteroon</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "63487001"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patientFemale"
+  },
+  "effectiveDateTime" : "2025-03-15",
+  "note" : [{
+    "text" : "Standardne antagonisti protokoll, patsient reageeris hästi."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "732970000"
+      }]
+    },
+    "valueBoolean" : true
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "170960008",
+        "display" : "ostrogeen ja progestageen"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Gonadotropiini vabastajahormooni agonistid"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Inimese gonadotropiin (uFSH)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Loomulik ovulatsioon"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Progesteroon"
+      }]
+    }
+  }]
+}

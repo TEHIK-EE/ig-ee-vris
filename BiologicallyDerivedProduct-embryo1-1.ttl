@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/BiologicallyDerivedProduct/embryo1-1> a fhir:BiologicallyDerivedProduct ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "embryo1-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-embryo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct embryo1-1</b></p><a name=\"embryo1-1\"> </a><a name=\"hcembryo1-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-embryo.html\">BiologicallyDerivedProduct: EE VRIS Embryo</a></p></div><p><b>Package</b>: <a href=\"BiologicallyDerivedProduct-embryo1.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB789-1; biologicalSourceEvent = EMB789; division = 1; productStatus = available (available); storageTempRequirements = -196 to -196 °C</a></p><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik embryo}\">Embrüo</span></p><p><b>parent</b>: </p><ul><li><a href=\"BiologicallyDerivedProduct-oocyte1-1.html\">BiologicallyDerivedProduct: productCode = Munarakk; identifier = OOC123-1; biologicalSourceEvent = OOC123; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-02-20 18:00:00+0200</a></li><li><a href=\"BiologicallyDerivedProduct-sperm1-1.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-2; biologicalSourceEvent = ABC123; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-02-20 18:00:00+0200</a></li></ul><p><b>identifier</b>: EMB789-1-A</p><p><b>biologicalSourceEvent</b>: EMB789</p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td><td>2025-03-14</td></tr></table><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp development-day}\">development-day</span></td><td>5</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-package"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/embryo1> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/embryo1" ]
+     ]
+  ] ) ; # 
+  fhir:productCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "embryo" ] ;
+       fhir:display [ fhir:v "Embrüo" ]
+     ] )
+  ] ; # 
+  fhir:parent ( [
+     fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/oocyte1-1> ;
+     fhir:reference [ fhir:v "BiologicallyDerivedProduct/oocyte1-1" ]
+  ] [
+     fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1-1> ;
+     fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1-1" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "EMB789-1-A" ]
+  ] ) ; # 
+  fhir:biologicalSourceEvent [
+     fhir:value [ fhir:v "EMB789" ]
+  ] ; # 
+  fhir:productStatus [
+     fhir:code [ fhir:v "available" ]
+  ] ; # 
+  fhir:collection [
+     fhir:source [
+       fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+       fhir:reference [ fhir:v "Patient/patientFemale" ]
+     ] ;
+     fhir:collected [
+       a fhir:dateTime ;
+       fhir:v "2025-03-14"^^xsd:date
+     ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "development-day" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 5
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

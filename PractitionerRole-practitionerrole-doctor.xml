@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="practitionerrole-doctor"/>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: PractitionerRole practitionerrole-doctor</b></p><a name="practitionerrole-doctor"> </a><a name="hcpractitionerrole-doctor"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p></div><p><b>identifier</b>: <code>https://fhir.ee/sid/pro/est/pho</code>/D99876</p><p><b>active</b>: true</p><p><b>period</b>: 2008-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href="Practitioner-practitioner-doctor.html">Practitioner Toktor Arst </a></p><p><b>organization</b>: <a href="Organization-organization-novavita1.html">Organization Nova Vita Kliinik AS</a></p></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pro/est/pho"/>
+    <value value="D99876"/>
+  </identifier>
+  <active value="true"/>
+  <period>
+    <start value="2008-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/practitioner-doctor"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/organization-novavita1"/>
+  </organization>
+</PractitionerRole>

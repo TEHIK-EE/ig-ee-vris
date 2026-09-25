@@ -1,0 +1,63 @@
+{
+  "resourceType" : "BiologicallyDerivedProduct",
+  "id" : "sperm1-2",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct sperm1-2</b></p><a name=\"sperm1-2\"> </a><a name=\"hcsperm1-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-sperm.html\">BiologicallyDerivedProduct: EE VRIS Sperm</a></p></div><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik sperm}\">Seemnerakud</span></p><p><b>parent</b>: <a href=\"BiologicallyDerivedProduct-sperm1.html\">BiologicallyDerivedProduct: extension = -&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></p><p><b>identifier</b>: ABC123-2</p><p><b>biologicalSourceEvent</b>: ABC123</p><p><b>processingFacility</b>: <a href=\"Organization-organization-novavita1.html\">Organization Nova Vita Kliinik AS</a></p><p><b>division</b>: 2</p><p><b>productStatus</b>: [not stated]: available (available)</p><p><b>storageTempRequirements</b>: 196-196 -196 °C</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}\">preservation-state</span></td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek cryopreserved}\">Külmutatud</span></td></tr></table></div>"
+  },
+  "productCode" : {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik",
+      "code" : "sperm",
+      "display" : "Seemnerakud"
+    }]
+  },
+  "parent" : [{
+    "reference" : "BiologicallyDerivedProduct/sperm1"
+  }],
+  "identifier" : [{
+    "value" : "ABC123-2"
+  }],
+  "biologicalSourceEvent" : {
+    "value" : "ABC123"
+  },
+  "processingFacility" : [{
+    "reference" : "Organization/organization-novavita1"
+  }],
+  "division" : "2",
+  "productStatus" : {
+    "code" : "available"
+  },
+  "storageTempRequirements" : {
+    "low" : {
+      "value" : 196,
+      "unit" : "-196 °C",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "°C"
+    },
+    "high" : {
+      "value" : 196,
+      "unit" : "-196 °C",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "°C"
+    }
+  },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "preservation-state"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-sailitamise-olek",
+        "code" : "cryopreserved",
+        "display" : "Külmutatud"
+      }]
+    }
+  }]
+}

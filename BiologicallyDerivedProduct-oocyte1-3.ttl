@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/BiologicallyDerivedProduct/oocyte1-3> a fhir:BiologicallyDerivedProduct ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oocyte1-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct oocyte1-3</b></p><a name=\"oocyte1-3\"> </a><a name=\"hcoocyte1-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-oocyte.html\">BiologicallyDerivedProduct: EE VRIS Oocyte</a></p></div><blockquote><p><b>Thawing date and count</b></p><ul><li>thawingDate: 2025-06-15</li><li>thawingCount: 1</li></ul></blockquote><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik oocyte}\">Munarakk</span></p><p><b>parent</b>: <a href=\"BiologicallyDerivedProduct-oocyte1.html\">BiologicallyDerivedProduct: extension = -&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Munarakk; biologicalSourceEvent = OOC123; productStatus = available (available)</a></p><p><b>identifier</b>: OOC123-3</p><p><b>biologicalSourceEvent</b>: OOC123</p><p><b>division</b>: 3</p><p><b>productStatus</b>: [not stated]: unavailable (unavailable)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td></tr></table><p><b>storageTempRequirements</b>: -196--196 °C</p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}\">preservation-state</span></p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek thawed}\">Sulatatud</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-count}\">frozen-count</span></p><p><b>value</b>: 2</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "thawingDate"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2025-06-15"^^xsd:date
+       ]
+     ] [
+       fhir:url [ fhir:v "thawingCount"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 1
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-thawing"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:productCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "oocyte" ] ;
+       fhir:display [ fhir:v "Munarakk" ]
+     ] )
+  ] ; # 
+  fhir:parent ( [
+     fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/oocyte1> ;
+     fhir:reference [ fhir:v "BiologicallyDerivedProduct/oocyte1" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "OOC123-3" ]
+  ] ) ; # 
+  fhir:biologicalSourceEvent [
+     fhir:value [ fhir:v "OOC123" ]
+  ] ; # 
+  fhir:division [ fhir:v "3"] ; # 
+  fhir:productStatus [
+     fhir:code [ fhir:v "unavailable" ]
+  ] ; # 
+  fhir:collection [
+     fhir:source [
+       fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+       fhir:reference [ fhir:v "Patient/patientFemale" ]
+     ]
+  ] ; # 
+  fhir:storageTempRequirements [
+     fhir:low [
+       fhir:value [ fhir:v "-196"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "°C" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "°C" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "-196"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "°C" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "°C" ]
+     ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "preservation-state" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-sailitamise-olek"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "thawed" ] ;
+         fhir:display [ fhir:v "Sulatatud" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "frozen-count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
