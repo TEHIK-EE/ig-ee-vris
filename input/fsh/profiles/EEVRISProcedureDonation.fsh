@@ -5,9 +5,11 @@ Title: "Procedure: EE VRIS Donation"
 Description: "Profile for donation of biological material (sperm, oocyte, reproductive tissue). (ee Bioloogilise materjali annetamise JA/või KOGUMISE protseduur.)"
 * ^status = #draft
 
-* category 0..1
-* category = $vris-procedure-category#donation
-* category ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
+//* category 0..1
+//* category = $vris-procedure-category#donation
+//* category ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
+* code from $vris-procedure-code
+* code ^short = "(ee Fix kood:)"
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISDonorAnonymous)

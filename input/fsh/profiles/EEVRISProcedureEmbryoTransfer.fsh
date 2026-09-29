@@ -5,12 +5,11 @@ Title: "Procedure: EE VRIS Embryo Transfer"
 Description: "Procedure for embryo transfer to recipient. Records transfer date, number of embryos, outcome, or reason for non-transfer. (ee Embrüo siirdamise protseduur.)"
 * ^status = #draft
 
-* category 1..1
-* category ^short = "(ee Kategooria: embrüo siirdamine)"
+//* category 1..1
+//* category ^short = "(ee Kategooria: embrüo siirdamine)"
 
-* code 1..1
-* code.text = "TODO: SNOMED CT otsi 'embryo transfer'"
-* code ^short = "(ee NB! SNOMED kood vajab kontrolli)"
+* code from $vris-procedure-code
+* code ^short = "(ee Fix kood:)"
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient)

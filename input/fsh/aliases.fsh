@@ -95,3 +95,6 @@ Alias: $vris-preparation-protocol-VS = https://fhir.ee/ValueSet/vris-ettevalmist
 Alias: $vris-destruction-code-VS = https://fhir.ee/ValueSet/vris-havitamine
 Alias: $vris-preservation-state = https://fhir.ee/ValueSet/vris-sailitamise-olek
 Alias: $vris-pubertal-status = https://fhir.ee/ValueSet/vris-puberteedi-staatus
+
+Alias: $vris-procedure-code = https://fhir.ee/ValueSet/vris-protseduuri-kood
+Alias: $vris-pgt-type = https://fhir.ee/ValueSet/vris-pgt-tyyp

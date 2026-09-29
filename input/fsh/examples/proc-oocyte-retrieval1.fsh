@@ -4,9 +4,9 @@ Usage: #example
 Description: "Example of oocyte retrieval procedure in IVF cycle March 2025"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-oocyte-retrieval"
 * status = #completed
-* category.coding.system = $sct
-* category.coding.code = #TODO
-* category.coding.display = "Oocyte retrieval"
+//* category.coding.system = $sct
+//* category.coding.code = #TODO
+//* category.coding.display = "Oocyte retrieval"
 * code = $sct#177037000
 * subject = Reference(Patient/patientFemale)
 * occurrenceDateTime = "2025-03-25T09:00:00+02:00"

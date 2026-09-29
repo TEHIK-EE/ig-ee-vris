@@ -5,12 +5,11 @@ Title: "Procedure: EE VRIS Fertilization"
 Description: "Profile for oocyte fertilization procedure using IVF, ICSI, or both methods. (ee Munarakkude viljastamise protseduur.)"
 * ^status = #draft
 
-* category 0..1
-* category ^short = "(ee Kategooria: viljastamine. Nt. 58533008 |Artificial insemination (procedure)|)"
+//* category 0..1
+//* category ^short = "(ee Kategooria: viljastamine. Nt. 58533008 |Artificial insemination (procedure)|)"
 
-* code 1..1
-//* code from $vris-fertilization-method (required)
-* code ^short = "(ee Viljastamise meetod IVF, ICSI või IVF+ICSI) NB! LOEND!!!!"
+* code from $vris-fertilization-method
+* code ^short = "(ee IVF, ICSI või IVF+ICSI)"
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)

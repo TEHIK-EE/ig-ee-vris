@@ -5,11 +5,11 @@ Title: "Procedure: EE VRIS Preimplantation Genetic Testing"
 Description: "Procedure for preimplantation genetic testing (PGT) of embryos. (ee Embrüodiagnostika protseduur enne siirdamist.)"
 * ^status = #draft
 
-* category 1..1
-* category ^short = "(ee Kategooria: embrüodiagnostika)"
+//* category 1..1
+//* category ^short = "(ee Kategooria: embrüodiagnostika)"
 
 * code 1..1
-//* code from $vris-pgt-type (required)
+* code from $vris-pgt-type (required)
 * code ^short = "(ee Embrüodiagnostika tüüp PGT-A, PGT-M, PGT-SR vms. LOEND vajalik!)"
 
 * subject 1..1

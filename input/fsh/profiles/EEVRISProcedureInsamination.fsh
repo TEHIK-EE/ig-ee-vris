@@ -5,10 +5,11 @@ Title: "Procedure: EE VRIS Intrauterine Insemination (IUI)"
 Description: "Profile for intrauterine insemination procedure sperm directly introduced into the uterine cavity. (ee Emakasisene inseminatsioon (IUI).)"
 * ^status = #draft
 
-* category 1..1
-* category ^short = "(ee Kategooria nt 58533008 |Artificial insemination (procedure)|)"
+//* category 1..1
+//* category ^short = "(ee Kategooria nt 58533008 |Artificial insemination (procedure)|)"
 
 * code 1..1
+* code from $vris-procedure-code
 //* code.text = "TODO: SNOMED CT – otsi 'intrauterine insemination' / 'IUI'"
 * code ^short = "(ee IUI nt: 265064001 |Intrauterine artificial insemination (procedure)| Vajab üle kontrollimist ja kinnitust!
 )"

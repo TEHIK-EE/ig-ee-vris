@@ -5,12 +5,13 @@ Title: "Procedure: EE VRIS Destruction"
 Description: "Profile for destruction of biological material (sperm, oocyte, embryo, reproductive tissue). (ee Bioloogilise materjali hävitamise protseduur.)"
 * ^status = #draft
 
-* category 1..1
-* category = $vris-procedure-category#destruction //64597002 |Destruktiivne protseduur|
-* category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel! Fake kood hetkel!)"
-
-* code from $vris-destruction-code-VS (preferred)
-* code ^short = "(ee KAS siin on codde vaja või piisab ainult categoryst?!?! Hävitamise täpsem kood (nt munaraku hävitamine jne). NB! LOEND puudu!)"
+//* category 1..1
+//* category = $vris-procedure-category#destruction //64597002 |Destruktiivne protseduur|
+//* category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel! Fake kood hetkel!)"
+* code from $vris-procedure-code
+* code ^short = "(ee Fix kood:)"
+//* code from $vris-destruction-code-VS (preferred)
+//* code ^short = "(ee KAS siin on codde vaja või piisab ainult categoryst?!?! Hävitamise täpsem kood (nt munaraku hävitamine jne). NB! LOEND puudu!)"
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient or EEVRISDonorAnonymous)

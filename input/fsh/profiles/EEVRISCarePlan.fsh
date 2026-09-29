@@ -2,7 +2,7 @@ Profile: EEVRISCarePlan
 Parent: CarePlan
 Id: ee-vris-care-plan
 Title: "CarePlan: EEVRIS Cycle"
-Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee Ravisükkel. VÄRSKE või KÜLMUTATUD-SULATATUD)"
+Description: "Profile for capturing infertility treatment. (ee Ravisükklit koondav profiil. Võib olla VÄRSKE või KÜLMUTATUD-SULATATUD)"
 * extension contains
     ExtensionEEVRISCycleDiscontinuationReason named cycleDiscontinuationReason 0..1 and
     ExtensionEEVRISCoverage named coverage 0..1
@@ -16,17 +16,17 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 * replaces 0..*
 * replaces ^short = "(ee Siia tuleb viide eelmisele tsükklile mida praegune tsükkel asendab.)"
 * partOf 0..*
-* partOf ^short = "(ee Siia tuleb viide kui tsükkel on osa SUUREMASt peamisest viljatusraviplaanist.)"
+* partOf ^short = "(ee Siia tuleb viide kui tsükkel on osa SUUREMASt PEAMISEST (/ nö katus) viljatusraviplaanist.)"
 * status 1..1
 * status ^short = "(ee Kasutada staatuseid kui katkestatakse |revoked| või lõpetatakse |completed| tsükkel)"
 * intent 1..1
 * category 1..*
-* category ^short = "(ee Siia LOEND, mis tüüpi ravitsükkel on. |Värske tsükkel|Külmutatud embrüo siirdamine|Emakasisene inseminatsioon (IUI))"
+* category ^short = "(ee Siia LOEND, mis tüüpi ravitsükkel on. |Doonorlus vms|Värske tsükkel|Külmutatud embrüo siirdamine|Emakasisene inseminatsioon (IUI))"
 * title 0..1
 * title ^short = "(ee Vabatekstiline inimloetav NIMETUS tsüklile.)"
 * description 0..1
 * subject 1..1
-* subject only Reference(EEVRISRecipient or $mpi-patient)
+* subject only Reference(EEVRISRecipient or $mpi-patient or EEVRISDonor or EEVRISDonorAnonymous)
 * encounter 0..1
 * encounter only Reference(EEVRISEncounter)
 * encounter ^short = "(ee Viide VISIIDILE/KONTAKTILE. Ja läbi Encounterite tekib (aastaid?) kestev EoC, mis seob kõik kokku. Encounter-EoC-teenus, siis kui valmis!)"
@@ -54,7 +54,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 //    coverage 0..* and
 //    other 0..*
 
-* supportingInfo only Reference(EEVRISRelatedPerson or EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
+* supportingInfo only Reference(EEVRISRelatedPerson or EEVRISRecipient or $mpi-patient)
 * supportingInfo ^short = "(ee Partneri viide, RelatedPerson või Patient)"
 
 //* supportingInfo[coverage] only Reference(EEVRISCoverage)
@@ -64,9 +64,9 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
 //* supportingInfo[other] ^short = "(ee Muud lisaviited vajadusel)"
 * goal 0..0
 * activity 0..*
-* activity ^short = "(ee Siin on (kõik) protseduurid, mida viljastumiseks TEHTI. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
+* activity ^short = "(ee Siin on (kõik) protseduurid, mida TEHTI. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
 * activity.id 0..1
-* activity.performedActivity ^slicing.discriminator[0].type = #profile
+* activity.performedActivity ^slicing.discriminator[0].type = #type // enne oli #profile 28.09.2026
 * activity.performedActivity ^slicing.discriminator[0].path = "reference.resolve()"
 * activity.performedActivity ^slicing.rules = #open
 * activity.performedActivity contains
@@ -74,7 +74,7 @@ Description: "Profile for capturing infertility treatment cycle(s) on woman. (ee
     procedure 0..* and
     observation 0..*
 * activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
-* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureAllocation or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination)
+* activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureAllocation or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination or EEVRISProcedureCryopreservation or EEVRISProcedureDonation)
 * activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol or EEVRISObservationStimulationProtocolEmbryo or EEVRISObservationFertilizationCounts or EEVRISObservationNeonatalIntensiveCare or EEVRISObservationEmbryoLifecycleCounts)
 * activity.extension 0..*
 * activity.modifierExtension 0..*

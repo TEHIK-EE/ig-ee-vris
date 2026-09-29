@@ -4,9 +4,9 @@ Usage: #example
 Description: "Example of fresh embryo transfer procedure"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer"
 * status = #completed
-* category.coding.system = $sct
-* category.coding.code = #TODO
-* category.coding.display = "Embryo transfer"
+//* category.coding.system = $sct
+//* category.coding.code = #TODO
+//* category.coding.display = "Embryo transfer"
 * code.coding.system = $sct
 * code.coding.code = #TODO
 * code.coding.display = "Embryo transfer"

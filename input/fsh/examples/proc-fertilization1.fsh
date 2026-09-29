@@ -4,9 +4,9 @@ Usage: #example
 Description: "Example of IVF fertilization procedure using donor sperm"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-fertilization"
 * status = #completed
-* category.coding.system = $sct
-* category.coding.code = #TODO
-* category.coding.display = "Fertilization"
+//* category.coding.system = $sct
+//* category.coding.code = #TODO
+//* category.coding.display = "Fertilization"
 * code.coding.system = $sct
 * code.coding.code = #TODO
 * code.coding.display = "IVF"

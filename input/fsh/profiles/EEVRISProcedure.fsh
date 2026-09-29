@@ -13,9 +13,9 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * status ^short = "(ee See on kohustuslik!)"
 * statusReason 0..1
 * statusReason ^short = "(ee STAATUSE Põhjuste LOEND?)"
-* category 0..*
-* category ^short = "(ee (laiem) kategooria määrab ära kas tegu on külmutamise, hävitamise, annetamise või väljastamisega. LOENDit VAJA! Igal profiilil fix kood)"
-* code 0..1
+* category 0..0
+* category ^short = "(ee Seda ei kasuta! Iga protseduur saab oma fix koodi)"
+* code 1..1
 * code ^short = "(ee Siia TÄPNE protseduur, nt kui on tegu IUI-ga. Kui koodi pole siis text-i täpne kirjeldus.)"
 * subject 1..1
 * subject ^short = "(ee Siia tuleb viide KELLELE protseduur tehti.)"

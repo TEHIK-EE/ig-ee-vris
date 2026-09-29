@@ -7,9 +7,8 @@ Description: "Profile for allocation of biological material (sperm, oocyte, embr
 
 * status ^short = "(ee SIIN on KOHUSTUSLIK staatuste loend!)" // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
 
-* category 0..1
-* category = $vris-procedure-category#allocation
-* category ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
+* code from $vris-procedure-code
+* code ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient)
@@ -19,9 +18,9 @@ Description: "Profile for allocation of biological material (sperm, oocyte, embr
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "(ee Broneerimise aeg)"
 
-* reason 0..*
+* reason 0..0
 //* reason from $vris-destruction-reason-VS (preferred)
-* reason ^short = "(ee Broneerimise põhjus?)"
+//* reason ^short = "(ee Broneerimise põhjus?)"
 
 * used 1..*
 * used ^short = "(ee Viide broneeritud bioloogilisele materjalile)"
