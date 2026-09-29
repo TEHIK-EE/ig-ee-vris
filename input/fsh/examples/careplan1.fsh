@@ -21,6 +21,8 @@ Description: "Example of a fresh IVF treatment cycle CarePlan for female recipie
 * addresses[0].reference = Reference(Condition/female-fertility-indication-example1)
 //* supportingInfo[0] = Reference(RelatedPerson/relatedPersonPartner)
 * supportingInfo = Reference(Patient/patientDonorMale)
+* activity.performedActivity.reference = Reference(Procedure/procedure-oocyte-retrieval)
+/*
 * activity[0].performedActivity[procedure].reference = Reference(Procedure/procedure-oocyte-retrieval)
 * activity[+].performedActivity[procedure].reference = Reference(Procedure/procedure-fertilization1)
 * activity[+].performedActivity[procedure].reference = Reference(Procedure/procedure-embryo-transfer)
@@ -28,7 +30,7 @@ Description: "Example of a fresh IVF treatment cycle CarePlan for female recipie
 * activity[+].performedActivity[observation].reference = Reference(Observation/observation-stimulation-protocol)
 * activity[+].performedActivity[observation].reference = Reference(Observation/observation-fertilization-counts)
 * activity[+].performedActivity[observation].reference = Reference(Observation/observation-embryo-lifecycle-counts)
-
+*/
 * extension[coverage].valueCodeableConcept = $sct#89780004 "Combined"
 //* extension[coverage].valueCodeableConcept.coding.code = #TODO
 //* extension[coverage].valueCodeableConcept.coding.display = "Health Insurance Fund covered"

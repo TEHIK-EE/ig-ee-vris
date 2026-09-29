@@ -66,7 +66,9 @@ Description: "Profile for capturing infertility treatment. (ee Ravisükklit koon
 * activity 0..*
 * activity ^short = "(ee Siin on (kõik) protseduurid, mida TEHTI. Lisaks viited ravimitele MedicationAdministration profiiliga?)"
 * activity.id 0..1
-* activity.performedActivity ^slicing.discriminator[0].type = #type // enne oli #profile 28.09.2026
+* activity.performedActivity only CodeableReference(EEVRISMedicationAdministration or EEVRISProcedure or EEVRISProcedureAllocation or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination or EEVRISProcedureCryopreservation or EEVRISProcedureDonation or EEVRISObservationStimulationProtocol or EEVRISObservationStimulationProtocolEmbryo or EEVRISObservationFertilizationCounts or EEVRISObservationNeonatalIntensiveCare or EEVRISObservationEmbryoLifecycleCounts)
+
+/** activity.performedActivity ^slicing.discriminator[0].type = #type // enne oli #profile 28.09.2026
 * activity.performedActivity ^slicing.discriminator[0].path = "reference.resolve()"
 * activity.performedActivity ^slicing.rules = #open
 * activity.performedActivity contains
@@ -76,6 +78,8 @@ Description: "Profile for capturing infertility treatment. (ee Ravisükklit koon
 * activity.performedActivity[medicationAdministration] only CodeableReference(EEVRISMedicationAdministration)
 * activity.performedActivity[procedure] only CodeableReference(EEVRISProcedure or EEVRISProcedureAllocation or EEVRISProcedureEmbryoTransfer or EEVRISProcedureFertilization or EEVRISProcedurePGT or EEVRISProcedureOocyteRetrieval or EEVRISProcedureInsemination or EEVRISProcedureCryopreservation or EEVRISProcedureDonation)
 * activity.performedActivity[observation] only CodeableReference(EEVRISObservationStimulationProtocol or EEVRISObservationStimulationProtocolEmbryo or EEVRISObservationFertilizationCounts or EEVRISObservationNeonatalIntensiveCare or EEVRISObservationEmbryoLifecycleCounts)
+
+*/
 * activity.extension 0..*
 * activity.modifierExtension 0..*
 //* activity.performedActivity 0..*
