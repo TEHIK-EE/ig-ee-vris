@@ -22,6 +22,7 @@ Description: "Profile for allocation of biological material (sperm, oocyte, embr
 //* reason from $vris-destruction-reason-VS (preferred)
 //* reason ^short = "(ee Broneerimise põhjus?)"
 
+* outcome 0..0
 * used 1..*
 * used ^short = "(ee Viide broneeritud bioloogilisele materjalile)"
 * used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte or EEVRISReproductiveTissue)

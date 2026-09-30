@@ -17,15 +17,15 @@ Description: "Profile for cryopreservation of biological material (sperm, oocyte
 * occurrence[x] 1..1
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "(ee Külmutamise kuupäev ja kellaaeg, kohustuslik)"
-* performer 1..*
+* performer 0..*
 * performer ^short = "(ee Embrüoloog või kliiniku spetsialist)"
 * performer.actor 1..1
-* reason 0..*
-* reason from $vris-cryopreservation-reason-VS (preferred)
-* reason ^short = "(ee Külmutamise põhjus, donatsioon, iseendale säilitamine, mittesiirdamiseks vms (NB! LOEND puudu!))"
-* outcome 0..1
-* outcome from $vris-cryopreservation-outcome-VS (preferred)
-* outcome ^short = "(ee Külmutamise tulemus, edukas / ebaõnnestunud / osaliselt edukas (NB! LOEND puudu!))"
+* reason 0..0
+//* reason from $vris-cryopreservation-reason-VS (preferred)
+//* reason ^short = "(ee Külmutamise põhjus, donatsioon, iseendale säilitamine, mittesiirdamiseks vms (NB! LOEND puudu!))"
+* outcome 0..0
+//* outcome from $vris-cryopreservation-outcome-VS (preferred)
+//* outcome ^short = "(ee Külmutamise tulemus, edukas / ebaõnnestunud / osaliselt edukas (NB! LOEND puudu!))"
 * used 1..*
 * used ^short = "(ee Viide külmutatud bioloogilisele materjalile: sperma / munarakk / embrüo)"
 * used only CodeableReference(EEVRISSperm or EEVRISEmbryo or EEVRISOocyte or EEVRISReproductiveTissue)
