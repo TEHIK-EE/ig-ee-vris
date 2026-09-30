@@ -18,8 +18,8 @@ Description: "Observation profile for tobacco use status in the Estonian VRIS fe
 * value[x] 1..1
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
-* valueCodeableConcept from https://fhir.ee/ValueSet/vris-tobacco-use (required)
-* valueCodeableConcept ^short = "(ee Tubakatoodete kasutamise staatus. NB! Seda LOENDIT veel EI ole. Kas saaks seostada nikotiiniandmete projektiga?)"
+* valueCodeableConcept from https://fhir.ee/ValueSet/suitsetamisharjumused (required)
+* valueCodeableConcept ^short = "(ee Loendi sisu vastab andmekoosseisu tabeli sisule. Pealkiri on erinev.)"
 * note 0..*
 * note ^short = "(ee Lisainfo vajadusel)"
 * component 0..0

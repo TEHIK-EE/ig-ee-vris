@@ -21,9 +21,9 @@ Description: "Example of donor sperm"
 * property[spermCollectionMethod].valueCodeableConcept.coding.code = #TODO
 * property[spermCollectionMethod].valueCodeableConcept.coding.display = "Ejaculation"
 
-* property[usageState].valueCodeableConcept.coding.system = $sct
-* property[usageState].valueCodeableConcept.coding.code = #TODO
-* property[usageState].valueCodeableConcept.coding.display = "Thawed from frozen"
+//* property[usageState].valueCodeableConcept.coding.system = $sct
+//* property[usageState].valueCodeableConcept.coding.code = #TODO
+//* property[usageState].valueCodeableConcept.coding.display = "Thawed from frozen"
 
 * property[donorStimulationMethod].valueCodeableConcept.coding.system = $sct
 * property[donorStimulationMethod].valueCodeableConcept.coding.code = #TODO
