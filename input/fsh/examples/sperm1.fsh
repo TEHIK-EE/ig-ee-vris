@@ -17,9 +17,9 @@ Description: "Example of donor sperm"
 * property[Role].valueCodeableConcept.coding.code = #TODO
 * property[Role].valueCodeableConcept.coding.display = "Non-partner donor"
 
-* property[collectionMethod].valueCodeableConcept.coding.system = $sct
-* property[collectionMethod].valueCodeableConcept.coding.code = #TODO
-* property[collectionMethod].valueCodeableConcept.coding.display = "Ejaculation"
+* property[spermCollectionMethod].valueCodeableConcept.coding.system = $sct
+* property[spermCollectionMethod].valueCodeableConcept.coding.code = #TODO
+* property[spermCollectionMethod].valueCodeableConcept.coding.display = "Ejaculation"
 
 * property[usageState].valueCodeableConcept.coding.system = $sct
 * property[usageState].valueCodeableConcept.coding.code = #TODO

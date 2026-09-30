@@ -23,8 +23,9 @@ Description: "Profile for donation of biological material (sperm, oocyte, reprod
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "(ee Annetamise kuupäev, kohustuslik)"
 
-* reason 0..*
-* reason ^short = "(ee Annetamise põhjus, kohustuslik. LOEND puudu!)"
+* reason 0..0
+//* reason 0..*
+//* reason ^short = "(ee Annetamise põhjus, kohustuslik. LOEND puudu!)"
 
 * used 0..*
 * used ^short = "(ee Viide annetatud bioloogilisele materjalile)"

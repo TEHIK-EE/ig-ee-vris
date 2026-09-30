@@ -9,12 +9,15 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $sugu = http://hl7.org/fhir/administrative-gender //https://fhir.ee/CodeSystem/administratiivne-sugu
 Alias: $product-category = http://hl7.org/fhir/product-category
+
 Alias: $vris-property-type-CS = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
 Alias: $vris-property-type = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
 Alias: $vris-property-type1-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-annetus
 Alias: $vris-property-type2-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-omadus
 
 Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+Alias: $ucum = http://unitsofmeasure.org
 Alias: $rtk = https://fhir.ee/CodeSystem/rtk
 Alias: $identifier-domain = https://fhir.ee/CodeSystem/identifikaatorite-domeen
 
@@ -36,9 +39,6 @@ Alias: $skin = https://fhir.ee/ValueSet/vris-naha-varvus
 Alias: $body-CS = https://fhir.ee/CodeSystem/vris-kehaehitus
 Alias: $body = https://fhir.ee/ValueSet/vris-kehaehitus
 Alias: $eyeDetail = https://fhir.ee/ValueSet/vris-silmade-varvuse-tapsustus
-
-Alias: $loinc = http://loinc.org
-Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $relationship-type-VS = https://fhir.ee/ValueSet/isiku-seos-patsiendiga
 Alias: $relationship-relation-VS = https://fhir.ee/ValueSet/patsiendi-kontaktisikute-liigid
@@ -83,6 +83,7 @@ Alias: $vris-fertility-preservation-method = https://fhir.ee/ValueSet/vris-vilja
 
 Alias: $vris-cell-origin-role = https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll
 Alias: $vris-collection-method = https://fhir.ee/ValueSet/vris-kogumise-meetod
+Alias: $vris-sperm-collection-method = https://fhir.ee/ValueSet/vris-sperma-kogumise-meetod
 Alias: $vris-cell-usage-state = https://fhir.ee/ValueSet/vris-suguraku-saamise-meetod
 
 Alias: $vris-cell-preservation-reason = https://fhir.ee/ValueSet/vris-suguraku-sailitamise-pohjus

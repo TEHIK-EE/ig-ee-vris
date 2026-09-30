@@ -51,7 +51,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     donatedCount 0..1 and
 //    frozenCount 0..1 and
     Role 0..1 and
-    collectionMethod 0..* and
+    spermCollectionMethod 0..* and
     usageState 0..* and
     donorStimulationMethod 0..1 and
     preservationReason 0..1 and
@@ -61,7 +61,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 //* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
 * property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
-* property[collectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon.)"
+* property[spermCollectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon.)"
 * property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)"
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja STIMULATSIOON: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu.)"
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
@@ -78,9 +78,9 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
-* property[collectionMethod].type = $vris-property-type#collection-method
-* property[collectionMethod].value[x] only CodeableConcept
-* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
+* property[spermCollectionMethod].type = $vris-property-type#collection-method
+* property[spermCollectionMethod].value[x] only CodeableConcept
+* property[spermCollectionMethod].valueCodeableConcept from $vris-sperm-collection-method (required)
 
 * property[usageState].type = $vris-property-type#usage-state
 * property[usageState].value[x] only CodeableConcept
