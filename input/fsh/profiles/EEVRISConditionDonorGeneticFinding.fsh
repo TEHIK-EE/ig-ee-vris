@@ -12,14 +12,14 @@ Description: "Genetic finding of cell donor that appears later in life. (ee Taga
 * verificationStatus 1..
 * verificationStatus ^binding.description = "LOENDist fix kood!" //from ConditionVerificationStatus (required)
 * verificationStatus ^short = "|provisional| = kahtlus; |confirmed| = DNA-testiga kinnitatud"
-* category 0..1
-* category.coding from $vris-donor-genetic-finding-type-VS
+* category 0..1 //see muutus andmekoosseisus vabatekstiks, category ei kasuta
+//* category.coding from $vris-donor-genetic-finding-type-VS
 //* category[conditionCategory] ^binding.description = "LOENDist fix kood!" //= $condition-category#encounter-diagnosis
 //* category[geneticFindingType] ^binding.description = "Uus loend vaja!!" //from $fertility-donor-genetic-finding-type (required)
-* category ^short = "Geneetilise leiu tüüp"
-* category ^definition = "Geneetilise leiu klassifikatsioon: |päriliku haiguse kahtlus|, |autosoom-retsessiivse kandlus|, |X-liiteline kandlus| või |mitokondriaalne kandlus|"
+//* category ^short = "Geneetilise leiu tüüp"
+//* category ^definition = "Geneetilise leiu klassifikatsioon: |päriliku haiguse kahtlus|, |autosoom-retsessiivse kandlus|, |X-liiteline kandlus| või |mitokondriaalne kandlus|"
 * code 1..
-* code ^short = "Molekulaarne diagnoos. Kas code alla või note alla?!?!?! KAS on lootust, et kunagi tuleks siia loend? Loend, mille alusel saaks valida kodeeritud diagnoosi?"
+* code ^short = "Molekulaarne diagnoos. KAS on lootust, et kunagi tuleks siia loend? Loend, mille alusel saaks valida kodeeritud diagnoosi?"
 * code.text 1..
 * code.text ^short = "(ee Diagnoos/haigus vabatekstina. Siin EI ole loendit, sest paljud geneetilised haigused pole veel RHK koodiga. TULEVIKUS Orpha-koodid?)"
 * code.text ^definition = "Molekulaarne diagnoos vabatekstina. Nt 'CFTR geeni c.1521_1523delCTT (F508del) variant — tsüstilise fibroosi kandlus'"
