@@ -12,7 +12,7 @@ Description: "Base profile for Procedure. For each specific procedure use their 
 * status 1..1   // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
 * status ^short = "(ee See on kohustuslik!)"
 * statusReason 0..1
-* statusReason ^short = "(ee STAATUSE Põhjuste LOEND? Vajalik näiteks kui siirdamist EI toimunud, muudel juhtudel tühjaks jätte.)"
+* statusReason ^short = "(ee STAATUSE Põhjuste LOEND? Vajalik näiteks kui siirdamist EI toimunud, muudel juhtudel tühjaks jätta.)"
 * category 0..0
 * category ^short = "(ee Seda EI kasuta! Iga protseduur saab oma fix koodi)"
 * code 1..1
