@@ -8,7 +8,7 @@ Description: "Example of donor sperm"
 //* extension[preservationReason].valueCodeableConcept.coding.code = #TODO
 //* extension[preservationReason].valueCodeableConcept.coding.display = "For donation"
 * extension[recipient].valueReference = Reference(Patient/patientFemale)
-* productCode = $biological-material-type#sperm "Seemnerakud"
+* productCode = $sct#119347001 "Seemnerakud"
 * productStatus = #available
 * collection.source = Reference(Patient/patientDonorMale)
 * property[donatedCount].valueInteger = 4

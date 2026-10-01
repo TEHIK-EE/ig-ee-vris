@@ -12,8 +12,6 @@ Alias: $product-category = http://hl7.org/fhir/product-category
 
 Alias: $vris-property-type-CS = https://fhir.ee/CodeSystem/vris-tunnuse-tyyp
 Alias: $vris-property-type = https://fhir.ee/ValueSet/vris-tunnuse-tyyp
-Alias: $vris-property-type1-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-annetus
-Alias: $vris-property-type2-VS = https://fhir.ee/ValueSet/vris-tunnuse-tyyp-omadus
 
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
@@ -63,9 +61,9 @@ Alias: $mpi-related-person = https://fhir.ee/mpi/StructureDefinition/ee-mpi-rela
 Alias: $birth-place = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 
 Alias: $vris-procedure-category = https://fhir.ee/ValueSet/vris-protseduuri-kategooria
-Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-kylmutamise-kood
-Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-kylmutamise-pohjus
-Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-kylmutamise-tulemus
+//Alias: $vris-cryopreservation-code-VS = https://fhir.ee/ValueSet/vris-kylmutamise-kood
+Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-embryo-kylmutamise-pohjus
+//Alias: $vris-cryopreservation-outcome-VS = https://fhir.ee/ValueSet/vris-kylmutamise-tulemus
 Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-havitamise-pohjus
 Alias: $reasons = https://fhir.ee/CodeSystem/vris-pohjused
 
