@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-stimulation-protocol"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-observation-stimulation-protocol"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-stimulation-protocol</b></p><a name="observation-stimulation-protocol"> </a><a name="hcobservation-stimulation-protocol"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-observation-stimulation-protocol.html">Observation: EE VRIS Ovarian Stimulation Protocol</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 63487001}">Assisted fertilization</span></p><p><b>subject</b>: <a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>effective</b>: 2025-03-15</p><p><b>note</b>: </p><blockquote><div><p>Standardne antagonisti protokoll, patsient reageeris hästi.</p>
+</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 732970000}">Controlled ovarian stimulation</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 170960008}">ostrogeen ja progestageen</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">Gonadotropiini vabastajahormooni agonistid</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">Inimese gonadotropiin (uFSH)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">Loomulik ovulatsioon</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">Progesteroon</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="63487001"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patientFemale"/>
+  </subject>
+  <effectiveDateTime value="2025-03-15"/>
+  <note>
+    <text value="Standardne antagonisti protokoll, patsient reageeris hästi."/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="732970000"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="170960008"/>
+        <display value="ostrogeen ja progestageen"/>
+      </coding>
+    </code>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Gonadotropiini vabastajahormooni agonistid"/>
+      </coding>
+    </code>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Inimese gonadotropiin (uFSH)"/>
+      </coding>
+    </code>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Loomulik ovulatsioon"/>
+      </coding>
+    </code>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+        <display value="Progesteroon"/>
+      </coding>
+    </code>
+  </component>
+</Observation>

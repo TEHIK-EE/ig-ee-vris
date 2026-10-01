@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Procedure/procedure-cryoSperm1> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "procedure-cryoSperm1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-cryopreservation"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-cryopreservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-cryoSperm1</b></p><a name=\"procedure-cryoSperm1\"> </a><a name=\"hcprocedure-cryoSperm1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-procedure-cryopreservation.html\">Procedure: EE VRIS Cryopreservation</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 870572003}\">Cryopreservation of spermatozoa</span></p><p><b>subject</b>: <a href=\"Patient-patientDonorMale.html\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR)</a></p><p><b>encounter</b>: <a href=\"Encounter/eoc-donationSperm2025\">Encounter/eoc-donationSperm2025</a></p><p><b>occurrence</b>: 2025-02-20 11:00:00+0200</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-practitionerrole-doctor.html\">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td></tr></table><h3>Useds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"BiologicallyDerivedProduct-sperm1-2.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-2; biologicalSourceEvent = ABC123; division = 2; productStatus = available (available); storageTempRequirements = 196 to 196 -196 °C</a></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"BiologicallyDerivedProduct-sperm1-3.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-3; biologicalSourceEvent = ABC123; division = 3; productStatus = available (available); storageTempRequirements = 196 to 196 -196 °C</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:870572003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "870572003" ] ;
+       fhir:display [ fhir:v "Cryopreservation of spermatozoa" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientDonorMale> ;
+     fhir:reference [ fhir:v "Patient/patientDonorMale" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://fhir.ee/vris/Encounter/eoc-donationSperm2025> ;
+     fhir:reference [ fhir:v "Encounter/eoc-donationSperm2025" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-02-20T11:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://fhir.ee/vris/PractitionerRole/practitionerrole-doctor> ;
+       fhir:reference [ fhir:v "PractitionerRole/practitionerrole-doctor" ]
+     ]
+  ] ) ; # 
+  fhir:used ( [
+     fhir:reference [
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1-2> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1-2" ]
+     ]
+  ] [
+     fhir:reference [
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1-3> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1-3" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Observation/observation-fertilization-counts> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-fertilization-counts"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-observation-fertilization-counts>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-fertilization-counts</b></p><a name=\"observation-fertilization-counts\"> </a><a name=\"hcobservation-fertilization-counts\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-observation-fertilization-counts.html\">Observation: EE VRIS Fertilization Counts</a></p></div><p><b>partOf</b>: <a href=\"Procedure-procedure-fertilization1.html\">Procedure IVF</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct TODO}\">Fertilization counts</span></p><p><b>subject</b>: <a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></p><p><b>effective</b>: 2025-03-26 10:00:00+0200</p><p><b>note</b>: </p><blockquote><div><p>Kõik 8 munarakku kasutati IVF meetodiks, 6 viljastusid korrektselt.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">12345678</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">22345678</span></p><p><b>value</b>: 8</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">32345678</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">42345678</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">52345678</span></p><p><b>value</b>: 6</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:partOf ( [
+     fhir:link <https://fhir.ee/vris/Procedure/procedure-fertilization1> ;
+     fhir:reference [ fhir:v "Procedure/procedure-fertilization1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:TODO ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TODO" ] ;
+       fhir:display [ fhir:v "Fertilization counts" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientFemale> ;
+     fhir:reference [ fhir:v "Patient/patientFemale" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-03-26T10:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Kõik 8 munarakku kasutati IVF meetodiks, 6 viljastusid korrektselt." ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "12345678" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "22345678" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 8
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "32345678" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "42345678" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 6
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "52345678" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 6
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/OperationDefinition/EEVRISPatientObservations> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EEVRISPatientObservations"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition EEVRISPatientObservations</b></p><a name=\"EEVRISPatientObservations\"> </a><a name=\"hcEEVRISPatientObservations\"> </a><p>URL: [base]/Patient/$patient-observations</p><p>URL: [base]/Patient/[id]/$patient-observations</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/references.html#Reference\">Reference</a> (<a href=\"StructureDefinition-ee-vris-patient-universal.html\" title=\"https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal\">Patient: EE VRIS Patient</a>, <a href=\"https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-verified.html\" title=\"https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified\">EE MPI Patient Verified</a>, <a href=\"https://fhir.ee/packages/mpi/1.5.0/site/StructureDefinition-ee-mpi-patient-unknown.html\" title=\"https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown\">EE MPI Patient Unknown</a>)</td><td/><td><div><p>Reference to the patient whose observations are being requested. Required when invoked at type level; optional (implied) when invoked at instance level.</p>\n</div></td></tr><tr><td>IN</td><td>profile</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#canonical\">canonical</a></td><td/><td><div><p>Filter results to include only Observations conforming to specified profile(s). Multiple profiles can be provided (OR condition).</p>\n</div></td></tr><tr><td>IN</td><td>category</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Filter by Observation.category value(s) (e.g., laboratory, exam, procedure, social-history).</p>\n</div></td></tr><tr><td>IN</td><td>code</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Filter by Observation.code value(s) (e.g., specific LOINC or SNOMED CT codes).</p>\n</div></td></tr><tr><td>IN</td><td>date-from</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Include only Observations with effective date on or after this date.</p>\n</div></td></tr><tr><td>IN</td><td>date-to</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Include only Observations with effective date on or before this date.</p>\n</div></td></tr><tr><td>IN</td><td>status</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td/><td><div><p>Filter by Observation.status (e.g., final, amended, corrected, cancelled).</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Bundle of type 'searchset' containing all matching Observation resources. Empty Bundle if patient has no observations.</p>\n</div></td></tr></table><div><p>This operation returns all Observation resources associated with a given patient, optionally filtered by profile, category, code, or effective date range.</p>\n</div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/vris/OperationDefinition/patient-observations"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PatientObservations"] ; # 
+  fhir:title [ fhir:v "$patient-observations operation"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-07-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@tehik.ee" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "TEHIK Andmekorraldus" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "andmekorraldus@tehik.ee" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "TEST Custom operation to retrieve all Observation resources for a specific patient in Estonian VRIS. Supports optional filtering by profile, category, code, and date range. (ee TEST Operatioon kõikide Observation ressursside pärimiseks VRIS-ist. Tagastab Bundle'i kõikide Observationitega, kus subject viitab antud patsiendile.)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v false] ; # 
+  fhir:code [ fhir:v "patient-observations"] ; # 
+  fhir:comment [ fhir:v "This operation returns all Observation resources associated with a given patient, optionally filtered by profile, category, code, or effective date range."] ; # 
+  fhir:resource ( [ fhir:v "Patient"] ) ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v true] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "patient" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Reference to the patient whose observations are being requested. Required when invoked at type level; optional (implied) when invoked at instance level." ] ;
+     fhir:type [ fhir:v "Reference" ] ;
+     fhir:targetProfile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-patient-universal>
+     ] [
+       fhir:v "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified>
+     ] [
+       fhir:v "https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-unknown>
+     ] )
+  ] [
+     fhir:name [ fhir:v "profile" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Filter results to include only Observations conforming to specified profile(s). Multiple profiles can be provided (OR condition)." ] ;
+     fhir:type [ fhir:v "canonical" ]
+  ] [
+     fhir:name [ fhir:v "category" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Filter by Observation.category value(s) (e.g., laboratory, exam, procedure, social-history)." ] ;
+     fhir:type [ fhir:v "CodeableConcept" ]
+  ] [
+     fhir:name [ fhir:v "code" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Filter by Observation.code value(s) (e.g., specific LOINC or SNOMED CT codes)." ] ;
+     fhir:type [ fhir:v "CodeableConcept" ]
+  ] [
+     fhir:name [ fhir:v "date-from" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Include only Observations with effective date on or after this date." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:name [ fhir:v "date-to" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Include only Observations with effective date on or before this date." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:name [ fhir:v "status" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Filter by Observation.status (e.g., final, amended, corrected, cancelled)." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:name [ fhir:v "return" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Bundle of type 'searchset' containing all matching Observation resources. Empty Bundle if patient has no observations." ] ;
+     fhir:type [ fhir:v "Bundle" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

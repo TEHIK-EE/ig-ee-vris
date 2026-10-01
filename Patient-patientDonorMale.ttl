@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Patient/patientDonorMale> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patientDonorMale"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-donor"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-donor>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patientDonorMale</b></p><a name=\"patientDonorMale\"> </a><a name=\"hcpatientDonorMale\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-donor.html\">Patient: EE VRIS Donor</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>https://fhir.ee/sid/pid/est/ppn</code>/K0307337 (, period: (?) --&gt; 2023-12-28)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">EE (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:{urn:iso:std:iso:3166 EE}\">Estonia</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension for the role of donor/recipient of biological material. (ee Sperma/munaraku doonori/retsipiendi roll (viljatusravi saav naine, mittepartnerannetaja, partner, anonüümne, säilitaja jne).)\"><a href=\"StructureDefinition-ee-vris-role.html\">Cell origin role</a></td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct TODO}\">Non-partner donor</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Tartu EE </td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-role"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:TODO ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TODO" ] ;
+         fhir:display [ fhir:v "Non-partner donor" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:city [ fhir:v "Tartu" ] ;
+       fhir:country [ fhir:v "EE" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "EE" ] ;
+           fhir:display [ fhir:v "Estonia" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "DR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/ni"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "38301105216" ]
+  ] [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/ppn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "K0307337" ] ;
+     fhir:period [
+       fhir:end [ fhir:v "2023-12-28"^^xsd:date ]
+     ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Estonian Police and Board Agency" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Mister" ] ;
+     fhir:given ( [ fhir:v "Ygrek" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [
+     fhir:v "1983-01-11"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.ee/base/StructureDefinition/ee-patient-age"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Age ;
+         fhir:value [ fhir:v "42"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "a" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:country [ fhir:v "EE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

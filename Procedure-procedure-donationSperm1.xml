@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-donationSperm1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-donation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure procedure-donationSperm1</b></p><a name="procedure-donationSperm1"> </a><a name="hcprocedure-donationSperm1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-procedure-donation.html">Procedure: EE VRIS Donation</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct puudu}">annetamine</span></p><p><b>subject</b>: <a href="Patient-patientDonorMale.html">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR)</a></p><p><b>encounter</b>: <a href="Encounter-encounter-donationSperm2025.html">Encounter: status = completed; actualPeriod = 2025-02-20 09:00:00+0200 --&gt; 2025-02-20 11:30:00+0200</a></p><p><b>occurrence</b>: 2025-02-20 09:30:00+0200</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="PractitionerRole-practitionerrole-doctor.html">PractitionerRole: identifier = https://fhir.ee/sid/pro/est/pho#D99876; period = 2008-01-01 --&gt; (ongoing)</a></td></tr></table><h3>Useds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="BiologicallyDerivedProduct-sperm1.html">BiologicallyDerivedProduct: extension = -&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="puudu"/>
+      <display value="annetamine"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patientDonorMale"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-donationSperm2025"/>
+  </encounter>
+  <occurrenceDateTime value="2025-02-20T09:30:00+02:00"/>
+  <performer>
+    <actor>
+      <reference value="PractitionerRole/practitionerrole-doctor"/>
+    </actor>
+  </performer>
+  <used>
+    <reference>
+      <reference value="BiologicallyDerivedProduct/sperm1"/>
+    </reference>
+  </used>
+</Procedure>

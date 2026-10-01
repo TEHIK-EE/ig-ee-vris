@@ -1,0 +1,50 @@
+{
+  "resourceType" : "BiologicallyDerivedProduct",
+  "id" : "embryo2",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct embryo2</b></p><a name=\"embryo2\"> </a><a name=\"hcembryo2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-embryo.html\">BiologicallyDerivedProduct: EE VRIS Embryo</a></p></div><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik embryo}\">Embrüo</span></p><p><b>identifier</b>: EMB790-1</p><p><b>biologicalSourceEvent</b>: EMB790</p><p><b>division</b>: 1</p><p><b>productStatus</b>: [not stated]: unavailable (unavailable)</p><p><b>expirationDate</b>: 2025-03-19 18:00:00+0200</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td><td>2025-03-19</td></tr></table><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}\">preservation-state</span></td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek fresh}\">Värske</span></td></tr></table></div>"
+  },
+  "productCode" : {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik",
+      "code" : "embryo",
+      "display" : "Embrüo"
+    }]
+  },
+  "identifier" : [{
+    "value" : "EMB790-1"
+  }],
+  "biologicalSourceEvent" : {
+    "value" : "EMB790"
+  },
+  "division" : "1",
+  "productStatus" : {
+    "code" : "unavailable"
+  },
+  "expirationDate" : "2025-03-19T18:00:00+02:00",
+  "collection" : {
+    "source" : {
+      "reference" : "Patient/patientFemale"
+    },
+    "collectedDateTime" : "2025-03-19"
+  },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "preservation-state"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-sailitamise-olek",
+        "code" : "fresh",
+        "display" : "Värske"
+      }]
+    }
+  }]
+}

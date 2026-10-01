@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1-3> a fhir:BiologicallyDerivedProduct ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sperm1-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-sperm"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-sperm>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct sperm1-3</b></p><a name=\"sperm1-3\"> </a><a name=\"hcsperm1-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-sperm.html\">BiologicallyDerivedProduct: EE VRIS Sperm</a></p></div><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik sperm}\">Seemnerakud</span></p><p><b>parent</b>: <a href=\"BiologicallyDerivedProduct-sperm1.html\">BiologicallyDerivedProduct: extension = -&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Seemnerakud; biologicalSourceEvent = ABC123; productStatus = available (available)</a></p><p><b>identifier</b>: ABC123-3</p><p><b>biologicalSourceEvent</b>: ABC123</p><p><b>processingFacility</b>: <a href=\"Organization-organization-novavita1.html\">Organization Nova Vita Kliinik AS</a></p><p><b>division</b>: 3</p><p><b>productStatus</b>: [not stated]: available (available)</p><p><b>storageTempRequirements</b>: 196-196 -196 °C</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}\">preservation-state</span></td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek cryopreserved}\">Külmutatud</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:productCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sperm" ] ;
+       fhir:display [ fhir:v "Seemnerakud" ]
+     ] )
+  ] ; # 
+  fhir:parent ( [
+     fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/sperm1> ;
+     fhir:reference [ fhir:v "BiologicallyDerivedProduct/sperm1" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "ABC123-3" ]
+  ] ) ; # 
+  fhir:biologicalSourceEvent [
+     fhir:value [ fhir:v "ABC123" ]
+  ] ; # 
+  fhir:processingFacility ( [
+     fhir:link <https://fhir.ee/vris/Organization/organization-novavita1> ;
+     fhir:reference [ fhir:v "Organization/organization-novavita1" ]
+  ] ) ; # 
+  fhir:division [ fhir:v "3"] ; # 
+  fhir:productStatus [
+     fhir:code [ fhir:v "available" ]
+  ] ; # 
+  fhir:storageTempRequirements [
+     fhir:low [
+       fhir:value [ fhir:v "196"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "-196 °C" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "°C" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "196"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "-196 °C" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "°C" ]
+     ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-tunnuse-tyyp"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "preservation-state" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/ValueSet/vris-sailitamise-olek"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cryopreserved" ] ;
+         fhir:display [ fhir:v "Külmutatud" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
