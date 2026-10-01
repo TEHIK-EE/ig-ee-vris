@@ -79,7 +79,8 @@ Alias: $vris-sperm-donor-stimulation-method = https://fhir.ee/ValueSet/vris-sper
 //Alias: $vris-cell-preservation-reason = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
 Alias: $vris-fertility-preservation-method = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-meetod
 
-Alias: $vris-cell-origin-role = https://fhir.ee/ValueSet/vris-suguraku-paritolu-roll
+Alias: $vris-cell-origin-role = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-paritolu-roll
+//Alias: $vris-sperm-origin-role = https://fhir.ee/ValueSet/vris-seemneraku-paritolu-roll
 Alias: $vris-collection-method = https://fhir.ee/ValueSet/vris-kogumise-meetod
 Alias: $vris-sperm-collection-method = https://fhir.ee/ValueSet/vris-seemnerakkude-kogumise-meetod
 Alias: $vris-cell-usage-state = https://fhir.ee/ValueSet/vris-suguraku-saamise-meetod
