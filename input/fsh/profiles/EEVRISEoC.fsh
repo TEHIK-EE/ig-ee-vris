@@ -8,8 +8,9 @@ Description: "Episode of care profile for VRIS fertility treatment. Groups relat
 * identifier 0..*
 * identifier ^short = "(ee Episoodi identifikaator)"
 
-//* type 0..*
-//* type ^short = "(ee Episoodi tüüp, nt viljatusRAVI, rasedus, ANNETAMINE ehk doonorlus, viljakuse säilitamine. NB! Vaja LOENDIT!)" //ei ole vaja kasutada
+* type 0..*
+* type ^short = "(ee Episoodi tüüp |Doonorlus|, |Külmutamine viljakuse säilitamise eesmärgil|,|Viljatusravi|,|Rasedus|)" //ei ole vaja kasutada
+* type from $vris-episode-type
 
 * patient 1..1
 * patient only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous or $mpi-patient or EEVRISPatientChild)

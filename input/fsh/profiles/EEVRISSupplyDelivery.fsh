@@ -20,7 +20,7 @@ Description: "Use this profile for describing when the biological material (sper
 * suppliedItem 1..*
 * suppliedItem ^short = "(ee MIDA liigutatakse. Bioloogiline materjal. KAS on vaja viidet ka pakendile või piisab BDP viitest?)"
 * suppliedItem.quantity 0..1
-* suppliedItem.quantity ^short = "(ee Kogus, dooside arv, mida liigutatakse.)"
+* suppliedItem.quantity ^short = "(ee Kogus, pakendite arv, mida liigutatakse.)"
 * suppliedItem.item[x] 1..1
 * suppliedItem.itemReference only Reference(EEVRISEmbryo or EEVRISSperm or EEVRISOocyte or EEVRISReproductiveTissue)
 * occurrence[x] 1..1

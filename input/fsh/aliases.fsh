@@ -98,3 +98,5 @@ Alias: $vris-pubertal-status = https://fhir.ee/ValueSet/vris-puberteedi-staatus
 
 Alias: $vris-procedure-code = https://fhir.ee/ValueSet/vris-protseduuri-kood
 Alias: $vris-pgt-type = https://fhir.ee/ValueSet/vris-pgt-tyyp
+Alias: $vris-episode-type = https://fhir.ee/ValueSet/vris-episoodi-tyyp
+Alias: $vris-episode-type-CS = https://fhir.ee/CodeSystem/vris-episoodi-tyyp

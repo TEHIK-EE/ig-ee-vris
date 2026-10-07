@@ -5,7 +5,7 @@ Description: "Example of donation event as a whole. Sperm donation to partner. (
 
 * identifier.value = "ABC123"
 * status = #finished
-//* type = $vris-episode-type#donation "Annetamine"
+* type = $vris-episode-type-CS#donorship "Doonorluse sündmus"
 * patient = Reference(Patient/patientDonorMale)
 * managingOrganization = Reference(Organization/organization-novavita1)
 * careManager = Reference(PractitionerRole/practitionerrole-doctor)
