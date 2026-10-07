@@ -21,6 +21,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Munandi kude või munasarja kude. NB! Vaja loendit!)"
 * productStatus 1..1
+* productStatus ^short = "(ee Bioloogilse materjali staatus available|unavailable. AGA BDP-ga protseduuri (ehk mis toiminguid BDP-ga tehakse) staatus on eraldiseisev. Kui on viljastamise protseduuris kasutatud, siis on staatus |unavailable|, kui on broneeritud, siis on ikka |available| kuni ära kasutatakse või hävitatakse.)"
 * collection 1..1
 * collection.source 1..1
 * collection.source only Reference(EEVRISDonor)

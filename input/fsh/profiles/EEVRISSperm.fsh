@@ -32,7 +32,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Sperma, fix kood! Vaja loendit! KAS on vaja kui igal sugurakul on oma profiil???)"
 * productStatus 1..
-* productStatus ^short = "(ee Staatuse kaudu saab broneeringut teha? NB Vaja loendit!)"
+* productStatus ^short = "(ee Bioloogilse materjali staatus available|unavailable. AGA BDP-ga protseduuri (ehk mis toiminguid BDP-ga tehakse) staatus on eraldiseisev. Kui on viljastamise protseduuris kasutatud, siis on staatus |unavailable|, kui on broneeritud, siis on ikka |available| kuni ära kasutatakse või hävitatakse.)"
 * collection 0..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor or EEVRISDonorAnonymous)

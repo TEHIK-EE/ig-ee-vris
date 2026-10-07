@@ -26,7 +26,7 @@ Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressur
 * productCode 1..
 * productCode from $biological-material-type-VS // ^binding.description = "LOEND!" //$fertility-biological-material-type#sperm
 * productStatus 1..
-* productStatus ^binding.description = "LOEND!" //from BiologicallyDerivedProductStatus (required)
+* productStatus ^short = "(ee Bioloogilse materjali staatus available|unavailable. AGA BDP-ga protseduuri (ehk mis toiminguid BDP-ga tehakse) staatus on eraldiseisev. Kui on viljastamise protseduuris kasutatud, siis on staatus |unavailable|, kui on broneeritud, siis on ikka |available| kuni ära kasutatakse või hävitatakse.)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference($vris-donor)

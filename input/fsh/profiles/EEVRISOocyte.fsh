@@ -22,6 +22,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * productCode from $biological-material-type-VS
 * productCode ^short = "Munarakk. FIX KOOD! (NB! Embryol on oma profiil EEVRISEmbryo). Vaja loendit!"
 * productStatus 1..
+* productStatus ^short = "(ee Bioloogilse materjali staatus available|unavailable. AGA BDP-ga protseduuri (ehk mis toiminguid BDP-ga tehakse) staatus on eraldiseisev. Kui on viljastamise protseduuris kasutatud, siis on staatus |unavailable|, kui on broneeritud, siis on ikka |available| kuni ära kasutatakse või hävitatakse.)"
 * collection 1..
 * collection.source 1..
 * collection.source only Reference(EEVRISDonor or EEVRISRecipient)
