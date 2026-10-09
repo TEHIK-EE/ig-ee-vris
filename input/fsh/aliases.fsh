@@ -102,4 +102,5 @@ Alias: $vris-episode-type = https://fhir.ee/ValueSet/vris-episoodi-tyyp
 Alias: $vris-episode-type-CS = https://fhir.ee/CodeSystem/vris-episoodi-tyyp
 Alias: $vris-observation-code = https://fhir.ee/ValueSet/vris-vaatluse-tyyp
 Alias: $vris-observation-component-code = https://fhir.ee/ValueSet/vris-vaatluse-komponendi-tyyp
+Alias: $vris-stim-component = https://fhir.ee/ValueSet/vris-stimulatsiooni-komponendi-tyyp
 

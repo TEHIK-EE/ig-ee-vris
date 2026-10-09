@@ -25,18 +25,24 @@ Description: "Captures stimulation protocol details for thawed embryo. (ee Sulat
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains
-    preparationProtocol 0..1 and
-    lutealPhaseSupport 0..1
+    ovarianStimulation 0..1 and
+    lhSuppression 0..1 and
+    lhSuppressionMethod 0..*
 
-* component[preparationProtocol] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
-* component[preparationProtocol].code = $vris-observation-component-code#732970000 //|Kontrollitud munasarjade stimulatsioon|
-* component[preparationProtocol].value[x] only CodeableConcept
-* component[lutealPhaseSupport].valueCodeableConcept from $vris-preparation-protocol-VS (required)
+* component[ovarianStimulation] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
+* component[ovarianStimulation].code = $vris-stim-component#ovarian-stimulation //|Controlled ovarian stimulation (procedure)|
+* component[ovarianStimulation].value[x] only boolean
 
-* component[lutealPhaseSupport] ^short = "(ee Luteaalfaasi toetus. LOEND: Ei toimunud, Inimese kooriongonadotropiin, Progesteroon, Muud progestageenid, Kombinatsioon)"
-* component[lutealPhaseSupport].code = $vris-observation-component-code#237221000181101  //|Luteaalfaasi toetus ravimitega|
-* component[lutealPhaseSupport].value[x] only CodeableConcept
-* component[lutealPhaseSupport].valueCodeableConcept from $vris-luteal-phase-support-VS (required)
+* component[lhSuppression] ^short = "(ee Luteiniseeriva hormooni (LH) supressiooni protokoll Jah/Ei)"
+* component[lhSuppression].code = $vris-stim-component#lh-suppression
+* component[lhSuppression].value[x] 1..1
+* component[lhSuppression].value[x] only boolean
+
+* component[lhSuppressionMethod] ^short = "(ee LH supressiooni protokolli meetod. Mitu valikut lubatud.)"
+* component[lhSuppressionMethod].code = $vris-stim-component#lh-suppression-method
+* component[lhSuppressionMethod].value[x] 1..1
+* component[lhSuppressionMethod].value[x] only CodeableConcept
+//* component[lhSuppressionMethod].valueCodeableConcept from $vris-lh-suppression-protocol-VS (required)
 
 * bodySite 0..0
 * specimen 0..0
