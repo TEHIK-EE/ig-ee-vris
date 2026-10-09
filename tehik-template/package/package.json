@@ -8,6 +8,6 @@
   "canonical": "http://github.com/HL7EE/ig-template-fhir",
   "base": "fhir.base.template",
   "dependencies": {
-    "fhir.base.template": "current"
+    "fhir.base.template": "0.8.1"
   }
 }
