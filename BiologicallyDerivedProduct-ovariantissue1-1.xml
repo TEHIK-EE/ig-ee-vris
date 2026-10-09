@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BiologicallyDerivedProduct xmlns="http://hl7.org/fhir">
+  <id value="ovariantissue1-1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-reproductive-tissue"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: BiologicallyDerivedProduct ovariantissue1-1</b></p><a name="ovariantissue1-1"> </a><a name="hcovariantissue1-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-reproductive-tissue.html">BiologicallyDerivedProduct: EE VRIS Reproductive Tissue</a></p></div><p><b>Cryopreservation date</b>: 2025-01-15</p><p><b>productCode</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik ovarian-tissue}">Munasarja kude</span></p><p><b>parent</b>: <a href="BiologicallyDerivedProduct-ovariantissue1.html">BiologicallyDerivedProduct: productCode = Munasarja kude; identifier = OVT123; biologicalSourceEvent = OVT123; productStatus = available (available)</a></p><p><b>identifier</b>: OVT123-1</p><p><b>biologicalSourceEvent</b>: OVT123</p><p><b>division</b>: 1</p><p><b>productStatus</b>: [not stated]: available (available)</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Source</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp frozen-fragment-count}">frozen-fragment-count</span></p><p><b>value</b>: 4</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}">preservation-state</span></p><p><b>value</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek cryopreserved}">Külmutatud</span></p></blockquote></div>
+  </text>
+  <extension url="https://fhir.ee/vris/StructureDefinition/ee-vris-cryopreservation-date">
+    <valueDateTime value="2025-01-15"/>
+  </extension>
+  <productCode>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"/>
+      <code value="ovarian-tissue"/>
+      <display value="Munasarja kude"/>
+    </coding>
+  </productCode>
+  <parent>
+    <reference value="BiologicallyDerivedProduct/ovariantissue1"/>
+  </parent>
+  <identifier>
+    <value value="OVT123-1"/>
+  </identifier>
+  <biologicalSourceEvent>
+    <value value="OVT123"/>
+  </biologicalSourceEvent>
+  <division value="1"/>
+  <productStatus>
+    <code value="available"/>
+  </productStatus>
+  <collection>
+    <source>
+      <reference value="Patient/patientFemale"/>
+    </source>
+  </collection>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="frozen-fragment-count"/>
+      </coding>
+    </type>
+    <valueInteger value="4"/>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="preservation-state"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-sailitamise-olek"/>
+        <code value="cryopreserved"/>
+        <display value="Külmutatud"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+</BiologicallyDerivedProduct>

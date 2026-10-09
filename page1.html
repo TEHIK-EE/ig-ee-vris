@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Diagram examples - VRIS - Viljatusravi infosüsteem v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/tehik.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="https://www.tehik.ee">
+    <img height="70" src="assets/images/tehik-logo.png"/>
+  </a>
+</div>
+
+<!-- Right logo - for example the FHIR logo --><!-- Make sure you have authorization to use the FHIR logo --><!--
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+  </div>
+-->
+<!-- search icon - if you want -->
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="search.html"><img alt="Search FHIR"
+      src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">VRIS - Viljatusravi infosüsteem</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  Estonia
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="page1.html">Page1</a>
+      </li>
+      <li>
+        <a href="page2.html">Page2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Diagram examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">VRIS - Viljatusravi infosüsteem - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir.ee/vris/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Diagram examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="paragraph-1">Paragraph #1</h3>
+
+<h4 id="test-diagram">TEST diagram</h4>
+<p>Sample diagram using <a href="https://mermaid.js.org/">mermaid</a> syntax:</p>
+
+<pre><code class="language-mermaid">graph TD
+    ViljatusraviSaavNaine --&gt;|tuleb kliinikusse| SaabRavi
+    SaabRavi --&gt;|õnnestub| synnibLaps
+    SaabRavi --&gt;|ei õnnestu| teebUueTsykli
+</code></pre>
+
+<h4 id="plantuml-diagram">PlantUML diagram</h4>
+<p>Sample diagram using <a href="https://plantuml.com/">PlantUML</a> syntax.</p>
+
+<p>Generated from <code class="language-plaintext highlighter-rouge">input/images-source/sample.plantuml</code> file:
+&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="592.0839px" preserveAspectRatio="none" style="width:600px;height:592px;background:#FFFFFF;" version="1.1" viewBox="0 0 600 592" width="600.4362px" zoomAndPan="magnify"><defs></defs><g><ellipse cx="373.746" cy="29.697" fill="#181818" rx="9.2803" ry="9.2803" style="stroke:none;stroke-width:0.9280311818477102;"></ellipse><g id="State1"><rect fill="#F1F1F1" height="46.4016" rx="11.6004" ry="11.6004" style="stroke:#181818;stroke-width:0.4640155909238551;" width="60.322" x="415.9714" y="6.4962"></rect><line style="stroke:#181818;stroke-width:0.4640155909238551;" x1="415.9714" x2="476.2934" y1="30.9005" y2="30.9005"></line><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="41.7614" x="425.2517" y="23.1962">State1</text></g><g id="State2"><rect fill="#F1F1F1" height="46.4016" rx="11.6004" ry="11.6004" style="stroke:#181818;stroke-width:0.4640155909238551;" width="60.322" x="247.0697" y="124.3562"></rect><line style="stroke:#181818;stroke-width:0.4640155909238551;" x1="247.0697" x2="307.3918" y1="148.7605" y2="148.7605"></line><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="41.7614" x="256.3501" y="141.0562">State2</text></g><ellipse cx="283.727" cy="577.2354" fill="none" rx="9.2803" ry="9.2803" style="stroke:#181818;stroke-width:0.9280311818477102;"></ellipse><ellipse cx="284.191" cy="577.6994" fill="#181818" rx="5.5682" ry="5.5682" style="stroke:none;stroke-width:0.9280311818477102;"></ellipse><path d="M145.9143,242.2161 L408.5472,242.2161 A11.6004,11.6004 0 0 1 420.1476,253.8165 L420.1476,266.6205 L134.314,266.6205 L134.314,253.8165 A11.6004,11.6004 0 0 1 145.9143,242.2161 " fill="#F1F1F1" style="stroke:#F1F1F1;stroke-width:0.9280311818477102;"></path><rect fill="none" height="254.5561" rx="11.6004" ry="11.6004" style="stroke:#181818;stroke-width:0.4640155909238551;" width="285.8336" x="134.314" y="242.2161"></rect><line style="stroke:#181818;stroke-width:0.4640155909238551;" x1="134.314" x2="420.1476" y1="266.6205" y2="266.6205"></line><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="41.7614" x="256.3501" y="258.9162">State3</text><g id="State3.long1"><rect fill="#F1F1F1" height="61.7721" rx="11.6004" ry="11.6004" style="stroke:#181818;stroke-width:0.4640155909238551;" width="180.9661" x="145.4503" y="329.7266"></rect><line style="stroke:#181818;stroke-width:0.4640155909238551;" x1="145.4503" x2="326.4164" y1="369.2549" y2="369.2549"></line><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="162.4055" x="154.7306" y="346.4266">Accumulate Enough Data</text><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="109.5077" x="181.1795" y="361.5506">Long State Name</text><text fill="#000000" font-family="sans-serif" font-size="11.1364" lengthAdjust="spacing" textLength="59.394" x="150.0905" y="384.2321">Just a test</text></g><ellipse cx="235.9334" cy="286.1091" fill="#181818" rx="9.2803" ry="9.2803" style="stroke:none;stroke-width:0.9280311818477102;"></ellipse><g id="State3.ProcessData"><rect fill="#F1F1F1" height="46.4016" rx="11.6004" ry="11.6004" style="stroke:#181818;stroke-width:0.4640155909238551;" width="100.2274" x="185.8197" y="441.0903"></rect><line style="stroke:#181818;stroke-width:0.4640155909238551;" x1="185.8197" x2="286.0471" y1="465.4946" y2="465.4946"></line><text fill="#000000" font-family="sans-serif" font-size="12.9924" lengthAdjust="spacing" textLength="81.6667" x="195.1" y="457.7904">ProcessData</text></g><!--link *start*State3 to long1--><g id="link_*start*State3_long1"><path d="M235.9334,295.3894 C235.9334,302.7209 235.9334,313.8851 235.9334,324.8823 " fill="none" id="*start*State3-to-long1" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="235.9334,329.5688,239.6455,321.2165,235.9334,324.9287,232.2212,321.2165,235.9334,329.5688" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon></g><!--link long1 to long1--><g id="link_long1_long1"><path d="M326.6391,353.2058 C336.6526,354.6535 343.121,357.187 343.121,360.8156 C343.121,363.8224 338.685,366.0776 331.4742,367.581 " fill="none" id="long1-to-long1" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="326.6391,368.4255,335.5039,370.6516,331.2107,367.6304,334.2319,363.3372,326.6391,368.4255" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="57.5379" x="348.6892" y="365.0538">New Data</text></g><!--link long1 to ProcessData--><g id="link_long1_ProcessData"><path d="M235.9334,391.9603 C235.9334,405.9179 235.9334,422.3812 235.9334,435.9861 " fill="none" id="long1-to-ProcessData" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="235.9334,440.849,239.6455,432.4968,235.9334,436.2089,232.2212,432.4968,235.9334,440.849" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="77.0266" x="236.8614" y="420.7357">Enough Data</text></g><!--link *start* to State1--><g id="link_*start*_State1"><path d="M383.082,29.697 C392.3809,29.697 401.6797,29.697 410.9786,29.697 " fill="none" id="*start*-to-State1" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="415.8415,29.697,407.4892,25.9849,411.2013,29.697,407.4892,33.4091,415.8415,29.697" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon></g><!--link State1 to State2--><g id="link_State1_State2"><path d="M415.9436,51.3665 C386.6085,71.5141 342.1373,102.0556 311.4937,123.1033 " fill="none" id="State1-to-State2" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="307.4567,125.8781,316.4451,124.2198,311.2847,123.2556,312.2489,118.0951,307.4567,125.8781" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="65.8902" x="371.8899" y="92.8652">Succeeded</text></g><!--link State1 to *end*--><g id="link_State1_*end*"><path d="M458.0484,53.1298 C494.1859,124.7924 594.4318,351.4732 499.0302,496.4967 C453.1298,566.2846 338.1282,575.2958 297.898,576.2702 " fill="none" id="State1-to-*end*" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="293.1558,576.3538,301.5705,579.9222,297.7952,576.2742,301.4432,572.499,293.1558,576.3538" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="47.3296" x="519.4469" y="210.7252">Aborted</text></g><!--link State2 to State3--><g id="link_State2_State3"><path d="M277.2308,170.7856 C277.2308,187.3881 277.2308,211.5633 277.2308,237.3347 " fill="none" id="State2-to-State3" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="277.2308,242.1697,280.9429,233.8175,277.2308,237.5296,273.5186,233.8175,277.2308,242.1697" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="65.8902" x="278.1588" y="210.7252">Succeeded</text></g><!--link State2 to *end*--><g id="link_State2_*end*"><path d="M246.7913,151.9373 C199.1369,159.1481 108.2641,180.6691 68.4237,242.2161 C7.0252,337.0888 5.5682,402.5799 68.4237,496.4967 C114.8903,565.9134 229.5392,575.1659 269.6209,576.2331 " fill="none" id="State2-to-*end*" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="274.3446,576.3352,266.0793,572.4332,269.7056,576.2292,265.9097,579.8555,274.3446,576.3352" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="47.3296" x="69.3518" y="373.5946">Aborted</text></g><!--link State3 to State3--><g id="link_State3_State3"><path d="M420.3796,342.4992 C439.7383,347.0001 452.6286,355.9556 452.6286,369.3564 C452.6286,381.6064 441.8635,390.1443 425.2239,394.9608 " fill="none" id="State3-to-State3" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="420.3796,396.2136,429.3966,397.7081,424.8709,395.0477,427.5312,390.522,420.3796,396.2136" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="34.3372" x="458.1968" y="373.5946">Failed</text></g><!--link State3 to *end*--><g id="link_State3_*end*"><path d="M178.6367,496.5988 C176.3166,511.5865 178.6831,526.4164 188.1398,540.1141 C206.6261,566.8786 247.6544,573.8666 269.4539,575.6856 " fill="none" id="State3-to-*end*" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="274.3075,576.029,266.2418,571.7295,269.6792,575.6974,265.7113,579.1348,274.3075,576.029" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="146.6289" x="189.0678" y="536.4641">Succeeded / Save Result</text></g><!--link State3 to *end*--><g id="link_State3_*end*"><path d="M333.5251,496.8772 C336.2257,506.0461 338.5551,515.2615 340.3369,524.3376 C341.6918,531.2143 343.7056,533.9613 340.3369,540.1141 C331.2607,556.6981 310.9832,566.795 297.3319,571.9642 " fill="none" id="State3-to-*end*-1" style="stroke:#181818;stroke-width:0.9280311818477102;"></path><polygon fill="#181818" points="292.6268,573.6532,301.7413,574.3364,296.996,572.0909,299.2415,567.3456,292.6268,573.6532" style="stroke:#181818;stroke-width:0.9280311818477102;"></polygon><text fill="#000000" font-family="sans-serif" font-size="12.0644" lengthAdjust="spacing" textLength="47.3296" x="342.1929" y="536.4641">Aborted</text></g></g></svg></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.tehik.ee">TEHIK</a>.  Package ee.fhir.vris#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 9, 2026 13:49+0000">2026-10-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

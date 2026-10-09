@@ -1,0 +1,54 @@
+{
+  "resourceType" : "BiologicallyDerivedProduct",
+  "id" : "embryo2-1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-embryo"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BiologicallyDerivedProduct embryo2-1</b></p><a name=\"embryo2-1\"> </a><a name=\"hcembryo2-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-embryo.html\">BiologicallyDerivedProduct: EE VRIS Embryo</a></p></div><p><b>Package</b>: <a href=\"BiologicallyDerivedProduct-embryo2.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB790-1; biologicalSourceEvent = EMB790; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-03-19 18:00:00+0200</a></p><p><b>productCode</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik embryo}\">Embrüo</span></p><p><b>parent</b>: </p><ul><li><a href=\"BiologicallyDerivedProduct-oocyte1-1.html\">BiologicallyDerivedProduct: productCode = Munarakk; identifier = OOC123-1; biologicalSourceEvent = OOC123; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-02-20 18:00:00+0200</a></li><li><a href=\"BiologicallyDerivedProduct-sperm1-1.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-2; biologicalSourceEvent = ABC123; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-02-20 18:00:00+0200</a></li></ul><p><b>identifier</b>: EMB790-1-A</p><p><b>biologicalSourceEvent</b>: EMB790</p><p><b>productStatus</b>: [not stated]: unavailable (unavailable)</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Source</b></td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patientFemale.html\">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td><td>2025-03-14</td></tr></table><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp development-day}\">development-day</span></td><td>5</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-package",
+    "valueReference" : {
+      "reference" : "BiologicallyDerivedProduct/embryo2"
+    }
+  }],
+  "productCode" : {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik",
+      "code" : "embryo",
+      "display" : "Embrüo"
+    }]
+  },
+  "parent" : [{
+    "reference" : "BiologicallyDerivedProduct/oocyte1-1"
+  },
+  {
+    "reference" : "BiologicallyDerivedProduct/sperm1-1"
+  }],
+  "identifier" : [{
+    "value" : "EMB790-1-A"
+  }],
+  "biologicalSourceEvent" : {
+    "value" : "EMB790"
+  },
+  "productStatus" : {
+    "code" : "unavailable"
+  },
+  "collection" : {
+    "source" : {
+      "reference" : "Patient/patientFemale"
+    },
+    "collectedDateTime" : "2025-03-14"
+  },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/ValueSet/vris-tunnuse-tyyp",
+        "code" : "development-day"
+      }]
+    },
+    "valueInteger" : 5
+  }]
+}

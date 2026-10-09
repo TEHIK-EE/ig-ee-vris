@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BiologicallyDerivedProduct xmlns="http://hl7.org/fhir">
+  <id value="oocyte1-1"/>
+  <meta>
+    <profile value="https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: BiologicallyDerivedProduct oocyte1-1</b></p><a name="oocyte1-1"> </a><a name="hcoocyte1-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-vris-oocyte.html">BiologicallyDerivedProduct: EE VRIS Oocyte</a></p></div><p><b>productCode</b>: <span title="Codes:{https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik oocyte}">Munarakk</span></p><p><b>parent</b>: <a href="BiologicallyDerivedProduct-oocyte1.html">BiologicallyDerivedProduct: extension = -&gt;Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216); productCode = Munarakk; biologicalSourceEvent = OOC123; productStatus = available (available)</a></p><p><b>identifier</b>: OOC123-1</p><p><b>biologicalSourceEvent</b>: OOC123</p><p><b>division</b>: 1</p><p><b>productStatus</b>: [not stated]: unavailable (unavailable)</p><p><b>expirationDate</b>: 2025-02-20 18:00:00+0200</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Source</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-patientFemale.html">Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)</a></td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp preservation-state}">preservation-state</span></p><p><b>value</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-sailitamise-olek fresh}">Värske</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://fhir.ee/ValueSet/vris-tunnuse-tyyp meta-phase-2-count}">meta-phase-2-count</span></p><p><b>value</b>: 3</p></blockquote></div>
+  </text>
+  <productCode>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/vris-bioloogilise-materjali-liik"/>
+      <code value="oocyte"/>
+      <display value="Munarakk"/>
+    </coding>
+  </productCode>
+  <parent>
+    <reference value="BiologicallyDerivedProduct/oocyte1"/>
+  </parent>
+  <identifier>
+    <value value="OOC123-1"/>
+  </identifier>
+  <biologicalSourceEvent>
+    <value value="OOC123"/>
+  </biologicalSourceEvent>
+  <division value="1"/>
+  <productStatus>
+    <code value="unavailable"/>
+  </productStatus>
+  <expirationDate value="2025-02-20T18:00:00+02:00"/>
+  <collection>
+    <source>
+      <reference value="Patient/patientFemale"/>
+    </source>
+  </collection>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="preservation-state"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-sailitamise-olek"/>
+        <code value="fresh"/>
+        <display value="Värske"/>
+      </coding>
+    </valueCodeableConcept>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://fhir.ee/ValueSet/vris-tunnuse-tyyp"/>
+        <code value="meta-phase-2-count"/>
+      </coding>
+    </type>
+    <valueInteger value="3"/>
+  </property>
+</BiologicallyDerivedProduct>

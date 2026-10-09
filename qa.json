@@ -1,0 +1,20 @@
+{
+  "url" : "https://fhir.ee/vris/ImplementationGuide/ee.fhir.vris",
+  "name" : "EEVRIS",
+  "title" : "VRIS - Viljatusravi infosüsteem",
+  "description" : "",
+  "status" : "draft",
+  "package-id" : "ee.fhir.vris",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 09 Oct, 2026 13:49:29 +0000",
+  "dateISO8601" : "2026-10-09T13:49:29+00:00",
+  "errs" : 535,
+  "warnings" : 959,
+  "hints" : 119,
+  "broken-links" : 3,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 117,
+  "version" : "5.0.0",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1635256736
+}

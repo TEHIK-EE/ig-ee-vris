@@ -1,0 +1,52 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "sources" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-condition-donor-genetic-finding.html" : "Condition: EE VRIS Donor Genetic Finding"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionVerificationStatus",
+    "title" : "Condition Verification Status",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.157",
+    "2.16.840.1.113883.4.642.2.75",
+    "2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.157",
+    "2.16.840.1.113883.4.642.2.75",
+    "2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-condition-donor-genetic-finding.html" : "Condition: EE VRIS Donor Genetic Finding"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/suitsetamisharjumused",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "Suitsetamisharjumused",
+    "title" : "Suitsetamisharjumused",
+    "description" : "Kasutatakse õendusabiteenuse dokumentidel ja tervisedeklaratsioonis, selle alusel saab märkida patsiendi tubakatoodete tarvitamise harjumusi.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.3.6.1.4.1.28284.6.2.1.322.2", "1.3.6.1.4.1.28284.6.2.1.322"],
+    "sources" : ["1.3.6.1.4.1.28284.6.2.1.322.2", "1.3.6.1.4.1.28284.6.2.1.322"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-observation-tobacco-use.html" : "Observation: EE VRIS Tobacco Use"
+  }]
+}
