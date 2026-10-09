@@ -7,7 +7,7 @@ Description: "Biochemical pregnancy detected by blood test. (ee Biokeemiline ras
 * status = #final
 * category = $obsCategory#laboratory
 * code 1..1
-* code = $sct#237243004 //|Biochemical pregnancy (finding)|
+* code = $vris-observation-code#237243004 //|Biochemical pregnancy (finding)|
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
 * effective[x] 1..1

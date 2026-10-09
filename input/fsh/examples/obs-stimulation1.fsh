@@ -1,4 +1,4 @@
-Instance: observation-stimulation-protocol
+/*Instance: observation-stimulation-protocol
 InstanceOf: EEVRISObservationStimulationProtocol
 Usage: #example
 Description: "Example of ovarian stimulation protocol for IVF cycle"
@@ -25,3 +25,4 @@ Description: "Example of ovarian stimulation protocol for IVF cycle"
 * component[lutealPhaseSupport].code.coding.code = #TODO
 * component[lutealPhaseSupport].code.coding.display = "Progesteroon"
 * note.text = "Standardne antagonisti protokoll, patsient reageeris hästi."
+*/

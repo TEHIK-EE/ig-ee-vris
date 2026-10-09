@@ -9,7 +9,7 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * category 1..*
 * category = $obsCategory#procedure
 * code 1..1
-* code = $sct#63487001 //|Assisted fertilization (procedure)| NB! OTSI uus kood!
+* code = $vris-observation-code#123 //|Assisted fertilization (procedure)| NB! OTSI uus kood!
 * code ^short = "(ee NB! Kood on placeholder! Vaja õiget koodi!)"
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor)
@@ -35,41 +35,41 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
     previousTreatmentContinuedUntil 0..1
 
 * component[ovarianStimulation] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
-* component[ovarianStimulation].code = $sct#732970000 //|Controlled ovarian stimulation (procedure)|
+* component[ovarianStimulation].code = $vris-observation-component-code#732970000 //|Controlled ovarian stimulation (procedure)|
 * component[ovarianStimulation].value[x] only boolean
 
 * component[stimulationMethod] ^short = "(ee Viljatusravi saava naise stimulatsiooni meetod. NB! LOEND VAJA!)"
-* component[stimulationMethod].code.text = "TODO: SNOMED CT otsi 'ovarian stimulation method' / "
+* component[stimulationMethod].code = $vris-observation-component-code#123 // otsi 'ovarian stimulation method' / "
 * component[stimulationMethod].value[x] only CodeableConcept
 * component[stimulationMethod].valueCodeableConcept from $vris-female-stimulation-method-VS (required)
 
 * component[preStimulationTreatment] ^short = "(ee Stimulatsioonieelne ravi)"
-* component[preStimulationTreatment].code.text = "TODO: SNOMED CT otsi 'pre-stimulation treatment'"
+* component[preStimulationTreatment].code = $vris-observation-component-code#123 //otsi 'pre-stimulation treatment'"
 * component[preStimulationTreatment].value[x] only CodeableConcept
 * component[preStimulationTreatment].valueCodeableConcept from $vris-pre-stimulation-treatment-VS (required)
 
 * component[lhSuppressionProtocol] ^short = "(ee Luteiniseeriva hormooni supressiooni protokoll. NB! LOEND VAja)"
-* component[lhSuppressionProtocol].code.text = "TODO: SNOMED CT otsi 'LH suppression protocol' / 'GnRH protocol'"
+* component[lhSuppressionProtocol].code = $vris-observation-component-code#123 //i 'LH suppression protocol' / 'GnRH protocol'"
 * component[lhSuppressionProtocol].value[x] only CodeableConcept
 * component[lhSuppressionProtocol].valueCodeableConcept from $vris-lh-suppression-protocol-VS (required)
 
 * component[gonadotropinUse] ^short = "(ee Gonadotropiini kasutus. NB! VAJA LOENDIT!)"
-* component[gonadotropinUse].code.text = "TODO: SNOMED CT otsi 'gonadotropin'"
+* component[gonadotropinUse].code = $vris-observation-component-code#123 //otsi 'gonadotropin'"
 * component[gonadotropinUse].value[x] only CodeableConcept
 * component[gonadotropinUse].valueCodeableConcept from $vris-gonadotropin-use-VS (required)
 
 * component[finalOocyteMaturationTrigger] ^short = "(ee Munarakkude lõpliku küpsemise käivitamine  NB! LOEND VAJA!)"
-* component[finalOocyteMaturationTrigger].code.text = "TODO: SNOMED CT otsi 'oocyte maturation trigger' / 'hCG trigger'"
+* component[finalOocyteMaturationTrigger].code = $vris-observation-component-code#123 // 'oocyte maturation trigger' / 'hCG trigger'"
 * component[finalOocyteMaturationTrigger].value[x] only CodeableConcept
 * component[finalOocyteMaturationTrigger].valueCodeableConcept from $vris-oocyte-trigger-VS (required)
 
 * component[lutealPhaseSupport] ^short = "(ee Luteaalfaasi toetus. LOEND: Ei toimunud, Inimese kooriongonadotropiin, Progesteroon, Muud progestageenid, Kombinatsioon)"
-* component[lutealPhaseSupport].code.text = "TODO: SNOMED CT otsi 'luteal phase support'"
+* component[lutealPhaseSupport].code = $vris-observation-component-code#237221000181101 // |Luteaalfaasi toetus ravimitega|
 * component[lutealPhaseSupport].value[x] only CodeableConcept
 * component[lutealPhaseSupport].valueCodeableConcept from $vris-luteal-phase-support-VS (required)
 
 * component[previousTreatmentContinuedUntil] ^short = "(ee Eelnev ravi jätkus kuni)"
-* component[previousTreatmentContinuedUntil].code.text = "TODO: SNOMED CT otsi 'date previous treatment ended'"
+* component[previousTreatmentContinuedUntil].code = $vris-observation-component-code#123 //otsi 'date previous treatment ended'"
 * component[previousTreatmentContinuedUntil].value[x] only dateTime
 
 * bodySite 0..0

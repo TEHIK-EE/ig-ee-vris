@@ -44,44 +44,44 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
     deliveryMethod 0..1                // UUS
 
 * component[terminationType] ^short = "(ee Raseduse katkemise/katkestamise liik)"
-* component[terminationType].code = $vris-observation-code#310506006 //|Reason for termination of pregnancy (observable entity)|
+* component[terminationType].code = $vris-observation-component-code#310506006 //|Reason for termination of pregnancy (observable entity)|
 * component[terminationType].value[x] only CodeableConcept
 //* component[terminationType].valueCodeableConcept from $vris-pregnancy-termination-type-VS (required)
 
 * component[indication] ^short = "(ee Näidustus, vabatekst)"
-* component[indication].code = $vris-observation-code#432678004 // |Indication for procedure (observable entity)|
+* component[indication].code = $vris-observation-component-code#432678004 // |Indication for procedure (observable entity)|
 * component[indication].value[x] only string
 
 * component[terminationDate] ^short = "(ee Raseduse katkemise/katkestamise kuupäev)"
-* component[terminationDate].code = $vris-observation-code#439272007 //|Date of procedure (observable entity)|
+* component[terminationDate].code = $vris-observation-component-code#439272007 //|Date of procedure (observable entity)|
 * component[terminationDate].value[x] only dateTime
 
 * component[deliveryDate] ^short = "(ee Sünnituse kuupäev)"
-* component[deliveryDate].code = $vris-observation-code#161714006 // |Estimated date of delivery (observable entity)|
+* component[deliveryDate].code = $vris-observation-component-code#161714006 // |Estimated date of delivery (observable entity)|
 * component[deliveryDate].value[x] only dateTime
 
 * component[gestationalAgeWeeks] ^short = "(ee Raseduskestus sünnituse hetkel, nädalates)"
-* component[gestationalAgeWeeks].code = $vris-observation-code#364739001 //|Finding of fetal gestation at delivery (finding)|
+* component[gestationalAgeWeeks].code = $vris-observation-component-code#364739001 //|Finding of fetal gestation at delivery (finding)|
 * component[gestationalAgeWeeks].value[x] only Quantity
 * component[gestationalAgeWeeks].valueQuantity.unit = "wk"
 * component[gestationalAgeWeeks].valueQuantity.system = $ucum
 * component[gestationalAgeWeeks].valueQuantity.code = #wk
 
 * component[liveBirthsCount] ^short = "(ee Sündinud laste arv)"
-* component[liveBirthsCount].code = $vris-observation-code#248991006 // |Number of live deliveries (observable entity)| //|Number of live deliveries (observable entity)|     
+* component[liveBirthsCount].code = $vris-observation-component-code#248991006 // |Number of live deliveries (observable entity)| //|Number of live deliveries (observable entity)|     
 * component[liveBirthsCount].value[x] only integer
 
 * component[stillbirthsCount] ^short = "(ee Surnult sündinud laste arv)"
-* component[stillbirthsCount].code = $vris-observation-code#252112002 //|Number of stillbirths (observable entity)|
+* component[stillbirthsCount].code = $vris-observation-component-code#252112002 //|Number of stillbirths (observable entity)|
 * component[stillbirthsCount].value[x] only integer
 
 * component[placentationType] ^short = "(ee Platsentatsiooni tüüp mitmikel)"
-* component[placentationType].code = $vris-observation-code#169952004 //|Placental finding (finding)| // |Multiple pregnancy (finding)|     
+* component[placentationType].code = $vris-observation-component-code#169952004 //|Placental finding (finding)| // |Multiple pregnancy (finding)|     
 * component[placentationType].value[x] only CodeableConcept
 //* component[placentationType].valueCodeableConcept from $vris-placentation-type-VS (required)
 
 * component[deliveryMethod] ^short = "(ee Sünnitusviis)"
-* component[deliveryMethod].code = $vris-observation-code#118215003 //|Delivery finding (finding)|        
+* component[deliveryMethod].code = $vris-observation-component-code#118215003 //|Delivery finding (finding)|        
 * component[deliveryMethod].value[x] only CodeableConcept
 //* component[deliveryMethod].valueCodeableConcept from $vris-delivery-method-VS (required)
 // Invariandid – UI loogika valideerimine

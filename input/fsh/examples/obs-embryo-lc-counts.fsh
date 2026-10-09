@@ -6,8 +6,8 @@ Description: "Example of embryo lifecycle counts summary for IVF cycle"
 
 * status = #final
 
-* code.coding.system = $sct
-* code.coding.code = #TODO
+//* code.coding.system = $sct
+//* code.coding.code = #TODO
 * code.coding.display = "Embryo lifecycle summary"
 
 * subject = Reference(Patient/patientFemale)

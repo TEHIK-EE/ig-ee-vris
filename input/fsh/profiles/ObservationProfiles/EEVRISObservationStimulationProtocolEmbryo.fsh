@@ -9,7 +9,7 @@ Description: "Captures stimulation protocol details for thawed embryo. (ee Sulat
 * category 1..*
 * category = $obsCategory#procedure
 * code 1..1
-* code = $sct#63487001 //|Assisted fertilization (procedure)| NB! OTSI uus kood!
+* code = $vris-observation-code#236894009 // |Külmutatud embrüo siirdamine| 
 * code ^short = "(ee NB! Kood on placeholder! Vaja õiget koodi!)"
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor)
@@ -29,12 +29,12 @@ Description: "Captures stimulation protocol details for thawed embryo. (ee Sulat
     lutealPhaseSupport 0..1
 
 * component[preparationProtocol] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
-* component[preparationProtocol].code.text = "TODO: SNOMED CT otsi 'luteal phase support'"
+* component[preparationProtocol].code = $vris-observation-component-code#732970000 //|Kontrollitud munasarjade stimulatsioon|
 * component[preparationProtocol].value[x] only CodeableConcept
 * component[lutealPhaseSupport].valueCodeableConcept from $vris-preparation-protocol-VS (required)
 
 * component[lutealPhaseSupport] ^short = "(ee Luteaalfaasi toetus. LOEND: Ei toimunud, Inimese kooriongonadotropiin, Progesteroon, Muud progestageenid, Kombinatsioon)"
-* component[lutealPhaseSupport].code.text = "TODO: SNOMED CT otsi 'luteal phase support'"
+* component[lutealPhaseSupport].code = $vris-observation-component-code#237221000181101  //|Luteaalfaasi toetus ravimitega|
 * component[lutealPhaseSupport].value[x] only CodeableConcept
 * component[lutealPhaseSupport].valueCodeableConcept from $vris-luteal-phase-support-VS (required)
 
