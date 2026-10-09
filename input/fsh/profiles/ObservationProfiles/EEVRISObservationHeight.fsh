@@ -8,7 +8,7 @@ Description: "Observation profile for recording height of a donor in the Estonia
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
 * code ^short = "Kehakõrguse kood"
-* code = $sct#1153637007
+* code = $vris-observation-code#1153637007
 * subject 1..1
 * subject only Reference($vris-donor or EEVRISRecipient or $mpi-patient or EEVRISDonorAnonymous)
 * effective[x] 1..1 

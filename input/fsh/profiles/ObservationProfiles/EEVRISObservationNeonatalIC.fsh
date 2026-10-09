@@ -6,8 +6,8 @@ Description: "Whether the child received neonatal intensive care during first 7 
 * ^status = #draft
 
 * status = #final
-* category = $obsCategory#exam
-* code = $sct#182810003 // |Intensive care monitoring (regime/therapy)|                                   // Neonatal intensive care
+//* category = $obsCategory#exam
+* code = $vris-observation-code#830077005 //|Admission to neonatal intensive care unit (procedure)| 
 * subject 1..1
 * subject only Reference(EEVRISPatientChild)
 * effective[x] 1..1

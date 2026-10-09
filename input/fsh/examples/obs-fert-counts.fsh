@@ -1,4 +1,4 @@
-Instance: observation-fertilization-counts
+/*Instance: observation-fertilization-counts
 InstanceOf: EEVRISObservationFertilizationCounts
 Usage: #example
 Description: "Example of laboratory fertilization counts after IVF cycle"
@@ -23,3 +23,4 @@ Description: "Example of laboratory fertilization counts after IVF cycle"
 * component[ivfFertilizedMIIOocyteCount].valueInteger = 6
 
 * note.text = "Kõik 8 munarakku kasutati IVF meetodiks, 6 viljastusid korrektselt."
+*/

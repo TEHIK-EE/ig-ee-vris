@@ -7,7 +7,7 @@ Description: "Indicator whether prenatal care was discontinued by patient or for
 
 * status = #final
 //* category = $obsCategory#survey
-* code = $sct#424525001 //|Antenatal care (regime/therapy)|     
+* code = $vris-observation-code#424525001 // |Raseduse jälgimine| 
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
 * effective[x] 1..1
