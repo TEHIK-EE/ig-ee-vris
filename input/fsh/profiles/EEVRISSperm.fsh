@@ -108,6 +108,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * storageTempRequirements 0..1
 * biologicalSourceEvent ^short = "(ee See on viide pakenditeülesele ühisele identifikaatorile, division näitab erineva pakendi numbrit)"
 
+* processingFacility ^short = "(ee Siit kaudu viide Organizationile ja sealt aadressile, kust ilmneb päritolu riik.)"
+
 * division ^short = "(ee Pakendi number kogumissündmuse sees: 1, 2, 3...)"
 * parent ^short = "(ee Viide lähtematerjalile, millest see pakend eraldati)"
 

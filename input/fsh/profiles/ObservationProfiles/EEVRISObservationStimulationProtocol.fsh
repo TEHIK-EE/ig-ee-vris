@@ -9,8 +9,7 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * category 1..*
 * category = $obsCategory#procedure
 * code 1..1
-* code = $vris-observation-code#123 //|Assisted fertilization (procedure)| NB! OTSI uus kood!
-* code ^short = "(ee NB! Kood on placeholder! Vaja õiget koodi!)"
+* code = $vris-observation-code#732970000 //|Kontrollitud munasarjade stimulatsioon| Kas see kood sobib?
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor)
 * effective[x] 1..1
