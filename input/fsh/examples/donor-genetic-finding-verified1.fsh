@@ -3,6 +3,7 @@ InstanceOf: Condition
 Usage: #example
 Description: "Example of confirmed condition of donor's genetic disorder"
 * meta.profile = "https://fhir.ee/vris/StructureDefinition/ee-vris-condition-donor-genetic-finding"
+* meta.source.value = "www.tis.ee.test.jne.bla"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 //* category[0] = $condition-category#encounter-diagnosis

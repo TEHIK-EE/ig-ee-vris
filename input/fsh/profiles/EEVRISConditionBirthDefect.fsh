@@ -4,6 +4,7 @@ Id: ee-vris-condition-birth-defect
 Title: "Condition: EE VRIS Birth Defect"
 Description: "Congenital birth defect of newborn child. (ee Lapse väärarend. NB! Tulevikus kasutada diagnoosi-teenuse viidet!)"
 * ^status = #draft
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 
 * clinicalStatus 1..1
 * clinicalStatus = $condition-clinical#active

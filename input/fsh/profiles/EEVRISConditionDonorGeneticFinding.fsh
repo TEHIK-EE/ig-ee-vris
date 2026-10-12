@@ -7,6 +7,8 @@ Description: "Genetic finding of cell donor that appears later in life. (ee Taga
 * ^status = #active
 * . ^short = "Doonori geneetiline leid"
 * . ^definition = "Tagantjärgi ilmnenud doonori geneetiline haigus või geenivariandi kandlus"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
+
 * clinicalStatus 1..
 * clinicalStatus ^binding.description = "LOENDist fix kood!" //$condition-clinical#active
 * verificationStatus 1..
