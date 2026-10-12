@@ -3,7 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-biochemical-pregnancy
 Title: "Observation: EE VRIS Biochemical Pregnancy"
 Description: "Biochemical pregnancy detected by blood test. (ee Biokeemiline rasedus, tuvastatud vereanalüüsiga.)"
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category = $obsCategory#laboratory
 * code 1..1

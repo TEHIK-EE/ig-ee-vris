@@ -5,7 +5,7 @@ Title: "Observation: EE VRIS Pregnancy Outcome"
 Description: "Pregnancy outcome including delivery, miscarriage, abortion details. (ee Raseduse lõpe sünnitus, katkemine või katkestamine koos detailidega.)"
 * ^status = #draft
 * ^version = "0.1.0"
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category 0..*
 * category = $obsCategory#exam

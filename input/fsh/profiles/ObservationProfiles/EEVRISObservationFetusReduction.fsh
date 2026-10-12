@@ -6,7 +6,7 @@ Description: "Observation profile for recording whether fetus reduction procedur
 * ^status = #draft
 * ^experimental = false
 * ^version = "0.1.0"
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category 0..*
 * category = $obsCategory#procedure

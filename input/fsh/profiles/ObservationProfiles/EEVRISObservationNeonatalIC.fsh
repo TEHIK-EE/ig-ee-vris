@@ -4,7 +4,7 @@ Id: ee-vris-observation-neonatal-intensive-care
 Title: "Observation: EE VRIS Neonatal Intensive Care"
 Description: "Whether the child received neonatal intensive care during first 7 days of life. (ee Lapse intensiivravi esimese 7 elupäeva jooksul.)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 //* category = $obsCategory#exam
 * code = $vris-observation-code#830077005 //|Admission to neonatal intensive care unit (procedure)| 

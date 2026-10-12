@@ -6,6 +6,7 @@ Description: "Captures stimulation protocol details for thawed embryo. (ee Sulat
 * ^status = #draft
 
 * status = #final
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category 1..*
 * category = $obsCategory#procedure
 * code 1..1

@@ -3,6 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-prior-fertility-treatment
 Title: "Observation: EE VRIS Prior Fertility Treatment"
 Description: "Prior fertility treatment history. Records whether IVF and/or IUI has been performed and the number of cycles. (ee Varasema viljatusravi anamnees)"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * basedOn 0..0
 * partOf 0..0
 * status 1..1

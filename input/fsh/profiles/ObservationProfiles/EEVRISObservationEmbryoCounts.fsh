@@ -4,7 +4,7 @@ Id: ee-vris-observation-embryo-lifecycle-counts
 Title: "Observation: EE VRIS Embryo Lifecycle Counts"
 Description: "Summary counts of embryo lifecycle events in a fertility treatment cycle (frozen, transferred, destroyed). (ee Embrüote elutsükli kokkuvõtted: külmutatud, siirdatud, hävitatud arv tsüklis. NB! Koodid pole veel kinnitatud)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * code 1..1
 //* code.text = "TODO: SNOMED CT – otsi 'embryo count' / 'embryo lifecycle summary'"

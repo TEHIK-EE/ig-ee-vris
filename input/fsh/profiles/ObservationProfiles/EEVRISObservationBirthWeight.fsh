@@ -4,7 +4,7 @@ Id: ee-vris-observation-birth-weight
 Title: "Observation: EE VRIS Birth Weight"
 Description: "Birth weight of newborn child. (ee Lapse sünnikaal grammides.)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category = $obsCategory#vital-signs
 * code = $vris-observation-code#364589006 // |Birth weight (observable entity)|                                  // Birth weight

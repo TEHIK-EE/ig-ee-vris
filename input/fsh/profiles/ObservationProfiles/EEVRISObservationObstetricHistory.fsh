@@ -3,6 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-obstetric-history
 Title: "Observation: EE VRIS Obstetric History"
 Description: "Past obstetric history at the START of fertility treatment cycle. Records cumulative count of all prior pregnancies, deliveries, live births and stillbirths BEFORE current treatment. (ee Sünnitusanamnees ENNE käesolevat viljatusravi tsüklit. Varasemate raseduste, sünnituste ja sündide kumulatiivne arv.)"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * basedOn 0..0
 * partOf 0..0
 * status 1..1

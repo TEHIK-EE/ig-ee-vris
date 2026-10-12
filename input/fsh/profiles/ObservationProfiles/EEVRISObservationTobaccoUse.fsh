@@ -4,6 +4,7 @@ Id: ee-vris-observation-tobacco-use
 Title: "Observation: EE VRIS Tobacco Use"
 Description: "Observation profile for tobacco use status in the Estonian VRIS fertility system. (ee Tubakatoodete kasutamine.)"
 * status = #final
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category = $obsCategory#social-history
 * category ^short = "Vaatluse kategooria"
 * code 1..1

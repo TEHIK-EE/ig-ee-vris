@@ -4,7 +4,7 @@ Id: ee-vris-observation-prenatal-care-discontinued
 Title: "Observation: EE VRIS Prenatal Care Discontinued"
 Description: "Indicator whether prenatal care was discontinued by patient or for unknown reasons. (ee Rasedusaegne tervisekontroll katkestatud patsiendi poolt või teadmata põhjusel.)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 //* category = $obsCategory#survey
 * code = $vris-observation-code#424525001 // |Raseduse jälgimine| 

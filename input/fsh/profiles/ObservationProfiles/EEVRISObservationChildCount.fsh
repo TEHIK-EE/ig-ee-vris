@@ -3,7 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-child-count
 Title: "Observation: EE VRIS Child Count"
 Description: "Count of children/pregnancies fom one donor. (ee Ühe anonüümse või mittepartnerist doonori doonorrakkudest saadud raseduste ja sündinud laste arv ning nende naiste arv, kellel on säilitatud embrüoid, mis on loodud nimetatud doonori doonorrakkudest ja mida võidakse tulevikus kasutada raseduse saavutamiseks.)"
-* meta.source ^short = "(ee Siia tuleb viide, kui andmed on pärit Rahvastikuregistrist)"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * basedOn 0..0
 * partOf 0..0
 * status 1..1

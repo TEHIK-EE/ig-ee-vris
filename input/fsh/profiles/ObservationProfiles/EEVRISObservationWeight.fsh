@@ -3,6 +3,7 @@ Parent: Observation
 Id: ee-vris-observation-weight
 Title: "Observation: EE VRIS Weight"
 Description: "Observation profile for recording weight of a donor in the Estonian VRIS fertility system. (ee Kaal.)"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category 0..* 
 * category ^short = "Vaatluse kategooria"

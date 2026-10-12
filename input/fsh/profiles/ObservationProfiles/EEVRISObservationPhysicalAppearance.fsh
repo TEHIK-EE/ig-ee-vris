@@ -4,6 +4,7 @@ Id: ee-vris-observation-physical-appearance
 Title: "Observation: EE VRIS Physical Appearance"
 Description: "Observation profile for recording characteristics of physical appearance of donor. (ee Profiil on mõeldud välimust kirjeldavate karakteristikute jaoks, nt silmade värd, juuste värv, naha värv, kehaehitus.)"
 * status = #final
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category ^short = "Vaatluse kategooria"
 * code 1..1 
 * code ^short = "Füüsilise välimuse vaatluse SCT kood"

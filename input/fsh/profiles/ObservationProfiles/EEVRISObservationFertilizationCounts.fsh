@@ -4,7 +4,7 @@ Id: ee-vris-observation-fertilization-counts
 Title: "Observation: EE VRIS Fertilization Counts"
 Description: "Counts of oocytes used and fertilized during fertilization procedure. (ee Viljastamise protseduuri munarakkude arvud erinevates staadiumites. NB! koodid pole veel lõplikult kinnitatud!)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 //* category 1..*
 //* category = $obsCategory#laboratory

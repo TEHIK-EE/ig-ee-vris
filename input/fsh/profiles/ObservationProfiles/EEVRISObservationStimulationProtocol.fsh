@@ -4,7 +4,7 @@ Id: ee-vris-observation-stimulation-protocol
 Title: "Observation: EE VRIS Ovarian Stimulation Protocol"
 Description: "Captures ovarian stimulation protocol details for fertility treatment cycle. (ee Munasarjade stimulatsiooni protokoll sisaldab meetodi, supressiooni, gonadotropiini ja eelneva ravi info.)"
 * ^status = #draft
-
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category 1..*
 * category = $obsCategory#procedure

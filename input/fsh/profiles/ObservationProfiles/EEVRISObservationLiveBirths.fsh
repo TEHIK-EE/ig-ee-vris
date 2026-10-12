@@ -3,7 +3,8 @@ Parent: Observation
 Id: ee-vris-observation-live-births
 Title: "Observation: EE VRIS Live Births"
 Description: "Live births and stillbirths BEFORE current treatment. (ee Elusalt sündinud laste arv ENNE käesolevat viljatusravi tsüklit.)"
-* meta.source ^short = "(ee Siia tuleb viide, kui andmed on pärit Rahvastikuregistrist)"
+
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * basedOn 0..0
 * partOf 0..0
 * status 1..1

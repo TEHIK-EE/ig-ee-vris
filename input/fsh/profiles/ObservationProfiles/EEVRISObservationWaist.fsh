@@ -4,6 +4,7 @@ Id: ee-vris-observation-waist
 Title: "Observation: EE VRIS Waist"
 Description: "Observation profile for recording waist circumference of a donor in the Estonian VRIS fertility system. (ee Vööümbermõõt.)"
 * status = #final 
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category ^short = "Vaatluse kategooria. Kas me üldse kasutame kategooriat?"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1

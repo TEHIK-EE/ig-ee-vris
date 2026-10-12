@@ -6,6 +6,7 @@ Description: "Observation profile for recording gender of a donor at the moment 
 * ^status = #draft
 * ^experimental = false
 * ^version = "0.1.0"
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category 1..* 
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"

@@ -4,6 +4,7 @@ Id: ee-vris-observation-height
 Title: "Observation: EE VRIS Height"
 Description: "Observation profile for recording height of a donor in the Estonian VRIS fertility system. (ee Pikkus.)"
 * status = #final
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category ^short = "Vaatluse kategooria — elutähtis näitaja"
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1

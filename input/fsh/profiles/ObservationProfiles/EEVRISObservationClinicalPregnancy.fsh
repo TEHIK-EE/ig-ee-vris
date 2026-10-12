@@ -6,6 +6,7 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * ^status = #draft
 * ^version = "0.1.0"
 * status = #final
+* meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category = $obsCategory#exam
 * code 1..1
 * code = $vris-observation-code#77386006 // |Pregnancy (finding)|
