@@ -1,0 +1,35 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "eoc-donationSperm2025",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-episode-of-care"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare eoc-donationSperm2025</b></p><a name=\"eoc-donationSperm2025\"> </a><a name=\"hceoc-donationSperm2025\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-episode-of-care.html\">EpisodeOfCare: EE VRIS Episode of Care</a></p></div><p><b>identifier</b>: ABC123</p><p><b>status</b>: Finished</p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/vris-episoodi-tyyp donorship}\">Doonorluse sündmus</span></p><p><b>patient</b>: <a href=\"Patient-patientDonorMale.html\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR: 38301105216)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-organization-novavita1.html\">Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009)</a></p><p><b>period</b>: 2025-02-20 --&gt; 2025-02-20</p><p><b>careManager</b>: <a href=\"PractitionerRole-practitionerrole-doctor.html\">Toktor Arst (https://fhir.ee/sid/pid/est/ni#38201010015) at Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009) (https://fhir.ee/sid/pro/est/pho#D99876)</a></p></div>"
+  },
+  "identifier" : [{
+    "value" : "ABC123"
+  }],
+  "status" : "finished",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/vris-episoodi-tyyp",
+      "code" : "donorship",
+      "display" : "Doonorluse sündmus"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/patientDonorMale"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/organization-novavita1"
+  },
+  "period" : {
+    "start" : "2025-02-20",
+    "end" : "2025-02-20"
+  },
+  "careManager" : {
+    "reference" : "PractitionerRole/practitionerrole-doctor"
+  }
+}

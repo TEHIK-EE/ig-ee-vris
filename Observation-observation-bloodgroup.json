@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-bloodgroup",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-observation-blood-group"]
+  },
+  "language" : "et",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-bloodgroup</b></p><a name=\"observation-bloodgroup\"> </a><a name=\"hcobservation-bloodgroup\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-observation-blood-group.html\">Observation: EE VRIS Blood Group</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 34530-6}\">34530-6</span></p><p><b>subject</b>: <a href=\"Patient-patientDonorMale.html\">D-2024-001</a></p><p><b>effective</b>: 2024-06-10</p><p><b>note</b>: </p><blockquote><div><p>Veregrupp määratud enne.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 57743-7}\">57743-7</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 112149005}\">Blood group B</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 978-7}\">978-7</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "34530-6"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patientDonorMale",
+    "display" : "D-2024-001"
+  },
+  "effectiveDateTime" : "2024-06-10",
+  "note" : [{
+    "text" : "Veregrupp määratud enne."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "57743-7"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "112149005"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "978-7"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "10828004"
+      }]
+    }
+  }]
+}

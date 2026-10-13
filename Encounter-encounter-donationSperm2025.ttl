@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/Encounter/encounter-donationSperm2025> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter-donationSperm2025"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-encounter"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-donationSperm2025</b></p><a name=\"encounter-donationSperm2025\"> </a><a name=\"hcencounter-donationSperm2025\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-encounter.html\">Encounter: EE VRIS Encounter</a></p></div><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Patient-patientDonorMale.html\">Ygrek Mister (official) Male, DoB: 1983-01-11 ( DR: 38301105216)</a></p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-eoc-donationSperm2025.html\">EpisodeOfCare: identifier = ABC123; status = finished; type = Doonorluse sündmus; period = 2025-02-20 --&gt; 2025-02-20</a></p><p><b>serviceProvider</b>: <a href=\"Organization-organization-novavita1.html\">Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-practitionerrole-doctor.html\">Toktor Arst (https://fhir.ee/sid/pid/est/ni#38201010015) at Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009) (https://fhir.ee/sid/pro/est/pho#D99876)</a></td></tr></table><p><b>actualPeriod</b>: 2025-02-20 09:00:00+0200 --&gt; 2025-02-20 11:30:00+0200</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/vris/Patient/patientDonorMale> ;
+     fhir:reference [ fhir:v "Patient/patientDonorMale" ]
+  ] ; # 
+  fhir:episodeOfCare ( [
+     fhir:link <https://fhir.ee/vris/EpisodeOfCare/eoc-donationSperm2025> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/eoc-donationSperm2025" ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://fhir.ee/vris/Organization/organization-novavita1> ;
+     fhir:reference [ fhir:v "Organization/organization-novavita1" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:link <https://fhir.ee/vris/PractitionerRole/practitionerrole-doctor> ;
+       fhir:reference [ fhir:v "PractitionerRole/practitionerrole-doctor" ]
+     ]
+  ] ) ; # 
+  fhir:actualPeriod [
+     fhir:start [ fhir:v "2025-02-20T09:00:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-02-20T11:30:00+02:00"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="practitionerrole-doctor"/>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: PractitionerRole practitionerrole-doctor</b></p><a name="practitionerrole-doctor"> </a><a name="hcpractitionerrole-doctor"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Toktor Arst (https://fhir.ee/sid/pid/est/ni#38201010015) at Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009) (https://fhir.ee/sid/pro/est/pho#D99876)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="The period during which this record applies">Valid Period:</td><td>2008-01-01 --&gt; (ongoing)</td></tr><tr><td style="background-color: #f3f5da" title="The practitioner who is able to provide the services in this role">Practitioner:</td><td colspan="3"><a href="Practitioner-practitioner-doctor.html">Toktor Arst (https://fhir.ee/sid/pid/est/ni#38201010015)</a></td></tr><tr><td style="background-color: #f3f5da" title="The organization where the practitioner performs the roles">Organization:</td><td colspan="3"><a href="Organization-organization-novavita1.html">Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009)</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pro/est/pho"/>
+    <value value="D99876"/>
+  </identifier>
+  <active value="true"/>
+  <period>
+    <start value="2008-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/practitioner-doctor"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/organization-novavita1"/>
+  </organization>
+</PractitionerRole>

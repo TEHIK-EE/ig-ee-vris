@@ -1,0 +1,87 @@
+# procedure-embryo-transfer - VRIS - Viljatusravi infosüsteem v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **procedure-embryo-transfer**
+
+## Example Procedure: procedure-embryo-transfer
+
+Profile: [Procedure: EE VRIS Embryo Transfer](StructureDefinition-ee-vris-procedure-embryo-transfer.md)
+
+**status**: Completed
+
+**code**: Embryo transfer
+
+**subject**: [Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)](Patient-patientFemale.md)
+
+**occurrence**: 2025-03-30 10:00:00+0200
+
+### Performers
+
+| | |
+| :--- | :--- |
+| - | **Actor** |
+| * | [Toktor Arst (https://fhir.ee/sid/pid/est/ni#38201010015) at Nova Vita Kliinik AS (https://fhir.ee/sid/org/est/br#10285009) (https://fhir.ee/sid/pro/est/pho#D99876)](PractitionerRole-practitionerrole-doctor.md) |
+
+**outcome**: Successful transfer
+
+**note**: 
+
+> 
+
+Üks embrüo siirdatud, arengupäev 5.
+
+
+### Useds
+
+| | |
+| :--- | :--- |
+| - | **Reference** |
+| * | [BiologicallyDerivedProduct/donor-embryo1](BiologicallyDerivedProduct/donor-embryo1) |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Procedure",
+  "id" : "procedure-embryo-transfer",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-procedure-embryo-transfer"]
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "TODO",
+      "display" : "Embryo transfer"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patientFemale"
+  },
+  "occurrenceDateTime" : "2025-03-30T10:00:00+02:00",
+  "performer" : [{
+    "actor" : {
+      "reference" : "PractitionerRole/practitionerrole-doctor"
+    }
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "TODO",
+      "display" : "Successful transfer"
+    }]
+  },
+  "note" : [{
+    "text" : "Üks embrüo siirdatud, arengupäev 5."
+  }],
+  "used" : [{
+    "reference" : {
+      "reference" : "BiologicallyDerivedProduct/donor-embryo1"
+    }
+  }]
+}
+
+```
