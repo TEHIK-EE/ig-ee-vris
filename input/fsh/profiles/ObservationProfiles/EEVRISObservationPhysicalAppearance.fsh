@@ -30,7 +30,7 @@ Description: "Observation profile for recording characteristics of physical appe
     bodyStructure 0..1
 * component[eyecolor] ^short = "Silmade värvus"
 //* component[eyecolor].code 1..1
-* component[eyecolor].code = $vris-observation-code#247030006
+* component[eyecolor].code = $vris-observation-component-code#247030006
 * component[eyecolor].value[x] 1..1
 * component[eyecolor].value[x] only CodeableConcept
 * component[eyecolor].value[x] from $eye (required)
@@ -42,19 +42,19 @@ Description: "Observation profile for recording characteristics of physical appe
 //* component[eyecolorDetail].value[x] from $eyeDetail (required)
 * component[haircolor] ^short = "Juuste värvus"
 //* component[haircolor].code 1..1
-* component[haircolor].code = $vris-observation-code#80040005
+* component[haircolor].code = $vris-observation-component-code#80040005
 * component[haircolor].value[x] 1..1
 * component[haircolor].value[x] only CodeableConcept
 * component[haircolor].value[x] from $hair (required)
 * component[skincolor] ^short = "Naha värvus"
 * component[skincolor].code 1..1
-* component[skincolor].code = $vris-observation-code#364533002
+* component[skincolor].code = $vris-observation-component-code#364533002
 //* component[skincolor].value[x] 1..1
 * component[skincolor].value[x] only CodeableConcept
 * component[skincolor].value[x] from $skin (required)
 * component[bodyStructure] ^short = "Kehaehitus"
 * component[bodyStructure].code 1..1
-* component[bodyStructure].code = $vris-observation-code#366209005
+* component[bodyStructure].code = $vris-observation-component-code#366209005
 //* component[bodyStructure].value[x] 1..1
 * component[bodyStructure].value[x] only CodeableConcept
 * component[bodyStructure].value[x] from $body (required)

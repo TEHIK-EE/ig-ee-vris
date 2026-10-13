@@ -57,7 +57,7 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
 * component[terminationDate].value[x] only dateTime
 
 * component[deliveryDate] ^short = "(ee Sünnituse kuupäev)"
-* component[deliveryDate].code = $vris-observation-component-code#161714006 // |Estimated date of delivery (observable entity)|
+* component[deliveryDate].code = $vris-observation-component-code#161714006 // |161714006 |Eeldatav sünnituse tähtaeg|
 * component[deliveryDate].value[x] only dateTime
 
 * component[gestationalAgeWeeks] ^short = "(ee Raseduskestus sünnituse hetkel, nädalates)"

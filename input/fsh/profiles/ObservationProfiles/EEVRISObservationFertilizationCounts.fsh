@@ -44,19 +44,19 @@ Description: "Counts of oocytes used and fertilized during fertilization procedu
 //* component[mIIOocyteCountICSI].value[x] only integer
 
 * component[usedOocyteCountIVF] ^short = "(ee Viljastamiseks kasutatud munarakkude arv IVF)"
-* component[usedOocyteCountIVF].code = $vris-observation-code#237141000181103 //"TODO: SNOMED CT kood puudu!"
+* component[usedOocyteCountIVF].code = $vris-observation-component-code#237141000181103 //"TODO: SNOMED CT kood puudu!"
 * component[usedOocyteCountIVF].value[x] only integer
 
 * component[usedMIIOocyteCountICSI] ^short = "(ee Viljastamiseks kasutatud MII munarakkude arv ICSI)"
-* component[usedMIIOocyteCountICSI].code = $vris-observation-code#237151000181100
+* component[usedMIIOocyteCountICSI].code = $vris-observation-component-code#237151000181100
 * component[usedMIIOocyteCountICSI].value[x] only integer
 
 * component[correctlyFertilizedPN2] ^short = "(ee Korrektselt viljastunud munarakkude arv PN2)"
-* component[correctlyFertilizedPN2].code = $vris-observation-code#237161000181102
+* component[correctlyFertilizedPN2].code = $vris-observation-component-code#237161000181102
 * component[correctlyFertilizedPN2].value[x] only integer
 
 * component[ivfFertilizedMIIOocyteCount] ^short = "(ee IVF meetodil viljastatud MII munarakkude arv)"
-* component[ivfFertilizedMIIOocyteCount].code = $vris-observation-code#237171000181107
+* component[ivfFertilizedMIIOocyteCount].code = $vris-observation-component-code#237171000181107
 * component[ivfFertilizedMIIOocyteCount].value[x] only integer
 
 /* Invariandid kontrolliks

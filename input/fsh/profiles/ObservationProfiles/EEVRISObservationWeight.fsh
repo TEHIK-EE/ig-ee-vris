@@ -10,7 +10,7 @@ Description: "Observation profile for recording weight of a donor in the Estonia
 * category = $obsCategory#vital-signs "Vital Signs"
 * code 1..1
 * code ^short = "Kehakaal"
-* code = $vris-observation-code#27113001 "Body weight"
+* code = $vris-observation-code#27113001 "Body weight" //27113001 |Kehakaal|
 * subject 1..1
 * subject only Reference($vris-donor or EEVRISRecipient or $mpi-patient or EEVRISDonorAnonymous)
 * effective[x] 1..1 
