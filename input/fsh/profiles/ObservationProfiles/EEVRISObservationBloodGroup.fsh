@@ -28,13 +28,13 @@ Description: "Observation profile for recording the ABO and Rh(D) blood group in
 * component[abo].code = $loinc#57743-7
 * component[abo].value[x] 1..1
 * component[abo].value[x] only CodeableConcept
-* component[abo].valueCodeableConcept from $sct (required)
+* component[abo].valueCodeableConcept from $abo (required)
 
 * component[rh] ^short = "RhD kuuluvus klassifikaatorist"
 * component[rh].code = $loinc#978-7
 * component[rh].value[x] 1..1
 * component[rh].value[x] only CodeableConcept
-* component[rh].valueCodeableConcept from $sct (required)
+* component[rh].valueCodeableConcept from $kvalitatiivne (required)
 
 * bodySite 0..0
 * specimen 0..0

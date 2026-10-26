@@ -14,3 +14,4 @@ Description: "Package 3 of 3 - cryopreserved, available"
 * storageTempRequirements.high = 196 '°C' "-196 °C"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
 //* extension[cryopreservationDate].valueDateTime = "2025-02-20"
+* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|

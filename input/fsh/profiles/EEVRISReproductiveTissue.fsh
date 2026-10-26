@@ -37,7 +37,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property contains
     fragmentCount 0..1 and
     frozenFragmentCount 0..1 and
-    Role 0..1 and
+    Role 1..1 and
     collectionMethod 0..1 and
     preservationReason 0..1 and 
     pubertalStatus 0..1 and
@@ -51,7 +51,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[frozenFragmentCount].type = $vris-property-type#frozen-fragment-count
 * property[frozenFragmentCount].value[x] only integer
 
-* property[Role].value[x] ^short = "(ee Koe päritolu roll: enda tarbeks / doonorluseks jne)"
+* property[Role].value[x] ^short = "(ee Koe päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne. See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
 * property[Role].type = $vris-property-type#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)

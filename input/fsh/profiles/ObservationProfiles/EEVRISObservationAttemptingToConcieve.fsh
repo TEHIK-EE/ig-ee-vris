@@ -13,7 +13,7 @@ Description: "Observation profile for how long is woman attempting to concieve. 
 * code 1..1
 //* code ^short = "(ee Rasestuda üritamise aeg)"
 //* code from $sct (preferred)
-* code = $vris-observation-code#169449001 "Trying to conceive"
+* code = $vris-observation-code#169449001 "Trying to conceive" //Üritab rasestuda
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patsient on AINULT viljatusravi saav naine)"

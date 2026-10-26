@@ -12,7 +12,7 @@ Description: "Observation profile for recording whether fetus reduction procedur
 * category = $obsCategory#procedure
 * category ^short = "(ee Vaatluse kategooria protseduur)"
 * code 1..1
-* code = $vris-observation-code#1287687008 // |Destruction of fetus (procedure)
+* code = $vris-observation-code#1287687008 // |Destruction of fetus (procedure) Loote destruktsioon
 * code ^short = "(ee Loote reduktsioon"
 * subject 1..1
 * subject only Reference(EEVRISRecipient)

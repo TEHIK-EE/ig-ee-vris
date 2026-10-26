@@ -9,7 +9,7 @@ Description: "Counts of oocytes used and fertilized during fertilization procedu
 //* category 1..*
 //* category = $obsCategory#laboratory
 * code 1..1
-* code = $vris-observation-code#246440005 //|Number of oocytes (qualifier value)|????
+* code = $vris-observation-code#246440005 //Ootsüütide arv
 * code ^short = "(ee NB! SNOMED kood vajab kontrolli)"
 
 * subject 1..1

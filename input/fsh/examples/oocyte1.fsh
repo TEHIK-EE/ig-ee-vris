@@ -26,9 +26,10 @@ Description: "Example of oocyte"
 
 * property[metaPhase2Count].valueInteger = 6
 
-* property[Role].valueCodeableConcept.coding.system = $reasons
-* property[Role].valueCodeableConcept.coding.code = #endale
-* property[Role].valueCodeableConcept.coding.display = "Säilitaja"
+* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|
+//* property[Role].valueCodeableConcept.coding.system = $reasons
+//* property[Role].valueCodeableConcept.coding.code = #endale
+//* property[Role].valueCodeableConcept.coding.display = "Säilitaja"
 
 * property[collectionMethod].valueCodeableConcept.coding.system = $sct
 * property[collectionMethod].valueCodeableConcept.coding.code = #TODO

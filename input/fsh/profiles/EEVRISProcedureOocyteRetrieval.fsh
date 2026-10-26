@@ -9,7 +9,7 @@ Description: "Profile for oocyte retrieval (ovarian puncture) procedure. (ee Mun
 //* category ^short = "(ee Fix kood: munarakkude eemaldamine. NB! LOEND puudub veel)"
 
 * code 1..1
-* code from $vris-procedure-code //177037000 //|Oocyte recovery (procedure)|
+* code from $vris-procedure-code //177037000 //|Oocyte recovery (procedure)| 177037000 |Munaraku eraldamine|
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)

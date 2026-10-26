@@ -11,3 +11,4 @@ Description: "Package 1 of 3 - used fresh"
 * division = "1"
 * expirationDate = "2025-02-20T18:00:00+02:00"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#fresh "Värske"
+* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|

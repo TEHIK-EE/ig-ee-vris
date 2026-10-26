@@ -50,7 +50,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property contains
     donatedCount 0..1 and
 //    frozenCount 0..1 and
-    Role 0..1 and
+    Role 1..1 and
     spermCollectionMethod 0..* and
     //usageState 0..* and
     donorStimulationMethod 0..1 and
@@ -60,7 +60,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 //* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
-* property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne)"
+* property[Role] ^short = "(ee Suguraku päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne. See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
 * property[spermCollectionMethod] ^short = "(ee Seemnerakkude kogumise meetod, nt ejakulatsioon, kirurgiline eemaldamine, elektroejakulatsioon.)"
 //* property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)" Kasutame preservationState
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja STIMULATSIOON: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu.)"

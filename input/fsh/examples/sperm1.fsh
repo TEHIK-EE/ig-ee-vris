@@ -13,9 +13,10 @@ Description: "Example of donor sperm"
 * collection.source = Reference(Patient/patientDonorMale)
 * property[donatedCount].valueInteger = 4
 //* property[frozenCount].valueInteger = 4
-* property[Role].valueCodeableConcept.coding.system = $sct
-* property[Role].valueCodeableConcept.coding.code = #TODO
-* property[Role].valueCodeableConcept.coding.display = "Non-partner donor"
+//* property[Role].valueCodeableConcept.coding.system = $sct
+//* property[Role].valueCodeableConcept.coding.code = #TODO
+//* property[Role].valueCodeableConcept.coding.display = "Non-partner donor"
+* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|
 
 * property[spermCollectionMethod].valueCodeableConcept.coding.system = $sct
 * property[spermCollectionMethod].valueCodeableConcept.coding.code = #TODO

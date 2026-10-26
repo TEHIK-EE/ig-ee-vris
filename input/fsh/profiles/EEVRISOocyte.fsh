@@ -38,7 +38,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     donatedCount 0..1 and
     frozenCount 0..1 and
     metaPhase2Count 0..1 and
-    Role 0..1 and
+    Role 1..1 and
     collectionMethod 0..1 and
     oocyteOrigin 0..1 and
     oocyteType 0..1 and
@@ -58,7 +58,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property[metaPhase2Count].type = $vris-property-type#meta-phase-2-count
 * property[metaPhase2Count].value[x] only integer
 
-* property[Role] ^short = "(ee Munaraku päritolu roll: enda tarbeks / doonorluseks / anonüümne jne)"
+* property[Role] ^short = "(ee Munaraku päritolu roll: säilitaja / anonüümne doonor / jne.See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
 * property[Role].type = $vris-property-type#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)

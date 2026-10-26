@@ -49,7 +49,7 @@ Description: "Pregnancy outcome including delivery, miscarriage, abortion detail
 //* component[terminationType].valueCodeableConcept from $vris-pregnancy-termination-type-VS (required)
 
 * component[indication] ^short = "(ee Näidustus, vabatekst)"
-* component[indication].code = $vris-observation-component-code#432678004 // |Indication for procedure (observable entity)|
+* component[indication].code = $vris-observation-component-code#432678004 // |Indication for procedure (observable entity)|Protseduuri näidustus
 * component[indication].value[x] only string
 
 * component[terminationDate] ^short = "(ee Raseduse katkemise/katkestamise kuupäev)"

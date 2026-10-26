@@ -9,7 +9,7 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category = $obsCategory#exam
 * code 1..1
-* code = $vris-observation-code#77386006 // |Pregnancy (finding)|
+* code = $vris-observation-code#77386006 // |Rase|
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
 * effective[x] 1..1
@@ -37,7 +37,7 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * component[gestationalSacCount].valueInteger ^short = "(ee Lootemunade arv, nt 1, 2, 3)"
 
 * component[fetalHeartActivity] ^short = "(ee Loote südametegevus)"
-* component[fetalHeartActivity].code = $vris-observation-component-code#249045009 //|Fetal heart sounds present (finding)|
+* component[fetalHeartActivity].code = $vris-observation-component-code#249045009 //|Fetal heart sounds present (finding)|Loote südamelöögid tuvastatud
 * component[fetalHeartActivity].value[x] only boolean
 
 * bodySite 0..0
