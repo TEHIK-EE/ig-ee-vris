@@ -41,7 +41,8 @@ Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressur
 //    donatedCount 0..1 and
     developmentDay 0..1 and
     preservationState 0..1 and 
-    preservationReason 0..1
+    preservationReason 0..1 and
+    originCountry 1..1
 //    frozenCount 0..1
 //    reCryo 0..1
 //* property[donatedCount] ^short = "Annetatud embrüote arv"
@@ -59,6 +60,10 @@ Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressur
 * property[preservationReason].type = $vris-property-type#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
+* property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
+* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].value[x] only CodeableConcept
+* property[originCountry].valueCodeableConcept from $rtk-VS (required)
 
 //* property[frozenCount] ^short = "Külmutatud embrüote arv"
 //* property[frozenCount].type.coding.code = #frozen-count //$vris-property-type-VS //^binding.description = "LOENDist fix kood!" //$fertility-bdp-property-type#donated-dose-count

@@ -15,3 +15,4 @@ Description: "Package 2 of 3 - cryopreserved, in storage"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
 * property[frozenCount].valueInteger = 3
 * property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|
+* property[originCountry].valueCodeableConcept = $rtk#EE

@@ -10,9 +10,10 @@ Description: "Ovarian tissue collected before oncological treatment"
 * collection.collector = Reference(PractitionerRole/practitionerrole-doctor)
 * collection.collectedDateTime = "2025-01-15"
 * property[fragmentCount].valueInteger = 8
-* property[frozenFragmentCount].valueInteger = 8
+//* property[frozenFragmentCount].valueInteger = 8
 
 * property[Role].valueCodeableConcept = $sct#237491000181102 "Bioloogilise materjali säilitaja"
 * property[collectionMethod].valueCodeableConcept = $vris-collection-method#biopsy "Biopsia"
 * property[preservationReason].valueCodeableConcept = $vris-fertility-preservation-reason#oncological "Onkoloogiline ravi"
 * property[pubertalStatus].valueCodeableConcept = $vris-pubertal-status#post-pubertal "Puberteedijärgne"
+* property[originCountry].valueCodeableConcept = $rtk#EE

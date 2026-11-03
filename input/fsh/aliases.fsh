@@ -18,6 +18,8 @@ Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $rtk = https://fhir.ee/CodeSystem/rtk
 Alias: $identifier-domain = https://fhir.ee/CodeSystem/identifikaatorite-domeen
+Alias: $rtk-VS =  https://fhir.ee/ValueSet/rtk-alpha-2
+//Alias: $rtk = https://fhir.ee/CodeSystem/rtk
 
 Alias: $vris-donor-genetic-finding-type = https://fhir.ee/CodeSystem/vris-geneetilise-leiu-tyyp
 Alias: $vris-donor-genetic-finding-type-VS = https://fhir.ee/ValueSet/vris-geneetilise-leiu-tyyp

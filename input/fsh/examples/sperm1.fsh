@@ -37,6 +37,7 @@ Description: "Example of donor sperm"
 * property[preservationMethod].valueCodeableConcept.coding.system = $sct
 * property[preservationMethod].valueCodeableConcept.coding.code = #TODO
 * property[preservationMethod].valueCodeableConcept.coding.display = "Kirurgiliselt saadud seemnerakkude säilitamine"
+* property[originCountry].valueCodeableConcept = $rtk#EE
 
 //* biologicalSourceEvent.system = $identifier-domain
 * biologicalSourceEvent.value = "ABC123"

@@ -17,3 +17,4 @@ Description: "Package 3 of 3 - cryopreserved, thawed and used"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#thawed "Sulatatud"
 * property[frozenCount].valueInteger = 2
 * property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|
+* property[originCountry].valueCodeableConcept = $rtk#EE

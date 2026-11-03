@@ -44,7 +44,8 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     oocyteType 0..1 and
     intendedUse 0..1 and
     preservationReason 0..1 and
-    preservationState 0..1
+    preservationState 0..1 and
+    originCountry 1..1 
 
 * property[donatedCount] ^short = "(ee Annetatud/saadud munarakkude arv)"
 * property[donatedCount].type = $vris-property-type#donated-count
@@ -91,6 +92,11 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * property[preservationState].type = $vris-property-type#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
+* property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
+* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].value[x] only CodeableConcept
+* property[originCountry].valueCodeableConcept from $rtk-VS (required)
 
 * request 0..0
 * division ^short = "(ee Pakendi number kogumissündmuse sees: 1, 2, 3...)"

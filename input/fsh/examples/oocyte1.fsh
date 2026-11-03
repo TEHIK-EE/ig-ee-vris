@@ -51,4 +51,6 @@ Description: "Example of oocyte"
 * property[preservationReason].valueCodeableConcept.coding.code = #nononco
 * property[preservationReason].valueCodeableConcept.coding.display = "Mitte-onkoloogiline terviseprobleem"
 
+* property[originCountry].valueCodeableConcept = $rtk#EE
+
 * biologicalSourceEvent.value = "OOC123"

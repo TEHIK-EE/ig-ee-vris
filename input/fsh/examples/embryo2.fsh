@@ -11,6 +11,7 @@ Description: "Fresh package. Transferred in the same cycle (Värske)"
 * division = "1"
 * expirationDate = "2025-03-19T18:00:00+02:00"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#fresh "Värske"
+* property[originCountry].valueCodeableConcept = $rtk#EE
 
 Instance: embryo2-1
 InstanceOf: EEVRISEmbryo
@@ -26,3 +27,4 @@ Description: "Individual embryo in fresh package EMB790-1"
 * parent[0] = Reference(BiologicallyDerivedProduct/oocyte1-1)
 * parent[+] = Reference(BiologicallyDerivedProduct/sperm1-1)
 * property[developmentDay].valueInteger = 5
+* property[originCountry].valueCodeableConcept = $rtk#EE

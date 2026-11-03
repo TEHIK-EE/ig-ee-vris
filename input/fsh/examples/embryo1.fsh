@@ -13,6 +13,7 @@ Description: "Package 1 of 2. Cryopreserved, contains two embryos"
 * storageTempRequirements.high = -196 '°C' "°C"
 * property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
 * property[preservationReason].valueCodeableConcept = $vris-fertility-preservation-reason#nononco "Mitte-onkoloogiline terviseprobleem"
+* property[originCountry].valueCodeableConcept = $rtk#EE
 
 Instance: embryo1-1
 InstanceOf: EEVRISEmbryo
@@ -28,6 +29,7 @@ Description: "Individual embryo 1 in package EMB789-1"
 * parent[0] = Reference(BiologicallyDerivedProduct/oocyte1-1)
 * parent[+] = Reference(BiologicallyDerivedProduct/sperm1-1)
 * property[developmentDay].valueInteger = 5
+* property[originCountry].valueCodeableConcept = $rtk#EE
 
 Instance: embryo1-2
 InstanceOf: EEVRISEmbryo
@@ -43,3 +45,4 @@ Description: "Individual embryo 2 in package EMB789-1"
 * parent[0] = Reference(BiologicallyDerivedProduct/oocyte1-1)
 * parent[+] = Reference(BiologicallyDerivedProduct/sperm1-1)
 * property[developmentDay].valueInteger = 5
+* property[originCountry].valueCodeableConcept = $rtk#EE

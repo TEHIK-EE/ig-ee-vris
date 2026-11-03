@@ -36,20 +36,21 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property ^slicing.description = "(ee Bioloogilise materjali (koe) omadused)"
 * property contains
     fragmentCount 0..1 and
-    frozenFragmentCount 0..1 and
+    //frozenFragmentCount 0..1 and
     Role 1..1 and
     collectionMethod 0..1 and
     preservationReason 0..1 and 
     pubertalStatus 0..1 and
-    preservationState 0..1
+    preservationState 0..1 and
+    originCountry 1..1
 
-* property[fragmentCount].value[x] ^short = "(ee Koetükkide arv)"
+* property[fragmentCount].value[x] ^short = "(ee Annetatud koetükkide arv. Iga koetükk on eraldi pakendis.)"
 * property[fragmentCount].type = $vris-property-type#fragment-count
 * property[fragmentCount].value[x] only integer
 
-* property[frozenFragmentCount].value[x] ^short = "(ee Külmutatud koetükkide arv)"
-* property[frozenFragmentCount].type = $vris-property-type#frozen-fragment-count
-* property[frozenFragmentCount].value[x] only integer
+//* property[frozenFragmentCount].value[x] ^short = "(ee Külmutatud koetükkide arv)"
+//* property[frozenFragmentCount].type = $vris-property-type#frozen-fragment-count
+//* property[frozenFragmentCount].value[x] only integer
 
 * property[Role].value[x] ^short = "(ee Koe päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne. See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
 * property[Role].type = $vris-property-type#cell-origin-role
@@ -75,6 +76,11 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * property[preservationState].type = $vris-property-type#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
+* property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
+* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].value[x] only CodeableConcept
+* property[originCountry].valueCodeableConcept from $rtk-VS (required)
 
 * request 0..0
 

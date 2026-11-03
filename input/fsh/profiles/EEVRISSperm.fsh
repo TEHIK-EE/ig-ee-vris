@@ -56,7 +56,8 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     donorStimulationMethod 0..1 and
     preservationReason 0..1 and
     preservationMethod 0..1 and 
-    preservationState 0..1
+    preservationState 0..1 and 
+    originCountry 1..1
 
 * property[donatedCount] ^short = "(ee Annetatud dooside arv)"
 //* property[frozenCount] ^short = "(ee Külmutatud spermadooside arv)"
@@ -67,6 +68,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
 * property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 * property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
+* property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
 
 * property[donatedCount].type = $vris-property-type#donated-count
 * property[donatedCount].value[x] only integer
@@ -101,6 +103,10 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationState].type = $vris-property-type#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
+
+* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].value[x] only CodeableConcept
+* property[originCountry].valueCodeableConcept from $rtk-VS (required)
 
 * request 0..0
 
