@@ -1,0 +1,95 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "sources" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-condition-donor-genetic-finding.html" : "Condition: EE VRIS Donor Genetic Finding"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionVerificationStatus",
+    "title" : "Condition Verification Status",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.157",
+    "2.16.840.1.113883.4.642.2.75",
+    "2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.157",
+    "2.16.840.1.113883.4.642.2.75",
+    "2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-condition-donor-genetic-finding.html" : "Condition: EE VRIS Donor Genetic Finding"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/abo-veregrupp",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ABOVeregrupp",
+    "title" : "ABO veregrupp",
+    "description" : "ABO veregrupi määravad patsiendi erütrotsüütide pinnal olevad A, B, H antigeenid ning vereplasmas sisalduvad antikehad anti-A ja anti-B. Põhineb SNOMED CT-l.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.3.6.1.4.1.28284.6.2.1.29", "1.3.6.1.4.1.28284.6.2.1.29.4"],
+    "sources" : ["1.3.6.1.4.1.28284.6.2.1.29", "1.3.6.1.4.1.28284.6.2.1.29.4"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-observation-blood-group.html" : "Observation: EE VRIS Blood Group"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus",
+    "version" : "9.0.0",
+    "status" : "active",
+    "name" : "KvalitatiivseUuringuVastus",
+    "title" : "Kvalitatiivse uuringu vastus",
+    "description" : "Kasutatakse labori kvalitatiivse uuringu tulemuse kirjeldamisel. Põhineb SNOMED CT-l.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.3.6.1.4.1.28284.6.2.1.266.9", "1.3.6.1.4.1.28284.6.2.1.266"],
+    "sources" : ["1.3.6.1.4.1.28284.6.2.1.266.9", "1.3.6.1.4.1.28284.6.2.1.266"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-observation-blood-group.html" : "Observation: EE VRIS Blood Group"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/rtk-alpha-2",
+    "version" : "2026",
+    "status" : "active",
+    "name" : "RTKAlpha2",
+    "title" : "Riikide ja territooriumide klassifikaator (ISO 3166-1 alpha-2)",
+    "description" : "Loend sisaldab igale riigile ja territooriumile omistatud kahekohalisi tähtkoode. Loendi sisu on vastavuses ISO 3166-1 alpha-2 loendiga. Loendi aluseks on koodisüsteem Riikide ja territooriumide klassifikaator, milles sisalduvad kahe-ja kolmekohalised tähtkoodid ja kolmekohalised numberkoodid.",
+    "systems" : ["https://fhir.ee/CodeSystem/rtk"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-sperm.html" : "BiologicallyDerivedProduct: EE VRIS Sperm",
+    "StructureDefinition-ee-vris-reproductive-tissue.html" : "BiologicallyDerivedProduct: EE VRIS Reproductive Tissue",
+    "StructureDefinition-ee-vris-oocyte.html" : "BiologicallyDerivedProduct: EE VRIS Oocyte",
+    "StructureDefinition-ee-vris-embryo.html" : "BiologicallyDerivedProduct: EE VRIS Embryo"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/suitsetamisharjumused",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "Suitsetamisharjumused",
+    "title" : "Suitsetamisharjumused",
+    "description" : "Kasutatakse õendusabiteenuse dokumentidel ja tervisedeklaratsioonis, selle alusel saab märkida patsiendi tubakatoodete tarvitamise harjumusi.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.3.6.1.4.1.28284.6.2.1.322.2", "1.3.6.1.4.1.28284.6.2.1.322"],
+    "sources" : ["1.3.6.1.4.1.28284.6.2.1.322.2", "1.3.6.1.4.1.28284.6.2.1.322"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-vris-observation-tobacco-use.html" : "Observation: EE VRIS Tobacco Use"
+  }]
+}
