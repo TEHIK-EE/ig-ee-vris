@@ -55,7 +55,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
     //usageState 0..* and
     donorStimulationMethod 0..1 and
     preservationReason 0..1 and
-    preservationMethod 0..1 and 
+    //preservationMethod 0..1 and 
     preservationState 0..1 and 
     originCountry 1..1
 
@@ -66,7 +66,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 //* property[usageState] ^short = "(ee Seemnerakkude SAAMISE meetod: värske, külmutatud-sulatatud, kombineeritud)" Kasutame preservationState
 * property[donorStimulationMethod] ^short = "(ee Seemnerakkude annetaja STIMULATSIOON: Follitropiin, Kooriongonadotropiin, Follitropiin+Kooriongonadotropiin, Muu.)"
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS)"
-* property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
+//* property[preservationMethod] ^short = "(ee VILJAKUSE säilitamise MEETOD)"
 * property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
 * property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
 
@@ -96,9 +96,9 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
-* property[preservationMethod].type = $vris-property-type#preservation-method
-* property[preservationMethod].value[x] only CodeableConcept
-* property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
+//* property[preservationMethod].type = $vris-property-type#preservation-method
+//* property[preservationMethod].value[x] only CodeableConcept
+//* property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
 
 * property[preservationState].type = $vris-property-type#preservation-state
 * property[preservationState].value[x] only CodeableConcept

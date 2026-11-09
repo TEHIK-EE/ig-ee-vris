@@ -34,9 +34,9 @@ Description: "Example of donor sperm"
 * property[preservationReason].valueCodeableConcept.coding.code = #3428006
 * property[preservationReason].valueCodeableConcept.coding.display = "|Oncologic (qualifier value)|"
 
-* property[preservationMethod].valueCodeableConcept.coding.system = $sct
-* property[preservationMethod].valueCodeableConcept.coding.code = #TODO
-* property[preservationMethod].valueCodeableConcept.coding.display = "Kirurgiliselt saadud seemnerakkude säilitamine"
+//* property[preservationMethod].valueCodeableConcept.coding.system = $sct
+//* property[preservationMethod].valueCodeableConcept.coding.code = #TODO
+//* property[preservationMethod].valueCodeableConcept.coding.display = "Kirurgiliselt saadud seemnerakkude säilitamine"
 * property[originCountry].valueCodeableConcept = $rtk#EE
 
 //* biologicalSourceEvent.system = $identifier-domain
