@@ -10,8 +10,8 @@ Description: "Example of a fresh IVF treatment cycle CarePlan for female recipie
 * title = "IVF tsükkel #1 Märts 2025"
 * description = "Värske IVF tsükkel doonori spermat ja retsipiendi enda munarakke kasutades"
 * category[0].coding.system = $sct
-* category[=].coding.code = #TODO
-* category[=].coding.display = "Fresh IVF cycle"
+* category[=].coding.code = #39251008
+* category[=].coding.display = "Munasarja punktsioon"
 * subject = Reference(Patient/patientFemale)
 //* encounter = Reference(Encounter/encounter-ivf-consultation-2025)
 * period.start = "2025-03-01"

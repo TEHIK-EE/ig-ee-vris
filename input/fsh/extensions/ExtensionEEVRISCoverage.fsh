@@ -7,4 +7,5 @@ Context: CarePlan
 * ^status = #draft
 
 * value[x] only CodeableConcept
-* value[x] ^short = "(ee VAJA LOENDIT jah/ei/kombineeritud)"
+* value[x] ^short = "(ee Loendist väärtus jah/ei/kombineeritud)"
+* value[x] from $terk-coverage

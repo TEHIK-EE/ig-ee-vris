@@ -7,7 +7,7 @@ Description: "Profile for capturing infertility treatment. (ee Ravisükklit koon
     ExtensionEEVRISCycleDiscontinuationReason named cycleDiscontinuationReason 0..1 and
     ExtensionEEVRISCoverage named coverage 0..1
 * extension[cycleDiscontinuationReason] ^short = "(ee Täidetakse kui status = revoked. Katkestamise põhjus.)"
-* extension[coverage] ^short = "(ee KAS on Tervisekassa poolt kompenseeritud või mitte. KAS kasutame seda või viidet Coverage-profiilile?!!)"
+* extension[coverage] ^short = "(ee KAS on Tervisekassa poolt kompenseeritud või mitte, või kombineeritud rahastus.)"
 * identifier 0..*
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
@@ -21,7 +21,8 @@ Description: "Profile for capturing infertility treatment. (ee Ravisükklit koon
 * status ^short = "(ee Kasutada staatuseid kui katkestatakse |revoked| või lõpetatakse |completed| tsükkel)"
 * intent 1..1
 * category 1..*
-* category ^short = "(ee Siia LOEND, mis tüüpi ravitsükkel on. |Doonorlus vms|Värske tsükkel|Külmutatud embrüo siirdamine|Emakasisene inseminatsioon (IUI))"
+* category ^short = "(ee Tsükli liik nt |Munasarjade punktsioon|Emakasisene inseminatsioon (IUI)|)"
+* category from $tsykli-liik
 * title 0..1
 * title ^short = "(ee Vabatekstiline inimloetav NIMETUS tsüklile.)"
 * description 0..1

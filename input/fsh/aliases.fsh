@@ -107,3 +107,6 @@ Alias: $vris-observation-component-code = https://fhir.ee/ValueSet/vris-vaatluse
 Alias: $vris-stim-component = https://fhir.ee/ValueSet/vris-stimulatsiooni-komponendi-tyyp
 Alias: $abo = https://fhir.ee/ValueSet/abo-veregrupp
 Alias: $kvalitatiivne = https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus
+
+Alias: $terk-coverage = https://fhir.ee/ValueSet/vris-tervisekassa-rahastatav-tsykkel
+Alias: $tsykli-liik = https://fhir.ee/ValueSet/vris-viljatusravi-tsykli-liik
