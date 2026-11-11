@@ -1,11 +1,11 @@
 Instance: sperm1-1
 InstanceOf: EEVRISSperm
 Usage: #example
-Description: "Package 1 of 3 - used fresh"
+Description: "Package 1 after SupplyDelivery when it is accepted by other TTO and ready for use"
 //* identifier.system = $vris-bdp-id
-* identifier.value = "ABC123-2"
+* identifier.value = "ABC123-1"
 * productCode = $biological-material-type#sperm "Seemnerakud"
-* productStatus = #unavailable
+* productStatus = $bdp-statusCS#in-storage "lattu sisse võetud"
 * biologicalSourceEvent.value = "ABC123"
 * parent = Reference(BiologicallyDerivedProduct/sperm1)
 * division = "1"
