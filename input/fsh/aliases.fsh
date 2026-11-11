@@ -111,5 +111,5 @@ Alias: $kvalitatiivne = https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus
 Alias: $terk-coverage = https://fhir.ee/ValueSet/vris-tervisekassa-rahastatav-tsykkel
 Alias: $tsykli-liik = https://fhir.ee/ValueSet/vris-viljatusravi-tsykli-liik
 
-Alias: $bdp-status = https://fhir.ee/ValueSet/vris-bdp-productstatus
-Alias: $bdp-statusCS = https://fhir.ee/CodeSystem/bdp-productstatus-in-storage
+Alias: $bdp-status = https://fhir.ee/ValueSet/vris-bdp-staatus
+Alias: $bdp-statusCS = https://fhir.ee/CodeSystem/bdp-productstatus-other
