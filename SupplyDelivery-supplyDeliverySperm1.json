@@ -1,0 +1,59 @@
+{
+  "resourceType" : "SupplyDelivery",
+  "id" : "supplyDeliverySperm1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery supplyDeliverySperm1</b></p><a name=\"supplyDeliverySperm1\"> </a><a name=\"hcsupplyDeliverySperm1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-supply-delivery.html\">SupplyDelivery: EE VRIS Biological material movement</a></p></div><p><b>Sihtriik</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/rtk FI}\">Finland</span></p><p><b>identifier</b>: SD-2025-04-15-001</p><p><b>status</b>: Delivered</p><p><b>type</b>: <span title=\"Codes:\">biologicallyderivedproduct</span></p><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-sperm1-1.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-1; biologicalSourceEvent = ABC123; division = 1; productStatus = lattu sisse võetud (bdp-productstatus-other#in-storage); expirationDate = 2025-02-20 18:00:00+0200</a></p></blockquote><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-sperm1-2.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-2; biologicalSourceEvent = ABC123; division = 2; productStatus = available (available); storageTempRequirements = 196\u00a0to\u00a0196 -196 °C</a></p></blockquote><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-sperm1-3.html\">BiologicallyDerivedProduct: productCode = Seemnerakud; identifier = ABC123-3; biologicalSourceEvent = ABC123; division = 3; productStatus = available (available); storageTempRequirements = 196\u00a0to\u00a0196 -196 °C</a></p></blockquote><p><b>occurrence</b>: 2025-04-15 10:30:00+0200 --&gt; 2025-04-17 10:30:00+0200</p><p><b>supplier</b>: OÜ Nova Vita Kliinik (Identifier: <code>https://fhir.ee/sid/org/est/br</code>/10285009)</p><p><b>receiver</b>: Ovumia Fertinova, Helsinki</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.ee/vris/StructureDefinition/ee-vris-destination-country",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/rtk",
+        "code" : "FI",
+        "display" : "Finland"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "value" : "SD-2025-04-15-001"
+  }],
+  "status" : "completed",
+  "type" : {
+    "coding" : [{
+      "code" : "biologicallyderivedproduct"
+    }]
+  },
+  "suppliedItem" : [{
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/sperm1-1"
+    }
+  },
+  {
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/sperm1-2"
+    }
+  },
+  {
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/sperm1-3"
+    }
+  }],
+  "occurrencePeriod" : {
+    "start" : "2025-04-15T10:30:00+02:00",
+    "end" : "2025-04-17T10:30:00+02:00"
+  },
+  "supplier" : {
+    "identifier" : {
+      "system" : "https://fhir.ee/sid/org/est/br",
+      "value" : "10285009"
+    },
+    "display" : "OÜ Nova Vita Kliinik"
+  },
+  "receiver" : [{
+    "display" : "Ovumia Fertinova, Helsinki"
+  }]
+}

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/vris/SupplyDelivery/supplydeliveryEmbryo1> a fhir:SupplyDelivery ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "supplydeliveryEmbryo1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery supplydeliveryEmbryo1</b></p><a name=\"supplydeliveryEmbryo1\"> </a><a name=\"hcsupplydeliveryEmbryo1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-supply-delivery.html\">SupplyDelivery: EE VRIS Biological material movement</a></p></div><p><b>identifier</b>: SD2026-148</p><p><b>status</b>: In Progress</p><p><b>type</b>: <span title=\"Codes:\">biologicallyderivedproduct</span></p><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-embryo1.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB789-1; biologicalSourceEvent = EMB789; division = 1; productStatus = available (available); storageTempRequirements = -196 to -196 °C</a></p></blockquote><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-embryo2.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB790-1; biologicalSourceEvent = EMB790; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-03-19 18:00:00+0200</a></p></blockquote><p><b>occurrence</b>: 2026-11-11 09:30:00+0200 --&gt; (ongoing)</p><p><b>supplier</b>: OÜ Nova Vita Kliinik (Identifier: <code>https://fhir.ee/sid/org/est/br</code>/10285009)</p><p><b>receiver</b>: Ida-Tallinna Keskhaigla (Identifier: <code>https://fhir.ee/sid/org/est/br</code>/10822068)</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "SD2026-148" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:code [ fhir:v "biologicallyderivedproduct" ]
+     ] )
+  ] ; # 
+  fhir:suppliedItem ( [
+     fhir:item [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/embryo1> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/embryo1" ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:Reference ;
+       fhir:link <https://fhir.ee/vris/BiologicallyDerivedProduct/embryo2> ;
+       fhir:reference [ fhir:v "BiologicallyDerivedProduct/embryo2" ]
+     ]
+  ] ) ; # 
+  fhir:occurrence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2026-11-11T09:30:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:supplier [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.ee/sid/org/est/br"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "10285009" ]
+     ] ;
+     fhir:display [ fhir:v "OÜ Nova Vita Kliinik" ]
+  ] ; # 
+  fhir:receiver ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.ee/sid/org/est/br"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "10822068" ]
+     ] ;
+     fhir:display [ fhir:v "Ida-Tallinna Keskhaigla" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

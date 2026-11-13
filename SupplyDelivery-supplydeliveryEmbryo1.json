@@ -1,0 +1,47 @@
+{
+  "resourceType" : "SupplyDelivery",
+  "id" : "supplydeliveryEmbryo1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-supply-delivery"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery supplydeliveryEmbryo1</b></p><a name=\"supplydeliveryEmbryo1\"> </a><a name=\"hcsupplydeliveryEmbryo1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-vris-supply-delivery.html\">SupplyDelivery: EE VRIS Biological material movement</a></p></div><p><b>identifier</b>: SD2026-148</p><p><b>status</b>: In Progress</p><p><b>type</b>: <span title=\"Codes:\">biologicallyderivedproduct</span></p><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-embryo1.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB789-1; biologicalSourceEvent = EMB789; division = 1; productStatus = available (available); storageTempRequirements = -196\u00a0to\u00a0-196 °C</a></p></blockquote><blockquote><p><b>suppliedItem</b></p><p><b>item</b>: <a href=\"BiologicallyDerivedProduct-embryo2.html\">BiologicallyDerivedProduct: productCode = Embrüo; identifier = EMB790-1; biologicalSourceEvent = EMB790; division = 1; productStatus = unavailable (unavailable); expirationDate = 2025-03-19 18:00:00+0200</a></p></blockquote><p><b>occurrence</b>: 2026-11-11 09:30:00+0200 --&gt; (ongoing)</p><p><b>supplier</b>: OÜ Nova Vita Kliinik (Identifier: <code>https://fhir.ee/sid/org/est/br</code>/10285009)</p><p><b>receiver</b>: Ida-Tallinna Keskhaigla (Identifier: <code>https://fhir.ee/sid/org/est/br</code>/10822068)</p></div>"
+  },
+  "identifier" : [{
+    "value" : "SD2026-148"
+  }],
+  "status" : "in-progress",
+  "type" : {
+    "coding" : [{
+      "code" : "biologicallyderivedproduct"
+    }]
+  },
+  "suppliedItem" : [{
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/embryo1"
+    }
+  },
+  {
+    "itemReference" : {
+      "reference" : "BiologicallyDerivedProduct/embryo2"
+    }
+  }],
+  "occurrencePeriod" : {
+    "start" : "2026-11-11T09:30:00+02:00"
+  },
+  "supplier" : {
+    "identifier" : {
+      "system" : "https://fhir.ee/sid/org/est/br",
+      "value" : "10285009"
+    },
+    "display" : "OÜ Nova Vita Kliinik"
+  },
+  "receiver" : [{
+    "identifier" : {
+      "system" : "https://fhir.ee/sid/org/est/br",
+      "value" : "10822068"
+    },
+    "display" : "Ida-Tallinna Keskhaigla"
+  }]
+}

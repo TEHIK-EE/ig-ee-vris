@@ -1,0 +1,180 @@
+# oocyte1 - VRIS - Viljatusravi infosüsteem v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **oocyte1**
+
+## Example BiologicallyDerivedProduct: oocyte1
+
+Profile: [BiologicallyDerivedProduct: EE VRIS Oocyte](StructureDefinition-ee-vris-oocyte.md)
+
+**BiologicallyDerivedProduct Intended Recipient**: [Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)](Patient-patientFemale.md)
+
+**productCode**: Munarakk
+
+**biologicalSourceEvent**: OOC123
+
+**productStatus**: [not stated]: available (available)
+
+### Collections
+
+| | |
+| :--- | :--- |
+| - | **Source** |
+| * | [Leena Lööve (official) Female, DoB: 1983-01-11 ( https://fhir.ee/sid/pid/est/ni#38301105216)](Patient-patientFemale.md) |
+
+> **property****type**: donated-count**value**: 8
+
+> **property****type**: frozen-count**value**: 5
+
+> **property****type**: meta-phase-2-count**value**: 6
+
+> **property****type**: cell-origin-role**value**: Mittepartnerannetaj
+
+> **property****type**: oocyte-origin**value**: Patient's own oocyte
+
+> **property****type**: oocyte-type**value**: Fresh, retrieved on fertilization day
+
+> **property****type**: preservation-reason**value**: Mitte-onkoloogiline terviseprobleem
+
+> **property****type**: origin-country**value**: Eesti
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "BiologicallyDerivedProduct",
+  "id" : "oocyte1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/vris/StructureDefinition/ee-vris-oocyte"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient",
+    "valueReference" : {
+      "reference" : "Patient/patientFemale"
+    }
+  }],
+  "productCode" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "86082002",
+      "display" : "Munarakk"
+    }]
+  },
+  "biologicalSourceEvent" : {
+    "value" : "OOC123"
+  },
+  "productStatus" : {
+    "code" : "available"
+  },
+  "collection" : {
+    "source" : {
+      "reference" : "Patient/patientFemale"
+    }
+  },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "donated-count"
+      }]
+    },
+    "valueInteger" : 8
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "frozen-count"
+      }]
+    },
+    "valueInteger" : 5
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "meta-phase-2-count"
+      }]
+    },
+    "valueInteger" : 6
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "cell-origin-role"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "237391000181109",
+        "display" : "Mittepartnerannetaj"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "oocyte-origin"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Patient's own oocyte"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "oocyte-type"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "TODO",
+        "display" : "Fresh, retrieved on fertilization day"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "preservation-reason"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-pohjused",
+        "code" : "reason-non-oncological",
+        "display" : "Mitte-onkoloogiline terviseprobleem"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/vris-tunnuse-tyyp",
+        "code" : "origin-country"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/rtk",
+        "code" : "EE"
+      }]
+    }
+  }]
+}
+
+```
