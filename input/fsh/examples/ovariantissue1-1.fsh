@@ -12,5 +12,5 @@ Description: "Package 1 of 2 - cryopreserved, in storage"
 * collection.source = Reference(Patient/patientFemale)
 * property[fragmentCount].valueInteger = 4
 * property[Role].valueCodeableConcept = $sct#237491000181102 "Bioloogilise materjali säilitaja"
-* property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
+* property[preservationState].valueCodeableConcept = $sct#261013005 "Fresh"
 * property[originCountry].valueCodeableConcept = $rtk#EE

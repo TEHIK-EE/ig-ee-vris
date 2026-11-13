@@ -10,7 +10,7 @@ Description: "Package 1 of 3 - used fresh"
 * division = "1"
 * collection.source = Reference(Patient/patientFemale)
 * expirationDate = "2025-02-20T18:00:00+02:00"
-* property[preservationState].valueCodeableConcept = $vris-preservation-state#fresh "Värske"
+* property[preservationState].valueCodeableConcept = $sct#261013005 "Fresh"
 * property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaja" // |Non-partner donor (person)|
 * property[metaPhase2Count].valueInteger = 3
 * property[originCountry].valueCodeableConcept = $rtk#EE

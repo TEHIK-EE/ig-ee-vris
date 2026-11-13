@@ -14,7 +14,7 @@ Description: "Package 3 of 3 - cryopreserved, thawed and used"
 * collection.source = Reference(Patient/patientFemale)
 * storageTempRequirements.low = -196 '°C' "°C"
 * storageTempRequirements.high = -196 '°C' "°C"
-* property[preservationState].valueCodeableConcept = $vris-preservation-state#thawed "Sulatatud"
+* property[preservationState].valueCodeableConcept = $sct#261013005 "Fresh"
 * property[frozenCount].valueInteger = 2
-* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaj" // |Non-partner donor (person)|
+* property[Role].valueCodeableConcept = $sct#237391000181109 "Mittepartnerannetaja" // |Non-partner donor (person)|
 * property[originCountry].valueCodeableConcept = $rtk#EE

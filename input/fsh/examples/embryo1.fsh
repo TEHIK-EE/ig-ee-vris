@@ -11,8 +11,8 @@ Description: "Package 1 of 2. Cryopreserved, contains two embryos"
 * division = "1"
 * storageTempRequirements.low = -196 '°C' "°C"
 * storageTempRequirements.high = -196 '°C' "°C"
-* property[preservationState].valueCodeableConcept = $vris-preservation-state#cryopreserved "Külmutatud"
-* property[preservationReason].valueCodeableConcept = $vris-fertility-preservation-reason#nononco "Mitte-onkoloogiline terviseprobleem"
+* property[preservationState].valueCodeableConcept = $sct#261014004 "Külmutatud"
+* property[preservationReason].valueCodeableConcept = $reasons#reason-non-oncological "Mitteonkoloogiline terviseprobleem"
 * property[originCountry].valueCodeableConcept = $rtk#EE
 
 Instance: embryo1-1

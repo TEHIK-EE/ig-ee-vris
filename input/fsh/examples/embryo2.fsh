@@ -10,7 +10,7 @@ Description: "Fresh package. Transferred in the same cycle (Värske)"
 * collection.collectedDateTime = "2025-03-19"
 * division = "1"
 * expirationDate = "2025-03-19T18:00:00+02:00"
-* property[preservationState].valueCodeableConcept = $vris-preservation-state#fresh "Värske"
+* property[preservationState].valueCodeableConcept = $sct#261013005 "Fresh"
 * property[originCountry].valueCodeableConcept = $rtk#EE
 
 Instance: embryo2-1

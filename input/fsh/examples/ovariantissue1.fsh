@@ -14,6 +14,6 @@ Description: "Ovarian tissue collected before oncological treatment"
 
 * property[Role].valueCodeableConcept = $sct#237491000181102 "Bioloogilise materjali säilitaja"
 * property[collectionMethod].valueCodeableConcept = $vris-collection-method#biopsy "Biopsia"
-* property[preservationReason].valueCodeableConcept = $vris-fertility-preservation-reason#oncological "Onkoloogiline ravi"
-* property[pubertalStatus].valueCodeableConcept = $vris-pubertal-status#post-pubertal "Puberteedijärgne"
+* property[preservationReason].valueCodeableConcept = $reasons#reason-oncological "Onkoloogiline põhjus"
+* property[pubertalStatus].valueCodeableConcept = $sct#419138002 "Pre-pubertal"
 * property[originCountry].valueCodeableConcept = $rtk#EE
