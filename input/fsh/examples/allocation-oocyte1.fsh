@@ -3,7 +3,7 @@ InstanceOf: EEVRISProcedureAllocation
 Usage: #example
 Description: "Allocation of oocyte to IVF cycle"
 * status = #completed
-* code = $vris-procedure-code#allocation
+* code = $sct#237011000181100 "Bioloogilise materjali broneerimine"
 * basedOn = Reference(CarePlan/carePlanIvfCycle2025)
 * subject = Reference(Patient/patientFemale)
 * occurrenceDateTime = "2025-03-25T14:00:00+02:00"

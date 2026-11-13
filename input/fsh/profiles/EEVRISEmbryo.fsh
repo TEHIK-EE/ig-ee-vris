@@ -33,6 +33,7 @@ Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressur
 * collection.source only Reference($vris-donor)
 * collection.source ^short = "(ee Doonori viide! NB kas seda on vaja? Kui parent viitab sperma ja munaraku doonoritele?)"
 //* property.type from $vris-property-type
+* property.type from $vris-property-type (required)
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
@@ -51,18 +52,18 @@ Description: "Profile for embryo. (ee Embrüo. Iga embrüo on omaette BDP-ressur
 //* property[donatedCount].value[x] only integer
 * property[developmentDay] ^short = "Embrüo arengupäev"
 * property[developmentDay] ^definition = "Embrüo arengupäev ehk päevade arv pärast viljastamist (nt 3, 5, 6)"
-* property[developmentDay].type = $vris-property-type#development-day
+* property[developmentDay].type = $vris-property-type-CS#development-day
 * property[developmentDay].value[x] only integer
 * property[preservationState] ^short = "(ee Säilitusseisund: värske|külmutatud|sulatatud — pakendil)"
-* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].type = $vris-property-type-CS#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
 * property[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus: onkoloogiline, sooline üleminek jne)"
-* property[preservationReason].type = $vris-property-type#preservation-reason
+* property[preservationReason].type = $vris-property-type-CS#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 * property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
-* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].type = $vris-property-type-CS#origin-country
 * property[originCountry].value[x] only CodeableConcept
 * property[originCountry].valueCodeableConcept from $rtk-VS (required)
 

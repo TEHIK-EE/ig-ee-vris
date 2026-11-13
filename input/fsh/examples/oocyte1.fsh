@@ -15,7 +15,7 @@ Description: "Example of oocyte"
 //* extension[thawing].extension[thawingDate].valueDateTime = "2025-06-15"
 //* extension[thawing].extension[thawingCount].valueInteger = 1
 
-* productCode = $biological-material-type#oocyte "Munarakk"
+* productCode = $sct#86082002 "Munarakk"
 * productStatus = #available
 
 * collection.source = Reference(Patient/patientFemale)
@@ -31,9 +31,9 @@ Description: "Example of oocyte"
 //* property[Role].valueCodeableConcept.coding.code = #endale
 //* property[Role].valueCodeableConcept.coding.display = "Säilitaja"
 
-* property[collectionMethod].valueCodeableConcept.coding.system = $sct
-* property[collectionMethod].valueCodeableConcept.coding.code = #TODO
-* property[collectionMethod].valueCodeableConcept.coding.display = "Follicular puncture"
+//* property[collectionMethod].valueCodeableConcept.coding.system = $sct
+//* property[collectionMethod].valueCodeableConcept.coding.code = #TODO
+//* property[collectionMethod].valueCodeableConcept.coding.display = "Follicular puncture"
 
 * property[oocyteOrigin].valueCodeableConcept.coding.system = $sct
 * property[oocyteOrigin].valueCodeableConcept.coding.code = #TODO
@@ -43,12 +43,12 @@ Description: "Example of oocyte"
 * property[oocyteType].valueCodeableConcept.coding.code = #TODO
 * property[oocyteType].valueCodeableConcept.coding.display = "Fresh, retrieved on fertilization day"
 
-* property[intendedUse].valueCodeableConcept.coding.system = $sct
-* property[intendedUse].valueCodeableConcept.coding.code = #TODO
-* property[intendedUse].valueCodeableConcept.coding.display = "For self use"
+//* property[intendedUse].valueCodeableConcept.coding.system = $sct
+//* property[intendedUse].valueCodeableConcept.coding.code = #TODO
+//* property[intendedUse].valueCodeableConcept.coding.display = "For self use"
 
 * property[preservationReason].valueCodeableConcept.coding.system = $reasons
-* property[preservationReason].valueCodeableConcept.coding.code = #nononco
+* property[preservationReason].valueCodeableConcept.coding.code = #reason-non-oncological
 * property[preservationReason].valueCodeableConcept.coding.display = "Mitte-onkoloogiline terviseprobleem"
 
 * property[originCountry].valueCodeableConcept = $rtk#EE

@@ -4,7 +4,7 @@ Usage: #example
 Description: "Package 1 after SupplyDelivery when it is accepted by other TTO and ready for use"
 //* identifier.system = $vris-bdp-id
 * identifier.value = "ABC123-1"
-* productCode = $biological-material-type#sperm "Seemnerakud"
+* productCode = $sct#119347001 "Seemnerakud"
 * productStatus = $bdp-statusCS#in-storage "lattu sisse võetud"
 * biologicalSourceEvent.value = "ABC123"
 * parent = Reference(BiologicallyDerivedProduct/sperm1)

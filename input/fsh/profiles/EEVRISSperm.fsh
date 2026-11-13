@@ -47,7 +47,7 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property ^slicing.ordered = false
 * property ^slicing.description = "Characteristics of biologic material. (ee Bioloogilise materjali omadused)"
 * property.type from $vris-property-type (required)
-* property.type ^short = "(ee Omaduse tüüp VRIS loendist. NB! LOEND ja koodid võivad veel muutuda!)"
+
 * property contains
     donatedCount 0..1 and
 //    frozenCount 0..1 and
@@ -71,17 +71,17 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 * property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
 * property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
 
-* property[donatedCount].type = $vris-property-type#donated-count
+* property[donatedCount].type = $vris-property-type-CS#donated-count
 * property[donatedCount].value[x] only integer
 
 //* property[frozenCount].type = $vris-property-type#frozen-count
 //* property[frozenCount].value[x] only integer
 
-* property[Role].type = $vris-property-type#cell-origin-role
+* property[Role].type = $vris-property-type-CS#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
-* property[spermCollectionMethod].type = $vris-property-type#collection-method
+* property[spermCollectionMethod].type = $vris-property-type-CS#collection-method
 * property[spermCollectionMethod].value[x] only CodeableConcept
 * property[spermCollectionMethod].valueCodeableConcept from $vris-sperm-collection-method (required)
 
@@ -89,11 +89,11 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 //* property[usageState].value[x] only CodeableConcept
 //* property[usageState].valueCodeableConcept from $vris-cell-usage-state (required)
 
-* property[donorStimulationMethod].type = $vris-property-type#donor-stimulation-method
+* property[donorStimulationMethod].type = $vris-property-type-CS#donor-stimulation-method
 * property[donorStimulationMethod].value[x] only CodeableConcept
 * property[donorStimulationMethod].valueCodeableConcept from $vris-sperm-donor-stimulation-method (required)
 
-* property[preservationReason].type = $vris-property-type#preservation-reason
+* property[preservationReason].type = $vris-property-type-CS#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
@@ -101,11 +101,11 @@ Description: "Profile for sperm. (ee Bioloogiline materjal (Seemnerakud)"
 //* property[preservationMethod].value[x] only CodeableConcept
 //* property[preservationMethod].valueCodeableConcept from $vris-fertility-preservation-method (required)
 
-* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].type = $vris-property-type-CS#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
 
-* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].type = $vris-property-type-CS#origin-country
 * property[originCountry].value[x] only CodeableConcept
 * property[originCountry].valueCodeableConcept from $rtk-VS (required)
 

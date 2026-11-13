@@ -30,6 +30,7 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
 * collection.source ^short = "Reference of the donor. (ee Doonori viide, kes on annetanud bioloogilise materjali. Võib olla anonüümne aga patient.link kaudu ka MPIst.)"
 * collection.collector 0..0
 //* property.type.coding from $vris-property-type-VS
+* property.type from $vris-property-type (required)
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type" //"type.coding.code.value"
 * property ^slicing.rules = #open
@@ -40,62 +41,62 @@ Description: "Profile for oocyte. (ee Bioloogiline materjal (munarakk/munarakud)
     frozenCount 0..1 and
     metaPhase2Count 0..1 and
     Role 1..1 and
-    collectionMethod 0..1 and
+    //collectionMethod 0..1 and
     oocyteOrigin 0..1 and
-    oocyteType 0..1 and
-    intendedUse 0..1 and
+    oocyteType 0..* and
+    //intendedUse 0..1 and
     preservationReason 0..1 and
     preservationState 0..1 and
     originCountry 1..1 
 
 * property[donatedCount] ^short = "(ee Annetatud/saadud munarakkude arv)"
-* property[donatedCount].type = $vris-property-type#donated-count
+* property[donatedCount].type = $vris-property-type-CS#donated-count
 * property[donatedCount].value[x] only integer
 
 * property[frozenCount] ^short = "(ee Külmutatud munarakkude arv)"
-* property[frozenCount].type = $vris-property-type#frozen-count
+* property[frozenCount].type = $vris-property-type-CS#frozen-count
 * property[frozenCount].value[x] only integer
 
 * property[metaPhase2Count] ^short = "(ee Metafaas II (MII) munarakkude arv)"
-* property[metaPhase2Count].type = $vris-property-type#meta-phase-2-count
+* property[metaPhase2Count].type = $vris-property-type-CS#meta-phase-2-count
 * property[metaPhase2Count].value[x] only integer
 
 * property[Role] ^short = "(ee Munaraku päritolu roll: säilitaja / anonüümne doonor / jne.See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
-* property[Role].type = $vris-property-type#cell-origin-role
+* property[Role].type = $vris-property-type-CS#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
-* property[collectionMethod] ^short = "(ee Munaraku kogumise meetod)"
-* property[collectionMethod].type = $vris-property-type#collection-method
-* property[collectionMethod].value[x] only CodeableConcept
-* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
+//* property[collectionMethod] ^short = "(ee Munaraku kogumise meetod)"
+//* property[collectionMethod].type = $vris-property-type#collection-method
+//* property[collectionMethod].value[x] only CodeableConcept
+//* property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
 
 * property[oocyteOrigin] ^short = "(ee Munaraku päritolu: patsiendi enda munarakk, PA munarakk jne)"
-* property[oocyteOrigin].type = $vris-property-type#oocyte-origin
+* property[oocyteOrigin].type = $vris-property-type-CS#oocyte-origin
 * property[oocyteOrigin].value[x] only CodeableConcept
 * property[oocyteOrigin].valueCodeableConcept from $vris-oocyte-origin (required)
 
-* property[oocyteType] ^short = "(ee Munaraku tüüp: viljastamise päeval hangitud / külmutatud-sulatatud jne)"
-* property[oocyteType].type = $vris-property-type#oocyte-type
+* property[oocyteType] ^short = "(ee Munaraku tüüp: viljastamise päeval hangitud / külmutatud-sulatatud või mõlemat)"
+* property[oocyteType].type = $vris-property-type-CS#oocyte-type
 * property[oocyteType].value[x] only CodeableConcept
 * property[oocyteType].valueCodeableConcept from $vris-oocyte-type (required)
 
-* property[intendedUse] ^short = "(ee Munaraku kasutusotstarve: doonorluseks või enda tarbeks)"
-* property[intendedUse].type = $vris-property-type#intended-use
-* property[intendedUse].value[x] only CodeableConcept
-* property[intendedUse].valueCodeableConcept from $vris-oocyte-intended-use (required)
+//* property[intendedUse] ^short = "(ee Munaraku kasutusotstarve: doonorluseks või enda tarbeks)"
+//* property[intendedUse].type = $vris-property-type#intended-use
+//* property[intendedUse].value[x] only CodeableConcept
+//* property[intendedUse].valueCodeableConcept from $vris-oocyte-intended-use (required)
 
 * property[preservationReason] ^short = "(ee Viljakuse säilitamise põhjus: onkoloogiline, sooline üleminek jne)"
-* property[preservationReason].type = $vris-property-type#preservation-reason
+* property[preservationReason].type = $vris-property-type-CS#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
-* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].type = $vris-property-type-CS#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
 
 * property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
-* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].type = $vris-property-type-CS#origin-country
 * property[originCountry].value[x] only CodeableConcept
 * property[originCountry].valueCodeableConcept from $rtk-VS (required)
 

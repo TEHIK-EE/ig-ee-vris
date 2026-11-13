@@ -7,7 +7,8 @@ Description: "Indicator whether prenatal care was discontinued by patient or for
 * meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 //* category = $obsCategory#survey
-* code = $vris-observation-code#424525001 // |Raseduse jälgimine| 
+* code from $vris-observation-code
+* code = $sct#424525001 // |Raseduse jälgimine| 
 * subject 1..1
 * subject only Reference(EEVRISRecipient)
 * effective[x] 1..1

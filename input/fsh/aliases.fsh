@@ -69,11 +69,11 @@ Alias: $vris-cryopreservation-reason-VS = https://fhir.ee/ValueSet/vris-embryo-k
 Alias: $vris-destruction-reason-VS = https://fhir.ee/ValueSet/vris-bioloogilise-materjali-havitamise-pohjus
 Alias: $reasons = https://fhir.ee/CodeSystem/vris-pohjused
 
-Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-stimulatsioonieelne-ravi
-Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-lh-supressiooni-protokoll
-Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-gonadotropiini-kasutus
-Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-munaraku-kypsemise-trigger
-Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteaalfaasi-toetus
+Alias: $vris-pre-stimulation-treatment-VS = https://fhir.ee/ValueSet/vris-munasarjade-stimulatsioonieelsed-ravimid
+Alias: $vris-lh-suppression-protocol-VS = https://fhir.ee/ValueSet/vris-luteiniseeriva-hormooni-supressiooniravimid
+Alias: $vris-gonadotropin-use-VS = https://fhir.ee/ValueSet/vris-munasarjade-stimulatsiooniravimid
+Alias: $vris-oocyte-trigger-VS = https://fhir.ee/ValueSet/vris-munarakkude-lopliku-kypsemise-kaivitamise-meetod
+Alias: $vris-luteal-phase-support-VS = https://fhir.ee/ValueSet/vris-luteaalfaasi-toetuse-meetod
 Alias: $vris-cycle-discontinuation-reason = https://fhir.ee/ValueSet/vris-tsykli-katkestamise-pohjus
 Alias: $vris-oocyte-intended-use = https://fhir.ee/ValueSet/vris-munaraku-kasutusotstarve
 Alias: $vris-fertility-preservation-reason = https://fhir.ee/ValueSet/vris-viljakuse-sailitamise-pohjus
@@ -94,9 +94,9 @@ Alias: $vris-oocyte-origin = https://fhir.ee/ValueSet/vris-munaraku-paritolu
 Alias: $vris-oocyte-type = https://fhir.ee/ValueSet/vris-munaraku-tyyp
 Alias: $vris-female-stimulation-method-VS = https://fhir.ee/ValueSet/vris-naise-stimulatsiooni-meetod
 Alias: $vris-preparation-protocol-VS = https://fhir.ee/ValueSet/vris-ettevalmistuse-protokoll
-Alias: $vris-destruction-code-VS = https://fhir.ee/ValueSet/vris-havitamine
+//Alias: $vris-destruction-code-VS = https://fhir.ee/ValueSet/vris-havitamine
 Alias: $vris-preservation-state = https://fhir.ee/ValueSet/vris-sailitamise-olek
-Alias: $vris-pubertal-status = https://fhir.ee/ValueSet/vris-puberteedi-staatus
+Alias: $vris-pubertal-status = https://fhir.ee/ValueSet/vris-koe-kylmsailitamise-aeg
 
 Alias: $vris-procedure-code = https://fhir.ee/ValueSet/vris-protseduuri-kood
 Alias: $vris-pgt-type = https://fhir.ee/ValueSet/vris-pgt-tyyp
@@ -105,6 +105,7 @@ Alias: $vris-episode-type-CS = https://fhir.ee/CodeSystem/vris-episoodi-tyyp
 Alias: $vris-observation-code = https://fhir.ee/ValueSet/vris-vaatluse-tyyp
 Alias: $vris-observation-component-code = https://fhir.ee/ValueSet/vris-vaatluse-komponendi-tyyp
 Alias: $vris-stim-component = https://fhir.ee/ValueSet/vris-stimulatsiooni-komponendi-tyyp
+Alias: $stim-CS = https://fhir.ee/CodeSystem/vris-stimulatsiooni-komponendi-tyyp
 Alias: $abo = https://fhir.ee/ValueSet/abo-veregrupp
 Alias: $kvalitatiivne = https://fhir.ee/ValueSet/kvalitatiivse-uuringu-vastus
 

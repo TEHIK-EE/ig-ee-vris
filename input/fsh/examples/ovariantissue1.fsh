@@ -3,7 +3,7 @@ InstanceOf: EEVRISReproductiveTissue
 Usage: #example
 Description: "Ovarian tissue collected before oncological treatment"
 * identifier.value = "OVT123"
-* productCode = $biological-material-type#ovarian-tissue "Munasarja kude"
+* productCode = $sct#127482009 "Tissue specimen from ovary"
 * productStatus = #available
 * biologicalSourceEvent.value = "OVT123"
 * collection.source = Reference(Patient/patientFemale)

@@ -9,7 +9,8 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * category = $obsCategory#exam
 * code 1..1
-* code = $vris-observation-code#77386006 // |Rase|
+* code from $vris-observation-code
+* code = $sct#77386006 // |Rase|
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
 * effective[x] 1..1
@@ -23,6 +24,7 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
 * dataAbsentReason 0..1
 * dataAbsentReason ^short = "(ee #unknown kui pole teada)"
 
+* component.code from $vris-observation-component-code (required)
 * component 0..*
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -32,12 +34,12 @@ Description: "Clinical pregnancy, confirmed by ultrasound AND number of fetus. (
     fetalHeartActivity 0..1
 
 * component[gestationalSacCount] ^short = "(ee Lootemunade arv ultraheliuuringul)"
-* component[gestationalSacCount].code = $vris-observation-component-code#300572002 //|Lootekott tuvastatud|
+* component[gestationalSacCount].code = $sct#300572002 //|Lootekott tuvastatud|
 * component[gestationalSacCount].value[x] only integer
 * component[gestationalSacCount].valueInteger ^short = "(ee Lootemunade arv, nt 1, 2, 3)"
 
 * component[fetalHeartActivity] ^short = "(ee Loote südametegevus)"
-* component[fetalHeartActivity].code = $vris-observation-component-code#249045009 //|Fetal heart sounds present (finding)|Loote südamelöögid tuvastatud
+* component[fetalHeartActivity].code = $sct#249045009 //|Fetal heart sounds present (finding)|Loote südamelöögid tuvastatud
 * component[fetalHeartActivity].value[x] only boolean
 
 * bodySite 0..0

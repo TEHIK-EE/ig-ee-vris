@@ -7,7 +7,8 @@ Description: "Whether the child received neonatal intensive care during first 7 
 * meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 //* category = $obsCategory#exam
-* code = $vris-observation-code#830077005 //| Vastuvõtt vastsündinute intensiivraviosakonda (procedure)| 
+* code from $vris-observation-code
+* code = $sct#830077005 //| Vastuvõtt vastsündinute intensiivraviosakonda (procedure)| 
 * subject 1..1
 * subject only Reference(EEVRISPatientChild)
 * effective[x] 1..1

@@ -8,7 +8,8 @@ Description: "Summary counts of embryo lifecycle events in a fertility treatment
 * status = #final
 * code 1..1
 //* code.text = "TODO: SNOMED CT – otsi 'embryo count' / 'embryo lifecycle summary'"
-* code = $vris-observation-code#237181000181109 // |Embrüo elutsükkel|
+* code from $vris-observation-code
+* code = $sct#237181000181109 // |Embrüo elutsükkel|
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor or EEVRISDonorAnonymous)
@@ -27,6 +28,7 @@ Description: "Summary counts of embryo lifecycle events in a fertility treatment
 * value[x] 0..0
 * note 0..*
 
+* component.code from $vris-observation-component-code (required)
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -36,13 +38,13 @@ Description: "Summary counts of embryo lifecycle events in a fertility treatment
     destroyedEmbryoCount 0..1
 
 * component[frozenEmbryoCount] ^short = "(ee Külmutatud embrüote arv tsüklis)"
-* component[frozenEmbryoCount].code = $vris-observation-component-code#237191000181106 // Külmutatud embrüote arv
+* component[frozenEmbryoCount].code = $sct#237191000181106 // Külmutatud embrüote arv
 * component[frozenEmbryoCount].value[x] only integer
 
 * component[transferredEmbryoCount] ^short = "(ee Siirdatud embrüote arv tsüklis 0-3)"
-* component[transferredEmbryoCount].code = $vris-observation-component-code#237201000181108 //Siirdatud embrüote arv
+* component[transferredEmbryoCount].code = $sct#237201000181108 //Siirdatud embrüote arv
 * component[transferredEmbryoCount].value[x] only integer
 
 * component[destroyedEmbryoCount] ^short = "(ee Hävitatud embrüote arv tsüklis)"
-* component[destroyedEmbryoCount].code = $vris-observation-component-code#237211000181105 //|Hävitatud embrüote arv|
+* component[destroyedEmbryoCount].code = $sct#237211000181105 //|Hävitatud embrüote arv|
 * component[destroyedEmbryoCount].value[x] only integer

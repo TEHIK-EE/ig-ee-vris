@@ -9,7 +9,7 @@ Description: "Procedure for embryo transfer to recipient. Records transfer date,
 //* category ^short = "(ee Kategooria: embrüo siirdamine)"
 
 * code from $vris-procedure-code
-* code ^short = "(ee Fix kood:)"
+* code = $sct#75456002 "Embrüo siirdamine"
 
 * subject 1..1
 * subject only Reference(EEVRISRecipient)

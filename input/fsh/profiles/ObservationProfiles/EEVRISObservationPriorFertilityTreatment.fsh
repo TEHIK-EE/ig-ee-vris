@@ -12,7 +12,8 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * category ^short = "Observation category"
 * code 1..1
 * code ^short = "(ee Varasem viljatusravi. NB! ÕIGE snomed kood on puudu! See on placeholder!)"
-* code = $vris-observation-code#416940007 "History of procedure" //237091000181107 |Varasem viljatusravi|?
+* code from $vris-observation-code
+* code = $sct#416940007 "History of procedure" //237091000181107 |Varasem viljatusravi|?
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient ainult viljatusravi saav naine)"
@@ -37,7 +38,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * referenceRange 0..0
 * hasMember 0..0
 * derivedFrom 0..0
-
+* component.code from $vris-observation-component-code (required)
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -50,7 +51,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
     iuiCyclesCount 0..1
 
 * component[priorIVF] ^short = "Varasem IVF toimunud (jah/ei)"
-* component[priorIVF].code = $vris-observation-component-code#52637005 "Test tube ovum fertilization" //52637005 |Munaraku kehaväline viljastamine|
+* component[priorIVF].code = $sct#52637005 "Test tube ovum fertilization" //52637005 |Munaraku kehaväline viljastamine|
 * component[priorIVF].code ^short = "Prior IVF performed"
 * component[priorIVF].value[x] only boolean
 * component[priorIVF].value[x] ^short = "true = Jah, false = Ei"
@@ -59,7 +60,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * component[priorIVF].referenceRange 0..0
 
 * component[ivfCyclesCount] ^short = "IVF tsüklite arv (kuvatakse kui IVF = Jah)"
-* component[ivfCyclesCount].code = $vris-observation-component-code#ivf-cycles-count //237101000181101 |IVF tsüklite arv|
+* component[ivfCyclesCount].code = $sct#237101000181101 "IVF tsüklite arv"
 * component[ivfCyclesCount].code ^short = "IVF cycles count. (ee NB! VAJA KOODI!)"
 * component[ivfCyclesCount].value[x] only integer
 * component[ivfCyclesCount].value[x] ^short = "IVF tsüklite arv"
@@ -68,7 +69,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * component[ivfCyclesCount].referenceRange 0..0
 
 * component[priorIUI] ^short = "Varasem IUI toimunud (jah/ei)"
-* component[priorIUI].code = $vris-observation-component-code#prior-iui //237111000181104 |Varasem emakasisene viljastamine|
+* component[priorIUI].code = $sct#237111000181104 "Varasem emakasisene viljastamine"
 * component[priorIUI].code ^short = "Prior IUI performed (ee NB! VAJA KOODI!)"
 * component[priorIUI].value[x] only boolean
 * component[priorIUI].value[x] ^short = "true = Jah, false = Ei"
@@ -77,7 +78,7 @@ Description: "Prior fertility treatment history. Records whether IVF and/or IUI 
 * component[priorIUI].referenceRange 0..0
 
 * component[iuiCyclesCount] ^short = "IUI tsüklite arv (kuvatakse kui IUI = Jah)"
-* component[iuiCyclesCount].code = $vris-observation-component-code#iui-cycles-count //237121000181108 |IUI tsüklite arv|
+* component[iuiCyclesCount].code = $sct#237121000181108 "IUI tsüklite arv"
 * component[iuiCyclesCount].code ^short = "IUI cycles count(ee NB! VAJA KOODI!)"
 * component[iuiCyclesCount].value[x] only integer
 * component[iuiCyclesCount].value[x] ^short = "IUI tsüklite arv"

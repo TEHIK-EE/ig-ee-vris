@@ -3,7 +3,7 @@ InstanceOf: EEVRISOocyte
 Usage: #example
 Description: "Package 1 of 3 - used fresh"
 * identifier.value = "OOC123-1"
-* productCode = $biological-material-type#oocyte "Munarakk"
+* productCode = $sct#86082002 "Munarakk"
 * productStatus = #unavailable
 * biologicalSourceEvent.value = "OOC123"
 * parent = Reference(BiologicallyDerivedProduct/oocyte1)

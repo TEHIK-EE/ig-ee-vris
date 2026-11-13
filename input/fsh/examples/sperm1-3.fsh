@@ -4,7 +4,7 @@ Usage: #example
 Description: "Package 3 of 3 - cryopreserved, available"
 //* identifier.system = $vris-bdp-id
 * identifier.value = "ABC123-3"
-* productCode = $biological-material-type#sperm "Seemnerakud"
+* productCode = $sct#119347001 "Seemnerakud"
 * productStatus = #available
 * biologicalSourceEvent.value = "ABC123"
 * parent = Reference(BiologicallyDerivedProduct/sperm1)

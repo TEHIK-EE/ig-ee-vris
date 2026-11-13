@@ -9,7 +9,8 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * category 1..*
 * category = $obsCategory#procedure
 * code 1..1
-* code = $vris-observation-code#732970000 //|Kontrollitud munasarjade stimulatsioon| Kas see kood sobib?
+* code from $vris-observation-code
+* code = $sct#732970000 //|Kontrollitud munasarjade stimulatsioon| Kas see kood sobib?
 * subject 1..1
 * subject only Reference(EEVRISRecipient or EEVRISDonor)
 * effective[x] 1..1
@@ -19,7 +20,9 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
 * value[x] 0..0
 * dataAbsentReason 0..0
 * note 0..*
-
+* component.code from $vris-stim-component (required)
+* component.code ^short = "(ee Stimulatsiooniprotokolli komponendi tüüp)"
+* component.value[x] 1..1
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -37,62 +40,62 @@ Description: "Captures ovarian stimulation protocol details for fertility treatm
     previousTreatmentContinuedUntil 0..1
 
 * component[ovarianStimulation] ^short = "(ee Munasarjade stimulatsioon Jah/Ei)"
-* component[ovarianStimulation].code = $vris-stim-component#ovarian-stimulation
+* component[ovarianStimulation].code = $stim-CS#ovarian-stimulation
 * component[ovarianStimulation].value[x] 1..1
 * component[ovarianStimulation].value[x] only boolean
 
 * component[preStimulationTreatment] ^short = "(ee Stimulatsioonieelne ravi Jah/Ei)"
-* component[preStimulationTreatment].code = $vris-stim-component#pre-stimulation-treatment
+* component[preStimulationTreatment].code = $stim-CS#pre-stimulation-treatment
 * component[preStimulationTreatment].value[x] 1..1
 * component[preStimulationTreatment].value[x] only boolean
 
-* component[preStimulationTreatmentMethod] ^short = "(ee Stimulatsioonieelse ravi meetod. Mitu valikut lubatud — iga valik eraldi komponendina.)"
-* component[preStimulationTreatmentMethod].code = $vris-stim-component#pre-stimulation-treatment-method
+* component[preStimulationTreatmentMethod] ^short = "(ee Stimulatsioonieelsed ravimid. Mitu valikut lubatud — iga valik eraldi komponendina.)"
+* component[preStimulationTreatmentMethod].code = $stim-CS#pre-stimulation-treatment-method
 * component[preStimulationTreatmentMethod].value[x] 1..1
 * component[preStimulationTreatmentMethod].value[x] only CodeableConcept
 * component[preStimulationTreatmentMethod].valueCodeableConcept from $vris-pre-stimulation-treatment-VS (required)
 
 * component[lhSuppression] ^short = "(ee Luteiniseeriva hormooni (LH) supressiooni protokoll Jah/Ei)"
-* component[lhSuppression].code = $vris-stim-component#lh-suppression
+* component[lhSuppression].code = $stim-CS#lh-suppression
 * component[lhSuppression].value[x] 1..1
 * component[lhSuppression].value[x] only boolean
 
-* component[lhSuppressionMethod] ^short = "(ee LH supressiooni protokolli meetod. Mitu valikut lubatud.)"
-* component[lhSuppressionMethod].code = $vris-stim-component#lh-suppression-method
+* component[lhSuppressionMethod] ^short = "(ee Luteiniseeriva hormooni supressiooniravimid. Mitu valikut lubatud.)"
+* component[lhSuppressionMethod].code = $stim-CS#lh-suppression-method
 * component[lhSuppressionMethod].value[x] 1..1
 * component[lhSuppressionMethod].value[x] only CodeableConcept
 * component[lhSuppressionMethod].valueCodeableConcept from $vris-lh-suppression-protocol-VS (required)
 
-* component[gonadotropinUse] ^short = "(ee Gonadotropiin. Mitu valikut lubatud. Koguannus tuleb EEVRISMedicationAdministration.dosage.dose kaudu)"
-* component[gonadotropinUse].code = $vris-stim-component#gonadotropin-use
+* component[gonadotropinUse] ^short = "(ee Munasarjade stimulatsiooniravimid. Mitu valikut lubatud. Koguannus tuleb EEVRISMedicationAdministration.dosage.dose kaudu)"
+* component[gonadotropinUse].code = $stim-CS#gonadotropin-use
 * component[gonadotropinUse].value[x] 1..1
 * component[gonadotropinUse].value[x] only CodeableConcept
 * component[gonadotropinUse].valueCodeableConcept from $vris-gonadotropin-use-VS (required)
 
 * component[finalOocyteMaturationTrigger] ^short = "(ee Munarakkude lõpliku küpsemise käivitamine Jah/Ei)"
-* component[finalOocyteMaturationTrigger].code = $vris-stim-component#final-oocyte-maturation-trigger
+* component[finalOocyteMaturationTrigger].code = $stim-CS#final-oocyte-maturation-trigger
 * component[finalOocyteMaturationTrigger].value[x] 1..1
 * component[finalOocyteMaturationTrigger].value[x] only boolean
 
 * component[finalOocyteMaturationTriggerMethod] ^short = "(ee Munarakkude lõpliku küpsemise käivitamise meetod. Mitu valikut lubatud.)"
-* component[finalOocyteMaturationTriggerMethod].code = $vris-stim-component#final-oocyte-maturation-trigger-method
+* component[finalOocyteMaturationTriggerMethod].code = $stim-CS#final-oocyte-maturation-trigger-method
 * component[finalOocyteMaturationTriggerMethod].value[x] 1..1
 * component[finalOocyteMaturationTriggerMethod].value[x] only CodeableConcept
 * component[finalOocyteMaturationTriggerMethod].valueCodeableConcept from $vris-oocyte-trigger-VS (required)
 
 * component[lutealPhaseSupport] ^short = "(ee Luteaalfaasi toetus Jah/Ei)"
-* component[lutealPhaseSupport].code = $vris-stim-component#luteal-phase-support
+* component[lutealPhaseSupport].code = $stim-CS#luteal-phase-support
 * component[lutealPhaseSupport].value[x] 1..1
 * component[lutealPhaseSupport].value[x] only boolean
 
 * component[lutealPhaseSupportMethod] ^short = "(ee Luteaalfaasi toetuse meetod. Mitu valikut lubatud.)"
-* component[lutealPhaseSupportMethod].code = $vris-stim-component#luteal-phase-support-method
+* component[lutealPhaseSupportMethod].code = $stim-CS#luteal-phase-support-method
 * component[lutealPhaseSupportMethod].value[x] 1..1
 * component[lutealPhaseSupportMethod].value[x] only CodeableConcept
 * component[lutealPhaseSupportMethod].valueCodeableConcept from $vris-luteal-phase-support-VS (required)
 
 * component[previousTreatmentContinuedUntil] ^short = "(ee Eelnev ravi jätkus kuni)"
-* component[previousTreatmentContinuedUntil].code = $vris-stim-component#previous-treatment-continued-until
+* component[previousTreatmentContinuedUntil].code = $stim-CS#previous-treatment-continued-until
 * component[previousTreatmentContinuedUntil].value[x] 1..1
 * component[previousTreatmentContinuedUntil].value[x] only dateTime
 

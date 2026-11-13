@@ -7,7 +7,8 @@ Description: "Birth weight of newborn child. (ee Lapse sünnikaal grammides.)"
 * meta.source ^short = "(ee Siia tuleb viide välisele andmeallikale, kui vajalik. Näiteks RR, raseduse infosüsteem jne.)"
 * status = #final
 * category = $obsCategory#vital-signs
-* code = $vris-observation-code#364589006 // |Birth weight (observable entity)|   Sünnikaal                               // Birth weight
+* code from $vris-observation-code
+* code = $sct#364589006 // |Birth weight (observable entity)|   Sünnikaal                               // Birth weight
 * subject 1..1
 * subject only Reference(EEVRISPatientChild)
 * effective[x] 1..1

@@ -9,7 +9,8 @@ Description: "Count of children/pregnancies fom one donor. (ee Ühe anonüümse 
 * status 1..1
 * code 1..1
 * code ^short = "(ee Sündinud laste arv.)"
-* code = $vris-observation-code#237231000181104 //|Laste arv ühelt doonorilt|
+* code from $vris-observation-code
+* code = $sct#237231000181104 //|Laste arv ühelt doonorilt|
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient retsipient või partner (kelle laste arv))"

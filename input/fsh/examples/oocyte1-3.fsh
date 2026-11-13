@@ -6,7 +6,7 @@ Description: "Package 3 of 3 - cryopreserved, thawed and used"
 //* extension[cryopreservationDate].valueDateTime = "2025-02-20"
 * extension[thawing].extension[thawingDate].valueDateTime = "2025-06-15"
 * extension[thawing].extension[thawingCount].valueInteger = 1
-* productCode = $biological-material-type#oocyte "Munarakk"
+* productCode = $sct#86082002 "Munarakk"
 * productStatus = #unavailable
 * biologicalSourceEvent.value = "OOC123"
 * parent = Reference(BiologicallyDerivedProduct/oocyte1)

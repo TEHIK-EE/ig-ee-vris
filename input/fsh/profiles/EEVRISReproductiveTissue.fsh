@@ -16,7 +16,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * extension[recipient] ^short = "(ee Retsipiendi viide. Tavaliselt on retsipient sama isik kes doonor (autoloogne säilitamine).)"
 
 * productCategory 0..0
-* productCategory ^short = "(ee Toote kategooria, kude (tissue) KAS SEDA ON  VAJA????)"
+* productCategory ^short = "(ee Toote kategooria, kude (tissue)"
 * productCode 1..1
 * productCode from $biological-material-type-VS
 * productCode ^short = "(ee Munandi kude või munasarja kude. NB! Vaja loendit!)"
@@ -29,6 +29,8 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 * collection.source ^short = "(ee Doonori/patsiendi viide, kellelt kude kogutud. Sama isik on doonor ja tulevane retsipient?)"
 * collection.collector 0..1
 * collection.collector ^short = "(ee Kude koguv tervishoiutöötaja)"
+
+* property.type from $vris-property-type (required)
 
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type"
@@ -46,7 +48,7 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
     originCountry 1..1
 
 * property[fragmentCount].value[x] ^short = "(ee Annetatud koetükkide arv. Iga koetükk on eraldi pakendis.)"
-* property[fragmentCount].type = $vris-property-type#fragment-count
+* property[fragmentCount].type = $vris-property-type-CS#fragment-count
 * property[fragmentCount].value[x] only integer
 
 //* property[frozenFragmentCount].value[x] ^short = "(ee Külmutatud koetükkide arv)"
@@ -54,32 +56,32 @@ Description: "Profile for reproductive tissue (testicular tissue, ovarian tissue
 //* property[frozenFragmentCount].value[x] only integer
 
 * property[Role].value[x] ^short = "(ee Koe päritolu roll: partner-annetaja, mittepartner, anonüümne doonor, säilitaja jne. See peab alati olema täidetud ning pärineb kõikidele pakenditele.)"
-* property[Role].type = $vris-property-type#cell-origin-role
+* property[Role].type = $vris-property-type-CS#cell-origin-role
 * property[Role].value[x] only CodeableConcept
 * property[Role].valueCodeableConcept from $vris-cell-origin-role (required)
 
 * property[collectionMethod].value[x] ^short = "(ee Koe kogumise meetod, nt biopsia)"
-* property[collectionMethod].type = $vris-property-type#collection-method
+* property[collectionMethod].type = $vris-property-type-CS#collection-method
 * property[collectionMethod].value[x] only CodeableConcept
 * property[collectionMethod].valueCodeableConcept from $vris-collection-method (required)
 
 * property[preservationReason] ^short = "(ee VILJAKUSE säilitamise PÕHJUS, nt enne onkoloogilist ravi)"
-* property[preservationReason].type = $vris-property-type#preservation-reason
+* property[preservationReason].type = $vris-property-type-CS#preservation-reason
 * property[preservationReason].value[x] only CodeableConcept
 * property[preservationReason].valueCodeableConcept from $vris-fertility-preservation-reason (required)
 
-* property[pubertalStatus] ^short = "(ee Kas kude koguti puberteedieelselt või -järgselt)"
-* property[pubertalStatus].type = $vris-property-type#pubertal-status
+* property[pubertalStatus] ^short = "(ee Koe külmsäilitamise aeg. Kas kude koguti puberteedieelselt või -järgselt)"
+* property[pubertalStatus].type = $vris-property-type-CS#pubertal-status
 * property[pubertalStatus].value[x] only CodeableConcept
 * property[pubertalStatus].valueCodeableConcept from $vris-pubertal-status (required)
 
 * property[preservationState] ^short = "(ee värske|külmutatud|sulatatud|)"
-* property[preservationState].type = $vris-property-type#preservation-state
+* property[preservationState].type = $vris-property-type-CS#preservation-state
 * property[preservationState].value[x] only CodeableConcept
 * property[preservationState].valueCodeableConcept from $vris-preservation-state (required)
 
 * property[originCountry] ^short = "(ee Riik, kust bioloogiline materjal pärineb. Imporditud materjali puhul lähteriik. Kohapealsete annetuste puhul alati EE)"
-* property[originCountry].type = $vris-property-type#origin-country
+* property[originCountry].type = $vris-property-type-CS#origin-country
 * property[originCountry].value[x] only CodeableConcept
 * property[originCountry].valueCodeableConcept from $rtk-VS (required)
 

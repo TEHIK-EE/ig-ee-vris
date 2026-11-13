@@ -9,7 +9,7 @@ Description: "Profile for destruction of biological material (sperm, oocyte, emb
 //* category = $vris-procedure-category#destruction //64597002 |Destruktiivne protseduur|
 //* category ^short = "(ee Fix kood: hävitamine. NB! Loendit pole veel! Fake kood hetkel!)"
 * code from $vris-procedure-code
-* code ^short = "(ee Fix kood:)"
+* code = $sct#64597002 "Destruktiivne protseduur"
 //* code from $vris-destruction-code-VS (preferred)
 //* code ^short = "(ee KAS siin on codde vaja või piisab ainult categoryst?!?! Hävitamise täpsem kood (nt munaraku hävitamine jne). NB! LOEND puudu!)"
 

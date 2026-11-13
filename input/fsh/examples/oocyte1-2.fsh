@@ -4,7 +4,7 @@ Usage: #example
 Description: "Package 2 of 3 - cryopreserved, in storage"
 * identifier.value = "OOC123-2"
 //* extension[cryopreservationDate].valueDateTime = "2025-02-20"
-* productCode = $biological-material-type#oocyte "Munarakk"
+* productCode = $sct#86082002 "Munarakk"
 * productStatus = #available
 * biologicalSourceEvent.value = "OOC123"
 * parent = Reference(BiologicallyDerivedProduct/oocyte1)

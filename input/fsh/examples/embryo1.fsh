@@ -3,7 +3,7 @@ InstanceOf: EEVRISEmbryo
 Usage: #example
 Description: "Package 1 of 2. Cryopreserved, contains two embryos"
 * identifier.value = "EMB789-1"
-* productCode = $biological-material-type#embryo "Embrüo"
+* productCode = $sct#57991002 "Embrüo"
 * productStatus = #available
 * biologicalSourceEvent.value = "EMB789"
 * collection.source = Reference(Patient/patientFemale)
@@ -21,7 +21,7 @@ Usage: #example
 Description: "Individual embryo 1 in package EMB789-1"
 * identifier.value = "EMB789-1-A"
 * extension[package].valueReference = Reference(BiologicallyDerivedProduct/embryo1)
-* productCode = $biological-material-type#embryo "Embrüo"
+* productCode = $sct#57991002 "Embrüo"
 * productStatus = #available
 * biologicalSourceEvent.value = "EMB789"
 * collection.source = Reference(Patient/patientFemale)
@@ -37,7 +37,7 @@ Usage: #example
 Description: "Individual embryo 2 in package EMB789-1"
 * identifier.value = "EMB789-1-B"
 * extension[package].valueReference = Reference(BiologicallyDerivedProduct/embryo1)
-* productCode = $biological-material-type#embryo "Embrüo"
+* productCode = $sct#57991002 "Embrüo"
 * productStatus = #available
 * biologicalSourceEvent.value = "EMB789"
 * collection.source = Reference(Patient/patientFemale)

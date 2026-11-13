@@ -9,7 +9,7 @@ Description: "Profile for donation of biological material (sperm, oocyte, reprod
 //* category = $vris-procedure-category#donation
 //* category ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
 * code from $vris-procedure-code
-* code ^short = "(ee Fix kood:)"
+* code = $sct#237041000181104 "Bioloogilise materjali annetamine" // NB! Kood tuleb nov.laiendiga
 
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISDonorAnonymous)

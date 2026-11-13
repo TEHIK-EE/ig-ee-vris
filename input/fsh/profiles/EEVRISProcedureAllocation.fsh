@@ -8,8 +8,7 @@ Description: "Profile for allocation of biological material (sperm, oocyte, embr
 * status ^short = "(ee SIIN on KOHUSTUSLIK staatuste loend!)" // required: preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|unknown
 
 * code from $vris-procedure-code
-* code ^short = "(ee Fix kood: hävitamine. NB! Loendit POLE veel! Kunstlik kood hetkel!)"
-
+* code = $sct#237011000181100 "Bioloogilise materjali broneerimine" // NB! Kood tuleb nov.lõpus
 * subject 1..1
 * subject only Reference(EEVRISDonor or EEVRISRecipient)
 * subject ^short = "(ee Kes annetas)"

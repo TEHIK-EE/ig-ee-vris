@@ -12,7 +12,8 @@ Description: "Live births and stillbirths BEFORE current treatment. (ee Elusalt 
 * category ^short = "Observation category"
 * code 1..1
 * code ^short = "(ee Sündinud laste arv.)"
-* code = $vris-observation-code#248991006 //|Number of live deliveries (observable entity)| //"Obstetric history"
+* code from $vris-observation-code
+* code = $sct#248991006 //|Number of live deliveries (observable entity)| //"Obstetric history"
 * subject 1..1
 * subject only Reference(EEVRISRecipient or $mpi-patient)
 * subject ^short = "(ee Patient retsipient või partner (kelle laste arv))"
